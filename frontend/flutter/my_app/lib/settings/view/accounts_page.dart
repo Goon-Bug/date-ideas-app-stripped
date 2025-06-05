@@ -111,7 +111,8 @@ class ChangeProfilePictureDialogState
                               key: 'iconImage',
                               value:
                                   'assets/profile_icons/icon_$selectedIconIndex.png');
-                          Navigator.pop(context, selectedIconIndex);
+                          Navigator.pushNamedAndRemoveUntil(
+                              context, '/home', (route) => false);
                         }
                       : null,
                   child: const Text('Save',
