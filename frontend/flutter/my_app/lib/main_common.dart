@@ -6,8 +6,6 @@ import 'package:date_spark_app/services/ad_manager.dart';
 import 'package:date_spark_app/services/date_ideas_service.dart';
 import 'package:date_spark_app/services/secure_storage_service.dart';
 import 'package:date_spark_app/timeline/timeline_repository.dart';
-import 'package:date_spark_app/user/user_repository.dart';
-import 'package:date_spark_app/authentication/authentication_repository.dart';
 import 'package:get_it/get_it.dart';
 import 'package:flutter/widgets.dart';
 
@@ -18,8 +16,6 @@ import 'package:date_spark_app/helper_functions.dart' as hp;
 final getIt = GetIt.instance;
 
 void setupDependencies() {
-  getIt.registerSingleton<AuthenticationRepository>(AuthenticationRepository());
-  getIt.registerSingleton<UserRepository>(UserRepository());
   getIt.registerLazySingleton<TimelineRepository>(() => TimelineRepository());
   getIt.registerLazySingleton<TokenCubit>(() => TokenCubit());
 }
@@ -33,7 +29,6 @@ Future<void> mainCommon({required bool isTestMode}) async {
     SecureStorage().deleteAll();
     await hp.deleteAllAppFiles();
     await hp.logSystemFiles();
-    await hp.addTestUserToStorage(); // keep only for test
   }
 
   setupDependencies();

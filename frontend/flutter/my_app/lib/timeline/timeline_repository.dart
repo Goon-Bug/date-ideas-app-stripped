@@ -2,76 +2,58 @@ import 'dart:developer';
 import 'dart:io';
 import 'package:date_spark_app/services/secure_storage_service.dart';
 import 'package:date_spark_app/timeline/models/timeline.dart';
-import 'package:date_spark_app/user/models/user.dart';
-import 'package:date_spark_app/user/user_repository.dart';
-import 'package:get_it/get_it.dart';
 
 class TimelineRepository {
-  final UserRepository userRepository;
   final SecureStorage storage;
+  final String storageKey = 'timelineEntries';
 
-  TimelineRepository()
-      : userRepository = GetIt.instance<UserRepository>(),
-        storage = SecureStorage();
+  TimelineRepository() : storage = SecureStorage();
 
   Future<List<TimelineItem>> getTimelineEntries() async {
     log('Fetching timeline entries...');
 
-    final User? currentUser = await userRepository.getUser();
-    if (currentUser == null) {
-      log('User not found');
-      throw Exception("User not found");
-    }
+    final timelineJson = await storage.read(key: storageKey);
 
-    final key = 'timelineEntries_${currentUser.id}';
-    final timelineJson = await storage.read(key: key);
     if (timelineJson != null) {
-      log('Fetched timeline entries from storage for user: ${currentUser.id}');
+      log('Fetched timeline entries from storage');
       final timelineEntries = TimelineItem.decodeList(timelineJson);
       return timelineEntries;
     }
 
-    log('No timeline entries in storage, falling back to current user data');
-    return currentUser.timelineEntries;
+    log('No timeline entries found');
+    return [];
   }
 
   Future<void> addTimelineEntry(TimelineItem newEntry) async {
     log('Adding new timeline entry: ${newEntry.id}');
 
-    final User? currentUser = await userRepository.getUser();
-    if (currentUser == null) {
-      log('User not found');
-      throw Exception("User not found");
-    }
+    final currentJson = await storage.read(key: storageKey);
+    final currentEntries = currentJson != null
+        ? TimelineItem.decodeList(currentJson)
+        : <TimelineItem>[];
 
-    final updatedEntries = List<TimelineItem>.from(currentUser.timelineEntries)
-      ..add(newEntry);
+    final updatedEntries = [...currentEntries, newEntry];
+    await storage.write(
+      key: storageKey,
+      value: TimelineItem.encodeList(updatedEntries),
+    );
 
     log('Updated timeline entries count: ${updatedEntries.length}');
-
-    final updatedUser = currentUser.copyWith(timelineEntries: updatedEntries);
-    await userRepository.updateUserInStorage(updatedUser);
-
-    log('Timeline entry added successfully');
   }
 
   Future<void> removeTimelineEntry(String entryId) async {
     log('Removing timeline entry with ID: $entryId');
 
-    final User? currentUser = await userRepository.getUser();
-    if (currentUser == null) {
-      log('User not found');
-      throw Exception("User not found");
-    }
+    final currentJson = await storage.read(key: storageKey);
+    final currentEntries = currentJson != null
+        ? TimelineItem.decodeList(currentJson)
+        : <TimelineItem>[];
 
     final entryToRemove =
-        currentUser.timelineEntries.firstWhere((entry) => entry.id == entryId);
-    log('Found entry to remove: ${entryToRemove.id}');
+        currentEntries.firstWhere((entry) => entry.id == entryId);
 
     if (entryToRemove.imagePath.isNotEmpty) {
       final imageFile = File(entryToRemove.imagePath);
-      log('Checking if image exists at: ${entryToRemove.imagePath}');
-
       try {
         if (await imageFile.exists()) {
           await imageFile.delete();
@@ -80,19 +62,18 @@ class TimelineRepository {
           log('Image not found at path: ${entryToRemove.imagePath}');
         }
       } catch (e) {
-        log("Image path error: $e");
+        log("Image deletion error: $e");
       }
     }
 
-    final updatedEntries = List<TimelineItem>.from(currentUser.timelineEntries)
-      ..removeWhere((entry) => entry.id == entryId);
+    final updatedEntries =
+        currentEntries.where((entry) => entry.id != entryId).toList();
+
+    await storage.write(
+      key: storageKey,
+      value: TimelineItem.encodeList(updatedEntries),
+    );
 
     log('Updated timeline entries count: ${updatedEntries.length}');
-
-    final updatedUser = currentUser.copyWith(timelineEntries: updatedEntries);
-    await userRepository.updateUserInStorage(updatedUser);
-    log('Updated User Timeline Entries: ${updatedUser.timelineEntries.toString()}');
-
-    log('Timeline entry successfully removed');
   }
 }

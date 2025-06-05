@@ -1,7 +1,6 @@
 import 'dart:developer';
 
-import 'package:date_spark_app/authentication/authentication_bloc.dart';
-import 'package:date_spark_app/authentication/authentication_repository.dart';
+import 'package:date_spark_app/helper_functions.dart';
 import 'package:date_spark_app/main/bloc/dates_scroller_bloc.dart';
 import 'package:date_spark_app/main/bloc/dates_scroller_state.dart';
 import 'package:date_spark_app/main/cubit/token_cubit.dart';
@@ -9,7 +8,6 @@ import 'package:date_spark_app/main/view/tags_widget.dart';
 import 'package:date_spark_app/services/ad_manager.dart';
 import 'package:date_spark_app/services/date_ideas_service.dart';
 import 'package:date_spark_app/timeline/bloc/timeline_cubit.dart';
-import 'package:date_spark_app/user/bloc/user_bloc.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:date_spark_app/services/navigation_service.dart';
@@ -54,191 +52,118 @@ class DateIdeasWheelPage extends StatelessWidget {
                   duration: const Duration(seconds: 3),
                 ),
               );
-              context.read<UserBloc>().add(UpdateUserTokens(state.tokenCount));
+              storage.write(
+                key: 'tokenCount',
+                value: state.tokenCount.toString(),
+              );
             }
           },
         ),
       ],
-      child: BlocBuilder<AuthenticationBloc, AuthenticationState>(
-        builder: (context, authState) {
-          return MultiBlocProvider(
-            providers: [
-              BlocProvider(create: (_) => DatesScrollerBloc()),
-              BlocProvider(
-                  create: (_) => TagsCubit(DateIdeasData.instance.tagsList)),
-            ],
-            child: BlocBuilder<DatesScrollerBloc, DatesScrollerState>(
-              builder: (context, state) {
-                final bool isSpinning = state is DatesScrollerSpinTo;
+      child: MultiBlocProvider(
+        providers: [
+          BlocProvider(create: (_) => DatesScrollerBloc()),
+          BlocProvider(
+              create: (_) => TagsCubit(DateIdeasData.instance.tagsList)),
+        ],
+        child: BlocBuilder<DatesScrollerBloc, DatesScrollerState>(
+          builder: (context, state) {
+            final bool isSpinning = state is DatesScrollerSpinTo;
 
-                return Scaffold(
-                  appBar: AppBar(
-                    title: Text(authState.user.username,
-                        style: const TextStyle(fontSize: 32)),
-                    backgroundColor: Theme.of(context).colorScheme.primary,
-                    actions: [
-                      IconButton(
-                        icon: const Icon(Icons.settings),
-                        onPressed: isSpinning
-                            ? null
-                            : () {
-                                Navigator.pushNamed(context, '/settings');
-                              },
+            return Scaffold(
+              appBar: AppBar(
+                title: const Text("Date Ideas", style: TextStyle(fontSize: 32)),
+                backgroundColor: Theme.of(context).colorScheme.primary,
+                actions: [
+                  IconButton(
+                    icon: const Icon(Icons.settings),
+                    onPressed: isSpinning
+                        ? null
+                        : () {
+                            Navigator.pushNamed(context, '/settings');
+                          },
+                  ),
+                ],
+              ),
+              body: Column(
+                children: [
+                  Row(
+                    children: [
+                      Padding(
+                        padding: const EdgeInsets.all(8.0),
+                        child: SizedBox(
+                          height: 45,
+                          width: 95,
+                          child: ElevatedButton(
+                            style: ElevatedButton.styleFrom(
+                              shape: RoundedRectangleBorder(
+                                side: BorderSide(
+                                  width: 5,
+                                  color:
+                                      Theme.of(context).colorScheme.onPrimary,
+                                ),
+                                borderRadius: BorderRadius.circular(8),
+                              ),
+                              backgroundColor:
+                                  Theme.of(context).colorScheme.primary,
+                            ),
+                            onPressed: () {
+                              AdManager().showRewardedAd(
+                                onRewarded: (reward) async {
+                                  log(reward.amount.toString());
+                                  await context
+                                      .read<TokenCubit>()
+                                      .addTokens(reward.amount as int);
+                                },
+                                context: context,
+                              );
+                            },
+                            child: Text(
+                              'Watch Ad',
+                              textAlign: TextAlign.center,
+                              maxLines: 2,
+                              style: TextStyle(
+                                height: 0.9,
+                                letterSpacing: 0.1,
+                                fontFamily: 'RetroTitle',
+                                fontSize: 18,
+                                color: Theme.of(context)
+                                    .colorScheme
+                                    .onPrimaryContainer,
+                              ),
+                            ),
+                          ),
+                        ),
+                      ),
+                      Expanded(
+                        child: Padding(
+                          padding: const EdgeInsets.only(right: 20),
+                          child: Align(
+                            alignment: Alignment.centerRight,
+                            child: Text(
+                              'Token Count: ${context.watch<TokenCubit>().state.tokenCount}',
+                              style: const TextStyle(fontSize: 26),
+                            ),
+                          ),
+                        ),
                       ),
                     ],
-                    leading: Builder(
-                      builder: (context) {
-                        return IconButton(
-                          icon: CircleAvatar(
-                            backgroundImage:
-                                AssetImage(authState.user.iconImage),
-                            backgroundColor: Colors.transparent,
-                            radius: 30,
-                          ),
-                          onPressed: () {
-                            Scaffold.of(context).openDrawer();
-                          },
-                        );
-                      },
+                  ),
+                  const Expanded(flex: 2, child: DateIdeasWheelContent()),
+                  Expanded(
+                    flex: 2,
+                    child: TagsCheckboxGrid(
+                      tagNames: DateIdeasData.instance.tagsList
+                          .map((tag) => tag.toTitleCase())
+                          .toList(),
+                      enabled: !isSpinning,
                     ),
                   ),
-                  body: Column(
-                    children: [
-                      Row(
-                        children: [
-                          Padding(
-                            padding: const EdgeInsets.all(8.0),
-                            child: SizedBox(
-                              height: 45,
-                              width: 95,
-                              child: ElevatedButton(
-                                style: ElevatedButton.styleFrom(
-                                  shape: RoundedRectangleBorder(
-                                    side: BorderSide(
-                                        width: 5,
-                                        color: Theme.of(context)
-                                            .colorScheme
-                                            .onPrimary),
-                                    borderRadius: BorderRadius.circular(8),
-                                  ),
-                                  backgroundColor:
-                                      Theme.of(context).colorScheme.primary,
-                                ),
-                                onPressed: () {
-                                  AdManager().showRewardedAd(
-                                    onRewarded: (reward) async {
-                                      log(reward.amount.toString());
-                                      await context
-                                          .read<TokenCubit>()
-                                          .addTokens(reward.amount as int);
-                                    },
-                                    context: context,
-                                  );
-                                },
-                                child: Text(
-                                  'Watch Ad',
-                                  textAlign: TextAlign.center,
-                                  maxLines: 2,
-                                  style: TextStyle(
-                                    height: 0.9,
-                                    letterSpacing: 0.1,
-                                    fontFamily: 'RetroTitle',
-                                    fontSize: 18,
-                                    color: Theme.of(context)
-                                        .colorScheme
-                                        .onPrimaryContainer,
-                                  ),
-                                ),
-                              ),
-                            ),
-                          ),
-                          Expanded(
-                            child: Padding(
-                              padding: const EdgeInsets.only(right: 20),
-                              child: Align(
-                                alignment: Alignment.centerRight,
-                                child: Text(
-                                  'Token Count: ${context.watch<TokenCubit>().state.tokenCount}',
-                                  style: const TextStyle(fontSize: 26),
-                                ),
-                              ),
-                            ),
-                          ),
-                        ],
-                      ),
-                      const Expanded(flex: 2, child: DateIdeasWheelContent()),
-                      Expanded(
-                        flex: 2,
-                        child: TagsCheckboxGrid(
-                          tagNames: DateIdeasData.instance.tagsList
-                              .map((tag) => tag.toTitleCase())
-                              .toList(),
-                          enabled: !isSpinning,
-                        ),
-                      ),
-                    ],
-                  ),
-                  drawer: (authState.status == AuthenticationStatus.unknown ||
-                          isSpinning)
-                      ? null
-                      : Drawer(
-                          child: ListView(
-                            padding: EdgeInsets.zero,
-                            children: [
-                              UserAccountsDrawerHeader(
-                                accountName: Text(authState.user.username,
-                                    style: const TextStyle(fontSize: 22)),
-                                accountEmail: Text(authState.user.email,
-                                    style: const TextStyle(fontSize: 18)),
-                                currentAccountPicture: CircleAvatar(
-                                  backgroundImage:
-                                      AssetImage(authState.user.iconImage),
-                                ),
-                              ),
-                              DefaultTextStyle(
-                                style: const TextStyle(fontSize: 28),
-                                child: Column(
-                                  children: [
-                                    ListTile(
-                                      title: const Text('My Timeline'),
-                                      onTap: () {
-                                        Navigator.pushNamed(
-                                            context, '/timeline');
-                                      },
-                                    ),
-                                    ListTile(
-                                      title: const Text('Settings'),
-                                      onTap: () {
-                                        Navigator.pushNamed(
-                                            context, '/settings');
-                                      },
-                                    ),
-                                    ListTile(
-                                      title: const Text('Logout'),
-                                      enabled: authState.status !=
-                                          AuthenticationStatus.unknown,
-                                      onTap: authState.status ==
-                                              AuthenticationStatus.unknown
-                                          ? null
-                                          : () async {
-                                              context
-                                                  .read<AuthenticationBloc>()
-                                                  .add(
-                                                      AuthenticationLogoutPressed());
-                                              Navigator.of(context).pop();
-                                            },
-                                    ),
-                                  ],
-                                ),
-                              ),
-                            ],
-                          ),
-                        ),
-                );
-              },
-            ),
-          );
-        },
+                ],
+              ),
+            );
+          },
+        ),
       ),
     );
   }
@@ -320,28 +245,25 @@ class _DateIdeasWheelContentState extends State<DateIdeasWheelContent> {
                           'title': idea['title'].toString(),
                         })
                   ];
-                  return SizedBox(
-                    height: 200.0,
-                    child: ListWheelScrollView.useDelegate(
-                      overAndUnderCenterOpacity: 0.2,
-                      controller: scrollController,
-                      physics: const NeverScrollableScrollPhysics(),
-                      itemExtent: 50,
-                      perspective: 0.003,
-                      diameterRatio: 1.5,
-                      childDelegate: ListWheelChildLoopingListDelegate(
-                        children: dateIdeas.map((idea) {
-                          return Center(
-                            child: Text(
-                              idea['title']!,
-                              style: const TextStyle(
-                                fontFamily: 'RetroTitle',
-                                fontSize: 40,
-                              ),
+                  return ListWheelScrollView.useDelegate(
+                    overAndUnderCenterOpacity: 0.2,
+                    controller: scrollController,
+                    physics: const NeverScrollableScrollPhysics(),
+                    itemExtent: 50,
+                    perspective: 0.003,
+                    diameterRatio: 1.5,
+                    childDelegate: ListWheelChildLoopingListDelegate(
+                      children: dateIdeas.map((idea) {
+                        return Center(
+                          child: Text(
+                            idea['title']!,
+                            style: const TextStyle(
+                              fontFamily: 'RetroTitle',
+                              fontSize: 40,
                             ),
-                          );
-                        }).toList(),
-                      ),
+                          ),
+                        );
+                      }).toList(),
                     ),
                   );
                 },
@@ -353,8 +275,7 @@ class _DateIdeasWheelContentState extends State<DateIdeasWheelContent> {
           padding: const EdgeInsets.all(18.0),
           child: ElevatedButton(
             style: ElevatedButton.styleFrom(
-              padding: const EdgeInsets.only(
-                  top: 10, left: 20, right: 20, bottom: 10),
+              padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
               backgroundColor: Theme.of(context).colorScheme.primary,
               shape: RoundedRectangleBorder(
                 borderRadius: BorderRadius.circular(8),
@@ -373,15 +294,12 @@ class _DateIdeasWheelContentState extends State<DateIdeasWheelContent> {
                     context
                         .read<DatesScrollerBloc>()
                         .add(DatesScrollerSpinRequested());
-                    context
-                        .read<TokenCubit>()
-                        .useTokens(10); //NOTE: 0 for testing
+                    context.read<TokenCubit>().useTokens(10); // 0 for testing
                   },
-            child: Text(
+            child: Text('Spin the Wheel!',
                 style: TextStyle(
                     color: Theme.of(context).colorScheme.onSurface,
-                    fontSize: 24),
-                'Spin the Wheel!'),
+                    fontSize: 24)),
           ),
         ),
       ],
@@ -472,11 +390,4 @@ class _DateIdeasWheelContentState extends State<DateIdeasWheelContent> {
       },
     );
   }
-}
-
-void main() {
-  runApp(const MaterialApp(
-    debugShowCheckedModeBanner: false,
-    home: DateIdeasWheelPage(),
-  ));
 }

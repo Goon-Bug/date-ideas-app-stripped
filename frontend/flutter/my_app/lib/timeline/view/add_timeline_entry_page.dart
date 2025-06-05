@@ -1,5 +1,4 @@
 import 'dart:developer';
-import 'package:date_spark_app/authentication/authentication_bloc.dart';
 import 'package:date_spark_app/services/date_ideas_service.dart';
 import 'package:date_spark_app/timeline/bloc/timeline_cubit.dart';
 import 'package:flutter/material.dart';
@@ -239,12 +238,8 @@ class AddTimelineEntryForm extends StatelessWidget {
                           await context.read<TimelineCubit>().addTimelineEntry(
                                 description: descriptionController.text,
                                 image: state.selectedImage,
-                                userId: context
-                                    .read<AuthenticationBloc>()
-                                    .state
-                                    .user
-                                    .id
-                                    .toString(),
+                                userId:
+                                    'Delete this field!', // TODO: Delete this field
                                 date: state.selectedDate,
                                 dateId:
                                     state.selectedDateIdea?['id'].toString() ??
