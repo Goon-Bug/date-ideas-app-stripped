@@ -32,6 +32,7 @@ class DateIdeasWheelPage extends StatelessWidget {
     return MaterialPageRoute<void>(builder: (_) => DateIdeasWheelPage());
   }
 
+  final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
   final storage = SecureStorage();
 
   @override
@@ -74,20 +75,26 @@ class DateIdeasWheelPage extends StatelessWidget {
             // Use a FutureBuilder to load the profileIcon asynchronously
             return FutureBuilder<String?>(
               future: storage.read(key: 'iconImage'),
-              builder: (context, snapshot) {
+              builder: (futureContext, snapshot) {
                 var profileIcon = snapshot.data?.toString() ??
                     'assets/profile_icons/icon_0.png';
                 log('Profile icon: $profileIcon', name: 'DateIdeasWheelPage');
 
                 return Scaffold(
+                  key: _scaffoldKey,
                   appBar: AppBar(
                     title: const Text("Date Spark",
                         style: TextStyle(fontSize: 32)),
                     backgroundColor: Theme.of(context).colorScheme.primary,
-                    leading: Padding(
-                      padding:
-                          const EdgeInsets.only(left: 8, top: 8, bottom: 8),
-                      child: CircleAvatar(
+                    leading: IconButton(
+                      onPressed: () {
+                        if (_scaffoldKey.currentState!.isDrawerOpen) {
+                          _scaffoldKey.currentState!.openEndDrawer();
+                        } else {
+                          _scaffoldKey.currentState!.openDrawer();
+                        }
+                      },
+                      icon: CircleAvatar(
                         radius: 30,
                         backgroundImage: profileIcon.isNotEmpty
                             ? AssetImage(profileIcon)
@@ -117,6 +124,55 @@ class DateIdeasWheelPage extends StatelessWidget {
                               },
                       ),
                     ],
+                  ),
+                  drawer: Drawer(
+                    child: ListView(
+                      padding: EdgeInsets.zero,
+                      children: [
+                        DrawerHeader(
+                          decoration: BoxDecoration(
+                            color: Theme.of(context).colorScheme.primary,
+                          ),
+                          child: Align(
+                            alignment: Alignment.bottomLeft,
+                            child: Padding(
+                              padding: const EdgeInsets.only(bottom: 20),
+                              child: Text(
+                                'Date Spark',
+                                style: TextStyle(
+                                  color: Theme.of(context)
+                                      .colorScheme
+                                      .onPrimaryContainer,
+                                  fontSize: 34,
+                                  fontFamily: 'RetroTitle',
+                                ),
+                              ),
+                            ),
+                          ),
+                        ),
+                        ListTile(
+                          leading: const Icon(Icons.home),
+                          title: const Text('Home'),
+                          onTap: () {
+                            Navigator.pushReplacementNamed(context, '/home');
+                          },
+                        ),
+                        ListTile(
+                          leading: const Icon(Icons.timeline),
+                          title: const Text('Timeline'),
+                          onTap: () {
+                            Navigator.pushNamed(context, '/timeline');
+                          },
+                        ),
+                        ListTile(
+                          leading: const Icon(Icons.settings),
+                          title: const Text('Settings'),
+                          onTap: () {
+                            Navigator.pushNamed(context, '/settings');
+                          },
+                        ),
+                      ],
+                    ),
                   ),
                   body: Column(
                     children: [
