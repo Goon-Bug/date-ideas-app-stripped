@@ -62,7 +62,7 @@ class AppView extends StatelessWidget {
           debugShowCheckedModeBanner: false,
           initialRoute: '/splash',
           routes: {
-            '/home': (context) => const DateIdeasWheelPage(),
+            '/home': (context) => DateIdeasWheelPage(),
             '/splash': (context) => const SplashPage(),
             '/settings': (context) => const SettingsPage(),
             '/accountManagement': (context) => const AccountManagementScreen(),
