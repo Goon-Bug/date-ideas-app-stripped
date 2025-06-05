@@ -105,9 +105,12 @@ class ChangeProfilePictureDialogState
                           Theme.of(context).colorScheme.primary)),
                   onPressed: selectedIconIndex != null
                       ? () {
+                          log('Saving selected icon index: $selectedIconIndex',
+                              name: 'ChangeProfilePictureDialog');
                           storage.write(
-                              key: 'profilePicture',
-                              value: 'icon_$selectedIconIndex.png');
+                              key: 'iconImage',
+                              value:
+                                  'assets/profile_icons/icon_$selectedIconIndex.png');
                           Navigator.pop(context, selectedIconIndex);
                         }
                       : null,
