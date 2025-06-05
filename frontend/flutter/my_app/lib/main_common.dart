@@ -26,15 +26,8 @@ Future<void> mainCommon({required bool isTestMode}) async {
   AdManager().initializeAds();
   await hp.logSystemFiles();
   // SecureStorage().deleteAll();
-  // await hp.deleteAllAppFiles();
+  hp.addDefaultsToStorage();
   storage.printAllSecureStorage();
-
-  if (isTestMode) {
-    await hp.logSystemFiles();
-    // SecureStorage().deleteAll();
-    // await hp.deleteAllAppFiles();
-    await hp.logSystemFiles();
-  }
 
   setupDependencies();
 
