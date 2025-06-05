@@ -60,7 +60,7 @@ class AppView extends StatelessWidget {
       builder: (context, theme) {
         return MaterialApp(
           debugShowCheckedModeBanner: false,
-          initialRoute: '/home',
+          initialRoute: '/splash',
           routes: {
             '/home': (context) => const DateIdeasWheelPage(),
             '/splash': (context) => const SplashPage(),

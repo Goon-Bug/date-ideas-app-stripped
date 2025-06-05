@@ -45,6 +45,13 @@ class SplashPageState extends State<SplashPage>
           curve: const Interval(0.5, 1.0, curve: Curves.easeInOut)),
     );
 
+    // Listen for animation complete and navigate
+    _controller.addStatusListener((status) {
+      if (status == AnimationStatus.completed) {
+        Navigator.of(context).pushReplacementNamed('/home');
+      }
+    });
+
     _controller.forward();
   }
 
