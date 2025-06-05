@@ -1,12 +1,12 @@
 import 'dart:developer';
 
-import 'package:date_spark_app/helper_functions.dart';
 import 'package:date_spark_app/main/bloc/dates_scroller_bloc.dart';
 import 'package:date_spark_app/main/bloc/dates_scroller_state.dart';
 import 'package:date_spark_app/main/cubit/token_cubit.dart';
 import 'package:date_spark_app/main/view/tags_widget.dart';
 import 'package:date_spark_app/services/ad_manager.dart';
 import 'package:date_spark_app/services/date_ideas_service.dart';
+import 'package:date_spark_app/services/secure_storage_service.dart';
 import 'package:date_spark_app/timeline/bloc/timeline_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
@@ -26,11 +26,13 @@ extension StringCasingExtension on String {
 NavigatorState get navigator => navigatorKey.currentState!;
 
 class DateIdeasWheelPage extends StatelessWidget {
-  const DateIdeasWheelPage({super.key});
+  DateIdeasWheelPage({super.key});
 
   static Route<void> route() {
-    return MaterialPageRoute<void>(builder: (_) => const DateIdeasWheelPage());
+    return MaterialPageRoute<void>(builder: (_) => DateIdeasWheelPage());
   }
+
+  final storage = SecureStorage();
 
   @override
   Widget build(BuildContext context) {
@@ -69,98 +71,132 @@ class DateIdeasWheelPage extends StatelessWidget {
         child: BlocBuilder<DatesScrollerBloc, DatesScrollerState>(
           builder: (context, state) {
             final bool isSpinning = state is DatesScrollerSpinTo;
+            // Use a FutureBuilder to load the profileIcon asynchronously
+            return FutureBuilder<String?>(
+              future: storage.read(key: 'iconImage'),
+              builder: (context, snapshot) {
+                var profileIcon =
+                    snapshot.data?.toString() ?? 'assets/icons/icon_0.png';
+                log('Profile icon: $profileIcon', name: 'DateIdeasWheelPage');
 
-            return Scaffold(
-              appBar: AppBar(
-                title: const Text("Date Ideas", style: TextStyle(fontSize: 32)),
-                backgroundColor: Theme.of(context).colorScheme.primary,
-                actions: [
-                  IconButton(
-                    icon: const Icon(Icons.settings),
-                    onPressed: isSpinning
-                        ? null
-                        : () {
-                            Navigator.pushNamed(context, '/settings');
-                          },
-                  ),
-                ],
-              ),
-              body: Column(
-                children: [
-                  Row(
-                    children: [
-                      Padding(
-                        padding: const EdgeInsets.all(8.0),
-                        child: SizedBox(
-                          height: 45,
-                          width: 95,
-                          child: ElevatedButton(
-                            style: ElevatedButton.styleFrom(
-                              shape: RoundedRectangleBorder(
-                                side: BorderSide(
-                                  width: 5,
-                                  color:
-                                      Theme.of(context).colorScheme.onPrimary,
-                                ),
-                                borderRadius: BorderRadius.circular(8),
-                              ),
-                              backgroundColor:
-                                  Theme.of(context).colorScheme.primary,
-                            ),
-                            onPressed: () {
-                              AdManager().showRewardedAd(
-                                onRewarded: (reward) async {
-                                  log(reward.amount.toString());
-                                  await context
-                                      .read<TokenCubit>()
-                                      .addTokens(reward.amount as int);
-                                },
-                                context: context,
-                              );
-                            },
-                            child: Text(
-                              'Watch Ad',
-                              textAlign: TextAlign.center,
-                              maxLines: 2,
-                              style: TextStyle(
-                                height: 0.9,
-                                letterSpacing: 0.1,
-                                fontFamily: 'RetroTitle',
-                                fontSize: 18,
-                                color: Theme.of(context)
-                                    .colorScheme
-                                    .onPrimaryContainer,
-                              ),
-                            ),
-                          ),
-                        ),
+                return Scaffold(
+                  appBar: AppBar(
+                    title: const Text("Date Spark",
+                        style: TextStyle(fontSize: 32)),
+                    backgroundColor: Theme.of(context).colorScheme.primary,
+                    leading: Padding(
+                      padding:
+                          const EdgeInsets.only(left: 8, top: 8, bottom: 8),
+                      child: CircleAvatar(
+                        radius: 30,
+                        backgroundImage: profileIcon.isNotEmpty
+                            ? AssetImage(profileIcon)
+                            : null,
                       ),
-                      Expanded(
-                        child: Padding(
-                          padding: const EdgeInsets.only(right: 20),
-                          child: Align(
-                            alignment: Alignment.centerRight,
-                            child: Text(
-                              'Token Count: ${context.watch<TokenCubit>().state.tokenCount}',
-                              style: const TextStyle(fontSize: 26),
+                    ),
+                    actions: [
+                      IconButton(
+                        tooltip: 'Reset Tags',
+                        icon: const Icon(Icons.refresh),
+                        onPressed: isSpinning
+                            ? null
+                            : () {
+                                context.read<DatesScrollerBloc>().add(
+                                    DatesScrollerResetRequested()); // Reset the wheel
+                                context
+                                    .read<TagsCubit>()
+                                    .resetTags(); // Reset tags
+                              },
+                      ),
+                      IconButton(
+                        icon: const Icon(Icons.settings),
+                        onPressed: isSpinning
+                            ? null
+                            : () {
+                                Navigator.pushNamed(context, '/settings');
+                              },
+                      ),
+                    ],
+                  ),
+                  body: Column(
+                    children: [
+                      Row(
+                        children: [
+                          Padding(
+                            padding: const EdgeInsets.all(8.0),
+                            child: SizedBox(
+                              height: 45,
+                              width: 95,
+                              child: ElevatedButton(
+                                style: ElevatedButton.styleFrom(
+                                  shape: RoundedRectangleBorder(
+                                    side: BorderSide(
+                                      width: 5,
+                                      color: Theme.of(context)
+                                          .colorScheme
+                                          .onPrimary,
+                                    ),
+                                    borderRadius: BorderRadius.circular(8),
+                                  ),
+                                  backgroundColor:
+                                      Theme.of(context).colorScheme.primary,
+                                ),
+                                onPressed: () {
+                                  AdManager().showRewardedAd(
+                                    onRewarded: (reward) async {
+                                      log(reward.amount.toString());
+                                      await context
+                                          .read<TokenCubit>()
+                                          .addTokens(reward.amount as int);
+                                    },
+                                    context: context,
+                                  );
+                                },
+                                child: Text(
+                                  'Watch Ad',
+                                  textAlign: TextAlign.center,
+                                  maxLines: 2,
+                                  style: TextStyle(
+                                    height: 0.9,
+                                    letterSpacing: 0.1,
+                                    fontFamily: 'RetroTitle',
+                                    fontSize: 18,
+                                    color: Theme.of(context)
+                                        .colorScheme
+                                        .onPrimaryContainer,
+                                  ),
+                                ),
+                              ),
                             ),
                           ),
+                          Expanded(
+                            child: Padding(
+                              padding: const EdgeInsets.only(right: 20),
+                              child: Align(
+                                alignment: Alignment.centerRight,
+                                child: Text(
+                                  'Token Count: ${context.watch<TokenCubit>().state.tokenCount}',
+                                  style: const TextStyle(fontSize: 26),
+                                ),
+                              ),
+                            ),
+                          ),
+                        ],
+                      ),
+                      const Expanded(flex: 2, child: DateIdeasWheelContent()),
+                      Expanded(
+                        flex: 2,
+                        child: TagsCheckboxGrid(
+                          tagNames: DateIdeasData.instance.tagsList
+                              .map((tag) => tag.toTitleCase())
+                              .toList(),
+                          enabled: !isSpinning,
                         ),
                       ),
                     ],
                   ),
-                  const Expanded(flex: 2, child: DateIdeasWheelContent()),
-                  Expanded(
-                    flex: 2,
-                    child: TagsCheckboxGrid(
-                      tagNames: DateIdeasData.instance.tagsList
-                          .map((tag) => tag.toTitleCase())
-                          .toList(),
-                      enabled: !isSpinning,
-                    ),
-                  ),
-                ],
-              ),
+                );
+              },
             );
           },
         ),
