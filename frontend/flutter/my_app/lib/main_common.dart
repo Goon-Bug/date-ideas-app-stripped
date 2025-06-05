@@ -21,13 +21,18 @@ void setupDependencies() {
 }
 
 Future<void> mainCommon({required bool isTestMode}) async {
+  final storage = SecureStorage();
   WidgetsFlutterBinding.ensureInitialized();
   AdManager().initializeAds();
+  await hp.logSystemFiles();
+  // SecureStorage().deleteAll();
+  // await hp.deleteAllAppFiles();
+  storage.printAllSecureStorage();
 
   if (isTestMode) {
     await hp.logSystemFiles();
-    SecureStorage().deleteAll();
-    await hp.deleteAllAppFiles();
+    // SecureStorage().deleteAll();
+    // await hp.deleteAllAppFiles();
     await hp.logSystemFiles();
   }
 
