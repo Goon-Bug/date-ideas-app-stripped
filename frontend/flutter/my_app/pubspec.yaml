@@ -1,0 +1,85 @@
+name: date_spark_app
+description: "A Flutter Frontend for Date Spark App"
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: "none" # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ">=3.4.4 <4.0.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_secure_storage: ^9.2.4
+  http: ^1.2.2
+  bloc: ^9.0.0
+  flutter_bloc: ^9.0.0
+  equatable: ^2.0.5
+  jwt_decoder: ^2.0.1
+  form_builder_validators: ^11.0.0
+  bloc_test: ^10.0.0
+  mockito: ^5.4.4
+  build_runner: ^2.0.0
+  mocktail: ^1.0.4
+  formz: ^0.8.0
+  dart_jsonwebtoken: ^3.1.1
+  flutter_dotenv: ^5.2.1
+  path: ^1.9.0
+  sqflite: ^2.4.1
+  url_launcher: ^6.1.7
+  flutter_markdown: ^0.7.5
+  intl: ^0.19.0
+  image_picker: ^1.1.2
+  get_it: ^8.0.3
+  path_provider: ^2.1.5
+  dropdown_button2: ^2.3.9
+  google_mobile_ads: ^5.3.1
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+
+  flutter_lints: ^5.0.0
+
+flutter:
+  uses-material-design: true
+
+  assets:
+    - assets/fonts/
+    - assets/images/
+    - assets/profile_icons/
+    - assets/date_ideas/local_dates.db
+
+  fonts:
+    - family: TitleFont
+      fonts:
+        - asset: assets/fonts/justmeagaindownhere.ttf
+          weight: 400
+    - family: GeneralFont
+      fonts:
+        - asset: assets/fonts/IndieFlower.ttf
+          weight: 400
+
+    - family: RetroSmall
+      fonts:
+        - asset: assets/fonts/VT323-Regular.ttf
+          weight: 400
+
+    - family: RetroTitle
+      fonts:
+        - asset: assets/fonts/Honk-Regular.ttf
+          weight: 400

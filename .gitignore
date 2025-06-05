@@ -1,0 +1,20 @@
+venv/
+helpful_code.txt
+__pycache__
+.coverage
+.vscode
+app.log
+secret_generator.py
+/app/routes_example.py
+/backend/database/add_test_users.sql
+.venv
+.env
+considerations.txt
+
+# Flutter/Dart
+.dart_tool/
+.flutter-plugins
+.flutter-plugins-dependencies
+.packages
+build/
+pubspec.lock
