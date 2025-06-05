@@ -115,6 +115,19 @@ Future<void> addTestUserToStorage() async {
 //   }
 // }
 
+Future<void> addDefaultsToStorage() async {
+  final allStorageData = await storage.readAll();
+  log('All storage data: $allStorageData');
+  if (allStorageData.isEmpty) {
+    log('Storage is empty, adding defaults');
+    await storage.write(key: 'tokenCount', value: '10');
+    await storage.write(
+        key: 'iconImage', value: 'assets/profile_icons/icon_0.png');
+  } else {
+    log('Storage already has data, skipping defaults');
+  }
+}
+
 Future<void> logSystemFiles() async {
   final directory = await getApplicationDocumentsDirectory();
   final dirPath = directory.path;
