@@ -75,8 +75,8 @@ class DateIdeasWheelPage extends StatelessWidget {
             return FutureBuilder<String?>(
               future: storage.read(key: 'iconImage'),
               builder: (context, snapshot) {
-                var profileIcon =
-                    snapshot.data?.toString() ?? 'assets/icons/icon_0.png';
+                var profileIcon = snapshot.data?.toString() ??
+                    'assets/profile_icons/icon_0.png';
                 log('Profile icon: $profileIcon', name: 'DateIdeasWheelPage');
 
                 return Scaffold(
