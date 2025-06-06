@@ -35,6 +35,18 @@ Copyright (c) 2024 Cameron Rashleigh Goon-Bug. All rights reserved.
 
 10. Contact Information
     - For inquiries regarding this License, please contact Cameron Rashleigh at goon-bug@hotmail.com.
+   
+
+## Third-Party Data and Licensing
+
+## OpenStreetMap
+
+This project makes use of geospatial data sourced from [OpenStreetMap](https://www.openstreetmap.org), which is made available under the [Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/1-0/).
+
+Any derived or modified data used within this application that originates from OpenStreetMap is used in accordance with the ODbL. Attribution is provided as required.
+
+OpenStreetMap © OpenStreetMap contributors.
+
 
 
 ## KivyMD
