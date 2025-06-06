@@ -102,7 +102,6 @@ class DateIdea(Base, CRUDMixin):
     __tablename__ = "date_ideas"
 
     id = Column(Integer, primary_key=True, autoincrement=True)
-    creator_id = Column(Integer, nullable=False)
     title = Column(Text, nullable=False)
     description = Column(Text, nullable=False)
     location = Column(Text, nullable=False)
@@ -111,13 +110,12 @@ class DateIdea(Base, CRUDMixin):
     tags = relationship("Tag", secondary=date_idea_tags, backref="date_ideas")
 
     __table_args__ = (
-        Index("ix_date_ideas_creator_id", "creator_id"),
         Index("ix_date_ideas_title", "title"),
     )
 
     def __repr__(self):  # pragma: no cover
         return (
-            f"<DateIdea(id={self.id}, creator_id={self.creator_id}, "
+            f"<DateIdea(id={self.id},"
             f"title={self.title}, description={self.description}, "
             f"location={self.location}, duration={self.duration}, "
             f"cost={self.cost}, tags={[tag.name for tag in self.tags]})>"
