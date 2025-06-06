@@ -35,26 +35,17 @@ Copyright (c) 2024 Cameron Rashleigh Goon-Bug. All rights reserved.
 
 10. Contact Information
     - For inquiries regarding this License, please contact Cameron Rashleigh at goon-bug@hotmail.com.
+   
 
+## Third-Party Data and Licensing
 
-## KivyMD
-MIT License: [https://github.com/kivymd/KivyMD/blob/master/LICENSE](https://github.com/kivymd/KivyMD/blob/master/LICENSE)
+## OpenStreetMap
 
-KivyMD is licensed under the MIT License, which permits unrestricted use, modification, and distribution, subject to certain conditions.
+This project makes use of geospatial data sourced from [OpenStreetMap](https://www.openstreetmap.org), which is made available under the [Open Database License (ODbL)](https://opendatacommons.org/licenses/odbl/1-0/).
 
----
+Any derived or modified data used within this application that originates from OpenStreetMap is used in accordance with the ODbL. Attribution is provided as required.
 
-## Flask
-BSD License: [https://github.com/pallets/flask/blob/main/LICENSE.rst](https://github.com/pallets/flask/blob/main/LICENSE.rst)
-
-Flask is licensed under the BSD License, which allows for use, modification, and distribution with attribution.
-
----
-
-## Redis
-BSD License: [https://github.com/redis/redis/blob/unstable/COPYING](https://github.com/redis/redis/blob/unstable/COPYING)
-
-Redis is licensed under the BSD License, which permits use, modification, and distribution under certain terms.
+OpenStreetMap © OpenStreetMap contributors.
 
 ---
 
@@ -65,44 +56,9 @@ Google Cloud Platform services are subject to the terms of service provided by G
 
 ---
 
-## Firebase
-Various Services: [https://firebase.google.com/terms](https://firebase.google.com/terms)
-
-Firebase services are subject to the terms of service provided by Google. Check the specific terms for each service you use.
-
----
-
 ## Google Analytics
 Google Analytics Terms of Service: [https://marketingplatform.google.com/about/analytics/terms/us/](https://marketingplatform.google.com/about/analytics/terms/us/)
 
 Google Analytics is subject to its own terms of service. Review and comply with these terms when using Google Analytics.
-
----
-
-## Firebase Authentication
-Firebase Terms of Service: [https://firebase.google.com/terms](https://firebase.google.com/terms)
-
-Firebase Authentication is subject to the terms of service provided by Google. Review and comply with these terms when using Firebase Authentication.
-
----
-
-## Redis (Caching)
-BSD License: [https://github.com/redis/redis/blob/unstable/COPYING](https://github.com/redis/redis/blob/unstable/COPYING)
-
-Redis is licensed under the BSD License, which permits use, modification, and distribution under certain terms.
-
----
-
-## Firebase Project (Push Notifications)
-Firebase Terms of Service: [https://firebase.google.com/terms](https://firebase.google.com/terms)
-
-Firebase services, including Push Notifications, are subject to the terms of service provided by Google. Review and comply with these terms.
-
----
-
-## Google serverless functions
-Google Cloud Platform Terms of Service: [https://cloud.google.com/terms](https://cloud.google.com/terms)
-
-Google serverless functions, hosted on Google Cloud Platform, are subject to the terms of service provided by Google. Review and comply with these terms.
 
 ---
