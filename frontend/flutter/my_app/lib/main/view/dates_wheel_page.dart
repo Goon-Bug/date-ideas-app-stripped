@@ -133,11 +133,11 @@ class DateIdeasWheelPage extends StatelessWidget {
                           decoration: BoxDecoration(
                             color: Theme.of(context).colorScheme.primary,
                           ),
-                          child: Align(
-                            alignment: Alignment.bottomLeft,
-                            child: Padding(
-                              padding: const EdgeInsets.only(bottom: 20),
-                              child: Text(
+                          child: Column(
+                            children: [
+                              SizedBox(
+                                  child: Image.asset(profileIcon, height: 80)),
+                              Text(
                                 'Date Spark',
                                 style: TextStyle(
                                   color: Theme.of(context)
@@ -147,7 +147,7 @@ class DateIdeasWheelPage extends StatelessWidget {
                                   fontFamily: 'RetroTitle',
                                 ),
                               ),
-                            ),
+                            ],
                           ),
                         ),
                         ListTile(
