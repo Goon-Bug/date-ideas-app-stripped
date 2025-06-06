@@ -4,28 +4,29 @@ import re
 
 OVERPASS_URL = "http://overpass-api.de/api/interpreter"
 
-# Amenity filters
+# Outdoor / nature amenities filters
 filters = [
-    '["amenity"="cinema"]',
-    '["amenity"="theatre"]',
-    '["amenity"="arts_centre"]',
-    '["leisure"="arts_centre"]',
-    '["amenity"="nightclub"]',
-    '["amenity"="casino"]',
-    '["tourism"="planetarium"]'
+    '["leisure"="park"]',
+    '["leisure"="fountain"]',
+    '["tourism"="picnic_site"]',
+    '["leisure"="garden"]',
+    '["tourism"="zoo"]',
+    '["tourism"="aquarium"]',
+    '["amenity"="animal_shelter"]',
+    '["nature"="nature_reserve"]',
+    '["tourism"="beach_resort"]'
 ]
 
-# Create the Overpass query using Liverpool as an administrative area
+# Build filters block for Overpass query
 filters_block = "\n".join(
     f"{type_}{f}(area.searchArea);" for f in filters for type_ in ["node", "way", "relation"]
 )
-
 
 query = f"""
 [out:json][timeout:25];
 area["name"="Liverpool"]["boundary"="administrative"]->.searchArea;
 (
-{''.join(filters_block)}
+{filters_block}
 );
 out tags center;
 """
@@ -45,27 +46,35 @@ def clean_tag(tag):
 
 # Description templates per amenity
 description_templates = {
-    "cinema": "Watch the latest films at {name}, a top-rated cinema experience.",
-    "theatre": "Enjoy a live performance at {name}, a local theatre with rich programming.",
-    "arts_centre": "Explore creative exhibitions and events at {name}, a vibrant arts centre.",
-    "nightclub": "Dance the night away at {name}, one of Liverpool’s energetic nightclubs.",
-    "casino": "Try your luck at {name}, a stylish casino with entertainment and games.",
-    "planetarium": "Stargaze at {name}, an educational and awe-inspiring planetarium."
+    "park": "Relax and enjoy nature at {name}, a beautiful local park.",
+    "fountain": "Visit {name}, a charming fountain to admire and unwind by.",
+    "picnic_site": "Have a delightful picnic at {name}, perfect for outdoor dining.",
+    "garden": "Stroll through {name}, a peaceful and scenic garden.",
+    "zoo": "Discover fascinating wildlife at {name}, a family-friendly zoo.",
+    "aquarium": "Explore marine life at {name}, an educational aquarium.",
+    "animal_shelter": "Support and visit {name}, a caring animal shelter.",
+    "nature_reserve": "Experience wildlife and nature at {name}, a protected nature reserve.",
+    "beach_resort": "Enjoy sun and sea at {name}, a relaxing beach resort."
 }
 
-# Estimated visit durations (in hours)
+# Estimated visit durations (hours)
 duration_map = {
-    "cinema": 2,
-    "theatre": 2.5,
-    "arts_centre": 1.5,
-    "nightclub": 3,
-    "casino": 2,
-    "planetarium": 1.5
+    "park": 2,
+    "fountain": 0.5,
+    "picnic_site": 2,
+    "garden": 1.5,
+    "zoo": 3,
+    "aquarium": 2,
+    "animal_shelter": 1,
+    "nature_reserve": 3,
+    "beach_resort": 4
 }
 
-# Custom tag mapping
+# Custom tag mapping (if needed)
 custom_tag_map = {
-    "arts_centre": "art",
+    "picnic_site": "picnic",
+    "animal_shelter": "animal care",
+    "nature_reserve": "nature"
 }
 
 aggregated = {}
@@ -75,7 +84,13 @@ for el in elements:
     name = tags.get("name")
     website = tags.get("website")
 
-    amenity = tags.get("amenity") or tags.get("leisure") or tags.get("tourism")
+    # Determine amenity type from tags, priority order
+    amenity = (
+        tags.get("leisure") or
+        tags.get("tourism") or
+        tags.get("amenity") or
+        tags.get("nature")
+    )
     if not name or not amenity:
         continue
 
@@ -87,15 +102,16 @@ for el in elements:
     location_parts = [street, city, postcode]
     location = ", ".join([part for part in location_parts if part]) or f"{el.get('lat')}, {el.get('lon')}"
 
-    template = description_templates.get(amenity, "Visit {name}, a unique entertainment venue in Liverpool.")
+    template = description_templates.get(amenity, "Visit {name}, a wonderful outdoor spot in Liverpool.")
     description = clean_text(template.format(name=name))
 
     tag_name = custom_tag_map.get(amenity, clean_tag(amenity))
-    tag_list = ["entertainment", tag_name]
+    tag_list = ["outdoor", tag_name]
     if wheelchair == "yes":
         tag_list.append("wheelchair accessible")
 
-    cost = "Medium" if amenity in {"cinema", "planetarium", "arts_centre"} else "High"
+    # Cost is usually low or free for these amenities
+    cost = "Low"
     duration = duration_map.get(amenity, 1.5)
 
     if name not in aggregated:
@@ -114,12 +130,7 @@ for el in elements:
             aggregated[name]["websites"].add(website)
         aggregated[name]["locations"].add(location)
 
-        cost_priority = {"Low": 1, "Medium": 2, "High": 3}
-        existing_cost = aggregated[name]["cost"]
-        if cost_priority[cost] > cost_priority.get(existing_cost, 0):
-            aggregated[name]["cost"] = cost
-
-# Final output
+# Final output list
 date_ideas = []
 for item in aggregated.values():
     date_ideas.append({
@@ -132,7 +143,7 @@ for item in aggregated.values():
         "websites": sorted(list(item["websites"]))
     })
 
-with open("backend/jsons/date_ideas_liverpool_entertainment.json", "w", encoding="utf-8") as f:
+with open("backend/jsons/date_ideas_liverpool_outdoor.json", "w", encoding="utf-8") as f:
     json.dump(date_ideas, f, ensure_ascii=False, indent=2)
 
-print(f"Saved {len(date_ideas)} date ideas to date_ideas_liverpool_entertainment.json")
+print(f"Saved {len(date_ideas)} outdoor date ideas to date_ideas_liverpool_outdoor.json")
