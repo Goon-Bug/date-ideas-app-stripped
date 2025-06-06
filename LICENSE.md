@@ -47,27 +47,6 @@ Any derived or modified data used within this application that originates from O
 
 OpenStreetMap © OpenStreetMap contributors.
 
-
-
-## KivyMD
-MIT License: [https://github.com/kivymd/KivyMD/blob/master/LICENSE](https://github.com/kivymd/KivyMD/blob/master/LICENSE)
-
-KivyMD is licensed under the MIT License, which permits unrestricted use, modification, and distribution, subject to certain conditions.
-
----
-
-## Flask
-BSD License: [https://github.com/pallets/flask/blob/main/LICENSE.rst](https://github.com/pallets/flask/blob/main/LICENSE.rst)
-
-Flask is licensed under the BSD License, which allows for use, modification, and distribution with attribution.
-
----
-
-## Redis
-BSD License: [https://github.com/redis/redis/blob/unstable/COPYING](https://github.com/redis/redis/blob/unstable/COPYING)
-
-Redis is licensed under the BSD License, which permits use, modification, and distribution under certain terms.
-
 ---
 
 ## Google Cloud Platform
@@ -77,44 +56,9 @@ Google Cloud Platform services are subject to the terms of service provided by G
 
 ---
 
-## Firebase
-Various Services: [https://firebase.google.com/terms](https://firebase.google.com/terms)
-
-Firebase services are subject to the terms of service provided by Google. Check the specific terms for each service you use.
-
----
-
 ## Google Analytics
 Google Analytics Terms of Service: [https://marketingplatform.google.com/about/analytics/terms/us/](https://marketingplatform.google.com/about/analytics/terms/us/)
 
 Google Analytics is subject to its own terms of service. Review and comply with these terms when using Google Analytics.
-
----
-
-## Firebase Authentication
-Firebase Terms of Service: [https://firebase.google.com/terms](https://firebase.google.com/terms)
-
-Firebase Authentication is subject to the terms of service provided by Google. Review and comply with these terms when using Firebase Authentication.
-
----
-
-## Redis (Caching)
-BSD License: [https://github.com/redis/redis/blob/unstable/COPYING](https://github.com/redis/redis/blob/unstable/COPYING)
-
-Redis is licensed under the BSD License, which permits use, modification, and distribution under certain terms.
-
----
-
-## Firebase Project (Push Notifications)
-Firebase Terms of Service: [https://firebase.google.com/terms](https://firebase.google.com/terms)
-
-Firebase services, including Push Notifications, are subject to the terms of service provided by Google. Review and comply with these terms.
-
----
-
-## Google serverless functions
-Google Cloud Platform Terms of Service: [https://cloud.google.com/terms](https://cloud.google.com/terms)
-
-Google serverless functions, hosted on Google Cloud Platform, are subject to the terms of service provided by Google. Review and comply with these terms.
 
 ---
