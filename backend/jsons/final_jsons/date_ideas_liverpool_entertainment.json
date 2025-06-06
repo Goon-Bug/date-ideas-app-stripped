@@ -1,0 +1,344 @@
+[
+  {
+    "title": "Blue Angel",
+    "description": "Dance the night away at Blue Angel, one of Liverpool’s energetic nightclubs.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "entertainment",
+      "nightclub"
+    ],
+    "websites": [
+      "https://www.instagram.com/therazliverpool/"
+    ]
+  },
+  {
+    "title": "Superstar Boudoir",
+    "description": "Dance the night away at Superstar Boudoir, one of Liverpool’s energetic nightclubs.",
+    "locations": [
+      "Stanley Street, Liverpool, L1 6AF"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "entertainment",
+      "nightclub"
+    ],
+    "websites": [
+      "https://www.facebook.com/SuperstarBoudoi"
+    ]
+  },
+  {
+    "title": "Walker Art Gallery",
+    "description": "Explore creative exhibitions and events at Walker Art Gallery, a vibrant arts centre.",
+    "locations": [
+      "William Brown Street, Liverpool, L3 8EL"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "art",
+      "entertainment",
+      "wheelchair accessible"
+    ],
+    "websites": [
+      "https://www.liverpoolmuseums.org.uk/walker/"
+    ]
+  },
+  {
+    "title": "Royal Court",
+    "description": "Enjoy a live performance at Royal Court, a local theatre with rich programming.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 2.5,
+    "cost": "High",
+    "tags": [
+      "entertainment",
+      "theatre"
+    ],
+    "websites": [
+      "https://liverpoolsroyalcourt.com/"
+    ]
+  },
+  {
+    "title": "Camel Club",
+    "description": "Dance the night away at Camel Club, one of Liverpool’s energetic nightclubs.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "entertainment",
+      "nightclub"
+    ],
+    "websites": [
+      "http://camelclubliverpool.co.uk/"
+    ]
+  },
+  {
+    "title": "District",
+    "description": "Dance the night away at District, one of Liverpool’s energetic nightclubs.",
+    "locations": [
+      "Jordan Street, Liverpool, L1 0BW"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "entertainment",
+      "nightclub"
+    ],
+    "websites": [
+      "https://www.facebook.com/DistrictLPool/",
+      "https://x.com/districtlpool?lang=en"
+    ]
+  },
+  {
+    "title": "Picturehouse at FACT",
+    "description": "Watch the latest films at Picturehouse at FACT, a top-rated cinema experience.",
+    "locations": [
+      "Wood Street, Liverpool, L1 4DQ"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "cinema",
+      "entertainment",
+      "wheelchair accessible"
+    ],
+    "websites": [
+      "https://www.picturehouses.com/cinema/picturehouse-at-fact"
+    ]
+  },
+  {
+    "title": "Genting Casino",
+    "description": "Try your luck at Genting Casino, a stylish casino with entertainment and games.",
+    "locations": [
+      "Queen Square, Liverpool, L1 1RH"
+    ],
+    "duration": 2,
+    "cost": "High",
+    "tags": [
+      "casino",
+      "entertainment"
+    ],
+    "websites": [
+      "https://www.gentingcasinos.co.uk/casinos/genting-casino-liverpool-renshaw-street/"
+    ]
+  },
+  {
+    "title": "Route 66 Drive in Cinema",
+    "description": "Watch the latest films at Route 66 Drive in Cinema, a top-rated cinema experience.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "cinema",
+      "entertainment"
+    ],
+    "websites": [
+      "https://cinematreasures.org/theaters/49402"
+    ]
+  },
+  {
+    "title": "Laughterhouse",
+    "description": "Enjoy a live performance at Laughterhouse, a local theatre with rich programming.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 2.5,
+    "cost": "High",
+    "tags": [
+      "entertainment",
+      "theatre"
+    ],
+    "websites": [
+      "https://www.facebook.com/laughterhousecomedy/",
+      "https://www.liverpoolphil.com/whats-on/comedy-spoken-word/laughterhouse-live/"
+    ]
+  },
+  {
+    "title": "Cavern Club",
+    "description": "Dance the night away at Cavern Club, one of Liverpool’s energetic nightclubs.",
+    "locations": [
+      "Mathew Street, Liverpool, L2 6RE"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "entertainment",
+      "nightclub"
+    ],
+    "websites": [
+      "https://www.cavernclub.com/",
+      "https://www.instagram.com/cavernliverpool/"
+    ]
+  },
+  {
+    "title": "The Cabin Club",
+    "description": "Dance the night away at The Cabin Club, one of Liverpool’s energetic nightclubs.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "entertainment",
+      "nightclub"
+    ],
+    "websites": [
+      "https://www.facebook.com/TheCabinClubLiverpool/"
+    ]
+  },
+  {
+    "title": "Lennon's Bar",
+    "description": "Dance the night away at Lennon's Bar, one of Liverpool’s energetic nightclubs.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "entertainment",
+      "nightclub"
+    ],
+    "websites": [
+      "https://www.facebook.com/LennonsBarMathewStreet/"
+    ]
+  },
+  {
+    "title": "Everyman",
+    "description": "Watch the latest films at Everyman, a top-rated cinema experience.",
+    "locations": [
+      "Whitechapel, Liverpool, L1 6DA"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "cinema",
+      "entertainment"
+    ],
+    "websites": [
+      "https://www.everymancinema.com/venues-list/x11i7-everyman-liverpool/"
+    ]
+  },
+  {
+    "title": "Epstein Theatre",
+    "description": "Enjoy a live performance at Epstein Theatre, a local theatre with rich programming.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 2.5,
+    "cost": "High",
+    "tags": [
+      "entertainment",
+      "theatre"
+    ],
+    "websites": [
+      "http://www.epsteintheatre.co.uk/"
+    ]
+  },
+  {
+    "title": "Heaven",
+    "description": "Dance the night away at Heaven, one of Liverpool’s energetic nightclubs.",
+    "locations": [
+      "Victoria Street, Liverpool, L2 6QE"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "entertainment",
+      "nightclub"
+    ],
+    "websites": [
+      "https://heavenliverpool.co.uk/",
+      "https://www.facebook.com/p/Heaven-Liverpool-61550290113264/"
+    ]
+  },
+  {
+    "title": "Flares",
+    "description": "Dance the night away at Flares, one of Liverpool’s energetic nightclubs.",
+    "locations": [
+      "Mathew Street, Liverpool, L2 6RE"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "entertainment",
+      "nightclub"
+    ],
+    "websites": [
+      "https://www.flaresbars.co.uk/liverpool"
+    ]
+  },
+  {
+    "title": "Jaloux",
+    "description": "Dance the night away at Jaloux, one of Liverpool’s energetic nightclubs.",
+    "locations": [
+      "Victoria Street, Liverpool, L2 5QA"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "entertainment",
+      "nightclub"
+    ],
+    "websites": [
+      null
+    ]
+  },
+  {
+    "title": "Dorothy's Showbar",
+    "description": "Dance the night away at Dorothy's Showbar, one of Liverpool’s energetic nightclubs.",
+    "locations": [
+      "Victoria Street, Liverpool, L2 5QA"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "entertainment",
+      "nightclub"
+    ],
+    "websites": [
+      null
+    ]
+  },
+  {
+    "title": "Noir",
+    "description": "Dance the night away at Noir, one of Liverpool’s energetic nightclubs.",
+    "locations": [
+      "Brunswick Street, Liverpool, L2 0PL"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "entertainment",
+      "nightclub"
+    ],
+    "websites": [
+      null
+    ]
+  },
+  {
+    "title": "Quarry Venue",
+    "description": "Enjoy a live performance at Quarry Venue, a local theatre with rich programming.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 2.5,
+    "cost": "High",
+    "tags": [
+      "entertainment",
+      "theatre"
+    ],
+    "websites": [
+      null
+    ]
+  }
+]
