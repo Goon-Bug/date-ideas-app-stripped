@@ -1,0 +1,727 @@
+[
+  {
+    "title": "Hollywood Bowl",
+    "description": "Strike some pins at Hollywood Bowl, a lively bowling alley.",
+    "locations": [
+      "Liverpool, L24 8QB",
+      "Montrose Way, Liverpool, L13 1EW"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "bowling",
+      "leisure"
+    ],
+    "websites": [
+      "https://www.hollywoodbowl.co.uk/liverpool"
+    ]
+  },
+  {
+    "title": "Junkyard Golf Club",
+    "description": "Challenge friends at Junkyard Golf Club, a fun miniature golf course.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "leisure",
+      "mini golf"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Citybike - Sandhills Station",
+    "description": "Explore Liverpool with Citybike - Sandhills Station, a convenient bicycle rental spot.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 1,
+    "cost": "Medium",
+    "tags": [
+      "bicycle rental",
+      "leisure"
+    ],
+    "websites": []
+  },
+  {
+    "title": "city bike - Silvester Street",
+    "description": "Explore Liverpool with city bike - Silvester Street, a convenient bicycle rental spot.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 1,
+    "cost": "Medium",
+    "tags": [
+      "bicycle rental",
+      "leisure"
+    ],
+    "websites": []
+  },
+  {
+    "title": "city bike - Hope University",
+    "description": "Explore Liverpool with city bike - Hope University, a convenient bicycle rental spot.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 1,
+    "cost": "Medium",
+    "tags": [
+      "bicycle rental",
+      "leisure"
+    ],
+    "websites": []
+  },
+  {
+    "title": "city bike - LJMU Tithebarn Street",
+    "description": "Explore Liverpool with city bike - LJMU Tithebarn Street, a convenient bicycle rental spot.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 1,
+    "cost": "Medium",
+    "tags": [
+      "bicycle rental",
+      "leisure"
+    ],
+    "websites": []
+  },
+  {
+    "title": "city bike - Passport Office",
+    "description": "Explore Liverpool with city bike - Passport Office, a convenient bicycle rental spot.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 1,
+    "cost": "Medium",
+    "tags": [
+      "bicycle rental",
+      "leisure"
+    ],
+    "websites": []
+  },
+  {
+    "title": "city bike - Capital Building",
+    "description": "Explore Liverpool with city bike - Capital Building, a convenient bicycle rental spot.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 1,
+    "cost": "Medium",
+    "tags": [
+      "bicycle rental",
+      "leisure"
+    ],
+    "websites": []
+  },
+  {
+    "title": "city bike - Exchange Station",
+    "description": "Explore Liverpool with city bike - Exchange Station, a convenient bicycle rental spot.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 1,
+    "cost": "Medium",
+    "tags": [
+      "bicycle rental",
+      "leisure"
+    ],
+    "websites": []
+  },
+  {
+    "title": "city bike - Chapel Street",
+    "description": "Explore Liverpool with city bike - Chapel Street, a convenient bicycle rental spot.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 1,
+    "cost": "Medium",
+    "tags": [
+      "bicycle rental",
+      "leisure"
+    ],
+    "websites": []
+  },
+  {
+    "title": "city bike - Dale Street",
+    "description": "Explore Liverpool with city bike - Dale Street, a convenient bicycle rental spot.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 1,
+    "cost": "Medium",
+    "tags": [
+      "bicycle rental",
+      "leisure"
+    ],
+    "websites": []
+  },
+  {
+    "title": "city bike - Canning Street",
+    "description": "Explore Liverpool with city bike - Canning Street, a convenient bicycle rental spot.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 1,
+    "cost": "Medium",
+    "tags": [
+      "bicycle rental",
+      "leisure"
+    ],
+    "websites": []
+  },
+  {
+    "title": "city bike - Port of Liverpool Building",
+    "description": "Explore Liverpool with city bike - Port of Liverpool Building, a convenient bicycle rental spot.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 1,
+    "cost": "Medium",
+    "tags": [
+      "bicycle rental",
+      "leisure"
+    ],
+    "websites": []
+  },
+  {
+    "title": "New Islington",
+    "description": "Explore Liverpool with New Islington, a convenient bicycle rental spot.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 1,
+    "cost": "Medium",
+    "tags": [
+      "bicycle rental",
+      "leisure"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Citybike",
+    "description": "Explore Liverpool with Citybike, a convenient bicycle rental spot.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 1,
+    "cost": "Medium",
+    "tags": [
+      "bicycle rental",
+      "leisure"
+    ],
+    "websites": []
+  },
+  {
+    "title": "city bike - Liverpool Town Hall",
+    "description": "Explore Liverpool with city bike - Liverpool Town Hall, a convenient bicycle rental spot.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 1,
+    "cost": "Medium",
+    "tags": [
+      "bicycle rental",
+      "leisure"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Salisbury Amateur Boxing Club",
+    "description": "Stay active at Salisbury Amateur Boxing Club, a well-equipped sports centre.",
+    "locations": [
+      "Salisbury Street, Liverpool, L3 8DR"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "leisure",
+      "sports"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Goals",
+    "description": "Stay active at Goals, a well-equipped sports centre.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "leisure",
+      "sports"
+    ],
+    "websites": [
+      "https://www.goalsfootball.co.uk/"
+    ]
+  },
+  {
+    "title": "Toxteth Library – Windsor Street",
+    "description": "Explore Liverpool with Toxteth Library – Windsor Street, a convenient bicycle rental spot.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 1,
+    "cost": "Medium",
+    "tags": [
+      "bicycle rental",
+      "leisure"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Promenade Princes Parade",
+    "description": "Explore Liverpool with Promenade Princes Parade, a convenient bicycle rental spot.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 1,
+    "cost": "Medium",
+    "tags": [
+      "bicycle rental",
+      "leisure"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Sefton Park - Ullet Road",
+    "description": "Explore Liverpool with Sefton Park - Ullet Road, a convenient bicycle rental spot.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 1,
+    "cost": "Medium",
+    "tags": [
+      "bicycle rental",
+      "leisure"
+    ],
+    "websites": []
+  },
+  {
+    "title": "city bike - Chinatown",
+    "description": "Explore Liverpool with city bike - Chinatown, a convenient bicycle rental spot.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 1,
+    "cost": "Medium",
+    "tags": [
+      "bicycle rental",
+      "leisure"
+    ],
+    "websites": []
+  },
+  {
+    "title": "The Climbing Hangar",
+    "description": "Stay active at The Climbing Hangar, a well-equipped sports centre.",
+    "locations": [
+      "Birchall Street, Liverpool",
+      "Speke Road, Liverpool, L19 2RF"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "leisure",
+      "sports"
+    ],
+    "websites": []
+  },
+  {
+    "title": "LC Sports in Liverpool College",
+    "description": "Stay active at LC Sports in Liverpool College, a well-equipped sports centre.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "leisure",
+      "sports"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Gravity MAX",
+    "description": "Stay active at Gravity MAX, a well-equipped sports centre.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "leisure",
+      "sports"
+    ],
+    "websites": []
+  },
+  {
+    "title": "TeamSport Liverpool",
+    "description": "Stay active at TeamSport Liverpool, a well-equipped sports centre.",
+    "locations": [
+      "Sefton St, Liverpool, L3 4BQ"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "leisure",
+      "sports"
+    ],
+    "websites": [
+      "https://www.team-sport.co.uk/go-kart-tracks/liverpool"
+    ]
+  },
+  {
+    "title": "David Lloyd Clubs",
+    "description": "Stay active at David Lloyd Clubs, a well-equipped sports centre.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "leisure",
+      "sports"
+    ],
+    "websites": [
+      "https://www.davidlloyd.co.uk/clubs/liverpool-speke"
+    ]
+  },
+  {
+    "title": "Lifestyles Park Road",
+    "description": "Stay active at Lifestyles Park Road, a well-equipped sports centre.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "leisure",
+      "sports"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Hope Park Sports",
+    "description": "Stay active at Hope Park Sports, a well-equipped sports centre.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "leisure",
+      "sports"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Melwood",
+    "description": "Stay active at Melwood, a well-equipped sports centre.",
+    "locations": [
+      "Melwood Drive, Liverpool, L12 8SY"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "leisure",
+      "sports"
+    ],
+    "websites": [
+      "https://en.wikipedia.org/wiki/Melwood"
+    ]
+  },
+  {
+    "title": "Liverpool Cricket Club",
+    "description": "Stay active at Liverpool Cricket Club, a well-equipped sports centre.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "leisure",
+      "sports"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Sports and Fitness Centre",
+    "description": "Stay active at Sports and Fitness Centre, a well-equipped sports centre.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "leisure",
+      "sports"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Lifestyles Everton Park",
+    "description": "Stay active at Lifestyles Everton Park, a well-equipped sports centre.",
+    "locations": [
+      "Great Homer Street, Liverpool, L5 5PH",
+      "Liverpool"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "leisure",
+      "sports"
+    ],
+    "websites": [
+      "https://liverpool.gov.uk/lifestyles/find-a-centre/everton-park/"
+    ]
+  },
+  {
+    "title": "Walton Sports Centre",
+    "description": "Stay active at Walton Sports Centre, a well-equipped sports centre.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "leisure",
+      "sports"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Liverpool Curling Club",
+    "description": "Enjoy skating at Liverpool Curling Club, a fun ice rink for all ages.",
+    "locations": [
+      "Gorham Street, Liverpool, B0T 1K0"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "ice skating",
+      "leisure"
+    ],
+    "websites": [
+      "http://www.liverpoolcurlingclub.com/"
+    ]
+  },
+  {
+    "title": "Toxteth FireFit Hub",
+    "description": "Stay active at Toxteth FireFit Hub, a well-equipped sports centre.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "leisure",
+      "sports"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Awesome Walls Liverpool",
+    "description": "Stay active at Awesome Walls Liverpool, a well-equipped sports centre.",
+    "locations": [
+      "Athol Street, Liverpool, L5 9TN"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "leisure",
+      "sports"
+    ],
+    "websites": [
+      "https://awesomewalls.co.uk/liverpool/"
+    ]
+  },
+  {
+    "title": "Archbishop Beck Tennis Centre",
+    "description": "Stay active at Archbishop Beck Tennis Centre, a well-equipped sports centre.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "leisure",
+      "sports"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Whitlam Leisure Centre",
+    "description": "Stay active at Whitlam Leisure Centre, a well-equipped sports centre.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "leisure",
+      "sports"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Irvine St",
+    "description": "Explore Liverpool with Irvine St, a convenient bicycle rental spot.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 1,
+    "cost": "Medium",
+    "tags": [
+      "bicycle rental",
+      "leisure"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Liverpool Tennis Centre",
+    "description": "Stay active at Liverpool Tennis Centre, a well-equipped sports centre.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "leisure",
+      "sports"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Woolton Lifestyles",
+    "description": "Stay active at Woolton Lifestyles, a well-equipped sports centre.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "leisure",
+      "sports"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Tiber Football Centre",
+    "description": "Stay active at Tiber Football Centre, a well-equipped sports centre.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "leisure",
+      "sports"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Greenbank Sports Academy",
+    "description": "Stay active at Greenbank Sports Academy, a well-equipped sports centre.",
+    "locations": [
+      "Greenbank Lane, Liverpool, L17 1AG"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "leisure",
+      "sports"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Mossley Hill Athletic Club",
+    "description": "Stay active at Mossley Hill Athletic Club, a well-equipped sports centre.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "leisure",
+      "sports"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Netherley Sports and Social Club",
+    "description": "Stay active at Netherley Sports and Social Club, a well-equipped sports centre.",
+    "locations": [
+      "Wood Lane, Liverpool, L27 6PX"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "leisure",
+      "sports"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Escape Live",
+    "description": "Test your wits at Escape Live, an exciting escape game venue.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "escape game",
+      "leisure"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Powerleague",
+    "description": "Stay active at Powerleague, a well-equipped sports centre.",
+    "locations": [
+      "Whittle Street, Liverpool, L5 2SQ"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "leisure",
+      "sports"
+    ],
+    "websites": [
+      "https://www.powerleague.co.uk/5-a-side/north-england/liverpool"
+    ]
+  },
+  {
+    "title": "Wyncote Sports Ground",
+    "description": "Stay active at Wyncote Sports Ground, a well-equipped sports centre.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "leisure",
+      "sports"
+    ],
+    "websites": [
+      "https://www.liverpool.ac.uk/sports/venues/wyncote/"
+    ]
+  },
+  {
+    "title": "Aintree Racecourse",
+    "description": "Stay active at Aintree Racecourse, a well-equipped sports centre.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "leisure",
+      "sports"
+    ],
+    "websites": [
+      "https://www.thejockeyclub.co.uk/aintree/"
+    ]
+  }
+]

@@ -12,7 +12,7 @@
       "nightclub"
     ],
     "websites": [
-      "https://www.instagram.com/therazliverpool/"
+      "https://www.blueangelliverpool.com/"
     ]
   },
   {
@@ -28,7 +28,24 @@
       "nightclub"
     ],
     "websites": [
-      "https://www.facebook.com/SuperstarBoudoi"
+      "https://www.superstarboudoir.com/"
+    ]
+  },
+  {
+    "title": "Event Cinemas",
+    "description": "Watch the latest films at Event Cinemas, a top-rated cinema experience.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "cinema",
+      "entertainment",
+      "wheelchair accessible"
+    ],
+    "websites": [
+      "https://www.eventcinemas.com.au/"
     ]
   },
   {
@@ -61,7 +78,7 @@
       "theatre"
     ],
     "websites": [
-      "https://liverpoolsroyalcourt.com/"
+      "https://royalcourtliverpool.co.uk/"
     ]
   },
   {
@@ -93,8 +110,7 @@
       "nightclub"
     ],
     "websites": [
-      "https://www.facebook.com/DistrictLPool/",
-      "https://x.com/districtlpool?lang=en"
+      "https://districtliverpool.com/"
     ]
   },
   {
@@ -111,13 +127,14 @@
       "wheelchair accessible"
     ],
     "websites": [
-      "https://www.picturehouses.com/cinema/picturehouse-at-fact"
+      "https://www.picturehouses.com/cinema/Picturehouse-at-FACT"
     ]
   },
   {
     "title": "Genting Casino",
     "description": "Try your luck at Genting Casino, a stylish casino with entertainment and games.",
     "locations": [
+      "Liverpool",
       "Queen Square, Liverpool, L1 1RH"
     ],
     "duration": 2,
@@ -127,7 +144,7 @@
       "entertainment"
     ],
     "websites": [
-      "https://www.gentingcasinos.co.uk/casinos/genting-casino-liverpool-renshaw-street/"
+      "https://www.gentingcasino.com/casinos/liverpool/"
     ]
   },
   {
@@ -143,7 +160,7 @@
       "entertainment"
     ],
     "websites": [
-      "https://cinematreasures.org/theaters/49402"
+      "https://www.route66drivein.com/"
     ]
   },
   {
@@ -159,8 +176,7 @@
       "theatre"
     ],
     "websites": [
-      "https://www.facebook.com/laughterhousecomedy/",
-      "https://www.liverpoolphil.com/whats-on/comedy-spoken-word/laughterhouse-live/"
+      "https://laughterhouse.co.uk/"
     ]
   },
   {
@@ -176,8 +192,7 @@
       "nightclub"
     ],
     "websites": [
-      "https://www.cavernclub.com/",
-      "https://www.instagram.com/cavernliverpool/"
+      "https://cavernclub.org/"
     ]
   },
   {
@@ -193,7 +208,7 @@
       "nightclub"
     ],
     "websites": [
-      "https://www.facebook.com/TheCabinClubLiverpool/"
+      "https://www.cabinclub.co.uk/"
     ]
   },
   {
@@ -209,7 +224,23 @@
       "nightclub"
     ],
     "websites": [
-      "https://www.facebook.com/LennonsBarMathewStreet/"
+      "https://lennonsliverpool.co.uk/"
+    ]
+  },
+  {
+    "title": "Cineworld",
+    "description": "Watch the latest films at Cineworld, a top-rated cinema experience.",
+    "locations": [
+      "Liverpool, L24 8QB"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "cinema",
+      "entertainment"
+    ],
+    "websites": [
+      "https://www.cineworld.co.uk/cinemas/speke/110"
     ]
   },
   {
@@ -225,7 +256,7 @@
       "entertainment"
     ],
     "websites": [
-      "https://www.everymancinema.com/venues-list/x11i7-everyman-liverpool/"
+      "https://www.everymancinema.com/liverpool"
     ]
   },
   {
@@ -241,7 +272,7 @@
       "theatre"
     ],
     "websites": [
-      "http://www.epsteintheatre.co.uk/"
+      "https://www.epsteintheatre.co.uk/"
     ]
   },
   {
@@ -257,8 +288,7 @@
       "nightclub"
     ],
     "websites": [
-      "https://heavenliverpool.co.uk/",
-      "https://www.facebook.com/p/Heaven-Liverpool-61550290113264/"
+      "https://heavenliverpool.co.uk/"
     ]
   },
   {
@@ -290,7 +320,7 @@
       "nightclub"
     ],
     "websites": [
-      null
+      "https://jalouxliverpool.com/"
     ]
   },
   {
@@ -306,7 +336,7 @@
       "nightclub"
     ],
     "websites": [
-      null
+      "https://www.dorothysshowbar.com/"
     ]
   },
   {
@@ -322,23 +352,302 @@
       "nightclub"
     ],
     "websites": [
-      null
+      "https://www.noirliverpool.co.uk/"
     ]
   },
   {
-    "title": "Quarry Venue",
-    "description": "Enjoy a live performance at Quarry Venue, a local theatre with rich programming.",
+    "title": "Alfred's",
+    "description": "Dance the night away at Alfred's, one of Liverpool’s energetic nightclubs.",
     "locations": [
       "Liverpool"
     ],
-    "duration": 2.5,
+    "duration": 3,
     "cost": "High",
     "tags": [
       "entertainment",
-      "theatre"
+      "nightclub"
     ],
     "websites": [
-      null
+      "https://alfredsliverpool.com/"
+    ]
+  },
+  {
+    "title": "The Kazimier",
+    "description": "Dance the night away at The Kazimier, one of Liverpool’s energetic nightclubs.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "entertainment",
+      "nightclub"
+    ],
+    "websites": [
+      "https://thekazimier.co.uk/"
+    ]
+  },
+  {
+    "title": "The Jacaranda",
+    "description": "Dance the night away at The Jacaranda, one of Liverpool’s energetic nightclubs.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "entertainment",
+      "nightclub"
+    ],
+    "websites": [
+      "https://www.thejacaranda.net/"
+    ]
+  },
+  {
+    "title": "The Cavern Pub",
+    "description": "Dance the night away at The Cavern Pub, one of Liverpool’s energetic nightclubs.",
+    "locations": [
+      "Mathew Street, Liverpool"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "entertainment",
+      "nightclub"
+    ],
+    "websites": [
+      "https://www.cavernpub.co.uk/"
+    ]
+  },
+  {
+    "title": "Venue 101",
+    "description": "Dance the night away at Venue 101, one of Liverpool’s energetic nightclubs.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "entertainment",
+      "nightclub"
+    ],
+    "websites": [
+      "https://venue101.com/"
+    ]
+  },
+  {
+    "title": "SuCasa",
+    "description": "Dance the night away at SuCasa, one of Liverpool’s energetic nightclubs.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "entertainment",
+      "nightclub"
+    ],
+    "websites": [
+      "https://www.sucasaliverpool.com/"
+    ]
+  },
+  {
+    "title": "The Magnet",
+    "description": "Dance the night away at The Magnet, one of Liverpool’s energetic nightclubs.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "entertainment",
+      "nightclub"
+    ],
+    "websites": [
+      "https://themagnetbar.co.uk/"
+    ]
+  },
+  {
+    "title": "Kazimier Garden",
+    "description": "Dance the night away at Kazimier Garden, one of Liverpool’s energetic nightclubs.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "entertainment",
+      "nightclub",
+      "outdoor"
+    ],
+    "websites": [
+      "https://thekazimier.co.uk/"
+    ]
+  },
+  {
+    "title": "Nations Bar",
+    "description": "Dance the night away at Nations Bar, one of Liverpool’s energetic nightclubs.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "entertainment",
+      "nightclub"
+    ],
+    "websites": [
+      "https://www.nationsbar.co.uk/"
+    ]
+  },
+  {
+    "title": "Cruise Bar",
+    "description": "Dance the night away at Cruise Bar, one of Liverpool’s energetic nightclubs.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "entertainment",
+      "nightclub"
+    ],
+    "websites": [
+      "https://cruiseliverpool.co.uk/"
+    ]
+  },
+  {
+    "title": "Revolution",
+    "description": "Dance the night away at Revolution, one of Liverpool’s energetic nightclubs.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "entertainment",
+      "nightclub",
+      "cocktails"
+    ],
+    "websites": [
+      "https://revolution-bars.co.uk/locations/liverpool/"
+    ]
+  },
+  {
+    "title": "Fargo Village",
+    "description": "Enjoy food and drinks at Fargo Village, a lively food and drink market.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "market"
+    ],
+    "websites": [
+      "https://www.fargovillage.co.uk/"
+    ]
+  },
+  {
+    "title": "Albert Dock",
+    "description": "Shop at Albert Dock, a popular shopping district with a range of stores.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "shopping",
+      "historic",
+      "outdoor"
+    ],
+    "websites": [
+      "https://albertdock.com/"
+    ]
+  },
+  {
+    "title": "Liverpool One",
+    "description": "Shop at Liverpool One, a popular shopping district with a range of stores.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "shopping",
+      "outdoor"
+    ],
+    "websites": [
+      "https://www.liverpool-one.com/"
+    ]
+  },
+  {
+    "title": "Merseyside Maritime Museum",
+    "description": "Explore maritime history at Merseyside Maritime Museum, a vibrant cultural site.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 1.5,
+    "cost": "Free",
+    "tags": [
+      "museum",
+      "culture",
+      "wheelchair accessible"
+    ],
+    "websites": [
+      "https://www.liverpoolmuseums.org.uk/maritime/"
+    ]
+  },
+  {
+    "title": "Museum of Liverpool",
+    "description": "Explore Liverpool's history at Museum of Liverpool, a vibrant cultural site.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 1.5,
+    "cost": "Free",
+    "tags": [
+      "museum",
+      "culture",
+      "wheelchair accessible"
+    ],
+    "websites": [
+      "https://www.liverpoolmuseums.org.uk/museum-liverpool/"
+    ]
+  },
+  {
+    "title": "Sefton Park",
+    "description": "Enjoy nature at Sefton Park, a beautiful park with walking paths and a lake.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 2,
+    "cost": "Free",
+    "tags": [
+      "nature",
+      "outdoor",
+      "wheelchair accessible"
+    ],
+    "websites": [
+      "https://www.sefton.gov.uk/parks-and-open-spaces/sefton-park.aspx"
+    ]
+  },
+  {
+    "title": "Calderstones Park",
+    "description": "Enjoy nature at Calderstones Park, a beautiful park with walking paths and a lake.",
+    "locations": [
+      "Liverpool"
+    ],
+    "duration": 2,
+    "cost": "Free",
+    "tags": [
+      "nature",
+      "outdoor",
+      "wheelchair accessible"
+    ],
+    "websites": [
+      "https://calderstones.org.uk/"
     ]
   }
 ]
