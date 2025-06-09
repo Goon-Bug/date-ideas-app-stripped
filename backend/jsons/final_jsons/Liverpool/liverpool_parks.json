@@ -11,7 +11,8 @@
       "outdoors",
       "nature",
       "history",
-      "budget-friendly"
+      "budget-friendly",
+      "adventure"
     ],
     "websites": [
       "https://en.wikipedia.org/wiki/Sefton_Park"
@@ -29,7 +30,8 @@
       "outdoors",
       "nature",
       "history",
-      "budget-friendly"
+      "budget-friendly",
+      "adventure"
     ],
     "websites": [
       "https://en.wikipedia.org/wiki/Calderstones_Park"
@@ -47,7 +49,8 @@
       "outdoors",
       "nature",
       "history",
-      "budget-friendly"
+      "budget-friendly",
+      "adventure"
     ],
     "websites": [
       "https://www.nationaltrust.org.uk/croxteth-hall-and-country-park"
@@ -65,7 +68,8 @@
       "outdoors",
       "nature",
       "history",
-      "budget-friendly"
+      "budget-friendly",
+      "adventure"
     ],
     "websites": [
       "https://en.wikipedia.org/wiki/Wavertree_Botanic_Garden_and_Park"
@@ -83,7 +87,8 @@
       "outdoors",
       "nature",
       "history",
-      "budget-friendly"
+      "budget-friendly",
+      "adventure"
     ],
     "websites": [
       "https://en.wikipedia.org/wiki/Newsham_Park"
@@ -101,7 +106,8 @@
       "outdoors",
       "nature",
       "relaxing",
-      "budget-friendly"
+      "budget-friendly",
+      "adventure"
     ],
     "websites": [
       "https://en.wikipedia.org/wiki/Everton_Park,_Liverpool"
@@ -119,7 +125,8 @@
       "outdoors",
       "nature",
       "relaxing",
-      "budget-friendly"
+      "budget-friendly",
+      "adventure"
     ],
     "websites": [
       "https://www.tripadvisor.com/Attractions-g186337-Activities-c57-Liverpool_Merseyside_England.html"
@@ -137,7 +144,8 @@
       "outdoors",
       "nature",
       "history",
-      "budget-friendly"
+      "budget-friendly",
+      "adventure"
     ],
     "websites": []
   },
@@ -153,7 +161,8 @@
       "outdoors",
       "nature",
       "history",
-      "budget-friendly"
+      "budget-friendly",
+      "adventure"
     ],
     "websites": []
   },
@@ -169,7 +178,8 @@
       "outdoors",
       "relaxing",
       "culture",
-      "budget-friendly"
+      "budget-friendly",
+      "adventure"
     ],
     "websites": [
       "https://en.wikipedia.org/wiki/Chavasse_Park"
@@ -187,7 +197,8 @@
       "outdoors",
       "nature",
       "history",
-      "budget-friendly"
+      "budget-friendly",
+      "adventure"
     ],
     "websites": []
   },
@@ -203,7 +214,8 @@
       "outdoors",
       "nature",
       "history",
-      "budget-friendly"
+      "budget-friendly",
+      "adventure"
     ],
     "websites": [
       "https://www.nationaltrust.org.uk/speke-hall-garden-and-estate"
@@ -220,7 +232,8 @@
     "tags": [
       "outdoors",
       "nature",
-      "budget-friendly"
+      "budget-friendly",
+      "adventure"
     ],
     "websites": [
       "https://www.liverpool.gov.uk/parks-and-open-spaces/find-a-park/wavertree-botanic-garden/"
@@ -239,7 +252,8 @@
       "nature",
       "history",
       "culture",
-      "budget-friendly"
+      "budget-friendly",
+      "adventure"
     ],
     "websites": []
   },
@@ -255,7 +269,8 @@
       "outdoors",
       "nature",
       "relaxing",
-      "budget-friendly"
+      "budget-friendly",
+      "adventure"
     ],
     "websites": []
   },
@@ -271,7 +286,8 @@
       "outdoors",
       "nature",
       "relaxing",
-      "budget-friendly"
+      "budget-friendly",
+      "adventure"
     ],
     "websites": []
   },
@@ -287,7 +303,8 @@
       "outdoors",
       "nature",
       "history",
-      "budget-friendly"
+      "budget-friendly",
+      "adventure"
     ],
     "websites": []
   },
@@ -303,7 +320,8 @@
       "outdoors",
       "nature",
       "relaxing",
-      "budget-friendly"
+      "budget-friendly",
+      "adventure"
     ],
     "websites": []
   },
@@ -319,7 +337,8 @@
       "outdoors",
       "nature",
       "fun",
-      "budget-friendly"
+      "budget-friendly",
+      "adventure"
     ],
     "websites": []
   },
@@ -329,13 +348,14 @@
     "locations": [
       "Otterspool Dr, Liverpool L17 4AL"
     ],
-    "duration": 2,
+    "duration": 1.5,
     "cost": "Low",
     "tags": [
       "outdoors",
       "nature",
       "relaxing",
-      "budget-friendly"
+      "budget-friendly",
+      "adventure"
     ],
     "websites": []
   }
