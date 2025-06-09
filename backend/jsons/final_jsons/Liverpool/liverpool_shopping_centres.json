@@ -1,0 +1,83 @@
+[
+    {
+        "title": "Liverpool ONE",
+        "description": "Explore Liverpool ONE, the city’s premier shopping and leisure destination.",
+        "locations": [
+            "Liverpool"
+        ],
+        "duration": 3,
+        "cost": "Medium",
+        "tags": [
+            "shopping",
+            "indoor"
+        ],
+        "websites": [
+            "https://www.liverpool-one.com/"
+        ]
+    },
+    {
+        "title": "Metquarter",
+        "description": "Visit Metquarter for a stylish shopping experience with boutique stores.",
+        "locations": [
+            "Liverpool"
+        ],
+        "duration": 2,
+        "cost": "Medium",
+        "tags": [
+            "shopping",
+            "indoor",
+            "luxury"
+        ],
+        "websites": [
+            "https://www.metquarter.com/"
+        ]
+    },
+    {
+        "title": "St. Johns Shopping Centre",
+        "description": "Shop at St. Johns Shopping Centre, offering a variety of high street brands.",
+        "locations": [
+            "Liverpool"
+        ],
+        "duration": 2,
+        "cost": "Medium",
+        "tags": [
+            "shopping",
+            "indoor"
+        ],
+        "websites": [
+            "https://stjohnsshoppingcentre.co.uk/"
+        ]
+    },
+    {
+        "title": "Clayton Square Shopping Centre",
+        "description": "Discover Clayton Square Shopping Centre with popular high street retailers.",
+        "locations": [
+            "Liverpool"
+        ],
+        "duration": 2,
+        "cost": "Medium",
+        "tags": [
+            "shopping",
+            "indoor"
+        ],
+        "websites": [
+            "https://claytonsquare.co.uk/"
+        ]
+    },
+    {
+        "title": "The Cavern Walks",
+        "description": "Shop and explore at The Cavern Walks, a mix of shops and entertainment venues.",
+        "locations": [
+            "Liverpool"
+        ],
+        "duration": 2,
+        "cost": "Medium",
+        "tags": [
+            "shopping",
+            "indoor"
+        ],
+        "websites": [
+            "https://www.cavernwalks.com/"
+        ]
+    }
+]

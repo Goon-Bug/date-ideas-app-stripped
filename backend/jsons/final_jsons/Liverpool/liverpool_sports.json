@@ -1,0 +1,127 @@
+[
+  {
+    "title": "Hollywood Bowl",
+    "description": "Strike some pins at Hollywood Bowl, a lively bowling alley.",
+    "locations": [
+      "Liverpool, L24 8QB",
+      "Montrose Way, Liverpool, L13 1EW"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "fun",
+      "entertainment"
+    ],
+    "websites": [
+      "https://www.hollywoodbowl.co.uk/liverpool"
+    ]
+  },
+  {
+    "title": "Junkyard Golf Club",
+    "description": "Challenge friends at Junkyard Golf Club, a fun and vibrant miniature golf course.",
+    "locations": [
+      "ONE, 1 Paradise St, Liverpool L1 8JF"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "fun",
+      "entertainment"
+    ],
+    "websites": [
+      "https://junkyardgolfclub.co.uk/liverpool"
+    ]
+  },
+  {
+    "title": "Liverpool Beatles Cycle Tour",
+    "description": "Explore Liverpool's iconic landmarks, Beatles history, and local culture with guided bike tours.",
+    "locations": [
+      "Kings Dock St, Liverpool L1 8JU"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "outdoors",
+      "active",
+      "adventure",
+      "travel",
+      "guided"
+    ],
+    "websites": [
+      "https://fareharbor.com/embeds/book/liverpoolcycletours/items/100314/calendar/2025/06/?language=en-GB&currency=GBP&product_id=ri112937&surface=maps"
+    ]
+  },
+  {
+    "title": "Climbing in Liverpool",
+    "description": "Get adventurous and active together with indoor climbing experiences at The Climbing Hangar or Awesome Walls.",
+    "locations": [
+      "Birchall Street, Liverpool",
+      "Speke Road, Liverpool, L19 2RF",
+      "Athol Street, Liverpool, L5 9TN"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "active",
+      "adventure"
+    ],
+    "websites": [
+      "https://theclimbinghangar.com/locations/liverpool/",
+      "https://awesomewalls.co.uk/liverpool/"
+    ]
+  },
+  {
+    "title": "Gravity MAX",
+    "description": "Stay active at Gravity MAX, a well-equipped sports centre.",
+    "locations": [
+      "Chavasse Park, Liverpool"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "active",
+      "fun"
+    ],
+    "websites": [
+      "https://gravity-global.com/max/liverpool"
+    ]
+  },
+  {
+    "title": "TeamSport Liverpool",
+    "description": "Race each other at TeamSport Liverpool's indoor go-karting track for a thrilling date.",
+    "locations": [
+      "Sefton St, Liverpool, L3 4BQ"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "adventure",
+      "entertainment"
+    ],
+    "websites": [
+      "https://www.team-sport.co.uk/go-kart-tracks/liverpool"
+    ]
+  },
+  {
+    "title": "Liverpool Curling Club",
+    "description": "Enjoy skating at Liverpool Curling Club, a fun ice rink for all ages.",
+    "locations": [
+      "Gorham Street, Liverpool, B0T 1K0"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "fun",
+      "active"
+    ],
+    "websites": [
+      "https://liverpoolcurling.com/"
+    ]
+  }
+]

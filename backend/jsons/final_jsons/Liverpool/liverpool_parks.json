@@ -1,0 +1,342 @@
+[
+  {
+    "title": "Sefton Park",
+    "description": "A 235-acre Grade I listed park featuring a boating lake, Victorian Palm House, and statues.",
+    "locations": [
+      "Sefton Park, Aigburth Dr, Liverpool L17 1AX"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://en.wikipedia.org/wiki/Sefton_Park"
+    ]
+  },
+  {
+    "title": "Calderstones Park",
+    "description": "A 126-acre park with botanical gardens, a lake, and a historic mansion house.",
+    "locations": [
+      "Calderstones Rd, Liverpool L18 3JB"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://en.wikipedia.org/wiki/Calderstones_Park"
+    ]
+  },
+  {
+    "title": "Croxteth Hall and Country Park",
+    "description": "Historic estate offering formal gardens, woodlands, and a working farm.",
+    "locations": [
+      "Moor Ln, Liverpool L11 1BE"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.nationaltrust.org.uk/croxteth-hall-and-country-park"
+    ]
+  },
+  {
+    "title": "Wavertree Botanic Garden and Park",
+    "description": "Mid-19th century public park with mature trees and greenhouses.",
+    "locations": [
+      "Wavertree Rd, Liverpool L15 4LE"
+    ],
+    "duration": 1.5,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://en.wikipedia.org/wiki/Wavertree_Botanic_Garden_and_Park"
+    ]
+  },
+  {
+    "title": "Newsham Park",
+    "description": "121-acre Victorian park with fishing lakes and historic buildings.",
+    "locations": [
+      "Prescot Rd, Liverpool L14 1LA"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://en.wikipedia.org/wiki/Newsham_Park"
+    ]
+  },
+  {
+    "title": "Everton Park",
+    "description": "Modern park with panoramic city views, community gardens, and landmarks.",
+    "locations": [
+      "Everton Rd, Liverpool L6 2DT"
+    ],
+    "duration": 1.5,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "relaxing",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://en.wikipedia.org/wiki/Everton_Park,_Liverpool"
+    ]
+  },
+  {
+    "title": "Otterspool Park",
+    "description": "Riverside park offering scenic Mersey views and recreational spaces.",
+    "locations": [
+      "Otterspool Dr, Liverpool L17 4AL"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "relaxing",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.tripadvisor.com/Attractions-g186337-Activities-c57-Liverpool_Merseyside_England.html"
+    ]
+  },
+  {
+    "title": "Princes Park",
+    "description": "Victorian park with boating lake, tennis courts, and a historic bandstand.",
+    "locations": [
+      "Princes Rd, Liverpool L8 4UE"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "budget-friendly"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Stanley Park",
+    "description": "Beautiful landscaped park near Anfield and Goodison Park stadiums.",
+    "locations": [
+      "Stanley Park Dr, Liverpool L4 0TH"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "budget-friendly"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Chavasse Park",
+    "description": "City centre park surrounded by shops and restaurants.",
+    "locations": [
+      "King Edward St, Liverpool L1 3AJ"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "relaxing",
+      "culture",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://en.wikipedia.org/wiki/Chavasse_Park"
+    ]
+  },
+  {
+    "title": "Festival Gardens",
+    "description": "Scenic park with lakes, pagodas, and riverside walks from the 1984 Garden Festival.",
+    "locations": [
+      "Liverpool Waterfront, Liverpool L3 4AG"
+    ],
+    "duration": 1.5,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "budget-friendly"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Speke Hall, Garden and Estate",
+    "description": "Tudor manor house with beautiful gardens and woodlands to explore.",
+    "locations": [
+      "Speke Hall Ln, Liverpool L24 1XD"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.nationaltrust.org.uk/speke-hall-garden-and-estate"
+    ]
+  },
+  {
+    "title": "Liverpool Botanical Garden",
+    "description": "Serene gardens with diverse plant species and glasshouses.",
+    "locations": [
+      "Wavertree Botanic Park, Wavertree Rd, Liverpool L15 4LE"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.liverpool.gov.uk/parks-and-open-spaces/find-a-park/wavertree-botanic-garden/"
+    ]
+  },
+  {
+    "title": "St James' Gardens",
+    "description": "Peaceful historic gardens adjacent to Liverpool Cathedral.",
+    "locations": [
+      "St James St, Liverpool L1 7BY"
+    ],
+    "duration": 1.5,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "culture",
+      "budget-friendly"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Greenbank Park",
+    "description": "Relaxing green spaces with woodland and sports facilities.",
+    "locations": [
+      "Greenbank Rd, Liverpool L17 1AG"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "relaxing",
+      "budget-friendly"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Childwall Woods and Fields",
+    "description": "Woodland and open fields perfect for walking and wildlife spotting.",
+    "locations": [
+      "Childwall Woods, Liverpool L16 4AH"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "relaxing",
+      "budget-friendly"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Toxteth Park Cemetery",
+    "description": "Historic cemetery with mature trees and quiet walking paths.",
+    "locations": [
+      "Priory Rd, Liverpool L8 9EY"
+    ],
+    "duration": 1.5,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "budget-friendly"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Everton Park - St George's Garden",
+    "description": "Community garden space within Everton Park with seasonal planting.",
+    "locations": [
+      "Everton Rd, Liverpool L6 2DT"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "relaxing",
+      "budget-friendly"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Walton Hall Park",
+    "description": "Large public park with playgrounds, sports facilities and open spaces.",
+    "locations": [
+      "Walton Hall Ave, Liverpool L4 9XP"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "fun",
+      "budget-friendly"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Otterspool Promenade",
+    "description": "Riverside walkway and park area popular for walking and cycling.",
+    "locations": [
+      "Otterspool Dr, Liverpool L17 4AL"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "relaxing",
+      "budget-friendly"
+    ],
+    "websites": []
+  }
+]

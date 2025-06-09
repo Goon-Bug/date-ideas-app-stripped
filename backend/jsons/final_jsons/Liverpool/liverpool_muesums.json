@@ -1,0 +1,88 @@
+[
+    {
+        "title": "Merseyside Maritime Museum",
+        "description": "Explore maritime history at Merseyside Maritime Museum, a vibrant cultural site.",
+        "locations": [
+            "Royal Albert Dock, Liverpool L3 4AQ"
+        ],
+        "duration": 1.5,
+        "cost": "Low",
+        "tags": [
+            "educational",
+            "indoor",
+            "history"
+        ],
+        "websites": [
+            "https://www.liverpoolmuseums.org.uk/maritime/"
+        ]
+    },
+    {
+        "title": "Museum of Liverpool",
+        "description": "Explore Liverpool's history at Museum of Liverpool, a vibrant cultural site.",
+        "locations": [
+            "Pier Head, Liverpool L3 1DG"
+        ],
+        "duration": 1.5,
+        "cost": "Low",
+        "tags": [
+            "educational",
+            "indoor",
+            "history"
+        ],
+        "websites": [
+            "https://www.liverpoolmuseums.org.uk/museum-liverpool/"
+        ]
+    },
+    {
+        "title": "World Museum",
+        "description": "A fascinating museum featuring exhibitions on space, ancient civilizations, natural history, and more.",
+        "locations": [
+            "William Brown St, Liverpool L3 8EN"
+        ],
+        "duration": 2,
+        "cost": "Low",
+        "tags": [
+            "educational",
+            "indoor",
+            "science",
+            "history"
+        ],
+        "websites": [
+            "https://www.liverpoolmuseums.org.uk/world-museum/"
+        ]
+    },
+    {
+        "title": "Tate Liverpool",
+        "description": "Modern and contemporary art gallery with a rotating collection and exhibitions by leading artists.",
+        "locations": [
+            "Royal Albert Dock, Liverpool L3 4BB"
+        ],
+        "duration": 1.5,
+        "cost": "Low",
+        "tags": [
+            "art",
+            "indoor"
+        ],
+        "websites": [
+            "https://www.tate.org.uk/visit/tate-liverpool"
+        ]
+    },
+    {
+        "title": "British Music Experience",
+        "description": "Interactive museum dedicated to British music history, from The Beatles to modern-day icons.",
+        "locations": [
+            "Cunard Building, Liverpool L3 1DS"
+        ],
+        "duration": 1.5,
+        "cost": "Low",
+        "tags": [
+            "interactive",
+            "educational",
+            "indoor",
+            "history"
+        ],
+        "websites": [
+            "https://www.britishmusicexperience.com/"
+        ]
+    }
+]

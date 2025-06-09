@@ -1,0 +1,170 @@
+[
+    {
+        "title": "The Empire Theatre",
+        "description": "Liverpool’s largest and most popular venue for musicals, concerts, and performances.",
+        "locations": [
+            "Lime Street, Liverpool, L1 1JE"
+        ],
+        "duration": 2,
+        "cost": "Medium",
+        "tags": [
+            "indoor",
+            "culture",
+            "art"
+        ],
+        "websites": [
+            "https://www.atgtickets.com/venues/the-empire-theatre-liverpool/"
+        ]
+    },
+    {
+        "title": "Liverpool Philharmonic Hall",
+        "description": "Home to the Royal Liverpool Philharmonic Orchestra offering classical concerts and events.",
+        "locations": [
+            "Hope Street, Liverpool, L1 9BP"
+        ],
+        "duration": 2,
+        "cost": "Medium",
+        "tags": [
+            "indoor",
+            "culture",
+            "art"
+        ],
+        "websites": [
+            "https://www.liverpoolphil.com/"
+        ]
+    },
+    {
+        "title": "FACT (Foundation for Art and Creative Technology)",
+        "description": "Contemporary arts centre with cinema, exhibitions, and creative workshops.",
+        "locations": [
+            "88 Wood Street, Liverpool, L1 4DQ"
+        ],
+        "duration": 1.5,
+        "cost": "Low",
+        "tags": [
+            "indoor",
+            "culture",
+            "art"
+        ],
+        "websites": [
+            "https://www.fact.co.uk/"
+        ]
+    },
+    {
+        "title": "The Bluecoat",
+        "description": "Liverpool’s centre for contemporary arts with galleries, live performances, and workshops.",
+        "locations": [
+            "School Lane, Liverpool, L1 3BX"
+        ],
+        "duration": 1.5,
+        "cost": "Low",
+        "tags": [
+            "indoor",
+            "culture",
+            "art"
+        ],
+        "websites": [
+            "https://www.thebluecoat.org.uk/"
+        ]
+    },
+    {
+        "title": "Everyman Theatre",
+        "description": "Renowned theatre offering a range of drama, comedy, and live performances.",
+        "locations": [
+            "2 Hope Place, Liverpool, L1 9BG"
+        ],
+        "duration": 2,
+        "cost": "Medium",
+        "tags": [
+            "indoor",
+            "culture",
+            "art"
+        ],
+        "websites": [
+            "https://everymanplayhouse.com/"
+        ]
+    },
+    {
+        "title": "Liverpool ONE Cinema",
+        "description": "Modern cinema complex showing the latest films with comfortable seating.",
+        "locations": [
+            "South John Street, Liverpool, L1 8BG"
+        ],
+        "duration": 2,
+        "cost": "Medium",
+        "tags": [
+            "indoor",
+            "relaxing"
+        ],
+        "websites": [
+            "https://www.liverpool-one.com/cinema/"
+        ]
+    },
+    {
+        "title": "Cineworld Liverpool",
+        "description": "Large cinema showing new releases and popular films.",
+        "locations": [
+            "Liverpool ONE, Liverpool, L1 8JQ"
+        ],
+        "duration": 2,
+        "cost": "Medium",
+        "tags": [
+            "indoor",
+            "relaxing"
+        ],
+        "websites": [
+            "https://www.cineworld.co.uk/cinemas/liverpool-one"
+        ]
+    },
+    {
+        "title": "Playhouse Theatre",
+        "description": "Theatre presenting a diverse range of live shows including drama and comedy.",
+        "locations": [
+            "Williamson Square, Liverpool, L1 1EL"
+        ],
+        "duration": 2,
+        "cost": "Medium",
+        "tags": [
+            "indoor",
+            "culture",
+            "art"
+        ],
+        "websites": [
+            "https://everymanplayhouse.com/"
+        ]
+    },
+    {
+        "title": "Camp and Furnace",
+        "description": "Unique industrial venue offering live music, food, and cultural events.",
+        "locations": [
+            "East Float, Liverpool, L3 1AH"
+        ],
+        "duration": 2,
+        "cost": "Medium",
+        "tags": [
+            "indoor",
+            "culture",
+            "food"
+        ],
+        "websites": [
+            "https://campandfurnace.co.uk/"
+        ]
+    },
+    {
+        "title": "Invisible Wind Factory",
+        "description": "Creative arts venue hosting music gigs, exhibitions, and immersive experiences.",
+        "locations": [
+            "Stanley Dock, Liverpool, L3 0AN"
+        ],
+        "duration": 2,
+        "cost": "Medium",
+        "tags": [
+            "indoor",
+            "culture",
+            "art"
+        ],
+        "websites": [
+            "https://invisiblewindfactory.com/"
+        ]
+    }
+]

@@ -1,0 +1,157 @@
+[
+    {
+        "title": "Bold Street Coffee",
+        "description": "Independent café known for excellent coffee, fresh food, local art displays and relaxed vibe.",
+        "locations": [
+            "89 Bold Street, Liverpool L1 4HF"
+        ],
+        "duration": 1,
+        "cost": "Low",
+        "tags": [
+            "food",
+            "indoor",
+            "culture",
+            "relaxing"
+        ],
+        "websites": [
+            "https://www.boldstreetcoffee.co.uk"
+        ]
+    },
+    {
+        "title": "Rococo Coffee House",
+        "description": "Charming Victorian-style café on Lord Street, serving brunch classics in a vintage setting.",
+        "locations": [
+            "61 Lord Street, Liverpool L2 6PB"
+        ],
+        "duration": 1,
+        "cost": "Low",
+        "tags": [
+            "food",
+            "indoor",
+            "art",
+            "relaxing"
+        ],
+        "websites": []
+    },
+    {
+        "title": "Mother Espresso",
+        "description": "Minimalist café at The Tea Factory with batch brew coffee, bagels and artisan pastries.",
+        "locations": [
+            "82 Wood Street, Liverpool L1 4DQ"
+        ],
+        "duration": 1,
+        "cost": "Low",
+        "tags": [
+            "food",
+            "indoor",
+            "relaxing"
+        ],
+        "websites": []
+    },
+    {
+        "title": "92 Degrees Coffee",
+        "description": "Coffee roastery café with high‑quality single-origin brews roasted on-site.",
+        "locations": [
+            "Hardman Street (multiple locations), Liverpool"
+        ],
+        "duration": 1,
+        "cost": "Low",
+        "tags": [
+            "food",
+            "indoor",
+            "culture"
+        ],
+        "websites": []
+    },
+    {
+        "title": "COFFI",
+        "description": "Speciality coffee shop in Georgian Quarter offering expertly brewed espresso and filter coffee.",
+        "locations": [
+            "8 Pilgrim Street, Liverpool L1 9HB"
+        ],
+        "duration": 1,
+        "cost": "Low",
+        "tags": [
+            "food",
+            "indoor",
+            "culture"
+        ],
+        "websites": []
+    },
+    {
+        "title": "Bean There Coffee Shop",
+        "description": "Smithdown Road café with homemade snacks and a welcoming atmosphere.",
+        "locations": [
+            "376 Smithdown Road, Liverpool L15 5AB"
+        ],
+        "duration": 1,
+        "cost": "Low",
+        "tags": [
+            "food",
+            "indoor",
+            "relaxing"
+        ],
+        "websites": []
+    },
+    {
+        "title": "Yonder",
+        "description": "Relaxed Baltic Triangle café serving great coffee and simple brunch dishes.",
+        "locations": [
+            "44 Simpson Street, Liverpool L1 0AX"
+        ],
+        "duration": 1,
+        "cost": "Low",
+        "tags": [
+            "food",
+            "indoor",
+            "relaxing"
+        ],
+        "websites": []
+    },
+    {
+        "title": "Rose Lane Coffee",
+        "description": "Speciality coffee and sweet treats in a friendly Mossley Hill venue.",
+        "locations": [
+            "171 Rose Lane, Liverpool L18 5EA"
+        ],
+        "duration": 1,
+        "cost": "Low",
+        "tags": [
+            "food",
+            "indoor",
+            "relaxing"
+        ],
+        "websites": []
+    },
+    {
+        "title": "Freida Mo’s",
+        "description": "Quirky Lark Lane café offering great coffee and cheerful brunch options.",
+        "locations": [
+            "33 Lark Lane, Liverpool L17 8UW"
+        ],
+        "duration": 1,
+        "cost": "Low",
+        "tags": [
+            "food",
+            "indoor",
+            "culture"
+        ],
+        "websites": []
+    },
+    {
+        "title": "Coffee & Fandisha",
+        "description": "Ethiopian-inspired café showcasing traditional ceremonies alongside pop-up art.",
+        "locations": [
+            "5 Brick Street, Liverpool L1 0BL"
+        ],
+        "duration": 1,
+        "cost": "Low",
+        "tags": [
+            "food",
+            "indoor",
+            "culture",
+            "art"
+        ],
+        "websites": []
+    }
+]

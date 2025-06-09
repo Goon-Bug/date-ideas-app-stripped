@@ -1,0 +1,163 @@
+[
+    {
+        "title": "Revolution de Cuba",
+        "description": "Lively bar with great cocktails and vibrant Cuban atmosphere.",
+        "locations": [
+            "Edward Pavilion, Liverpool, L3 4AF"
+        ],
+        "duration": 1.5,
+        "cost": "Medium",
+        "tags": [
+            "food",
+            "indoor"
+        ],
+        "websites": [
+            "https://www.revoluciondecuba.com/bar/liverpool/"
+        ]
+    },
+    {
+        "title": "The Magnet",
+        "description": "Popular bar with live music and a friendly crowd.",
+        "locations": [
+            "113 Renshaw Street, Liverpool, L1 2SF"
+        ],
+        "duration": 1.5,
+        "cost": "Low",
+        "tags": [
+            "food",
+            "indoor",
+            "relaxing"
+        ],
+        "websites": []
+    },
+    {
+        "title": "Alma de Cuba",
+        "description": "Vibrant nightclub set in a former church with Latin music and cocktails.",
+        "locations": [
+            "Seel Street, Liverpool, L1 4BW"
+        ],
+        "duration": 2,
+        "cost": "Medium",
+        "tags": [
+            "food",
+            "indoor"
+        ],
+        "websites": [
+            "https://www.almadecuba.com/"
+        ]
+    },
+    {
+        "title": "The Shipping Forecast",
+        "description": "Popular bar and music venue with eclectic live acts.",
+        "locations": [
+            "6-10 Wapping, Liverpool, L1 8DQ"
+        ],
+        "duration": 2,
+        "cost": "Low",
+        "tags": [
+            "food",
+            "indoor",
+            "relaxing"
+        ],
+        "websites": [
+            "https://www.theshippingforecast.co.uk/"
+        ]
+    },
+    {
+        "title": "The Cavern Club",
+        "description": "Historic music venue and bar known for live performances.",
+        "locations": [
+            "10 Mathew Street, Liverpool, L2 6RE"
+        ],
+        "duration": 2,
+        "cost": "Low",
+        "tags": [
+            "food",
+            "indoor",
+            "culture"
+        ],
+        "websites": [
+            "https://www.cavernclub.org/"
+        ]
+    },
+    {
+        "title": "BrewDog Liverpool",
+        "description": "Craft beer bar with a wide selection and relaxed atmosphere.",
+        "locations": [
+            "The Art School, Sugnall Street, Liverpool, L7 7EB"
+        ],
+        "duration": 1.5,
+        "cost": "Medium",
+        "tags": [
+            "food",
+            "indoor",
+            "relaxing"
+        ],
+        "websites": [
+            "https://www.brewdog.com/locations/liverpool"
+        ]
+    },
+    {
+        "title": "Connoisseur",
+        "description": "Upmarket bar with a great cocktail menu and stylish interior.",
+        "locations": [
+            "6 Temple Lane, Liverpool, L2 5RH"
+        ],
+        "duration": 1.5,
+        "cost": "Medium",
+        "tags": [
+            "food",
+            "indoor"
+        ],
+        "websites": [
+            "https://www.connoisseurliverpool.co.uk/"
+        ]
+    },
+    {
+        "title": "The Baltic Social",
+        "description": "Large venue with multiple bars, cocktails, and relaxed seating.",
+        "locations": [
+            "3A Seel Street, Liverpool, L1 4BE"
+        ],
+        "duration": 2,
+        "cost": "Medium",
+        "tags": [
+            "food",
+            "indoor",
+            "relaxing"
+        ],
+        "websites": [
+            "https://www.thebalticsocial.com/"
+        ]
+    },
+    {
+        "title": "Heebie Jeebies",
+        "description": "Vibrant bar and club known for live music and DJs.",
+        "locations": [
+            "25 Bold Street, Liverpool, L1 4EZ"
+        ],
+        "duration": 2,
+        "cost": "Low",
+        "tags": [
+            "food",
+            "indoor"
+        ],
+        "websites": [
+            "https://www.heebiejeebies.com/"
+        ]
+    },
+    {
+        "title": "Sappho Nightclub",
+        "description": "Popular nightclub with a lively dance floor and themed nights.",
+        "locations": [
+            "65 Rumford Street, Liverpool, L1 1LD"
+        ],
+        "duration": 2,
+        "cost": "Low",
+        "tags": [
+            "food",
+            "indoor"
+        ],
+        "websites": []
+    }
+]
