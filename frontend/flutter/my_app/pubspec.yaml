@@ -62,8 +62,7 @@ flutter:
     - assets/fonts/
     - assets/images/
     - assets/profile_icons/
-    - assets/date_ideas/local_dates.db
-    - assets/date_ideas/liverpool_dates.db
+    - assets/date_ideas/
 
   fonts:
     - family: TitleFont
