@@ -3,7 +3,7 @@ from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from backend.database.models.dates_models import Base
 
-SQLITE_DB = "local_dates.db"
+SQLITE_DB = "liverpool_dates.db"
 
 logger = logging.getLogger(__name__)
 
