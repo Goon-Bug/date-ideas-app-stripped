@@ -24,7 +24,7 @@ class DateIdeasData {
     log('Loading Database');
 
     final List<Map<String, dynamic>> data = await db.rawQuery('''
-    SELECT di.id, di.title, di.description, di.location, di.duration, di.cost, 
+    SELECT di.id, di.title, di.pack, di.description, di.location, di.duration, di.cost, 
            GROUP_CONCAT(t.name) AS tags
     FROM date_ideas di
     LEFT JOIN date_idea_tags dit ON di.id = dit.date_idea_id
@@ -38,6 +38,7 @@ class DateIdeasData {
       return {
         'id': idea['id'],
         'title': idea['title'],
+        'pack': idea['pack'],
         'description': idea['description'],
         'location': idea['location'],
         'duration': idea['duration'],
@@ -76,7 +77,7 @@ class DateIdeasData {
 
     try {
       final byteData =
-          await rootBundle.load('assets/date_ideas/local_dates.db');
+          await rootBundle.load('assets/date_ideas/liverpool_dates.db');
       final buffer = byteData.buffer.asUint8List();
       await File(path).writeAsBytes(buffer);
       log("Database copied successfully to: $path");
