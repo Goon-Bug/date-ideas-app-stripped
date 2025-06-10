@@ -62,7 +62,9 @@ flutter:
     - assets/fonts/
     - assets/images/
     - assets/profile_icons/
-    - assets/date_ideas/
+    - assets/db/databases/
+    - assets/db/jsons/
+    - assets/db/manifest.json
 
   fonts:
     - family: TitleFont
