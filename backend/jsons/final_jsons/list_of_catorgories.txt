@@ -1,3 +1,6 @@
+Command to combine jsons:
+python combine_json_folder.py . combined_output.json
+
 Catagories:
 
 Sports and Activities
