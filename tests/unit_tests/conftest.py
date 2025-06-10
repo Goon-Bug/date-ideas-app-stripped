@@ -4,8 +4,8 @@ import json
 from sqlalchemy import create_engine
 from sqlalchemy.orm import sessionmaker
 from backend.database.models.dates_models import Base, Tag
-from backend.database.models.user_models import User
-from backend import create_app, db
+from backend.database.models.user_models import User  # type: ignore
+from backend import create_app, db  # type: ignore
 
 
 @pytest.fixture(autouse=True)
@@ -100,7 +100,6 @@ def sample_date_idea(db_session_dates):
 
     # Return the dictionary with the DateIdea data, including the tags
     return {
-        "creator_id": 1,
         "title": "Sample Date Idea",
         "description": "This is a sample date idea.",
         "location": "Sample Location",
@@ -115,7 +114,6 @@ def temp_json_file_dates():
     """Fixture to create and remove a temporary JSON file."""
     sample_json = [
         {
-            "creator_id": 1,
             "title": "Sample Date Idea 1",
             "description": "A fun date idea.",
             "location": "Park",
@@ -124,7 +122,6 @@ def temp_json_file_dates():
             "tags": ["sample_tag"],  # Tags are now a list of strings
         },
         {
-            "creator_id": 1,
             "title": "Sample Date Idea 2",
             "description": "A romantic date idea.",
             "location": "Restaurant",
