@@ -31,10 +31,9 @@ def load_initial_data(session, json_file):
 
             # Create a DateIdea object with all fields including tags
             date_idea = DateIdea(
-                creator_id=idea['creator_id'],
                 title=idea['title'],
                 description=idea['description'],
-                location=idea['location'],
+                location=", ".join(idea['location']) if isinstance(idea['location'], list) else idea['location'],
                 duration=idea['duration'],
                 cost=idea['cost']
             )
@@ -53,5 +52,5 @@ def load_initial_data(session, json_file):
 
 if __name__ == "__main__":  # pragma: no cover
     session = setup_database()
-    load_initial_data(session, 'backend/jsons/date_ideas.json')
+    load_initial_data(session, 'backend/jsons/final_jsons/Liverpool/combined.json')
     session.close()
