@@ -2,7 +2,7 @@
   {
     "title": "Revolution de Cuba",
     "description": "Lively bar with great cocktails and vibrant Cuban atmosphere.",
-    "locations": [
+    "location": [
       "Edward Pavilion, Liverpool, L3 4AF"
     ],
     "duration": 1.5,
@@ -18,7 +18,7 @@
   {
     "title": "The Magnet",
     "description": "Popular bar with live music and a friendly crowd.",
-    "locations": [
+    "location": [
       "113 Renshaw Street, Liverpool, L1 2SF"
     ],
     "duration": 1.5,
@@ -33,7 +33,7 @@
   {
     "title": "Alma de Cuba",
     "description": "Vibrant nightclub set in a former church with Latin music and cocktails.",
-    "locations": [
+    "location": [
       "Seel Street, Liverpool, L1 4BW"
     ],
     "duration": 2,
@@ -49,7 +49,7 @@
   {
     "title": "The Shipping Forecast",
     "description": "Popular bar and music venue with eclectic live acts.",
-    "locations": [
+    "location": [
       "6-10 Wapping, Liverpool, L1 8DQ"
     ],
     "duration": 2,
@@ -66,7 +66,7 @@
   {
     "title": "The Cavern Club",
     "description": "Historic music venue and bar known for live performances.",
-    "locations": [
+    "location": [
       "10 Mathew Street, Liverpool, L2 6RE"
     ],
     "duration": 2,
@@ -83,7 +83,7 @@
   {
     "title": "BrewDog Liverpool",
     "description": "Craft beer bar with a wide selection and relaxed atmosphere.",
-    "locations": [
+    "location": [
       "The Art School, Sugnall Street, Liverpool, L7 7EB"
     ],
     "duration": 1.5,
@@ -94,13 +94,13 @@
       "relaxing"
     ],
     "websites": [
-      "https://www.brewdog.com/locations/liverpool"
+      "https://www.brewdog.com/location/liverpool"
     ]
   },
   {
     "title": "Connoisseur",
     "description": "Upmarket bar with a great cocktail menu and stylish interior.",
-    "locations": [
+    "location": [
       "6 Temple Lane, Liverpool, L2 5RH"
     ],
     "duration": 1.5,
@@ -116,7 +116,7 @@
   {
     "title": "The Baltic Social",
     "description": "Large venue with multiple bars, cocktails, and relaxed seating.",
-    "locations": [
+    "location": [
       "3A Seel Street, Liverpool, L1 4BE"
     ],
     "duration": 2,
@@ -133,7 +133,7 @@
   {
     "title": "Heebie Jeebies",
     "description": "Vibrant bar and club known for live music and DJs.",
-    "locations": [
+    "location": [
       "25 Bold Street, Liverpool, L1 4EZ"
     ],
     "duration": 2,
@@ -149,7 +149,7 @@
   {
     "title": "Sappho Nightclub",
     "description": "Popular nightclub with a lively dance floor and themed nights.",
-    "locations": [
+    "location": [
       "65 Rumford Street, Liverpool, L1 1LD"
     ],
     "duration": 2,
@@ -163,7 +163,7 @@
   {
     "title": "Bold Street Coffee",
     "description": "Independent café known for excellent coffee, fresh food, local art displays and relaxed vibe.",
-    "locations": [
+    "location": [
       "89 Bold Street, Liverpool L1 4HF"
     ],
     "duration": 1,
@@ -181,7 +181,7 @@
   {
     "title": "Rococo Coffee House",
     "description": "Charming Victorian-style café on Lord Street, serving brunch classics in a vintage setting.",
-    "locations": [
+    "location": [
       "61 Lord Street, Liverpool L2 6PB"
     ],
     "duration": 1,
@@ -197,7 +197,7 @@
   {
     "title": "Mother Espresso",
     "description": "Minimalist café at The Tea Factory with batch brew coffee, bagels and artisan pastries.",
-    "locations": [
+    "location": [
       "82 Wood Street, Liverpool L1 4DQ"
     ],
     "duration": 1,
@@ -212,8 +212,8 @@
   {
     "title": "92 Degrees Coffee",
     "description": "Coffee roastery café with high‑quality single-origin brews roasted on-site.",
-    "locations": [
-      "Hardman Street (multiple locations), Liverpool"
+    "location": [
+      "Hardman Street (multiple location), Liverpool"
     ],
     "duration": 1,
     "cost": "Low",
@@ -227,7 +227,7 @@
   {
     "title": "COFFI",
     "description": "Speciality coffee shop in Georgian Quarter offering expertly brewed espresso and filter coffee.",
-    "locations": [
+    "location": [
       "8 Pilgrim Street, Liverpool L1 9HB"
     ],
     "duration": 1,
@@ -242,7 +242,7 @@
   {
     "title": "Bean There Coffee Shop",
     "description": "Smithdown Road café with homemade snacks and a welcoming atmosphere.",
-    "locations": [
+    "location": [
       "376 Smithdown Road, Liverpool L15 5AB"
     ],
     "duration": 1,
@@ -257,7 +257,7 @@
   {
     "title": "Yonder",
     "description": "Relaxed Baltic Triangle café serving great coffee and simple brunch dishes.",
-    "locations": [
+    "location": [
       "44 Simpson Street, Liverpool L1 0AX"
     ],
     "duration": 1,
@@ -272,7 +272,7 @@
   {
     "title": "Rose Lane Coffee",
     "description": "Speciality coffee and sweet treats in a friendly Mossley Hill venue.",
-    "locations": [
+    "location": [
       "171 Rose Lane, Liverpool L18 5EA"
     ],
     "duration": 1,
@@ -287,7 +287,7 @@
   {
     "title": "Freida Mo’s",
     "description": "Quirky Lark Lane café offering great coffee and cheerful brunch options.",
-    "locations": [
+    "location": [
       "33 Lark Lane, Liverpool L17 8UW"
     ],
     "duration": 1,
@@ -302,7 +302,7 @@
   {
     "title": "Coffee & Fandisha",
     "description": "Ethiopian-inspired café showcasing traditional ceremonies alongside pop-up art.",
-    "locations": [
+    "location": [
       "5 Brick Street, Liverpool L1 0BL"
     ],
     "duration": 1,
@@ -318,7 +318,7 @@
   {
     "title": "Merseyside Maritime Museum",
     "description": "Explore maritime history at Merseyside Maritime Museum, a vibrant cultural site.",
-    "locations": [
+    "location": [
       "Royal Albert Dock, Liverpool L3 4AQ"
     ],
     "duration": 1.5,
@@ -335,7 +335,7 @@
   {
     "title": "Museum of Liverpool",
     "description": "Explore Liverpool's history at Museum of Liverpool, a vibrant cultural site.",
-    "locations": [
+    "location": [
       "Pier Head, Liverpool L3 1DG"
     ],
     "duration": 1.5,
@@ -352,7 +352,7 @@
   {
     "title": "World Museum",
     "description": "A fascinating museum featuring exhibitions on space, ancient civilizations, natural history, and more.",
-    "locations": [
+    "location": [
       "William Brown St, Liverpool L3 8EN"
     ],
     "duration": 2,
@@ -370,7 +370,7 @@
   {
     "title": "Tate Liverpool",
     "description": "Modern and contemporary art gallery with a rotating collection and exhibitions by leading artists.",
-    "locations": [
+    "location": [
       "Royal Albert Dock, Liverpool L3 4BB"
     ],
     "duration": 1.5,
@@ -386,7 +386,7 @@
   {
     "title": "British Music Experience",
     "description": "Interactive museum dedicated to British music history, from The Beatles to modern-day icons.",
-    "locations": [
+    "location": [
       "Cunard Building, Liverpool L3 1DS"
     ],
     "duration": 1.5,
@@ -404,7 +404,7 @@
   {
     "title": "Sefton Park",
     "description": "A 235-acre Grade I listed park featuring a boating lake, Victorian Palm House, and statues.",
-    "locations": [
+    "location": [
       "Sefton Park, Aigburth Dr, Liverpool L17 1AX"
     ],
     "duration": 2,
@@ -423,7 +423,7 @@
   {
     "title": "Calderstones Park",
     "description": "A 126-acre park with botanical gardens, a lake, and a historic mansion house.",
-    "locations": [
+    "location": [
       "Calderstones Rd, Liverpool L18 3JB"
     ],
     "duration": 2,
@@ -442,7 +442,7 @@
   {
     "title": "Croxteth Hall and Country Park",
     "description": "Historic estate offering formal gardens, woodlands, and a working farm.",
-    "locations": [
+    "location": [
       "Moor Ln, Liverpool L11 1BE"
     ],
     "duration": 2,
@@ -461,7 +461,7 @@
   {
     "title": "Wavertree Botanic Garden and Park",
     "description": "Mid-19th century public park with mature trees and greenhouses.",
-    "locations": [
+    "location": [
       "Wavertree Rd, Liverpool L15 4LE"
     ],
     "duration": 1.5,
@@ -480,7 +480,7 @@
   {
     "title": "Newsham Park",
     "description": "121-acre Victorian park with fishing lakes and historic buildings.",
-    "locations": [
+    "location": [
       "Prescot Rd, Liverpool L14 1LA"
     ],
     "duration": 2,
@@ -499,7 +499,7 @@
   {
     "title": "Everton Park",
     "description": "Modern park with panoramic city views, community gardens, and landmarks.",
-    "locations": [
+    "location": [
       "Everton Rd, Liverpool L6 2DT"
     ],
     "duration": 1.5,
@@ -518,7 +518,7 @@
   {
     "title": "Otterspool Park",
     "description": "Riverside park offering scenic Mersey views and recreational spaces.",
-    "locations": [
+    "location": [
       "Otterspool Dr, Liverpool L17 4AL"
     ],
     "duration": 2,
@@ -537,7 +537,7 @@
   {
     "title": "Princes Park",
     "description": "Victorian park with boating lake, tennis courts, and a historic bandstand.",
-    "locations": [
+    "location": [
       "Princes Rd, Liverpool L8 4UE"
     ],
     "duration": 2,
@@ -554,7 +554,7 @@
   {
     "title": "Stanley Park",
     "description": "Beautiful landscaped park near Anfield and Goodison Park stadiums.",
-    "locations": [
+    "location": [
       "Stanley Park Dr, Liverpool L4 0TH"
     ],
     "duration": 2,
@@ -571,7 +571,7 @@
   {
     "title": "Chavasse Park",
     "description": "City centre park surrounded by shops and restaurants.",
-    "locations": [
+    "location": [
       "King Edward St, Liverpool L1 3AJ"
     ],
     "duration": 1,
@@ -590,7 +590,7 @@
   {
     "title": "Festival Gardens",
     "description": "Scenic park with lakes, pagodas, and riverside walks from the 1984 Garden Festival.",
-    "locations": [
+    "location": [
       "Liverpool Waterfront, Liverpool L3 4AG"
     ],
     "duration": 1.5,
@@ -607,7 +607,7 @@
   {
     "title": "Speke Hall, Garden and Estate",
     "description": "Tudor manor house with beautiful gardens and woodlands to explore.",
-    "locations": [
+    "location": [
       "Speke Hall Ln, Liverpool L24 1XD"
     ],
     "duration": 2,
@@ -626,7 +626,7 @@
   {
     "title": "Liverpool Botanical Garden",
     "description": "Serene gardens with diverse plant species and glasshouses.",
-    "locations": [
+    "location": [
       "Wavertree Botanic Park, Wavertree Rd, Liverpool L15 4LE"
     ],
     "duration": 2,
@@ -644,7 +644,7 @@
   {
     "title": "St James' Gardens",
     "description": "Peaceful historic gardens adjacent to Liverpool Cathedral.",
-    "locations": [
+    "location": [
       "St James St, Liverpool L1 7BY"
     ],
     "duration": 1.5,
@@ -662,7 +662,7 @@
   {
     "title": "Greenbank Park",
     "description": "Relaxing green spaces with woodland and sports facilities.",
-    "locations": [
+    "location": [
       "Greenbank Rd, Liverpool L17 1AG"
     ],
     "duration": 2,
@@ -679,7 +679,7 @@
   {
     "title": "Childwall Woods and Fields",
     "description": "Woodland and open fields perfect for walking and wildlife spotting.",
-    "locations": [
+    "location": [
       "Childwall Woods, Liverpool L16 4AH"
     ],
     "duration": 2,
@@ -696,7 +696,7 @@
   {
     "title": "Toxteth Park Cemetery",
     "description": "Historic cemetery with mature trees and quiet walking paths.",
-    "locations": [
+    "location": [
       "Priory Rd, Liverpool L8 9EY"
     ],
     "duration": 1.5,
@@ -713,7 +713,7 @@
   {
     "title": "Everton Park - St George's Garden",
     "description": "Community garden space within Everton Park with seasonal planting.",
-    "locations": [
+    "location": [
       "Everton Rd, Liverpool L6 2DT"
     ],
     "duration": 1,
@@ -730,7 +730,7 @@
   {
     "title": "Walton Hall Park",
     "description": "Large public park with playgrounds, sports facilities and open spaces.",
-    "locations": [
+    "location": [
       "Walton Hall Ave, Liverpool L4 9XP"
     ],
     "duration": 2,
@@ -747,7 +747,7 @@
   {
     "title": "Otterspool Promenade",
     "description": "Riverside walkway and park area popular for walking and cycling.",
-    "locations": [
+    "location": [
       "Otterspool Dr, Liverpool L17 4AL"
     ],
     "duration": 1.5,
@@ -764,7 +764,7 @@
   {
     "title": "Belzan",
     "description": "A relaxed fine‑dining bistro on Smithdown Road, featuring seasonal British dishes with Michelin recognition.",
-    "locations": [
+    "location": [
       "Smithdown Road, Liverpool L15 3JR"
     ],
     "duration": 1.5,
@@ -782,7 +782,7 @@
   {
     "title": "NORD",
     "description": "Modern restaurant with an eclectic international menu in a sleek, futuristic setting.",
-    "locations": [
+    "location": [
       "100 Old Hall St, Liverpool L3 9QJ"
     ],
     "duration": 1.5,
@@ -799,7 +799,7 @@
   {
     "title": "The Art School",
     "description": "Award‑winning fine-dining in a beautiful Victorian building serving inventive Modern British cuisine.",
-    "locations": [
+    "location": [
       "1 Sugnall St, Liverpool L7 7EB"
     ],
     "duration": 2,
@@ -818,7 +818,7 @@
   {
     "title": "Maray",
     "description": "Middle Eastern–inspired small plates, craft cocktails, and a laid-back vibe make this a local favourite.",
-    "locations": [
+    "location": [
       "91 Bold St, Liverpool L1 4HF"
     ],
     "duration": 1.5,
@@ -834,7 +834,7 @@
   {
     "title": "Rudy's Neapolitan Pizza",
     "description": "Casual pizzeria serving authentic wood-fired Neapolitan pizzas at great value.",
-    "locations": [
+    "location": [
       "Castle Street, Liverpool L2 0NE"
     ],
     "duration": 1.5,
@@ -844,13 +844,13 @@
       "indoor"
     ],
     "websites": [
-      "https://www.rudyspizza.co.uk/locations/liverpool"
+      "https://www.rudyspizza.co.uk/location/liverpool"
     ]
   },
   {
     "title": "Mowgli Street Food",
     "description": "Indian street food served in a vibrant setting with swing seats and hanging lights.",
-    "locations": [
+    "location": [
       "69 Bold St, Liverpool L1 4EZ"
     ],
     "duration": 1.5,
@@ -866,7 +866,7 @@
   {
     "title": "Pattersons",
     "description": "Casual chicken and burger joint known for generous portions and quirky style.",
-    "locations": [
+    "location": [
       "28 Gradwell St, Liverpool L1 4JH"
     ],
     "duration": 1.5,
@@ -882,7 +882,7 @@
   {
     "title": "Dale Street Eatery",
     "description": "Trendy brunch and coffee spot popular for artisan plates and quality coffee.",
-    "locations": [
+    "location": [
       "61 Dale St, Liverpool L2 2HJ"
     ],
     "duration": 1,
@@ -898,7 +898,7 @@
   {
     "title": "Slim's",
     "description": "Funky venue serving up stacked burgers, wings, and loaded fries with a cool vibe.",
-    "locations": [
+    "location": [
       "108 Bold St, Liverpool L1 4DJ"
     ],
     "duration": 1.5,
@@ -914,7 +914,7 @@
   {
     "title": "Bundobust",
     "description": "Trendy Indian street food and craft beer served in a communal dining space.",
-    "locations": [
+    "location": [
       "17-19 Bold St, Liverpool L1 4DN"
     ],
     "duration": 1.5,
@@ -930,7 +930,7 @@
   {
     "title": "Liverpool ONE",
     "description": "Explore Liverpool ONE, the city’s premier shopping and leisure destination.",
-    "locations": [
+    "location": [
       "Liverpool"
     ],
     "duration": 3,
@@ -946,7 +946,7 @@
   {
     "title": "Metquarter",
     "description": "Visit Metquarter for a stylish shopping experience with boutique stores.",
-    "locations": [
+    "location": [
       "Liverpool"
     ],
     "duration": 2,
@@ -963,7 +963,7 @@
   {
     "title": "St. Johns Shopping Centre",
     "description": "Shop at St. Johns Shopping Centre, offering a variety of high street brands.",
-    "locations": [
+    "location": [
       "Liverpool"
     ],
     "duration": 2,
@@ -979,7 +979,7 @@
   {
     "title": "Clayton Square Shopping Centre",
     "description": "Discover Clayton Square Shopping Centre with popular high street retailers.",
-    "locations": [
+    "location": [
       "Liverpool"
     ],
     "duration": 2,
@@ -995,7 +995,7 @@
   {
     "title": "The Cavern Walks",
     "description": "Shop and explore at The Cavern Walks, a mix of shops and entertainment venues.",
-    "locations": [
+    "location": [
       "Liverpool"
     ],
     "duration": 2,
@@ -1011,7 +1011,7 @@
   {
     "title": "Hollywood Bowl",
     "description": "Strike some pins at Hollywood Bowl, a lively bowling alley.",
-    "locations": [
+    "location": [
       "Liverpool, L24 8QB",
       "Montrose Way, Liverpool, L13 1EW"
     ],
@@ -1029,7 +1029,7 @@
   {
     "title": "Junkyard Golf Club",
     "description": "Challenge friends at Junkyard Golf Club, a fun and vibrant miniature golf course.",
-    "locations": [
+    "location": [
       "ONE, 1 Paradise St, Liverpool L1 8JF"
     ],
     "duration": 1.5,
@@ -1046,7 +1046,7 @@
   {
     "title": "Liverpool Beatles Cycle Tour",
     "description": "Explore Liverpool's iconic landmarks, Beatles history, and local culture with guided bike tours.",
-    "locations": [
+    "location": [
       "Kings Dock St, Liverpool L1 8JU"
     ],
     "duration": 2,
@@ -1065,7 +1065,7 @@
   {
     "title": "Climbing in Liverpool",
     "description": "Get adventurous and active together with indoor climbing experiences at The Climbing Hangar or Awesome Walls.",
-    "locations": [
+    "location": [
       "Birchall Street, Liverpool",
       "Speke Road, Liverpool, L19 2RF",
       "Athol Street, Liverpool, L5 9TN"
@@ -1077,14 +1077,14 @@
       "active"
     ],
     "websites": [
-      "https://theclimbinghangar.com/locations/liverpool/",
+      "https://theclimbinghangar.com/location/liverpool/",
       "https://awesomewalls.co.uk/liverpool/"
     ]
   },
   {
     "title": "Gravity MAX",
     "description": "Stay active at Gravity MAX, a well-equipped sports centre.",
-    "locations": [
+    "location": [
       "Chavasse Park, Liverpool"
     ],
     "duration": 2,
@@ -1101,7 +1101,7 @@
   {
     "title": "TeamSport Liverpool",
     "description": "Race each other at TeamSport Liverpool's indoor go-karting track for a thrilling date.",
-    "locations": [
+    "location": [
       "Sefton St, Liverpool, L3 4BQ"
     ],
     "duration": 2,
@@ -1117,7 +1117,7 @@
   {
     "title": "Liverpool Curling Club",
     "description": "Enjoy skating at Liverpool Curling Club, a fun ice rink for all ages.",
-    "locations": [
+    "location": [
       "Gorham Street, Liverpool, B0T 1K0"
     ],
     "duration": 1.5,
