@@ -1,3 +1,4 @@
+import 'dart:convert';
 import 'dart:developer';
 import 'dart:io';
 import 'package:flutter/services.dart';
@@ -23,6 +24,12 @@ class DateIdeasData {
 
     log('Loading database from: $path');
     final db = await openDatabase(path);
+
+    final isValid = await _validateDatabaseSchema(db);
+    if (!isValid) {
+      log("Invalid database schema. Required tables are missing.");
+      return;
+    }
 
     final List<Map<String, dynamic>> data = await db.rawQuery('''
       SELECT di.id, di.title, di.pack, di.description, di.location, di.duration, di.cost, 
@@ -59,33 +66,55 @@ class DateIdeasData {
     log("Loaded ${dateIdeasMap.length} date ideas and tags: $tagsList");
   }
 
-  /// Copy a .db file from assets (e.g., for built-in city packs)
-  Future<void> copyAssetDatabase({
-    bool overwrite = false,
-    required String assetPath,
-    required String dbName,
-  }) async {
-    final databasePath = await getDatabasesPath();
-    final path = join(databasePath, dbName);
-    final fileExists = await File(path).exists();
-
-    if (fileExists && !overwrite) {
-      log("Database $dbName already exists. Skipping copy.");
-      return;
-    }
-
+  /// Validate that required tables exist
+  Future<bool> _validateDatabaseSchema(Database db) async {
+    final requiredTables = ['date_ideas', 'date_idea_tags', 'tags'];
     try {
-      if (fileExists) {
-        await File(path).delete();
-        log("Overwriting existing database...");
+      final tableData = await db.rawQuery(
+        "SELECT name FROM sqlite_master WHERE type='table';",
+      );
+      final existingTables = tableData.map((e) => e['name'] as String).toSet();
+      return requiredTables.every(existingTables.contains);
+    } catch (e) {
+      log("Error validating schema: $e");
+      return false;
+    }
+  }
+
+  Future<void> copyAllAssetDatabasesFromManifest({
+    bool overwrite = false,
+    required String manifestAssetPath,
+    required String assetsFolderPath,
+  }) async {
+    final manifestData = await rootBundle.loadString(manifestAssetPath);
+    final List<dynamic> dbFiles = jsonDecode(manifestData);
+
+    final databasePath = await getDatabasesPath();
+
+    for (final dbFileName in dbFiles) {
+      final assetPath = '$assetsFolderPath/$dbFileName';
+      final path = join(databasePath, dbFileName);
+      final file = File(path);
+      final fileExists = await file.exists();
+
+      if (fileExists && !overwrite) {
+        log("Database $dbFileName already exists. Skipping copy.");
+        continue;
       }
 
-      final byteData = await rootBundle.load(assetPath);
-      final buffer = byteData.buffer.asUint8List();
-      await File(path).writeAsBytes(buffer);
-      log("Asset database copied to: $path");
-    } catch (e) {
-      log("Error copying asset database: $e");
+      try {
+        if (fileExists) {
+          await file.delete();
+          log("Overwriting existing database $dbFileName...");
+        }
+
+        final byteData = await rootBundle.load(assetPath);
+        final buffer = byteData.buffer.asUint8List();
+        await file.writeAsBytes(buffer);
+        log("Asset database $dbFileName copied to: $path");
+      } catch (e) {
+        log("Error copying asset database $dbFileName: $e");
+      }
     }
   }
 
