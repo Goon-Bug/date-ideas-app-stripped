@@ -1,8 +1,9 @@
 [
     {
         "title": "Merseyside Maritime Museum",
+        "pack": "liverpool",
         "description": "Explore maritime history at Merseyside Maritime Museum, a vibrant cultural site.",
-        "locations": [
+        "location": [
             "Royal Albert Dock, Liverpool L3 4AQ"
         ],
         "duration": 1.5,
@@ -18,8 +19,9 @@
     },
     {
         "title": "Museum of Liverpool",
+        "pack": "liverpool",
         "description": "Explore Liverpool's history at Museum of Liverpool, a vibrant cultural site.",
-        "locations": [
+        "location": [
             "Pier Head, Liverpool L3 1DG"
         ],
         "duration": 1.5,
@@ -35,8 +37,9 @@
     },
     {
         "title": "World Museum",
+        "pack": "liverpool",
         "description": "A fascinating museum featuring exhibitions on space, ancient civilizations, natural history, and more.",
-        "locations": [
+        "location": [
             "William Brown St, Liverpool L3 8EN"
         ],
         "duration": 2,
@@ -53,8 +56,9 @@
     },
     {
         "title": "Tate Liverpool",
+        "pack": "liverpool",
         "description": "Modern and contemporary art gallery with a rotating collection and exhibitions by leading artists.",
-        "locations": [
+        "location": [
             "Royal Albert Dock, Liverpool L3 4BB"
         ],
         "duration": 1.5,
@@ -69,8 +73,9 @@
     },
     {
         "title": "British Music Experience",
+        "pack": "liverpool",
         "description": "Interactive museum dedicated to British music history, from The Beatles to modern-day icons.",
-        "locations": [
+        "location": [
             "Cunard Building, Liverpool L3 1DS"
         ],
         "duration": 1.5,

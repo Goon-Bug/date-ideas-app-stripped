@@ -1,8 +1,9 @@
 [
     {
         "title": "Liverpool ONE",
+        "pack": "liverpool",
         "description": "Explore Liverpool ONE, the city’s premier shopping and leisure destination.",
-        "locations": [
+        "location": [
             "Liverpool"
         ],
         "duration": 3,
@@ -17,8 +18,9 @@
     },
     {
         "title": "Metquarter",
+        "pack": "liverpool",
         "description": "Visit Metquarter for a stylish shopping experience with boutique stores.",
-        "locations": [
+        "location": [
             "Liverpool"
         ],
         "duration": 2,
@@ -34,8 +36,9 @@
     },
     {
         "title": "St. Johns Shopping Centre",
+        "pack": "liverpool",
         "description": "Shop at St. Johns Shopping Centre, offering a variety of high street brands.",
-        "locations": [
+        "location": [
             "Liverpool"
         ],
         "duration": 2,
@@ -50,8 +53,9 @@
     },
     {
         "title": "Clayton Square Shopping Centre",
+        "pack": "liverpool",
         "description": "Discover Clayton Square Shopping Centre with popular high street retailers.",
-        "locations": [
+        "location": [
             "Liverpool"
         ],
         "duration": 2,
@@ -66,8 +70,9 @@
     },
     {
         "title": "The Cavern Walks",
+        "pack": "liverpool",
         "description": "Shop and explore at The Cavern Walks, a mix of shops and entertainment venues.",
-        "locations": [
+        "location": [
             "Liverpool"
         ],
         "duration": 2,

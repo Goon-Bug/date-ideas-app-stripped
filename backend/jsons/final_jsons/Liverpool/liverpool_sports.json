@@ -1,8 +1,9 @@
 [
   {
     "title": "Hollywood Bowl",
+    "pack": "liverpool",
     "description": "Strike some pins at Hollywood Bowl, a lively bowling alley.",
-    "locations": [
+    "location": [
       "Liverpool, L24 8QB",
       "Montrose Way, Liverpool, L13 1EW"
     ],
@@ -19,8 +20,9 @@
   },
   {
     "title": "Junkyard Golf Club",
+    "pack": "liverpool",
     "description": "Challenge friends at Junkyard Golf Club, a fun and vibrant miniature golf course.",
-    "locations": [
+    "location": [
       "ONE, 1 Paradise St, Liverpool L1 8JF"
     ],
     "duration": 1.5,
@@ -36,8 +38,9 @@
   },
   {
     "title": "Liverpool Beatles Cycle Tour",
+    "pack": "liverpool",
     "description": "Explore Liverpool's iconic landmarks, Beatles history, and local culture with guided bike tours.",
-    "locations": [
+    "location": [
       "Kings Dock St, Liverpool L1 8JU"
     ],
     "duration": 2,
@@ -55,8 +58,9 @@
   },
   {
     "title": "Climbing in Liverpool",
+    "pack": "liverpool",
     "description": "Get adventurous and active together with indoor climbing experiences at The Climbing Hangar or Awesome Walls.",
-    "locations": [
+    "location": [
       "Birchall Street, Liverpool",
       "Speke Road, Liverpool, L19 2RF",
       "Athol Street, Liverpool, L5 9TN"
@@ -68,14 +72,15 @@
       "active"
     ],
     "websites": [
-      "https://theclimbinghangar.com/locations/liverpool/",
+      "https://theclimbinghangar.com/location/liverpool/",
       "https://awesomewalls.co.uk/liverpool/"
     ]
   },
   {
     "title": "Gravity MAX",
+    "pack": "liverpool",
     "description": "Stay active at Gravity MAX, a well-equipped sports centre.",
-    "locations": [
+    "location": [
       "Chavasse Park, Liverpool"
     ],
     "duration": 2,
@@ -91,8 +96,9 @@
   },
   {
     "title": "TeamSport Liverpool",
+    "pack": "liverpool",
     "description": "Race each other at TeamSport Liverpool's indoor go-karting track for a thrilling date.",
-    "locations": [
+    "location": [
       "Sefton St, Liverpool, L3 4BQ"
     ],
     "duration": 2,
@@ -107,8 +113,9 @@
   },
   {
     "title": "Liverpool Curling Club",
+    "pack": "liverpool",
     "description": "Enjoy skating at Liverpool Curling Club, a fun ice rink for all ages.",
-    "locations": [
+    "location": [
       "Gorham Street, Liverpool, B0T 1K0"
     ],
     "duration": 1.5,

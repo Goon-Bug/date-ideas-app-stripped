@@ -1,8 +1,9 @@
 [
     {
         "title": "Revolution de Cuba",
+        "pack": "liverpool",
         "description": "Lively bar with great cocktails and vibrant Cuban atmosphere.",
-        "locations": [
+        "location": [
             "Edward Pavilion, Liverpool, L3 4AF"
         ],
         "duration": 1.5,
@@ -17,8 +18,9 @@
     },
     {
         "title": "The Magnet",
+        "pack": "liverpool",
         "description": "Popular bar with live music and a friendly crowd.",
-        "locations": [
+        "location": [
             "113 Renshaw Street, Liverpool, L1 2SF"
         ],
         "duration": 1.5,
@@ -32,8 +34,9 @@
     },
     {
         "title": "Alma de Cuba",
+        "pack": "liverpool",
         "description": "Vibrant nightclub set in a former church with Latin music and cocktails.",
-        "locations": [
+        "location": [
             "Seel Street, Liverpool, L1 4BW"
         ],
         "duration": 2,
@@ -48,8 +51,9 @@
     },
     {
         "title": "The Shipping Forecast",
+        "pack": "liverpool",
         "description": "Popular bar and music venue with eclectic live acts.",
-        "locations": [
+        "location": [
             "6-10 Wapping, Liverpool, L1 8DQ"
         ],
         "duration": 2,
@@ -65,8 +69,9 @@
     },
     {
         "title": "The Cavern Club",
+        "pack": "liverpool",
         "description": "Historic music venue and bar known for live performances.",
-        "locations": [
+        "location": [
             "10 Mathew Street, Liverpool, L2 6RE"
         ],
         "duration": 2,
@@ -82,8 +87,9 @@
     },
     {
         "title": "BrewDog Liverpool",
+        "pack": "liverpool",
         "description": "Craft beer bar with a wide selection and relaxed atmosphere.",
-        "locations": [
+        "location": [
             "The Art School, Sugnall Street, Liverpool, L7 7EB"
         ],
         "duration": 1.5,
@@ -94,13 +100,14 @@
             "relaxing"
         ],
         "websites": [
-            "https://www.brewdog.com/locations/liverpool"
+            "https://www.brewdog.com/location/liverpool"
         ]
     },
     {
         "title": "Connoisseur",
+        "pack": "liverpool",
         "description": "Upmarket bar with a great cocktail menu and stylish interior.",
-        "locations": [
+        "location": [
             "6 Temple Lane, Liverpool, L2 5RH"
         ],
         "duration": 1.5,
@@ -115,8 +122,9 @@
     },
     {
         "title": "The Baltic Social",
+        "pack": "liverpool",
         "description": "Large venue with multiple bars, cocktails, and relaxed seating.",
-        "locations": [
+        "location": [
             "3A Seel Street, Liverpool, L1 4BE"
         ],
         "duration": 2,
@@ -132,8 +140,9 @@
     },
     {
         "title": "Heebie Jeebies",
+        "pack": "liverpool",
         "description": "Vibrant bar and club known for live music and DJs.",
-        "locations": [
+        "location": [
             "25 Bold Street, Liverpool, L1 4EZ"
         ],
         "duration": 2,
@@ -148,8 +157,9 @@
     },
     {
         "title": "Sappho Nightclub",
+        "pack": "liverpool",
         "description": "Popular nightclub with a lively dance floor and themed nights.",
-        "locations": [
+        "location": [
             "65 Rumford Street, Liverpool, L1 1LD"
         ],
         "duration": 2,

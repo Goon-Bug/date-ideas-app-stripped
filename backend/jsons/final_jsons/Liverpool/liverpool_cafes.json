@@ -1,8 +1,9 @@
 [
     {
         "title": "Bold Street Coffee",
+        "pack": "liverpool",
         "description": "Independent café known for excellent coffee, fresh food, local art displays and relaxed vibe.",
-        "locations": [
+        "location": [
             "89 Bold Street, Liverpool L1 4HF"
         ],
         "duration": 1,
@@ -19,8 +20,9 @@
     },
     {
         "title": "Rococo Coffee House",
+        "pack": "liverpool",
         "description": "Charming Victorian-style café on Lord Street, serving brunch classics in a vintage setting.",
-        "locations": [
+        "location": [
             "61 Lord Street, Liverpool L2 6PB"
         ],
         "duration": 1,
@@ -35,8 +37,9 @@
     },
     {
         "title": "Mother Espresso",
+        "pack": "liverpool",
         "description": "Minimalist café at The Tea Factory with batch brew coffee, bagels and artisan pastries.",
-        "locations": [
+        "location": [
             "82 Wood Street, Liverpool L1 4DQ"
         ],
         "duration": 1,
@@ -50,9 +53,10 @@
     },
     {
         "title": "92 Degrees Coffee",
+        "pack": "liverpool",
         "description": "Coffee roastery café with high‑quality single-origin brews roasted on-site.",
-        "locations": [
-            "Hardman Street (multiple locations), Liverpool"
+        "location": [
+            "Hardman Street (multiple location), Liverpool"
         ],
         "duration": 1,
         "cost": "Low",
@@ -65,8 +69,9 @@
     },
     {
         "title": "COFFI",
+        "pack": "liverpool",
         "description": "Speciality coffee shop in Georgian Quarter offering expertly brewed espresso and filter coffee.",
-        "locations": [
+        "location": [
             "8 Pilgrim Street, Liverpool L1 9HB"
         ],
         "duration": 1,
@@ -80,8 +85,9 @@
     },
     {
         "title": "Bean There Coffee Shop",
+        "pack": "liverpool",
         "description": "Smithdown Road café with homemade snacks and a welcoming atmosphere.",
-        "locations": [
+        "location": [
             "376 Smithdown Road, Liverpool L15 5AB"
         ],
         "duration": 1,
@@ -95,8 +101,9 @@
     },
     {
         "title": "Yonder",
+        "pack": "liverpool",
         "description": "Relaxed Baltic Triangle café serving great coffee and simple brunch dishes.",
-        "locations": [
+        "location": [
             "44 Simpson Street, Liverpool L1 0AX"
         ],
         "duration": 1,
@@ -110,8 +117,9 @@
     },
     {
         "title": "Rose Lane Coffee",
+        "pack": "liverpool",
         "description": "Speciality coffee and sweet treats in a friendly Mossley Hill venue.",
-        "locations": [
+        "location": [
             "171 Rose Lane, Liverpool L18 5EA"
         ],
         "duration": 1,
@@ -125,8 +133,9 @@
     },
     {
         "title": "Freida Mo’s",
+        "pack": "liverpool",
         "description": "Quirky Lark Lane café offering great coffee and cheerful brunch options.",
-        "locations": [
+        "location": [
             "33 Lark Lane, Liverpool L17 8UW"
         ],
         "duration": 1,
@@ -140,8 +149,9 @@
     },
     {
         "title": "Coffee & Fandisha",
+        "pack": "liverpool",
         "description": "Ethiopian-inspired café showcasing traditional ceremonies alongside pop-up art.",
-        "locations": [
+        "location": [
             "5 Brick Street, Liverpool L1 0BL"
         ],
         "duration": 1,

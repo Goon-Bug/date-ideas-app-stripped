@@ -1,8 +1,9 @@
 [
   {
     "title": "Belzan",
+    "pack": "liverpool",
     "description": "A relaxed fine‑dining bistro on Smithdown Road, featuring seasonal British dishes with Michelin recognition.",
-    "locations": [
+    "location": [
       "Smithdown Road, Liverpool L15 3JR"
     ],
     "duration": 1.5,
@@ -19,8 +20,9 @@
   },
   {
     "title": "NORD",
+    "pack": "liverpool",
     "description": "Modern restaurant with an eclectic international menu in a sleek, futuristic setting.",
-    "locations": [
+    "location": [
       "100 Old Hall St, Liverpool L3 9QJ"
     ],
     "duration": 1.5,
@@ -36,8 +38,9 @@
   },
   {
     "title": "The Art School",
+    "pack": "liverpool",
     "description": "Award‑winning fine-dining in a beautiful Victorian building serving inventive Modern British cuisine.",
-    "locations": [
+    "location": [
       "1 Sugnall St, Liverpool L7 7EB"
     ],
     "duration": 2,
@@ -55,8 +58,9 @@
   },
   {
     "title": "Maray",
+    "pack": "liverpool",
     "description": "Middle Eastern–inspired small plates, craft cocktails, and a laid-back vibe make this a local favourite.",
-    "locations": [
+    "location": [
       "91 Bold St, Liverpool L1 4HF"
     ],
     "duration": 1.5,
@@ -71,8 +75,9 @@
   },
   {
     "title": "Rudy's Neapolitan Pizza",
+    "pack": "liverpool",
     "description": "Casual pizzeria serving authentic wood-fired Neapolitan pizzas at great value.",
-    "locations": [
+    "location": [
       "Castle Street, Liverpool L2 0NE"
     ],
     "duration": 1.5,
@@ -82,13 +87,14 @@
       "indoor"
     ],
     "websites": [
-      "https://www.rudyspizza.co.uk/locations/liverpool"
+      "https://www.rudyspizza.co.uk/location/liverpool"
     ]
   },
   {
     "title": "Mowgli Street Food",
+    "pack": "liverpool",
     "description": "Indian street food served in a vibrant setting with swing seats and hanging lights.",
-    "locations": [
+    "location": [
       "69 Bold St, Liverpool L1 4EZ"
     ],
     "duration": 1.5,
@@ -103,8 +109,9 @@
   },
   {
     "title": "Pattersons",
+    "pack": "liverpool",
     "description": "Casual chicken and burger joint known for generous portions and quirky style.",
-    "locations": [
+    "location": [
       "28 Gradwell St, Liverpool L1 4JH"
     ],
     "duration": 1.5,
@@ -119,8 +126,9 @@
   },
   {
     "title": "Dale Street Eatery",
+    "pack": "liverpool",
     "description": "Trendy brunch and coffee spot popular for artisan plates and quality coffee.",
-    "locations": [
+    "location": [
       "61 Dale St, Liverpool L2 2HJ"
     ],
     "duration": 1,
@@ -135,8 +143,9 @@
   },
   {
     "title": "Slim's",
+    "pack": "liverpool",
     "description": "Funky venue serving up stacked burgers, wings, and loaded fries with a cool vibe.",
-    "locations": [
+    "location": [
       "108 Bold St, Liverpool L1 4DJ"
     ],
     "duration": 1.5,
@@ -151,8 +160,9 @@
   },
   {
     "title": "Bundobust",
+    "pack": "liverpool",
     "description": "Trendy Indian street food and craft beer served in a communal dining space.",
-    "locations": [
+    "location": [
       "17-19 Bold St, Liverpool L1 4DN"
     ],
     "duration": 1.5,

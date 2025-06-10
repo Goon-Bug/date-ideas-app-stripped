@@ -1,8 +1,9 @@
 [
   {
     "title": "Sefton Park",
+    "pack": "liverpool",
     "description": "A 235-acre Grade I listed park featuring a boating lake, Victorian Palm House, and statues.",
-    "locations": [
+    "location": [
       "Sefton Park, Aigburth Dr, Liverpool L17 1AX"
     ],
     "duration": 2,
@@ -20,8 +21,9 @@
   },
   {
     "title": "Calderstones Park",
+    "pack": "liverpool",
     "description": "A 126-acre park with botanical gardens, a lake, and a historic mansion house.",
-    "locations": [
+    "location": [
       "Calderstones Rd, Liverpool L18 3JB"
     ],
     "duration": 2,
@@ -39,8 +41,9 @@
   },
   {
     "title": "Croxteth Hall and Country Park",
+    "pack": "liverpool",
     "description": "Historic estate offering formal gardens, woodlands, and a working farm.",
-    "locations": [
+    "location": [
       "Moor Ln, Liverpool L11 1BE"
     ],
     "duration": 2,
@@ -58,8 +61,9 @@
   },
   {
     "title": "Wavertree Botanic Garden and Park",
+    "pack": "liverpool",
     "description": "Mid-19th century public park with mature trees and greenhouses.",
-    "locations": [
+    "location": [
       "Wavertree Rd, Liverpool L15 4LE"
     ],
     "duration": 1.5,
@@ -77,8 +81,9 @@
   },
   {
     "title": "Newsham Park",
+    "pack": "liverpool",
     "description": "121-acre Victorian park with fishing lakes and historic buildings.",
-    "locations": [
+    "location": [
       "Prescot Rd, Liverpool L14 1LA"
     ],
     "duration": 2,
@@ -96,8 +101,9 @@
   },
   {
     "title": "Everton Park",
+    "pack": "liverpool",
     "description": "Modern park with panoramic city views, community gardens, and landmarks.",
-    "locations": [
+    "location": [
       "Everton Rd, Liverpool L6 2DT"
     ],
     "duration": 1.5,
@@ -115,8 +121,9 @@
   },
   {
     "title": "Otterspool Park",
+    "pack": "liverpool",
     "description": "Riverside park offering scenic Mersey views and recreational spaces.",
-    "locations": [
+    "location": [
       "Otterspool Dr, Liverpool L17 4AL"
     ],
     "duration": 2,
@@ -134,8 +141,9 @@
   },
   {
     "title": "Princes Park",
+    "pack": "liverpool",
     "description": "Victorian park with boating lake, tennis courts, and a historic bandstand.",
-    "locations": [
+    "location": [
       "Princes Rd, Liverpool L8 4UE"
     ],
     "duration": 2,
@@ -151,8 +159,9 @@
   },
   {
     "title": "Stanley Park",
+    "pack": "liverpool",
     "description": "Beautiful landscaped park near Anfield and Goodison Park stadiums.",
-    "locations": [
+    "location": [
       "Stanley Park Dr, Liverpool L4 0TH"
     ],
     "duration": 2,
@@ -168,8 +177,9 @@
   },
   {
     "title": "Chavasse Park",
+    "pack": "liverpool",
     "description": "City centre park surrounded by shops and restaurants.",
-    "locations": [
+    "location": [
       "King Edward St, Liverpool L1 3AJ"
     ],
     "duration": 1,
@@ -187,8 +197,9 @@
   },
   {
     "title": "Festival Gardens",
+    "pack": "liverpool",
     "description": "Scenic park with lakes, pagodas, and riverside walks from the 1984 Garden Festival.",
-    "locations": [
+    "location": [
       "Liverpool Waterfront, Liverpool L3 4AG"
     ],
     "duration": 1.5,
@@ -204,8 +215,9 @@
   },
   {
     "title": "Speke Hall, Garden and Estate",
+    "pack": "liverpool",
     "description": "Tudor manor house with beautiful gardens and woodlands to explore.",
-    "locations": [
+    "location": [
       "Speke Hall Ln, Liverpool L24 1XD"
     ],
     "duration": 2,
@@ -223,8 +235,9 @@
   },
   {
     "title": "Liverpool Botanical Garden",
+    "pack": "liverpool",
     "description": "Serene gardens with diverse plant species and glasshouses.",
-    "locations": [
+    "location": [
       "Wavertree Botanic Park, Wavertree Rd, Liverpool L15 4LE"
     ],
     "duration": 2,
@@ -241,8 +254,9 @@
   },
   {
     "title": "St James' Gardens",
+    "pack": "liverpool",
     "description": "Peaceful historic gardens adjacent to Liverpool Cathedral.",
-    "locations": [
+    "location": [
       "St James St, Liverpool L1 7BY"
     ],
     "duration": 1.5,
@@ -259,8 +273,9 @@
   },
   {
     "title": "Greenbank Park",
+    "pack": "liverpool",
     "description": "Relaxing green spaces with woodland and sports facilities.",
-    "locations": [
+    "location": [
       "Greenbank Rd, Liverpool L17 1AG"
     ],
     "duration": 2,
@@ -276,8 +291,9 @@
   },
   {
     "title": "Childwall Woods and Fields",
+    "pack": "liverpool",
     "description": "Woodland and open fields perfect for walking and wildlife spotting.",
-    "locations": [
+    "location": [
       "Childwall Woods, Liverpool L16 4AH"
     ],
     "duration": 2,
@@ -293,70 +309,57 @@
   },
   {
     "title": "Toxteth Park Cemetery",
+    "pack": "liverpool",
     "description": "Historic cemetery with mature trees and quiet walking paths.",
-    "locations": [
+    "location": [
       "Priory Rd, Liverpool L8 9EY"
     ],
     "duration": 1.5,
     "cost": "Low",
     "tags": [
       "outdoors",
-      "nature",
       "history",
-      "budget-friendly",
-      "adventure"
-    ],
-    "websites": []
-  },
-  {
-    "title": "Everton Park - St George's Garden",
-    "description": "Community garden space within Everton Park with seasonal planting.",
-    "locations": [
-      "Everton Rd, Liverpool L6 2DT"
-    ],
-    "duration": 1,
-    "cost": "Low",
-    "tags": [
-      "outdoors",
-      "nature",
       "relaxing",
-      "budget-friendly",
-      "adventure"
+      "budget-friendly"
     ],
     "websites": []
   },
   {
-    "title": "Walton Hall Park",
-    "description": "Large public park with playgrounds, sports facilities and open spaces.",
-    "locations": [
-      "Walton Hall Ave, Liverpool L4 9XP"
-    ],
-    "duration": 2,
-    "cost": "Low",
-    "tags": [
-      "outdoors",
-      "nature",
-      "fun",
-      "budget-friendly",
-      "adventure"
-    ],
-    "websites": []
-  },
-  {
-    "title": "Otterspool Promenade",
-    "description": "Riverside walkway and park area popular for walking and cycling.",
-    "locations": [
-      "Otterspool Dr, Liverpool L17 4AL"
+    "title": "Sefton Park Palm House",
+    "pack": "liverpool",
+    "description": "Victorian glasshouse with tropical plants and cultural events.",
+    "location": [
+      "Sefton Park, Liverpool L17 1AX"
     ],
     "duration": 1.5,
     "cost": "Low",
     "tags": [
-      "outdoors",
+      "indoor",
+      "culture",
       "nature",
-      "relaxing",
-      "budget-friendly",
-      "adventure"
+      "budget-friendly"
     ],
-    "websites": []
+    "websites": [
+      "https://seftonparkpalmhouse.com/"
+    ]
+  },
+  {
+    "title": "Sudley House",
+    "pack": "liverpool",
+    "description": "Historic house museum with art collections and gardens.",
+    "location": [
+      "Liverpool L8 7TQ"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "culture",
+      "history",
+      "indoor",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.liverpoolmuseums.org.uk/sudley-house"
+    ]
   }
 ]
