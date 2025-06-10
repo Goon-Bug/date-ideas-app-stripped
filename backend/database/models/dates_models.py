@@ -103,6 +103,7 @@ class DateIdea(Base, CRUDMixin):
 
     id = Column(Integer, primary_key=True, autoincrement=True)
     title = Column(Text, nullable=False)
+    pack = Column(Text, nullable=False)
     description = Column(Text, nullable=False)
     location = Column(Text, nullable=False)
     duration = Column(Float, nullable=False)  # Converted duration to float
@@ -117,6 +118,7 @@ class DateIdea(Base, CRUDMixin):
         return (
             f"<DateIdea(id={self.id},"
             f"title={self.title}, description={self.description}, "
+            f"pack={self.pack}, "
             f"location={self.location}, duration={self.duration}, "
             f"cost={self.cost}, tags={[tag.name for tag in self.tags]})>"
         )
