@@ -15,15 +15,16 @@ class DateIdeasData {
 
   static DateIdeasData get instance => _instance;
 
-  Future<void> loadData() async {
+  Future<void> loadData(String jsonPath) async {
     final databasePath = await getDatabasesPath();
-    final path = join(databasePath, 'local_dates.db');
+    log('Database path: $databasePath');
+    final path = join(databasePath, jsonPath);
 
     final db = await openDatabase(path);
     log('Loading Database');
 
     final List<Map<String, dynamic>> data = await db.rawQuery('''
-    SELECT di.id, di.creator_id, di.title, di.description, di.location, di.duration, di.cost, 
+    SELECT di.id, di.title, di.description, di.location, di.duration, di.cost, 
            GROUP_CONCAT(t.name) AS tags
     FROM date_ideas di
     LEFT JOIN date_idea_tags dit ON di.id = dit.date_idea_id
@@ -36,7 +37,6 @@ class DateIdeasData {
 
       return {
         'id': idea['id'],
-        'creator_id': idea['creator_id'],
         'title': idea['title'],
         'description': idea['description'],
         'location': idea['location'],
@@ -57,9 +57,10 @@ class DateIdeasData {
     log("Loaded tags: $tagsList");
   }
 
-  Future<void> copyDatabase({bool overwrite = false}) async {
+  Future<void> copyDatabase(
+      {bool overwrite = false, required String dbName}) async {
     final databasePath = await getDatabasesPath();
-    final path = join(databasePath, 'local_dates.db');
+    final path = join(databasePath, dbName);
 
     final fileExists = await File(path).exists();
 
