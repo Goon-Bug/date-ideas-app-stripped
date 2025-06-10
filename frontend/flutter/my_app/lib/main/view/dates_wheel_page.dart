@@ -421,6 +421,7 @@ class _DateIdeasWheelContentState extends State<DateIdeasWheelContent> {
                 const SizedBox(height: 20),
                 Text(
                   result['title'],
+                  textAlign: TextAlign.center,
                   style: const TextStyle(
                     fontFamily: 'RetroTitle',
                     fontSize: 42,
@@ -431,7 +432,7 @@ class _DateIdeasWheelContentState extends State<DateIdeasWheelContent> {
                 const SizedBox(height: 10),
                 Text(
                   result['description'],
-                  textAlign: TextAlign.center,
+                  textAlign: TextAlign.left,
                   style: TextStyle(
                     fontSize: 18,
                     color: Colors.grey[700],
