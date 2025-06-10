@@ -31,8 +31,9 @@ Future<void> mainCommon({required bool isTestMode}) async {
 
   setupDependencies();
 
-  await DateIdeasData.instance.copyDatabase(overwrite: true);
-  await DateIdeasData.instance.loadData();
+  await DateIdeasData.instance
+      .copyDatabase(overwrite: true, dbName: 'local_dates.db');
+  await DateIdeasData.instance.loadData('local_dates.db');
 
   runApp(const App());
 }
