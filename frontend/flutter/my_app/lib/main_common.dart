@@ -37,7 +37,8 @@ Future<void> mainCommon({required bool isTestMode}) async {
     assetsFolderPath: 'assets/db',
   );
 
-  await DateIdeasData.instance.loadData('liverpool_dates.db');
+  await DateIdeasData.instance.loadAllDatabasesFromManifest(
+      manifestAssetPath: 'assets/db/manifest.json');
 
   runApp(const App());
 }
