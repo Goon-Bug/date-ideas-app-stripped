@@ -17,6 +17,44 @@ class DateIdeasData {
 
   static DateIdeasData get instance => _instance;
 
+  Future<void> loadAllDatabasesFromManifest({
+    required String manifestAssetPath, // e.g., 'db/manifest.json'
+  }) async {
+    try {
+      // Load and parse manifest
+      final manifestJson = await rootBundle.loadString(manifestAssetPath);
+      final List<dynamic> databasePaths = json.decode(manifestJson);
+
+      if (databasePaths.isEmpty) {
+        log('No database paths found in manifest.');
+        return;
+      }
+
+      final databasePath = await getDatabasesPath();
+
+      for (final relativePath in databasePaths) {
+        final dbName = basename(relativePath);
+        final fullPath = join(databasePath, dbName);
+
+        final fileExists = await File(fullPath).exists();
+        if (!fileExists) {
+          log("Database $dbName not found locally, skipping load.");
+          continue;
+        }
+
+        await loadData(dbName);
+      }
+
+      // Deduplicate
+      dateIdeasTitles = dateIdeasTitles.toSet().toList();
+      tagsList = tagsList.toSet().toList();
+
+      log("Finished loading all databases from manifest.");
+    } catch (e) {
+      log("Error loading databases from manifest: $e");
+    }
+  }
+
   /// Load a .db file (e.g., downloaded or asset-based) into memory
   Future<void> loadData(String dbName) async {
     final databasePath = await getDatabasesPath();
@@ -32,15 +70,15 @@ class DateIdeasData {
     }
 
     final List<Map<String, dynamic>> data = await db.rawQuery('''
-      SELECT di.id, di.title, di.pack, di.description, di.location, di.duration, di.cost, 
-             GROUP_CONCAT(t.name) AS tags
-      FROM date_ideas di
-      LEFT JOIN date_idea_tags dit ON di.id = dit.date_idea_id
-      LEFT JOIN tags t ON dit.tag_id = t.id
-      GROUP BY di.id
-    ''');
+    SELECT di.id, di.title, di.pack, di.description, di.location, di.duration, di.cost, 
+           GROUP_CONCAT(t.name) AS tags
+    FROM date_ideas di
+    LEFT JOIN date_idea_tags dit ON di.id = dit.date_idea_id
+    LEFT JOIN tags t ON dit.tag_id = t.id
+    GROUP BY di.id
+  ''');
 
-    dateIdeasMap = data.map((idea) {
+    dateIdeasMap.addAll(data.map((idea) {
       final tags = (idea['tags'] as String?)?.split(',') ?? [];
       return {
         'id': idea['id'],
@@ -52,18 +90,21 @@ class DateIdeasData {
         'cost': idea['cost'],
         'tags': tags,
       };
-    }).toList();
+    }));
 
-    dateIdeasMapOriginal = List.from(dateIdeasMap);
-    dateIdeasTitles =
-        dateIdeasMap.map((idea) => idea['title'] as String).toList();
+    dateIdeasTitles.addAll(
+      data.map((idea) => idea['title'] as String),
+    );
 
     final List<Map<String, dynamic>> tagsData =
         await db.rawQuery('SELECT DISTINCT name FROM tags ORDER BY name');
 
-    tagsList = tagsData.map((tag) => tag['name'] as String).toList();
+    tagsList.addAll(
+      tagsData.map((tag) => tag['name'] as String),
+    );
 
-    log("Loaded ${dateIdeasMap.length} date ideas and tags: $tagsList");
+    await db.close();
+    log("Loaded ${data.length} ideas from $dbName");
   }
 
   /// Validate that required tables exist
@@ -92,8 +133,9 @@ class DateIdeasData {
     final databasePath = await getDatabasesPath();
 
     for (final dbFileName in dbFiles) {
-      final assetPath = '$assetsFolderPath/$dbFileName';
+      final assetPath = '$assetsFolderPath/databases/$dbFileName';
       final path = join(databasePath, dbFileName);
+
       final file = File(path);
       final fileExists = await file.exists();
 
