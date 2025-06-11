@@ -1,4 +1,4 @@
 [
-    "databases/liverpool_dates.db",
-    "databases/original_dates.db"
+    "liverpool_dates.db",
+    "original_dates.db"
 ]
