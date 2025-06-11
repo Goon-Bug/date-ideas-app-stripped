@@ -3,7 +3,7 @@ import logging
 from backend.database.models.dates_models import DateIdea, Tag
 from backend.database.setup_dates_db import setup_database
 
-SQLITE_DB = "liverpool_dates.db"
+SQLITE_DB = "original_dates.db"
 
 logger = logging.getLogger(__name__)
 
@@ -53,5 +53,5 @@ def load_initial_data(session, json_file):
 
 if __name__ == "__main__":  # pragma: no cover
     session = setup_database()
-    load_initial_data(session, 'backend/jsons/final_jsons/Liverpool/liverpool_all_dates.json')
+    load_initial_data(session, 'backend/jsons/final_jsons/original_date_ideas.json')
     session.close()
