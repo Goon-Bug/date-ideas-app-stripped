@@ -1,0 +1,282 @@
+[
+  {
+    "title": "Picnic in the Park",
+    "pack": "original",
+    "description": "Enjoy a relaxing picnic with homemade snacks.",
+    "location": "Central Park",
+    "duration": 2.0,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "relaxing",
+      "budget-friendly",
+      "nature"
+    ]
+  },
+  {
+    "title": "Museum Visit",
+    "pack": "original",
+    "description": "Explore the latest exhibits at the local museum.",
+    "location": "Art Museum",
+    "duration": 3.0,
+    "cost": "Medium",
+    "tags": [
+      "educational",
+      "indoor",
+      "culture",
+      "art"
+    ]
+  },
+  {
+    "title": "Cooking Class",
+    "pack": "original",
+    "description": "Learn to cook a new cuisine together in a cooking class.",
+    "location": "Downtown Culinary School",
+    "duration": 2.5,
+    "cost": "Medium",
+    "tags": [
+      "interactive",
+      "fun",
+      "food",
+      "indoor"
+    ]
+  },
+  {
+    "title": "Scenic Hike",
+    "pack": "original",
+    "description": "Take a hike through beautiful scenic trails.",
+    "location": "Mountain Trail",
+    "duration": 4.0,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "active",
+      "nature",
+      "adventure"
+    ]
+  },
+  {
+    "title": "Wine Tasting",
+    "pack": "original",
+    "description": "Taste a selection of wines at a local vineyard.",
+    "location": "Sunset Vineyard",
+    "duration": 2.0,
+    "cost": "Medium",
+    "tags": [
+      "relaxing",
+      "romantic",
+      "luxury",
+      "food"
+    ]
+  },
+  {
+    "title": "Art Gallery Tour",
+    "pack": "original",
+    "description": "Explore the latest art exhibits at a local gallery.",
+    "location": "City Art Gallery",
+    "duration": 1.5,
+    "cost": "Low",
+    "tags": [
+      "art",
+      "culture",
+      "indoor",
+      "educational"
+    ]
+  },
+  {
+    "title": "Drive-in Movie",
+    "pack": "original",
+    "description": "Watch a movie from the comfort of your car at a drive-in theater.",
+    "location": "Northside Drive-In",
+    "duration": 3.0,
+    "cost": "Low",
+    "tags": [
+      "nostalgic",
+      "romantic",
+      "relaxing",
+      "entertainment"
+    ]
+  },
+  {
+    "title": "Dance Class",
+    "pack": "original",
+    "description": "Take a dance class together and learn some new moves.",
+    "location": "Dance Studio",
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "fun",
+      "interactive",
+      "active",
+      "indoor"
+    ]
+  },
+  {
+    "title": "Botanical Garden Visit",
+    "pack": "original",
+    "description": "Stroll through a beautiful botanical garden.",
+    "location": "Greenhouse Gardens",
+    "duration": 2.0,
+    "cost": "Low",
+    "tags": [
+      "nature",
+      "relaxing",
+      "romantic",
+      "outdoors"
+    ]
+  },
+  {
+    "title": "Stargazing",
+    "pack": "original",
+    "description": "Observe the stars and planets at an observatory.",
+    "location": "Starlight Observatory",
+    "duration": 2.0,
+    "cost": "Low",
+    "tags": [
+      "romantic",
+      "relaxing",
+      "nighttime",
+      "science"
+    ]
+  },
+  {
+    "title": "Comedy Show",
+    "pack": "original",
+    "description": "Enjoy a night of laughter at a local comedy club.",
+    "location": "Laugh Factory",
+    "duration": 2.0,
+    "cost": "Medium",
+    "tags": [
+      "fun",
+      "entertainment",
+      "indoor",
+      "nighttime"
+    ]
+  },
+  {
+    "title": "Scenic Bike Ride",
+    "pack": "original",
+    "description": "Take a relaxing bike ride through scenic routes.",
+    "location": "Riverside Trail",
+    "duration": 2.0,
+    "cost": "Low",
+    "tags": [
+      "active",
+      "outdoors",
+      "nature",
+      "budget-friendly"
+    ]
+  },
+  {
+    "title": "Local Festival",
+    "pack": "original",
+    "description": "Attend a fun local festival or fair.",
+    "location": "Downtown Plaza",
+    "duration": 3.0,
+    "cost": "Medium",
+    "tags": [
+      "entertainment",
+      "outdoors",
+      "fun",
+      "culture"
+    ]
+  },
+  {
+    "title": "Historical Landmark Visit",
+    "pack": "original",
+    "description": "Explore historical landmarks and learn about the area's history.",
+    "location": "Historical Society",
+    "duration": 2.0,
+    "cost": "Low",
+    "tags": [
+      "educational",
+      "culture",
+      "history",
+      "outdoors"
+    ]
+  },
+  {
+    "title": "Pottery Class",
+    "pack": "original",
+    "description": "Create your own pottery in a fun class.",
+    "location": "Pottery Studio",
+    "duration": 2.5,
+    "cost": "Medium",
+    "tags": [
+      "interactive",
+      "fun",
+      "art",
+      "indoor"
+    ]
+  },
+  {
+    "title": "Themed Dinner Night",
+    "pack": "original",
+    "description": "Have a themed dinner night at home with a specific cuisine.",
+    "location": "Home",
+    "duration": 3.0,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "budget-friendly",
+      "fun",
+      "romantic"
+    ]
+  },
+  {
+    "title": "Weekend Trip",
+    "pack": "original",
+    "description": "Take a weekend trip to a nearby city for a change of scenery.",
+    "location": "Nearby City",
+    "duration": 48.0,
+    "cost": "High",
+    "tags": [
+      "adventure",
+      "travel",
+      "romantic",
+      "luxury"
+    ]
+  },
+  {
+    "title": "Local Café Visit",
+    "pack": "original",
+    "description": "Visit a local café and enjoy some coffee or tea.",
+    "location": "Downtown Café",
+    "duration": 1.5,
+    "cost": "Low",
+    "tags": [
+      "relaxing",
+      "food",
+      "indoor",
+      "budget-friendly"
+    ]
+  },
+  {
+    "title": "Potluck Dinner",
+    "pack": "original",
+    "description": "Organize a potluck dinner with friends or family.",
+    "location": "Home",
+    "duration": 3.0,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "interactive",
+      "fun",
+      "budget-friendly"
+    ]
+  },
+  {
+    "title": "Fishing Trip",
+    "pack": "original",
+    "description": "Spend a day fishing at a local lake or river.",
+    "location": "Lakewood",
+    "duration": 4.0,
+    "cost": "Medium",
+    "tags": [
+      "outdoors",
+      "relaxing",
+      "nature",
+      "adventure"
+    ]
+  }
+]
