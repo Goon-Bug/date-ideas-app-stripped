@@ -81,7 +81,7 @@ class DateIdeasData {
     }
   }
 
-  Future<void> copyAllAssetDatabasesFromManifest({
+  Future<void> copyAllDatabasesFromManifest({
     bool overwrite = false,
     required String manifestAssetPath,
     required String assetsFolderPath,
@@ -169,6 +169,7 @@ class DateIdeasData {
   Future<bool> isPackInstalled(String dbName) async {
     final databasePath = await getDatabasesPath();
     final fullPath = join(databasePath, dbName);
-    return File(fullPath).exists();
+    return File(fullPath)
+        .exists(); //FIXME: change to check if user has access to already downloaded pack
   }
 }
