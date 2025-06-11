@@ -31,7 +31,7 @@ Future<void> mainCommon({required bool isTestMode}) async {
 
   setupDependencies();
 
-  await DateIdeasData.instance.copyAllAssetDatabasesFromManifest(
+  await DateIdeasData.instance.copyAllDatabasesFromManifest(
     overwrite: false,
     manifestAssetPath: 'assets/db/manifest.json',
     assetsFolderPath: 'assets/db',
