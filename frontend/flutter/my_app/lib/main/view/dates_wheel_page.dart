@@ -72,8 +72,6 @@ class DateIdeasWheelPage extends StatelessWidget {
             builder: (futureContext, snapshot) {
               var profileIcon = snapshot.data?.toString() ??
                   'assets/profile_icons/icon_0.png';
-              log('Profile icon: $profileIcon', name: 'DateIdeasWheelPage');
-
               return Scaffold(
                 key: _scaffoldKey,
                 appBar: AppBar(
