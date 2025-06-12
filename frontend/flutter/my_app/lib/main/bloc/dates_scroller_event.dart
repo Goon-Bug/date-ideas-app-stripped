@@ -19,3 +19,14 @@ class DatesFilterRequested extends DatesScrollerEvent {
 }
 
 class DatesScrollerResetRequested extends DatesScrollerEvent {}
+
+class DatesTagsReset extends DatesScrollerEvent {}
+
+class DatesPackSelected extends DatesScrollerEvent {
+  final String packName;
+
+  const DatesPackSelected(this.packName);
+
+  @override
+  List<Object> get props => [packName];
+}
