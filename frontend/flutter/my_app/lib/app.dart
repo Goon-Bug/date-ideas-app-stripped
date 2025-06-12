@@ -1,5 +1,8 @@
+import 'package:date_spark_app/main/bloc/dates_scroller_bloc.dart';
 import 'package:date_spark_app/main/cubit/token_cubit.dart';
+import 'package:date_spark_app/main/tags/tags_cubit.dart';
 import 'package:date_spark_app/main/view/dates_wheel_page.dart';
+import 'package:date_spark_app/services/date_ideas_service.dart';
 import 'package:date_spark_app/services/navigation_service.dart';
 import 'package:date_spark_app/settings/blocs/theme_cubit.dart';
 import 'package:date_spark_app/settings/view/accounts_page.dart';
@@ -45,6 +48,10 @@ class _AppState extends State<App> with WidgetsBindingObserver {
         BlocProvider(create: (_) => ThemeCubit()),
         BlocProvider(lazy: true, create: (_) => TimelineCubit()),
         BlocProvider(lazy: true, create: (_) => TokenCubit()),
+        BlocProvider(lazy: true, create: (_) => DatesScrollerBloc()),
+        BlocProvider(
+            lazy: true,
+            create: (_) => TagsCubit(DateIdeasData.instance.tagsList)),
       ],
       child: const AppView(),
     );
