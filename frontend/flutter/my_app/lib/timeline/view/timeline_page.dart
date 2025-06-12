@@ -1,5 +1,7 @@
 import 'dart:developer';
 import 'dart:io';
+import 'package:date_spark_app/main/bloc/dates_scroller_bloc.dart';
+import 'package:date_spark_app/main/tags/tags_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:date_spark_app/timeline/bloc/timeline_cubit.dart';
@@ -16,78 +18,89 @@ class TimelinePage extends StatelessWidget {
   Widget build(BuildContext context) {
     context.read<TimelineCubit>().loadTimelineEntries();
 
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Timeline'),
-      ),
-      body: LayoutBuilder(
-        builder: (context, constraints) {
-          return BlocConsumer<TimelineCubit, TimelineState>(
-            listener: (context, state) {
-              log("$state");
+    return PopScope(
+      canPop: false,
+      onPopInvokedWithResult: (didPop, result) async {
+        // If already popped, just return
+        if (didPop) return;
+        context.read<DatesScrollerBloc>().add(DatesScrollerResetRequested());
+        context.read<TagsCubit>().resetTags();
 
-              if (state.status == TimelineStatus.failure) {
-                ScaffoldMessenger.of(context).showSnackBar(
-                  SnackBar(content: Text(state.errorMessage ?? 'Error')),
-                );
-              } else if (state.status == TimelineStatus.added) {
-                context.read<TimelineCubit>().loadTimelineEntries();
-              }
-            },
-            builder: (context, state) {
-              if (state.status == TimelineStatus.loading) {
-                return const Center(
-                  child: CircularProgressIndicator(),
-                );
-              } else if (state.status == TimelineStatus.failure) {
-                return Center(
-                  child: Text(
-                    state.errorMessage ?? 'Failed to load timeline entries.',
-                    style:
-                        TextStyle(color: Theme.of(context).colorScheme.error),
-                  ),
-                );
-              } else {
-                if (state.timelineEntries.isEmpty) {
-                  return Padding(
-                    padding: EdgeInsets.symmetric(
-                      vertical: constraints.maxHeight * 0.1,
-                    ),
-                    child: const Center(
-                      child: Text('No timeline entries available.'),
+        if (context.mounted) {
+          Navigator.of(context).pop();
+        }
+      },
+      child: Scaffold(
+        appBar: AppBar(
+          title: const Text('Timeline'),
+        ),
+        body: LayoutBuilder(
+          builder: (context, constraints) {
+            return BlocConsumer<TimelineCubit, TimelineState>(
+              listener: (context, state) {
+                log("$state");
+
+                if (state.status == TimelineStatus.failure) {
+                  ScaffoldMessenger.of(context).showSnackBar(
+                    SnackBar(content: Text(state.errorMessage ?? 'Error')),
+                  );
+                } else if (state.status == TimelineStatus.added) {
+                  context.read<TimelineCubit>().loadTimelineEntries();
+                }
+              },
+              builder: (context, state) {
+                if (state.status == TimelineStatus.loading) {
+                  return const Center(child: CircularProgressIndicator());
+                } else if (state.status == TimelineStatus.failure) {
+                  return Center(
+                    child: Text(
+                      state.errorMessage ?? 'Failed to load timeline entries.',
+                      style:
+                          TextStyle(color: Theme.of(context).colorScheme.error),
                     ),
                   );
-                }
-
-                return ListView.builder(
-                  padding: EdgeInsets.symmetric(
-                    horizontal: constraints.maxWidth * 0.015,
-                  ),
-                  itemCount: state.timelineEntries.length,
-                  itemBuilder: (context, index) {
-                    final entry = state.timelineEntries[index];
-                    return TimelineEntry(
-                      timelineItem: entry,
-                      isLast: index == state.timelineEntries.length - 1,
+                } else {
+                  if (state.timelineEntries.isEmpty) {
+                    return Padding(
+                      padding: EdgeInsets.symmetric(
+                        vertical: constraints.maxHeight * 0.1,
+                      ),
+                      child: const Center(
+                        child: Text('No timeline entries available.'),
+                      ),
                     );
-                  },
-                );
-              }
-            },
-          );
-        },
-      ),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () async {
-          await context.read<TimelineCubit>().resetAddEntryFields();
-          if (context.mounted) {
-            Navigator.pushNamed(context, '/addTimelineEntry');
-          }
-        },
-        backgroundColor: Theme.of(context).colorScheme.primary,
-        foregroundColor: Theme.of(context).colorScheme.onPrimary,
-        tooltip: "Add to Timeline",
-        child: const Icon(Icons.add),
+                  }
+
+                  return ListView.builder(
+                    padding: EdgeInsets.symmetric(
+                      horizontal: constraints.maxWidth * 0.015,
+                    ),
+                    itemCount: state.timelineEntries.length,
+                    itemBuilder: (context, index) {
+                      final entry = state.timelineEntries[index];
+                      return TimelineEntry(
+                        timelineItem: entry,
+                        isLast: index == state.timelineEntries.length - 1,
+                      );
+                    },
+                  );
+                }
+              },
+            );
+          },
+        ),
+        floatingActionButton: FloatingActionButton(
+          onPressed: () async {
+            await context.read<TimelineCubit>().resetAddEntryFields();
+            if (context.mounted) {
+              Navigator.pushNamed(context, '/addTimelineEntry');
+            }
+          },
+          backgroundColor: Theme.of(context).colorScheme.primary,
+          foregroundColor: Theme.of(context).colorScheme.onPrimary,
+          tooltip: "Add to Timeline",
+          child: const Icon(Icons.add),
+        ),
       ),
     );
   }
@@ -184,8 +197,8 @@ class TimelineItemCard extends StatelessWidget {
                 if (!exists) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(
-                        content:
-                            Text("Image not found at the specified path.")),
+                      content: Text("Image not found at the specified path."),
+                    ),
                   );
                   return;
                 }
@@ -233,7 +246,7 @@ class TimelineItemCard extends StatelessWidget {
                         const TextStyle(fontFamily: 'RetroTitle', fontSize: 24),
                   ),
                   Text(
-                    "${timelineItem.description}",
+                    timelineItem.description!,
                     style: TextStyle(
                       fontSize: 14,
                       color: Theme.of(context).colorScheme.onSurface,
@@ -264,10 +277,11 @@ class TimelineItemCard extends StatelessWidget {
               'Are you sure you want to delete this timeline entry?'),
           actions: <Widget>[
             TextButton(
-                onPressed: () {
-                  Navigator.of(context).pop();
-                },
-                child: Text('Cancel', style: TextStyle(fontSize: 16))),
+              onPressed: () {
+                Navigator.of(context).pop();
+              },
+              child: const Text('Cancel', style: TextStyle(fontSize: 16)),
+            ),
             ElevatedButton(
               onPressed: () {
                 context
