@@ -7,12 +7,12 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 
 class TagsCheckboxGrid extends StatelessWidget {
   final List<String> tagNames;
-  final bool enabled; // NEW
+  final bool enabled;
 
   const TagsCheckboxGrid({
     super.key,
     required this.tagNames,
-    this.enabled = true, // NEW
+    this.enabled = true,
   });
 
   @override
@@ -56,7 +56,7 @@ class TagsCheckboxGrid extends StatelessWidget {
                           context.read<DatesScrollerBloc>().add(
                                 updatedSelectedTags.isNotEmpty
                                     ? DatesFilterRequested(updatedSelectedTags)
-                                    : DatesScrollerResetRequested(),
+                                    : DatesTagsReset(),
                               );
 
                           log('Updated Filters: $updatedSelectedTags');
@@ -107,7 +107,7 @@ class TagsCheckboxGrid extends StatelessWidget {
                                     updatedSelectedTags.isNotEmpty
                                         ? DatesFilterRequested(
                                             updatedSelectedTags)
-                                        : DatesScrollerResetRequested(),
+                                        : DatesTagsReset(),
                                   );
 
                               log('Updated Filters: $updatedSelectedTags');
