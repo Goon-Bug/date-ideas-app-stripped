@@ -17,6 +17,35 @@ class DatesScrollerBloc extends Bloc<DatesScrollerEvent, DatesScrollerState> {
     on<DatesScrollerSpinRequested>(_onSpinRequested);
     on<DatesScrollerResetRequested>(_onResetRequested);
     on<DatesFilterRequested>(_onFilterRequested);
+    on<DatesTagsReset>(_onTagsResetRequested);
+    on<DatesPackSelected>(_onPackSelected);
+  }
+
+  Future<void> _onPackSelected(
+    DatesPackSelected event,
+    Emitter<DatesScrollerState> emit,
+  ) async {
+    dl.log('Received DatesPackSelected: ${event.packName}');
+
+    final allDateIdeas = DateIdeasData.instance.dateIdeasMapOriginal;
+
+    List<Map<String, dynamic>> filteredIdeas;
+
+    if (event.packName == 'all') {
+      // If 'all' is selected, show all date ideas without filtering
+      filteredIdeas = List.from(allDateIdeas);
+    } else {
+      // Otherwise filter by pack name
+      filteredIdeas =
+          allDateIdeas.where((idea) => idea['pack'] == event.packName).toList();
+    }
+
+    _dateIdeas = List.from(filteredIdeas);
+
+    dl.log('Filtered Ideas Count: ${filteredIdeas.length}');
+
+    emit(DatesScrollerFiltered(
+        filteredIdeas.isNotEmpty, List.from(filteredIdeas)));
   }
 
   Future<void> _onSpinRequested(
@@ -46,7 +75,17 @@ class DatesScrollerBloc extends Bloc<DatesScrollerEvent, DatesScrollerState> {
     DatesScrollerResetRequested event,
     Emitter<DatesScrollerState> emit,
   ) {
+    _dateIdeas = List.from(DateIdeasData.instance.dateIdeasMapOriginal);
+    dl.log('Resetting to original date ideas count: ${_dateIdeas.length}');
+    emit(DatesScrollerIdle(_dateIdeas));
+  }
+
+  void _onTagsResetRequested(
+    DatesTagsReset event,
+    Emitter<DatesScrollerState> emit,
+  ) {
     _dateIdeas = List.from(DateIdeasData.instance.dateIdeasMap);
+    dl.log('Resetting date ideas count: ${_dateIdeas.length}');
     emit(DatesScrollerIdle(_dateIdeas));
   }
 
