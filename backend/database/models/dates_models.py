@@ -109,6 +109,7 @@ class DateIdea(Base, CRUDMixin):
     duration = Column(Float, nullable=False)  # Converted duration to float
     cost = Column(Enum(CostEnum), nullable=False)  # Enum for cost
     tags = relationship("Tag", secondary=date_idea_tags, backref="date_ideas")
+    websites = Column(Text, nullable=True)  # Optional websites field
 
     __table_args__ = (
         Index("ix_date_ideas_title", "title"),
@@ -120,7 +121,8 @@ class DateIdea(Base, CRUDMixin):
             f"title={self.title}, description={self.description}, "
             f"pack={self.pack}, "
             f"location={self.location}, duration={self.duration}, "
-            f"cost={self.cost}, tags={[tag.name for tag in self.tags]})>"
+            f"cost={self.cost}, tags={[tag.name for tag in self.tags]}, "
+            f"websites={self.websites}>)"
         )
 
 
