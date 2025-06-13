@@ -18,14 +18,15 @@ class DatesScrollerBloc extends Bloc<DatesScrollerEvent, DatesScrollerState> {
     on<DatesScrollerResetRequested>(_onResetRequested);
     on<DatesFilterRequested>(_onFilterRequested);
     on<DatesTagsReset>(_onTagsResetRequested);
-    on<DatesPackSelected>(_onPackSelected);
+    on<DatesPackRequested>(_onPackSelected);
   }
 
   Future<void> _onPackSelected(
-    DatesPackSelected event,
+    DatesPackRequested event,
     Emitter<DatesScrollerState> emit,
   ) async {
     dl.log('Received DatesPackSelected: ${event.packName}');
+    emit(DatesPackSelected(event.packName, _dateIdeas));
 
     final allDateIdeas = DateIdeasData.instance.dateIdeasMapOriginal;
 
