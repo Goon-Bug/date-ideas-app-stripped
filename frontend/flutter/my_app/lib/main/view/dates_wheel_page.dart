@@ -12,6 +12,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:date_spark_app/services/navigation_service.dart';
 import 'package:date_spark_app/main/tags/tags_cubit.dart';
+import 'package:url_launcher/url_launcher.dart';
 
 // Utility extension for string capitalization
 extension StringCasingExtension on String {
@@ -82,165 +83,12 @@ class DateIdeasWheelPage extends StatelessWidget {
                   'assets/profile_icons/icon_0.png';
               return Scaffold(
                 key: _scaffoldKey,
-                appBar: AppBar(
-                  title:
-                      const Text("Date Spark", style: TextStyle(fontSize: 32)),
-                  backgroundColor: Theme.of(context).colorScheme.primary,
-                  leading: IconButton(
-                    onPressed: () {
-                      if (_scaffoldKey.currentState!.isDrawerOpen) {
-                        _scaffoldKey.currentState!.openEndDrawer();
-                      } else {
-                        _scaffoldKey.currentState!.openDrawer();
-                      }
-                    },
-                    icon: CircleAvatar(
-                      radius: 30,
-                      backgroundImage: profileIcon.isNotEmpty
-                          ? AssetImage(profileIcon)
-                          : null,
-                    ),
-                  ),
-                  actions: [
-                    IconButton(
-                      tooltip: 'Reset Tags',
-                      icon: const Icon(Icons.refresh),
-                      onPressed: () {
-                        context
-                            .read<DatesScrollerBloc>()
-                            .add(DatesScrollerReset());
-                        context.read<TagsCubit>().resetTags();
-                      },
-                    ),
-                    IconButton(
-                      icon: const Icon(Icons.settings),
-                      onPressed: isSpinning
-                          ? null
-                          : () {
-                              Navigator.pushNamed(context, '/settings');
-                            },
-                    ),
-                  ],
-                ),
-                drawer: Drawer(
-                  child: ListView(
-                    padding: EdgeInsets.zero,
-                    children: [
-                      DrawerHeader(
-                        decoration: BoxDecoration(
-                          color: Theme.of(context).colorScheme.primary,
-                        ),
-                        child: Column(
-                          children: [
-                            SizedBox(
-                                child: Image.asset(profileIcon, height: 80)),
-                            Text(
-                              'Date Spark',
-                              style: TextStyle(
-                                color: Theme.of(context)
-                                    .colorScheme
-                                    .onPrimaryContainer,
-                                fontSize: 34,
-                                fontFamily: 'RetroTitle',
-                              ),
-                            ),
-                          ],
-                        ),
-                      ),
-                      ListTile(
-                        leading: const Icon(Icons.home),
-                        title: const Text('Home'),
-                        onTap: () {
-                          Navigator.pushReplacementNamed(context, '/home');
-                        },
-                      ),
-                      ListTile(
-                        leading: const Icon(Icons.timeline),
-                        title: const Text('Timeline'),
-                        onTap: () {
-                          Navigator.pushNamed(context, '/timeline');
-                        },
-                      ),
-                      ListTile(
-                        leading: const Icon(Icons.settings),
-                        title: const Text('Settings'),
-                        onTap: () {
-                          Navigator.pushNamed(context, '/settings');
-                        },
-                      ),
-                    ],
-                  ),
-                ),
+                appBar: MainAppBar(
+                    scaffoldKey: _scaffoldKey, isSpinning: isSpinning),
+                drawer: MainDrawer(profileIcon: profileIcon),
                 body: Column(
                   children: [
-                    Row(
-                      children: [
-                        Padding(
-                          padding: const EdgeInsets.all(8.0),
-                          child: SizedBox(
-                            height: 45,
-                            width: 95,
-                            child: ElevatedButton(
-                              style: ElevatedButton.styleFrom(
-                                shape: RoundedRectangleBorder(
-                                  side: BorderSide(
-                                    width: 5,
-                                    color:
-                                        Theme.of(context).colorScheme.onPrimary,
-                                  ),
-                                  borderRadius: BorderRadius.circular(8),
-                                ),
-                                backgroundColor:
-                                    Theme.of(context).colorScheme.primary,
-                              ),
-                              onPressed: () {
-                                AdManager().showRewardedAd(
-                                  onRewarded: (reward) async {
-                                    log(reward.amount.toString());
-                                    await context
-                                        .read<TokenCubit>()
-                                        .addTokens(reward.amount as int);
-                                  },
-                                  context: context,
-                                );
-                              },
-                              child: Text(
-                                'Watch Ad',
-                                textAlign: TextAlign.center,
-                                maxLines: 2,
-                                style: TextStyle(
-                                  height: 0.9,
-                                  letterSpacing: 0.1,
-                                  fontFamily: 'RetroTitle',
-                                  fontSize: 18,
-                                  color: Theme.of(context)
-                                      .colorScheme
-                                      .onPrimaryContainer,
-                                ),
-                              ),
-                            ),
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.only(left: 12.0),
-                          child: PackDropdown(
-                            key: _dropdownKey,
-                          ),
-                        ),
-                        Expanded(
-                          child: Padding(
-                            padding: const EdgeInsets.only(right: 20),
-                            child: Align(
-                              alignment: Alignment.centerRight,
-                              child: Text(
-                                'Token Count: ${context.watch<TokenCubit>().state.tokenCount}',
-                                style: const TextStyle(fontSize: 26),
-                              ),
-                            ),
-                          ),
-                        ),
-                      ],
-                    ),
+                    MainTopRow(dropdownKey: _dropdownKey),
                     const Expanded(flex: 2, child: DateIdeasWheelContent()),
                     Expanded(
                       flex: 2,
@@ -258,6 +106,206 @@ class DateIdeasWheelPage extends StatelessWidget {
           );
         },
       ),
+    );
+  }
+}
+
+class MainTopRow extends StatelessWidget {
+  const MainTopRow({
+    super.key,
+    required GlobalKey<PackDropdownState> dropdownKey,
+  }) : _dropdownKey = dropdownKey;
+
+  final GlobalKey<PackDropdownState> _dropdownKey;
+
+  @override
+  Widget build(BuildContext context) {
+    return Row(
+      children: [
+        Padding(
+          padding: const EdgeInsets.all(8.0),
+          child: SizedBox(
+            height: 45,
+            width: 95,
+            child: ElevatedButton(
+              style: ElevatedButton.styleFrom(
+                shape: RoundedRectangleBorder(
+                  side: BorderSide(
+                    width: 5,
+                    color: Theme.of(context).colorScheme.onPrimary,
+                  ),
+                  borderRadius: BorderRadius.circular(8),
+                ),
+                backgroundColor: Theme.of(context).colorScheme.primary,
+              ),
+              onPressed: () {
+                AdManager().showRewardedAd(
+                  onRewarded: (reward) async {
+                    log(reward.amount.toString());
+                    await context
+                        .read<TokenCubit>()
+                        .addTokens(reward.amount as int);
+                  },
+                  context: context,
+                );
+              },
+              child: Text(
+                'Watch Ad',
+                textAlign: TextAlign.center,
+                maxLines: 2,
+                style: TextStyle(
+                  height: 0.9,
+                  letterSpacing: 0.1,
+                  fontFamily: 'RetroTitle',
+                  fontSize: 18,
+                  color: Theme.of(context).colorScheme.onPrimaryContainer,
+                ),
+              ),
+            ),
+          ),
+        ),
+        Padding(
+          padding: const EdgeInsets.only(left: 12.0),
+          child: PackDropdown(
+            key: _dropdownKey,
+          ),
+        ),
+        Expanded(
+          child: Padding(
+            padding: const EdgeInsets.only(right: 20),
+            child: Align(
+              alignment: Alignment.centerRight,
+              child: Text(
+                'Token Count: ${context.watch<TokenCubit>().state.tokenCount}',
+                style: const TextStyle(fontSize: 26),
+              ),
+            ),
+          ),
+        ),
+      ],
+    );
+  }
+}
+
+class MainDrawer extends StatelessWidget {
+  const MainDrawer({
+    super.key,
+    required this.profileIcon,
+  });
+
+  final String profileIcon;
+
+  @override
+  Widget build(BuildContext context) {
+    return Drawer(
+      child: ListView(
+        padding: EdgeInsets.zero,
+        children: [
+          DrawerHeader(
+            decoration: BoxDecoration(
+              color: Theme.of(context).colorScheme.primary,
+            ),
+            child: Column(
+              children: [
+                SizedBox(child: Image.asset(profileIcon, height: 80)),
+                Text(
+                  'Date Spark',
+                  style: TextStyle(
+                    color: Theme.of(context).colorScheme.onPrimaryContainer,
+                    fontSize: 34,
+                    fontFamily: 'RetroTitle',
+                  ),
+                ),
+              ],
+            ),
+          ),
+          ListTile(
+            leading: const Icon(Icons.home),
+            title: const Text('Home'),
+            onTap: () {
+              Navigator.pushReplacementNamed(context, '/home');
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.timeline),
+            title: const Text('Timeline'),
+            onTap: () {
+              Navigator.pushNamed(context, '/timeline');
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.settings),
+            title: const Text('Settings'),
+            onTap: () {
+              Navigator.pushNamed(context, '/settings');
+            },
+          ),
+        ],
+      ),
+    );
+  }
+}
+
+class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
+  const MainAppBar({
+    super.key,
+    required GlobalKey<ScaffoldState> scaffoldKey,
+    required this.isSpinning,
+  }) : _scaffoldKey = scaffoldKey;
+
+  final GlobalKey<ScaffoldState> _scaffoldKey;
+  final bool isSpinning;
+
+  @override
+  Size get preferredSize => const Size.fromHeight(kToolbarHeight);
+
+  @override
+  Widget build(BuildContext context) {
+    final storage = SecureStorage();
+
+    return FutureBuilder<String?>(
+      future: storage.read(key: 'iconImage'),
+      builder: (context, snapshot) {
+        final profileIcon =
+            snapshot.data?.toString() ?? 'assets/profile_icons/icon_0.png';
+
+        return AppBar(
+          title: const Text("Date Spark", style: TextStyle(fontSize: 32)),
+          backgroundColor: Theme.of(context).colorScheme.primary,
+          leading: IconButton(
+            onPressed: () {
+              if (_scaffoldKey.currentState!.isDrawerOpen) {
+                _scaffoldKey.currentState!.openEndDrawer();
+              } else {
+                _scaffoldKey.currentState!.openDrawer();
+              }
+            },
+            icon: CircleAvatar(
+              radius: 30,
+              backgroundImage:
+                  profileIcon.isNotEmpty ? AssetImage(profileIcon) : null,
+            ),
+          ),
+          actions: [
+            IconButton(
+              tooltip: 'Reset Tags',
+              icon: const Icon(Icons.refresh),
+              onPressed: () {
+                context.read<DatesScrollerBloc>().add(DatesScrollerReset());
+                context.read<TagsCubit>().resetTags();
+              },
+            ),
+            IconButton(
+              icon: const Icon(Icons.settings),
+              onPressed: isSpinning
+                  ? null
+                  : () {
+                      Navigator.pushNamed(context, '/settings');
+                    },
+            ),
+          ],
+        );
+      },
     );
   }
 }
@@ -447,13 +495,35 @@ class _DateIdeasWheelContentState extends State<DateIdeasWheelContent> {
                   ),
                 ),
                 const SizedBox(height: 10),
-                Text(
-                  result['websites'].join('\n'),
-                  textAlign: TextAlign.left,
-                  style: TextStyle(
-                    fontSize: 18,
-                    color: Colors.grey[700],
-                  ),
+                Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children:
+                      List<Widget>.from(result['websites'].map<Widget>((url) {
+                    return GestureDetector(
+                      onTap: () async {
+                        final uri = Uri.parse(url);
+                        if (await canLaunchUrl(uri) && context.mounted) {
+                          await launchUrl(uri,
+                              mode: LaunchMode.externalApplication);
+                        } else {
+                          ScaffoldMessenger.of(context).showSnackBar(
+                            SnackBar(content: Text('Could not launch $url')),
+                          );
+                        }
+                      },
+                      child: Padding(
+                        padding: const EdgeInsets.symmetric(vertical: 4.0),
+                        child: Text(
+                          url,
+                          style: const TextStyle(
+                            fontSize: 18,
+                            color: Colors.blue,
+                            decoration: TextDecoration.underline,
+                          ),
+                        ),
+                      ),
+                    );
+                  })),
                 ),
                 const SizedBox(height: 10),
                 ElevatedButton(
