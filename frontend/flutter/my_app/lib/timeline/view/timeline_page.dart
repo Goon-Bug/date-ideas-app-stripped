@@ -21,11 +21,9 @@ class TimelinePage extends StatelessWidget {
     return PopScope(
       canPop: false,
       onPopInvokedWithResult: (didPop, result) async {
-        // If already popped, just return
         if (didPop) return;
-        context.read<DatesScrollerBloc>().add(DatesScrollerResetRequested());
+        context.read<DatesScrollerBloc>().add(DatesScrollerReset());
         context.read<TagsCubit>().resetTags();
-        context.read<DatesScrollerBloc>().add(DatesPackRequested('all'));
 
         if (context.mounted) {
           Navigator.of(context).pop();
