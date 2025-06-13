@@ -3,7 +3,7 @@ import logging
 from backend.database.models.dates_models import DateIdea, Tag
 from backend.database.setup_dates_db import setup_database
 
-SQLITE_DB = "original_dates.db"
+SQLITE_DB = "liverpool_dates.db"
 
 logger = logging.getLogger(__name__)
 
@@ -36,7 +36,12 @@ def load_initial_data(session, json_file):
                 description=idea['description'],
                 location=", ".join(idea['location']) if isinstance(idea['location'], list) else idea['location'],
                 duration=idea['duration'],
-                cost=idea['cost']
+                cost=idea['cost'],
+                websites=(
+                    ", ".join(idea['websites'])
+                    if isinstance(idea.get('websites'), list)
+                    else idea.get('websites', None)
+                ),
             )
 
             # Add the tags to the DateIdea's relationship field
