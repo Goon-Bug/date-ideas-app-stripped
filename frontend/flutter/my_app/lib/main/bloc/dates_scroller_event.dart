@@ -22,10 +22,10 @@ class DatesScrollerResetRequested extends DatesScrollerEvent {}
 
 class DatesTagsReset extends DatesScrollerEvent {}
 
-class DatesPackSelected extends DatesScrollerEvent {
+class DatesPackRequested extends DatesScrollerEvent {
   final String packName;
 
-  const DatesPackSelected(this.packName);
+  const DatesPackRequested(this.packName);
 
   @override
   List<Object> get props => [packName];
