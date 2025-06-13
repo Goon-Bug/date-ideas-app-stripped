@@ -71,7 +71,7 @@ class DateIdeasData {
     }
 
     final List<Map<String, dynamic>> data = await db.rawQuery('''
-    SELECT di.id, di.title, di.pack, di.description, di.location, di.duration, di.cost, 
+    SELECT di.id, di.title, di.pack, di.description, di.location, di.duration, di.cost, di.websites, 
            GROUP_CONCAT(t.name) AS tags
     FROM date_ideas di
     LEFT JOIN date_idea_tags dit ON di.id = dit.date_idea_id
@@ -81,6 +81,7 @@ class DateIdeasData {
 
     final mappedData = data.map((idea) {
       final tags = (idea['tags'] as String?)?.split(',') ?? [];
+      log(tags.toString());
       return {
         'id': idea['id'],
         'title': idea['title'],
@@ -90,6 +91,7 @@ class DateIdeasData {
         'duration': idea['duration'],
         'cost': idea['cost'],
         'tags': tags,
+        'websites': (idea['websites'] as String?)?.split(',') ?? [],
       };
     }).toList();
 
