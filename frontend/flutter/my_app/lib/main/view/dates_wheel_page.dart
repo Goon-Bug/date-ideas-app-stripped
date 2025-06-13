@@ -33,6 +33,8 @@ class DateIdeasWheelPage extends StatelessWidget {
   }
 
   final GlobalKey<ScaffoldState> _scaffoldKey = GlobalKey<ScaffoldState>();
+  final GlobalKey<PackDropdownState> _dropdownKey =
+      GlobalKey<PackDropdownState>();
   final storage = SecureStorage();
 
   @override
@@ -63,9 +65,15 @@ class DateIdeasWheelPage extends StatelessWidget {
           },
         ),
       ],
-      child: BlocBuilder<DatesScrollerBloc, DatesScrollerState>(
+      child: BlocConsumer<DatesScrollerBloc, DatesScrollerState>(
+        listener: (context, state) {
+          if (state is DatesPackSelected) {
+            _dropdownKey.currentState?.reset();
+          }
+        },
         builder: (context, state) {
           final bool isSpinning = state is DatesScrollerSpinTo;
+
           // Use a FutureBuilder to load the profileIcon asynchronously
           return FutureBuilder<String?>(
             future: storage.read(key: 'iconImage'),
@@ -214,7 +222,9 @@ class DateIdeasWheelPage extends StatelessWidget {
                         ),
                         Padding(
                           padding: const EdgeInsets.only(left: 12.0),
-                          child: PackDropdown(),
+                          child: PackDropdown(
+                            key: _dropdownKey,
+                          ),
                         ),
                         Expanded(
                           child: Padding(
@@ -427,6 +437,24 @@ class _DateIdeasWheelContentState extends State<DateIdeasWheelContent> {
                   ),
                 ),
                 const SizedBox(height: 10),
+                Text(
+                  result['location'],
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.grey[700],
+                  ),
+                ),
+                const SizedBox(height: 10),
+                Text(
+                  result['websites'] ?? 'No website provided',
+                  textAlign: TextAlign.left,
+                  style: TextStyle(
+                    fontSize: 18,
+                    color: Colors.grey[700],
+                  ),
+                ),
+                const SizedBox(height: 10),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Theme.of(context).colorScheme.primary,
@@ -479,6 +507,12 @@ class PackDropdown extends StatefulWidget {
 class PackDropdownState extends State<PackDropdown> {
   String? selectedPack; // Start as null
 
+  void reset() {
+    setState(() {
+      selectedPack = null;
+    });
+  }
+
   @override
   Widget build(BuildContext context) {
     final packs = DateIdeasData.instance.packs;
@@ -503,7 +537,7 @@ class PackDropdownState extends State<PackDropdown> {
         if (newValue != null) {
           DateIdeasData.instance.datesSort(newValue);
           context.read<DatesScrollerBloc>().add(
-                DatesPackSelected(newValue),
+                DatesPackRequested(newValue),
               );
 
           context.read<TagsCubit>().resetTags();
