@@ -48,3 +48,13 @@ class DatesScrollerFiltered extends DatesScrollerState {
   @override
   List<Object> get props => [isFiltered, dateIdeas];
 }
+
+class DatesPackSelected extends DatesScrollerState {
+  final String packName;
+
+  const DatesPackSelected(this.packName, List<Map<String, dynamic>> dateIdeas)
+      : super(dateIdeas);
+
+  @override
+  List<Object> get props => [packName, dateIdeas];
+}
