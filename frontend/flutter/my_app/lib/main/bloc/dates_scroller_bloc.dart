@@ -13,7 +13,7 @@ class DatesScrollerBloc extends Bloc<DatesScrollerEvent, DatesScrollerState> {
 
   DatesScrollerBloc()
       : super(DatesScrollerIdle(DateIdeasData.instance.dateIdeasMap)) {
-    _dateIdeas = List.from(DateIdeasData.instance.dateIdeasMap);
+    _dateIdeas = DateIdeasData.instance.dateIdeasMap;
     on<DatesScrollerSpinRequested>(_onSpinRequested);
     on<DatesScrollerReset>(_onResetRequested);
     on<DatesFilterRequested>(_onFilterRequested);
@@ -45,8 +45,7 @@ class DatesScrollerBloc extends Bloc<DatesScrollerEvent, DatesScrollerState> {
 
     dl.log('Filtered Ideas Count: ${filteredIdeas.length}');
 
-    emit(DatesScrollerFiltered(
-        filteredIdeas.isNotEmpty, List.from(filteredIdeas)));
+    emit(DatesScrollerFiltered(filteredIdeas.isNotEmpty, filteredIdeas));
   }
 
   Future<void> _onSpinRequested(
