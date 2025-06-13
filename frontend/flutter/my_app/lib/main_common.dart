@@ -25,7 +25,7 @@ Future<void> mainCommon({required bool isTestMode}) async {
   WidgetsFlutterBinding.ensureInitialized();
   AdManager().initializeAds();
   await hp.logSystemFiles();
-  // SecureStorage().deleteAll();
+  SecureStorage().deleteAll();
   hp.addDefaultsToStorage();
   storage.printAllSecureStorage();
 
