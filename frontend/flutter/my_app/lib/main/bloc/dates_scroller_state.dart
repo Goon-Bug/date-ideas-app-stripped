@@ -9,6 +9,13 @@ abstract class DatesScrollerState extends Equatable {
   List<Object> get props => [dateIdeas];
 }
 
+class DatesScrollerResetRequested extends DatesScrollerState {
+  const DatesScrollerResetRequested(super.dateIdeas);
+
+  @override
+  List<Object> get props => [dateIdeas];
+}
+
 class DatesScrollerIdle extends DatesScrollerState {
   const DatesScrollerIdle(super.dateIdeas);
 }

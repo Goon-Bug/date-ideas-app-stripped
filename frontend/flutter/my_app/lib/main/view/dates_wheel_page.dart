@@ -67,7 +67,7 @@ class DateIdeasWheelPage extends StatelessWidget {
       ],
       child: BlocConsumer<DatesScrollerBloc, DatesScrollerState>(
         listener: (context, state) {
-          if (state is DatesPackSelected) {
+          if (state is DatesScrollerResetRequested) {
             _dropdownKey.currentState?.reset();
           }
         },
@@ -106,9 +106,10 @@ class DateIdeasWheelPage extends StatelessWidget {
                       tooltip: 'Reset Tags',
                       icon: const Icon(Icons.refresh),
                       onPressed: () {
-                        context.read<DatesScrollerBloc>().add(
-                            DatesScrollerResetRequested()); // Reset the wheel
-                        context.read<TagsCubit>().resetTags(); // Reset tags
+                        context
+                            .read<DatesScrollerBloc>()
+                            .add(DatesScrollerReset());
+                        context.read<TagsCubit>().resetTags();
                       },
                     ),
                     IconButton(
@@ -447,7 +448,7 @@ class _DateIdeasWheelContentState extends State<DateIdeasWheelContent> {
                 ),
                 const SizedBox(height: 10),
                 Text(
-                  result['websites'] ?? 'No website provided',
+                  result['websites'].join('\n'),
                   textAlign: TextAlign.left,
                   style: TextStyle(
                     fontSize: 18,

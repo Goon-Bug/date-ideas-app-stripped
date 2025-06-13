@@ -18,7 +18,7 @@ class DatesFilterRequested extends DatesScrollerEvent {
   List<Object> get props => [tags];
 }
 
-class DatesScrollerResetRequested extends DatesScrollerEvent {}
+class DatesScrollerReset extends DatesScrollerEvent {}
 
 class DatesTagsReset extends DatesScrollerEvent {}
 
