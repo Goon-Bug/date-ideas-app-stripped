@@ -1,6 +1,9 @@
 import 'dart:developer';
 import 'package:date_spark_app/helper_functions.dart';
+import 'package:date_spark_app/main/bloc/dates_scroller_bloc.dart';
+import 'package:date_spark_app/main/tags/tags_cubit.dart';
 import 'package:flutter/material.dart';
+import 'package:flutter_bloc/flutter_bloc.dart';
 
 class AccountManagementScreen extends StatelessWidget {
   const AccountManagementScreen({super.key});
@@ -111,6 +114,10 @@ class ChangeProfilePictureDialogState
                               key: 'iconImage',
                               value:
                                   'assets/profile_icons/icon_$selectedIconIndex.png');
+                          context
+                              .read<DatesScrollerBloc>()
+                              .add(DatesScrollerReset());
+                          context.read<TagsCubit>().resetTags();
                           Navigator.pushNamedAndRemoveUntil(
                               context, '/home', (route) => false);
                         }
