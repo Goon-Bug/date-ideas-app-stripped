@@ -25,6 +25,7 @@ class TimelinePage extends StatelessWidget {
         if (didPop) return;
         context.read<DatesScrollerBloc>().add(DatesScrollerResetRequested());
         context.read<TagsCubit>().resetTags();
+        context.read<DatesScrollerBloc>().add(DatesPackRequested('all'));
 
         if (context.mounted) {
           Navigator.of(context).pop();
