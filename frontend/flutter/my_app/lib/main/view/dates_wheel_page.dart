@@ -120,69 +120,65 @@ class MainTopRow extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Row(
-      children: [
-        Padding(
-          padding: const EdgeInsets.all(8.0),
-          child: SizedBox(
-            height: 45,
-            width: 95,
-            child: ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                shape: RoundedRectangleBorder(
-                  side: BorderSide(
-                    width: 5,
-                    color: Theme.of(context).colorScheme.onPrimary,
+    return Padding(
+      padding: const EdgeInsets.only(top: 8.0),
+      child: Row(
+        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+        children: [
+          Padding(
+            padding: const EdgeInsets.only(left: 8.0),
+            child: SizedBox(
+              height: 45,
+              width: 95,
+              child: ElevatedButton(
+                style: ElevatedButton.styleFrom(
+                  shape: RoundedRectangleBorder(
+                    side: BorderSide(
+                      width: 5,
+                      color: Theme.of(context).colorScheme.onPrimary,
+                    ),
+                    borderRadius: BorderRadius.circular(8),
                   ),
-                  borderRadius: BorderRadius.circular(8),
+                  backgroundColor: Theme.of(context).colorScheme.primary,
                 ),
-                backgroundColor: Theme.of(context).colorScheme.primary,
-              ),
-              onPressed: () {
-                AdManager().showRewardedAd(
-                  onRewarded: (reward) async {
-                    log(reward.amount.toString());
-                    await context
-                        .read<TokenCubit>()
-                        .addTokens(reward.amount as int);
-                  },
-                  context: context,
-                );
-              },
-              child: Text(
-                'Watch Ad',
-                textAlign: TextAlign.center,
-                maxLines: 2,
-                style: TextStyle(
-                  height: 0.9,
-                  letterSpacing: 0.1,
-                  fontFamily: 'RetroTitle',
-                  fontSize: 18,
-                  color: Theme.of(context).colorScheme.onPrimaryContainer,
+                onPressed: () {
+                  AdManager().showRewardedAd(
+                    onRewarded: (reward) async {
+                      log(reward.amount.toString());
+                      await context
+                          .read<TokenCubit>()
+                          .addTokens(reward.amount as int);
+                    },
+                    context: context,
+                  );
+                },
+                child: Text(
+                  'Watch Ad',
+                  textAlign: TextAlign.center,
+                  maxLines: 2,
+                  style: TextStyle(
+                    height: 0.9,
+                    letterSpacing: 0.1,
+                    fontFamily: 'RetroTitle',
+                    fontSize: 18,
+                    color: Theme.of(context).colorScheme.onPrimaryContainer,
+                  ),
                 ),
               ),
             ),
           ),
-        ),
-        Padding(
-          padding: const EdgeInsets.only(left: 12.0),
-          child: PackDropdown(
+          PackDropdown(
             key: _dropdownKey,
           ),
-        ),
-        Expanded(
-          child: Padding(
-            padding: const EdgeInsets.only(right: 20),
-            child: Align(
-              alignment: Alignment.centerRight,
-              child: Text(
-                'Token Count: ${context.watch<TokenCubit>().state.tokenCount}',
-                style: const TextStyle(fontSize: 26),
-              ),
+          Padding(
+            padding: const EdgeInsets.only(right: 8.0),
+            child: Text(
+              'Tokens: ${context.watch<TokenCubit>().state.tokenCount}',
+              style: const TextStyle(fontSize: 24),
             ),
           ),
-        ),
-      ],
+        ],
+      ),
     );
   }
 }
