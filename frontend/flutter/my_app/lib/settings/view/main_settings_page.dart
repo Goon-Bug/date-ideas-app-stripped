@@ -1,5 +1,8 @@
+import 'dart:developer';
+
 import 'package:date_spark_app/services/navigation_service.dart';
 import 'package:flutter/material.dart';
+import 'package:http/http.dart' as http;
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
@@ -136,8 +139,145 @@ class _SettingsPageState extends State<SettingsPage> {
             },
           ),
           const Divider(),
+          ListTile(
+            leading: const Icon(
+              Icons.assignment_add,
+              size: 34,
+            ),
+            title: const Text(
+              'Request a City',
+              style: TextStyle(fontSize: 22),
+            ),
+            subtitle: const Text(
+              'Request a new city to be added',
+              style: TextStyle(fontSize: 15),
+            ),
+            onTap: () {
+              showCityInputDialog(context);
+            },
+          ),
         ],
       ),
     );
   }
+}
+
+Future<void> showCityInputDialog(BuildContext context) async {
+  final TextEditingController controller = TextEditingController();
+  final GlobalKey<FormState> formKey = GlobalKey<FormState>();
+
+  return showDialog<void>(
+    context: context,
+    builder: (BuildContext context) {
+      return AlertDialog(
+        title: const Text('Enter City'),
+        content: Form(
+          key: formKey,
+          child: TextFormField(
+            controller: controller,
+            maxLength: 26,
+            decoration: const InputDecoration(
+              labelText: 'City Name',
+              border: OutlineInputBorder(),
+              counterText: '', // hides the character counter
+            ),
+            validator: (value) {
+              final trimmed = value?.trim() ?? '';
+              if (trimmed.isEmpty) return 'City name is required';
+              if (!RegExp(r'^[a-zA-Z\s]+$').hasMatch(trimmed)) {
+                return 'Only letters and spaces allowed';
+              }
+              if (trimmed.length > 26) return 'Max 26 characters allowed';
+              return null;
+            },
+          ),
+        ),
+        actions: [
+          TextButton(
+            onPressed: () => Navigator.of(context).pop(), // Cancel
+            child: const Text('Cancel'),
+          ),
+          ElevatedButton(
+            style: ElevatedButton.styleFrom(
+              backgroundColor: Theme.of(context).colorScheme.primary,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.circular(20),
+              ),
+            ),
+            onPressed: () {
+              if (formKey.currentState?.validate() == true) {
+                final city = controller.text.trim();
+                submitCityToSheet(city);
+                log('City submitted: $city', name: 'showCityInputDialog');
+                Navigator.of(context).pop(city); // Return valid city name
+              }
+            },
+            child: Text(
+              'Request',
+              style: TextStyle(
+                color: Theme.of(context).colorScheme.onSecondary,
+              ),
+            ),
+          ),
+        ],
+      );
+    },
+  );
+}
+
+Future<void> testRateLimit() async {
+  const url =
+      'https://script.google.com/macros/s/AKfycbzSK7QFyqKNiSGFCiZl_KO60rwQOQ5U7i1RD2WIhRwUXGt5O5XQfGbC2FTWwdogjkEe/exec';
+
+  for (int i = 1; i <= 55; i++) {
+    final response = await http.post(Uri.parse(url), body: {
+      'city': 'TestCity $i',
+    });
+
+    log('[$i] Status: ${response.statusCode}, Body: ${response.body}');
+    await Future.delayed(Duration(milliseconds: 300)); // Optional throttle
+  }
+}
+
+Future<bool> submitCityToSheet(String city) async {
+  const String url =
+      'https://script.google.com/macros/s/AKfycbzSK7QFyqKNiSGFCiZl_KO60rwQOQ5U7i1RD2WIhRwUXGt5O5XQfGbC2FTWwdogjkEe/exec';
+
+  final formattedCity = toTitleCase(city);
+  try {
+    // Use http.Request for more control
+    final request = http.Request('POST', Uri.parse(url))
+      ..bodyFields = {'city': formattedCity};
+
+    // Send request
+    final streamedResponse = await request.send();
+
+    // Check for redirect (302)
+    if (streamedResponse.statusCode == 302) {
+      final redirectedUrl = streamedResponse.headers['location'];
+      if (redirectedUrl != null) {
+        final redirectedResponse = await http.get(Uri.parse(redirectedUrl));
+        log('Redirected response: ${redirectedResponse.body}');
+        return redirectedResponse.body.contains('"success": true');
+      }
+    }
+
+    // Otherwise read the original response
+    final responseBody = await streamedResponse.stream.bytesToString();
+    log('Response: $responseBody');
+    return responseBody.contains('"success": true');
+  } catch (e) {
+    log('Error submitting city: $e');
+    return false;
+  }
+}
+
+String toTitleCase(String text) {
+  if (text.isEmpty) return text;
+  return text
+      .split(' ')
+      .map((word) => word.isEmpty
+          ? ''
+          : word[0].toUpperCase() + word.substring(1).toLowerCase())
+      .join(' ');
 }
