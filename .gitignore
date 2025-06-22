@@ -6,10 +6,10 @@ __pycache__
 app.log
 secret_generator.py
 /app/routes_example.py
-/backend/database/add_test_users.sql
 .venv
 .env
 considerations.txt
+/backend/
 
 # Flutter/Dart
 .dart_tool/
