@@ -9,7 +9,7 @@ secret_generator.py
 .venv
 .env
 considerations.txt
-/backend/
+/backend/jsons/
 
 # Flutter/Dart
 .dart_tool/
