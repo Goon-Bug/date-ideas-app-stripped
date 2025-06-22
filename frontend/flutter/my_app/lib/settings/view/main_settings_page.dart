@@ -1,5 +1,6 @@
 import 'dart:developer';
 
+import 'package:date_spark_app/services/ad_manager.dart';
 import 'package:date_spark_app/services/navigation_service.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
@@ -207,9 +208,15 @@ Future<void> showCityInputDialog(BuildContext context) async {
             onPressed: () {
               if (formKey.currentState?.validate() == true) {
                 final city = controller.text.trim();
-                submitCityToSheet(city);
-                log('City submitted: $city', name: 'showCityInputDialog');
-                Navigator.of(context).pop(city); // Return valid city name
+
+                AdManager().showInterstitialAd(
+                  context: context,
+                  onAdClosed: () {
+                    submitCityToSheet(city);
+                    log('City submitted: $city', name: 'showCityInputDialog');
+                    Navigator.of(context).pop(city); // Return valid city name
+                  },
+                );
               }
             },
             child: Text(
@@ -225,31 +232,15 @@ Future<void> showCityInputDialog(BuildContext context) async {
   );
 }
 
-Future<void> testRateLimit() async {
-  const url =
-      'https://script.google.com/macros/s/AKfycbzSK7QFyqKNiSGFCiZl_KO60rwQOQ5U7i1RD2WIhRwUXGt5O5XQfGbC2FTWwdogjkEe/exec';
-
-  for (int i = 1; i <= 55; i++) {
-    final response = await http.post(Uri.parse(url), body: {
-      'city': 'TestCity $i',
-    });
-
-    log('[$i] Status: ${response.statusCode}, Body: ${response.body}');
-    await Future.delayed(Duration(milliseconds: 300)); // Optional throttle
-  }
-}
-
 Future<bool> submitCityToSheet(String city) async {
   const String url =
       'https://script.google.com/macros/s/AKfycbzSK7QFyqKNiSGFCiZl_KO60rwQOQ5U7i1RD2WIhRwUXGt5O5XQfGbC2FTWwdogjkEe/exec';
 
   final formattedCity = toTitleCase(city);
   try {
-    // Use http.Request for more control
     final request = http.Request('POST', Uri.parse(url))
       ..bodyFields = {'city': formattedCity};
 
-    // Send request
     final streamedResponse = await request.send();
 
     // Check for redirect (302)
