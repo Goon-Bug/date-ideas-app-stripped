@@ -1,3 +1,4 @@
+import 'package:date_spark_app/logger.dart';
 import 'package:date_spark_app/main/bloc/dates_scroller_bloc.dart';
 import 'package:date_spark_app/main/cubit/token_cubit.dart';
 import 'package:date_spark_app/main/tags/tags_cubit.dart';
@@ -33,6 +34,7 @@ class _AppState extends State<App> with WidgetsBindingObserver {
   @override
   void dispose() {
     WidgetsBinding.instance.removeObserver(this);
+    fileLogWriter.close();
     super.dispose();
   }
 
