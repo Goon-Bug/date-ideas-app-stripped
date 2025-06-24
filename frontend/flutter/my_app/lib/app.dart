@@ -37,9 +37,7 @@ class _AppState extends State<App> with WidgetsBindingObserver {
   }
 
   @override
-  Future<void> didChangeAppLifecycleState(AppLifecycleState state) async {
-    // Removed auth repo and token cubit logic here
-  }
+  Future<void> didChangeAppLifecycleState(AppLifecycleState state) async {}
 
   @override
   Widget build(BuildContext context) {
