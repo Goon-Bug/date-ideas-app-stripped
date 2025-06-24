@@ -67,15 +67,6 @@ flutter:
     - assets/db/manifest.json
 
   fonts:
-    - family: TitleFont
-      fonts:
-        - asset: assets/fonts/justmeagaindownhere.ttf
-          weight: 400
-    - family: GeneralFont
-      fonts:
-        - asset: assets/fonts/IndieFlower.ttf
-          weight: 400
-
     - family: RetroSmall
       fonts:
         - asset: assets/fonts/VT323-Regular.ttf
