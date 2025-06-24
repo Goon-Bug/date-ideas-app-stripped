@@ -7,6 +7,7 @@ final FileLogWriter fileLogWriter = FileLogWriter();
 
 final bool isProduction = bool.fromEnvironment('dart.vm.product');
 
+/// Initializes global logger configuration
 Future<void> configureLogger() async {
   await fileLogWriter.init();
 
@@ -23,3 +24,7 @@ Future<void> configureLogger() async {
     fileLogWriter.write(record);
   });
 }
+
+/// Returns a logger instance tagged with the provided name.
+/// Example: final log = taggedLogger('TokenCubit');
+Logger taggedLogger(String name) => Logger('DateSparkApp.$name');
