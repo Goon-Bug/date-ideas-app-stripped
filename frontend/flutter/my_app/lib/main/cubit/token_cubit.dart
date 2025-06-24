@@ -1,9 +1,12 @@
-import 'dart:developer' as developer;
 import 'package:bloc/bloc.dart';
-import 'package:flutter_secure_storage/flutter_secure_storage.dart';
 import 'package:equatable/equatable.dart';
+import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:date_spark_app/logger.dart';
+import 'package:logging/logging.dart';
 
 part 'token_state.dart';
+
+final Logger _log = taggedLogger('TokenCubit');
 
 class TokenCubit extends Cubit<TokenState> {
   final FlutterSecureStorage _storage = FlutterSecureStorage();
@@ -17,12 +20,11 @@ class TokenCubit extends Cubit<TokenState> {
       String? tokenCountString = await _storage.read(key: 'tokenCount');
       if (tokenCountString != null) {
         int tokenCount = int.parse(tokenCountString);
-        developer.log('Loaded token count: $tokenCount', name: 'TokenCubit');
+        _log.fine('Loaded token count: $tokenCount');
         emit(state.copyWith(tokenCount: tokenCount));
       }
-    } catch (e) {
-      developer.log('Error loading token count: $e',
-          name: 'TokenCubit', error: e);
+    } catch (e, stack) {
+      _log.severe('Error loading token count', e, stack);
     }
   }
 
@@ -33,25 +35,25 @@ class TokenCubit extends Cubit<TokenState> {
       if (currentTokenCount + amount <= 30) {
         await _storage.write(key: 'tokenUpdated', value: 'true');
         currentTokenCount += amount;
-        developer.log('$currentTokenCount', name: 'TokenCubit');
+        _log.fine('Token count increased: $currentTokenCount (+$amount)');
 
         await _storage.write(
             key: 'tokenCount', value: currentTokenCount.toString());
-        developer.log('Token count increased: $currentTokenCount (+$amount)',
-            name: 'TokenCubit');
 
         emit(state.copyWith(
-            tokenCount: currentTokenCount,
-            tokenLimitReached: false,
-            tokenUpdated: true));
+          tokenCount: currentTokenCount,
+          tokenLimitReached: false,
+          tokenUpdated: true,
+        ));
       } else {
-        developer.log('Token limit reached', name: 'TokenCubit');
+        _log.warning('Token limit reached');
         emit(state.copyWith(
-            tokenLimitReached: true,
-            timstamp: DateTime.now().toIso8601String()));
+          tokenLimitReached: true,
+          timstamp: DateTime.now().toIso8601String(),
+        ));
       }
-    } catch (e) {
-      developer.log('Error adding tokens: $e', name: 'TokenCubit', error: e);
+    } catch (e, stack) {
+      _log.severe('Error adding tokens', e, stack);
     }
   }
 
@@ -61,22 +63,21 @@ class TokenCubit extends Cubit<TokenState> {
 
       if (currentTokenCount >= amount) {
         await _storage.write(key: 'tokenUpdated', value: 'true');
-        developer.log('$currentTokenCount');
         currentTokenCount -= amount;
-        developer.log('$currentTokenCount');
+        _log.fine('Token count decreased: $currentTokenCount (-$amount)');
 
         await _storage.write(
             key: 'tokenCount', value: currentTokenCount.toString());
-        developer.log('Token count decreased: $currentTokenCount (-$amount)',
-            name: 'TokenCubit');
 
         emit(state.copyWith(
-            tokenCount: currentTokenCount, tokenLimitReached: false));
+          tokenCount: currentTokenCount,
+          tokenLimitReached: false,
+        ));
       } else {
-        developer.log('Not enough tokens', name: 'TokenCubit');
+        _log.warning('Not enough tokens');
       }
-    } catch (e) {
-      developer.log('Error using tokens: $e', name: 'TokenCubit', error: e);
+    } catch (e, stack) {
+      _log.severe('Error using tokens', e, stack);
     }
   }
 }

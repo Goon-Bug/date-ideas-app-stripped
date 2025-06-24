@@ -1,6 +1,6 @@
-import 'dart:developer';
 import 'dart:io';
 import 'package:bloc/bloc.dart';
+import 'package:date_spark_app/logger.dart';
 import 'package:date_spark_app/services/date_ideas_service.dart';
 import 'package:date_spark_app/timeline/models/timeline.dart';
 import 'package:date_spark_app/timeline/timeline_repository.dart';
@@ -9,14 +9,17 @@ import 'package:get_it/get_it.dart';
 import 'package:intl/intl.dart';
 import 'dart:math' as math;
 import 'package:image_picker/image_picker.dart';
+import 'package:logging/logging.dart';
 import 'package:path_provider/path_provider.dart';
 
 part 'timeline_state.dart';
 
+final Logger _log = taggedLogger('TimelineCubit');
+
 class TimelineCubit extends Cubit<TimelineState> {
   final TimelineRepository timelineRepository =
       GetIt.instance<TimelineRepository>();
-  final ImagePicker _picker = ImagePicker(); // Image picker instance
+  final ImagePicker _picker = ImagePicker();
 
   TimelineCubit() : super(const TimelineState()) {
     loadDateIdeas();
@@ -24,16 +27,17 @@ class TimelineCubit extends Cubit<TimelineState> {
 
   Future<void> loadTimelineEntries() async {
     try {
-      log('Loading timeline entries...');
+      _log.info('Loading timeline entries...');
       emit(state.copyWith(status: TimelineStatus.loading));
       final timelineEntries = await timelineRepository.getTimelineEntries();
-      log('Successfully loaded timeline entries: ${timelineEntries.length} entries');
+      _log.info(
+          'Successfully loaded timeline entries: ${timelineEntries.length} entries');
       emit(state.copyWith(
         status: TimelineStatus.success,
         timelineEntries: timelineEntries,
       ));
-    } catch (error) {
-      log('Failed to load timeline entries: $error');
+    } catch (error, stackTrace) {
+      _log.severe('Failed to load timeline entries', error, stackTrace);
       emit(state.copyWith(
         status: TimelineStatus.failure,
         errorMessage: error.toString(),
@@ -43,24 +47,17 @@ class TimelineCubit extends Cubit<TimelineState> {
 
   Future<void> loadDateIdeas() async {
     try {
-      log('Loading date ideas...');
-
+      _log.info('Loading date ideas...');
       final dateIdeas = DateIdeasData.instance.dateIdeasMap;
-
       final rawDateIdeas = dateIdeas.map<Map<String, dynamic>>((entry) {
         return entry;
       }).toList();
-
-      emit(state.copyWith(
-        dateIdeaEntries: rawDateIdeas,
-      ));
-
-      log('Successfully loaded date ideas: ${rawDateIdeas.length} entries');
-    } catch (error) {
-      log('Failed to load date ideas: $error');
-      emit(state.copyWith(
-        errorMessage: error.toString(),
-      ));
+      emit(state.copyWith(dateIdeaEntries: rawDateIdeas));
+      _log.info(
+          'Successfully loaded date ideas: ${rawDateIdeas.length} entries');
+    } catch (error, stackTrace) {
+      _log.severe('Failed to load date ideas', error, stackTrace);
+      emit(state.copyWith(errorMessage: error.toString()));
     }
   }
 
@@ -71,9 +68,10 @@ class TimelineCubit extends Cubit<TimelineState> {
       final imagePath = '${directory.path}/$imageName';
       final imageBytes = await image.readAsBytes();
       await File(imagePath).writeAsBytes(imageBytes);
+      _log.info('Image saved at path: $imagePath');
       return imagePath;
-    } catch (e) {
-      log('Failed to save image: $e');
+    } catch (e, stackTrace) {
+      _log.severe('Failed to save image', e, stackTrace);
       rethrow;
     }
   }
@@ -82,37 +80,42 @@ class TimelineCubit extends Cubit<TimelineState> {
     final pickedFile = await _picker.pickImage(source: ImageSource.gallery);
     if (pickedFile != null) {
       final image = File(pickedFile.path);
+      _log.info('Image picked: ${pickedFile.path}');
       updateSelectedImage(image);
+    } else {
+      _log.info('No image picked.');
     }
   }
 
   Future<void> updateSelectedImage(File image) async {
+    _log.info('Updating selected image');
     emit(state.copyWith(selectedImage: image));
   }
 
   Future<void> updateSelectedDate(String date) async {
+    _log.info('Updating selected date: $date');
     emit(state.copyWith(selectedDate: date));
   }
 
   Future<void> selectDateIdea(Map<String, dynamic> dateIdea) async {
-    log('Selecting a Date Idea...');
+    _log.info('Selecting a Date Idea: $dateIdea');
     emit(state.copyWith(selectedDateIdea: dateIdea));
-    log('Selected Date Idea is now ${state.selectedDateIdea}');
+    _log.info('Selected Date Idea is now ${state.selectedDateIdea}');
   }
 
   Future<void> resetSelectedDateIdea() async {
-    log('Resetting selectedDateIdea to null');
-    state.copyWith(selectedDateIdea: null, resetSelectedDateIdea: true);
+    _log.info('Resetting selectedDateIdea to null');
+    emit(state.copyWith(selectedDateIdea: null, resetSelectedDateIdea: true));
   }
 
   Future<void> resetAddEntryFields() async {
+    _log.info('Resetting add entry fields');
     emit(state.copyWith(
       selectedDate: '',
       selectedDateIdea: null,
       resetSelectedDateIdea: true,
       selectedImage: null,
     ));
-    log('$state');
   }
 
   Future<void> addTimelineEntry({
@@ -124,7 +127,7 @@ class TimelineCubit extends Cubit<TimelineState> {
     required String dateTitle,
   }) async {
     try {
-      log('Adding new timeline entry...');
+      _log.info('Adding new timeline entry...');
       emit(state.copyWith(status: TimelineStatus.loading));
 
       String imagePath = '';
@@ -146,14 +149,14 @@ class TimelineCubit extends Cubit<TimelineState> {
       );
 
       await timelineRepository.addTimelineEntry(newEntry);
-      log('Successfully added new timeline entry: $newEntry');
+      _log.info('Successfully added new timeline entry: $newEntry');
 
       emit(state.copyWith(
         status: TimelineStatus.added,
         timelineEntries: List.from(state.timelineEntries)..add(newEntry),
       ));
-    } catch (error) {
-      log('Failed to add new timeline entry: $error');
+    } catch (error, stackTrace) {
+      _log.severe('Failed to add new timeline entry', error, stackTrace);
       emit(state.copyWith(
         status: TimelineStatus.failure,
         errorMessage: error.toString(),
@@ -163,18 +166,18 @@ class TimelineCubit extends Cubit<TimelineState> {
 
   Future<void> removeTimelineEntry(String entryId) async {
     try {
-      log('Removing timeline entry with ID: $entryId');
+      _log.info('Removing timeline entry with ID: $entryId');
       emit(state.copyWith(status: TimelineStatus.loading));
       await timelineRepository.removeTimelineEntry(entryId);
-      log('Successfully removed timeline entry with ID: $entryId');
+      _log.info('Successfully removed timeline entry with ID: $entryId');
       emit(state.copyWith(
         status: TimelineStatus.success,
         timelineEntries: state.timelineEntries
             .where((entry) => entry.id != entryId)
             .toList(),
       ));
-    } catch (error) {
-      log('Failed to remove timeline entry: $error');
+    } catch (error, stackTrace) {
+      _log.severe('Failed to remove timeline entry', error, stackTrace);
       emit(state.copyWith(
         status: TimelineStatus.failure,
         errorMessage: error.toString(),
@@ -183,11 +186,12 @@ class TimelineCubit extends Cubit<TimelineState> {
   }
 
   void resetErrorMessage() {
-    log('Resetting error message');
+    _log.info('Resetting error message');
     emit(state.copyWith(errorMessage: null));
   }
 
   void clearTimeline() {
+    _log.info('Clearing timeline state');
     emit(const TimelineState());
   }
 }

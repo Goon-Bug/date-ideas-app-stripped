@@ -1,6 +1,7 @@
 import 'dart:async';
 import 'dart:math';
 import 'package:bloc/bloc.dart';
+import 'package:date_spark_app/logger.dart';
 import 'package:date_spark_app/main/bloc/dates_scroller_state.dart';
 import 'package:date_spark_app/services/date_ideas_service.dart';
 import 'package:equatable/equatable.dart';
@@ -8,7 +9,7 @@ import 'package:logging/logging.dart';
 
 part 'dates_scroller_event.dart';
 
-final Logger _log = Logger('DatesScrollerBloc');
+final Logger _log = taggedLogger('DatesScrollerBloc');
 
 class DatesScrollerBloc extends Bloc<DatesScrollerEvent, DatesScrollerState> {
   List<Map<String, dynamic>> _dateIdeas = [];

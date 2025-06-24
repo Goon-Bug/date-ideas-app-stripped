@@ -1,5 +1,3 @@
-import 'dart:developer';
-
 import 'package:date_spark_app/main/bloc/dates_scroller_bloc.dart';
 import 'package:date_spark_app/main/bloc/dates_scroller_state.dart';
 import 'package:date_spark_app/main/cubit/token_cubit.dart';
@@ -14,6 +12,7 @@ import 'package:date_spark_app/services/navigation_service.dart';
 import 'package:date_spark_app/main/tags/tags_cubit.dart';
 import 'package:url_launcher/url_launcher.dart';
 
+//TODO: Refactor for production token usage
 // Utility extension for string capitalization
 extension StringCasingExtension on String {
   String toTitleCase() {
@@ -144,7 +143,6 @@ class MainTopRow extends StatelessWidget {
                 onPressed: () {
                   AdManager().showRewardedAd(
                     onRewarded: (reward) async {
-                      log(reward.amount.toString());
                       await context
                           .read<TokenCubit>()
                           .addTokens(reward.amount as int);

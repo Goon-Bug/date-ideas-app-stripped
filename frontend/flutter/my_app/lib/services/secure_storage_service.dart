@@ -1,6 +1,8 @@
-import 'dart:developer';
-
+import 'package:date_spark_app/logger.dart';
 import 'package:flutter_secure_storage/flutter_secure_storage.dart';
+import 'package:logging/logging.dart';
+
+final Logger _log = taggedLogger('SecureStorageService');
 
 class SecureStorage {
   static final SecureStorage _instance = SecureStorage._internal();
@@ -23,7 +25,7 @@ class SecureStorage {
 
   Future<void> delete({required String key}) async {
     await _storage.delete(key: key);
-    log('Deleted key: $key');
+    _log.info('Deleted key: $key');
   }
 
   Future<void> deleteAllExceptTimelineEntries() async {
@@ -33,12 +35,12 @@ class SecureStorage {
 
     await Future.wait(keysToDelete.map((key) => _storage.delete(key: key)));
 
-    log('Deleted all keys except timeline-related ones.');
+    _log.info('Deleted all keys except timeline-related ones.');
   }
 
   Future<void> deleteAll() async {
     await _storage.deleteAll();
-    log('Deleted all keys.');
+    _log.info('Deleted all keys.');
   }
 
   Future<Map<String, String>> readAll() async {
@@ -49,11 +51,11 @@ class SecureStorage {
   Future<void> printAllSecureStorage() async {
     final allData = await _storage.readAll();
     if (allData.isEmpty) {
-      log("SecureStorage is empty.");
+      _log.info("SecureStorage is empty.");
     } else {
-      log("SecureStorage contents:");
+      _log.info("SecureStorage contents:");
       allData.forEach((key, value) {
-        log("$key: $value");
+        _log.info("$key: $value");
       });
     }
   }

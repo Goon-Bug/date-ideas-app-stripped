@@ -1,4 +1,3 @@
-import 'dart:developer';
 import 'package:date_spark_app/services/date_ideas_service.dart';
 import 'package:date_spark_app/timeline/bloc/timeline_cubit.dart';
 import 'package:flutter/material.dart';
@@ -33,7 +32,6 @@ class AddTimelineEntryForm extends StatelessWidget {
             key: formKey,
             child: BlocBuilder<TimelineCubit, TimelineState>(
               builder: (context, state) {
-                log('Selected Date Idea UI: ${state.selectedDateIdea}');
                 if (state.status == TimelineStatus.loading) {
                   return const Center(child: CircularProgressIndicator());
                 }
@@ -49,7 +47,6 @@ class AddTimelineEntryForm extends StatelessWidget {
                     ),
                   );
                 }
-                log('Selected Date Idea: ${state.selectedDateIdea}');
 
                 return Column(
                   crossAxisAlignment: CrossAxisAlignment.start,

@@ -1,7 +1,10 @@
-import 'dart:developer';
 import 'dart:io';
+import 'package:date_spark_app/logger.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:flutter/material.dart';
+import 'package:logging/logging.dart';
+
+final Logger _log = taggedLogger('AdManager');
 
 class AdManager {
   static final AdManager _instance = AdManager._internal();
@@ -37,10 +40,10 @@ class AdManager {
         onAdLoaded: (RewardedAd ad) {
           _rewardedAd = ad;
           _numRewardedLoadAttempts = 0;
-          log('Rewarded ad loaded');
+          _log.info('Rewarded ad loaded');
         },
         onAdFailedToLoad: (LoadAdError error) {
-          log('Rewarded ad failed to load: $error');
+          _log.severe('Rewarded ad failed to load: $error');
           _rewardedAd = null;
           _numRewardedLoadAttempts += 1;
           if (_numRewardedLoadAttempts < maxFailedLoadAttempts) {
@@ -59,18 +62,20 @@ class AdManager {
       ScaffoldMessenger.of(context).showSnackBar(
         SnackBar(content: Text('Warning: RewardedAd not loaded yet.')),
       );
+      _log.warning('Attempted to show rewarded ad before it was loaded');
       return;
     }
 
     _rewardedAd!.fullScreenContentCallback = FullScreenContentCallback(
-      onAdShowedFullScreenContent: (RewardedAd ad) => log('Rewarded ad showed'),
+      onAdShowedFullScreenContent: (RewardedAd ad) =>
+          _log.info('Rewarded ad showed'),
       onAdDismissedFullScreenContent: (RewardedAd ad) {
-        log('Rewarded ad dismissed');
+        _log.info('Rewarded ad dismissed');
         ad.dispose();
         _createRewardedAd();
       },
       onAdFailedToShowFullScreenContent: (RewardedAd ad, AdError error) {
-        log('Rewarded ad failed to show: $error');
+        _log.severe('Rewarded ad failed to show: $error');
         ad.dispose();
         _createRewardedAd();
       },
@@ -98,10 +103,10 @@ class AdManager {
         onAdLoaded: (InterstitialAd ad) {
           _interstitialAd = ad;
           _numInterstitialLoadAttempts = 0;
-          log('Interstitial ad loaded');
+          _log.info('Interstitial ad loaded');
         },
         onAdFailedToLoad: (LoadAdError error) {
-          log('Interstitial ad failed to load: $error');
+          _log.severe('Interstitial ad failed to load: $error');
           _interstitialAd = null;
           _numInterstitialLoadAttempts += 1;
           if (_numInterstitialLoadAttempts < maxFailedLoadAttempts) {
@@ -122,20 +127,21 @@ class AdManager {
           SnackBar(content: Text('Warning: InterstitialAd not loaded yet.')),
         );
       }
+      _log.warning('Attempted to show interstitial ad before it was loaded');
       return;
     }
 
     _interstitialAd!.fullScreenContentCallback = FullScreenContentCallback(
       onAdShowedFullScreenContent: (InterstitialAd ad) =>
-          log('Interstitial ad showed'),
+          _log.info('Interstitial ad showed'),
       onAdDismissedFullScreenContent: (InterstitialAd ad) {
-        log('Interstitial ad dismissed');
+        _log.info('Interstitial ad dismissed');
         ad.dispose();
         _createInterstitialAd();
         onAdClosed?.call();
       },
       onAdFailedToShowFullScreenContent: (InterstitialAd ad, AdError error) {
-        log('Interstitial ad failed to show: $error');
+        _log.severe('Interstitial ad failed to show: $error');
         ad.dispose();
         _createInterstitialAd();
         onAdClosed?.call();

@@ -1,9 +1,12 @@
 import 'dart:convert';
-import 'dart:developer';
 import 'dart:io';
+import 'package:date_spark_app/logger.dart';
 import 'package:flutter/services.dart';
+import 'package:logging/logging.dart';
 import 'package:sqflite/sqflite.dart';
 import 'package:path/path.dart';
+
+final Logger _log = taggedLogger('DateIdeasService');
 
 class DateIdeasData {
   static final DateIdeasData _instance = DateIdeasData._internal();
@@ -27,7 +30,7 @@ class DateIdeasData {
       final List<dynamic> databasePaths = json.decode(manifestJson);
 
       if (databasePaths.isEmpty) {
-        log('No database paths found in manifest.');
+        _log.warning('No database paths found in manifest.');
         return;
       }
 
@@ -39,7 +42,7 @@ class DateIdeasData {
 
         final fileExists = await File(fullPath).exists();
         if (!fileExists) {
-          log("Database $dbName not found locally, skipping load.");
+          _log.info("Database $dbName not found locally, skipping load.");
           continue;
         }
 
@@ -50,9 +53,9 @@ class DateIdeasData {
       dateIdeasTitles = dateIdeasTitles.toSet().toList();
       tagsList = tagsList.toSet().toList();
 
-      log("Finished loading all databases from manifest.");
+      _log.info("Finished loading all databases from manifest.");
     } catch (e) {
-      log("Error loading databases from manifest: $e");
+      _log.severe("Error loading databases from manifest: $e");
     }
   }
 
@@ -61,12 +64,12 @@ class DateIdeasData {
     final databasePath = await getDatabasesPath();
     final path = join(databasePath, dbName);
 
-    log('Loading database from: $path');
+    _log.info('Loading database from: $path');
     final db = await openDatabase(path);
 
     final isValid = await _validateDatabaseSchema(db);
     if (!isValid) {
-      log("Invalid database schema. Required tables are missing.");
+      _log.warning("Invalid database schema. Required tables are missing.");
       return;
     }
 
@@ -81,7 +84,7 @@ class DateIdeasData {
 
     final mappedData = data.map((idea) {
       final tags = (idea['tags'] as String?)?.split(',') ?? [];
-      log(tags.toString());
+      _log.fine(tags.toString());
       return {
         'id': idea['id'],
         'title': idea['title'],
@@ -113,7 +116,7 @@ class DateIdeasData {
     );
 
     await db.close();
-    log("Loaded ${data.length} ideas from $dbName");
+    _log.info("Loaded ${data.length} ideas from $dbName");
   }
 
   /// Validate that required tables exist
@@ -126,7 +129,7 @@ class DateIdeasData {
       final existingTables = tableData.map((e) => e['name'] as String).toSet();
       return requiredTables.every(existingTables.contains);
     } catch (e) {
-      log("Error validating schema: $e");
+      _log.severe("Error validating schema: $e");
       return false;
     }
   }
@@ -149,22 +152,22 @@ class DateIdeasData {
       final fileExists = await file.exists();
 
       if (fileExists && !overwrite) {
-        log("Database $dbFileName already exists. Skipping copy.");
+        _log.info("Database $dbFileName already exists. Skipping copy.");
         continue;
       }
 
       try {
         if (fileExists) {
           await file.delete();
-          log("Overwriting existing database $dbFileName...");
+          _log.info("Overwriting existing database $dbFileName...");
         }
 
         final byteData = await rootBundle.load(assetPath);
         final buffer = byteData.buffer.asUint8List();
         await file.writeAsBytes(buffer);
-        log("Asset database $dbFileName copied to: $path");
+        _log.info("Asset database $dbFileName copied to: $path");
       } catch (e) {
-        log("Error copying asset database $dbFileName: $e");
+        _log.severe("Error copying asset database $dbFileName: $e");
       }
     }
   }
@@ -194,11 +197,11 @@ class DateIdeasData {
   }
 
   void datesSort(String pack) {
-    log('select1ng pack: $pack');
+    _log.info('select1ng pack: $pack');
 
     if (pack == 'all') {
       dateIdeasMap = dateIdeasMapOriginal;
-      log('pack is all, resetting to original list');
+      _log.info('pack is all, resetting to original list');
     } else {
       dateIdeasMap = dateIdeasMapOriginal
           .where((idea) => (idea['pack'] as String) == pack)

@@ -1,4 +1,3 @@
-import 'dart:developer';
 import 'dart:io';
 import 'package:date_spark_app/main/bloc/dates_scroller_bloc.dart';
 import 'package:date_spark_app/main/tags/tags_cubit.dart';
@@ -37,8 +36,6 @@ class TimelinePage extends StatelessWidget {
           builder: (context, constraints) {
             return BlocConsumer<TimelineCubit, TimelineState>(
               listener: (context, state) {
-                log("$state");
-
                 if (state.status == TimelineStatus.failure) {
                   ScaffoldMessenger.of(context).showSnackBar(
                     SnackBar(content: Text(state.errorMessage ?? 'Error')),
