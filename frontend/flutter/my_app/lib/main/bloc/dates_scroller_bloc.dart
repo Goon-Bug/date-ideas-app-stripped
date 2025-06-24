@@ -1,12 +1,14 @@
 import 'dart:async';
 import 'dart:math';
-import 'dart:developer' as dl;
 import 'package:bloc/bloc.dart';
 import 'package:date_spark_app/main/bloc/dates_scroller_state.dart';
 import 'package:date_spark_app/services/date_ideas_service.dart';
 import 'package:equatable/equatable.dart';
+import 'package:logging/logging.dart';
 
 part 'dates_scroller_event.dart';
+
+final Logger _log = Logger('DatesScrollerBloc');
 
 class DatesScrollerBloc extends Bloc<DatesScrollerEvent, DatesScrollerState> {
   List<Map<String, dynamic>> _dateIdeas = [];
@@ -25,7 +27,7 @@ class DatesScrollerBloc extends Bloc<DatesScrollerEvent, DatesScrollerState> {
     DatesPackRequested event,
     Emitter<DatesScrollerState> emit,
   ) async {
-    dl.log('Received DatesPackSelected: ${event.packName}');
+    _log.fine('Received DatesPackSelected: ${event.packName}');
     emit(DatesPackSelected(event.packName, _dateIdeas));
 
     final allDateIdeas = DateIdeasData.instance.dateIdeasMapOriginal;
@@ -33,17 +35,15 @@ class DatesScrollerBloc extends Bloc<DatesScrollerEvent, DatesScrollerState> {
     List<Map<String, dynamic>> filteredIdeas;
 
     if (event.packName == 'all') {
-      // If 'all' is selected, show all date ideas without filtering
       filteredIdeas = List.from(allDateIdeas);
     } else {
-      // Otherwise filter by pack name
       filteredIdeas =
           allDateIdeas.where((idea) => idea['pack'] == event.packName).toList();
     }
 
     _dateIdeas = List.from(filteredIdeas);
 
-    dl.log('Filtered Ideas Count: ${filteredIdeas.length}');
+    _log.fine('Filtered Ideas Count: ${filteredIdeas.length}');
 
     emit(DatesScrollerFiltered(filteredIdeas.isNotEmpty, filteredIdeas));
   }
@@ -55,7 +55,10 @@ class DatesScrollerBloc extends Bloc<DatesScrollerEvent, DatesScrollerState> {
     emit(DatesScrollerSpinning(_dateIdeas));
 
     final random = Random();
-    if (_dateIdeas.isEmpty) return;
+    if (_dateIdeas.isEmpty) {
+      _log.warning('Spin requested with empty _dateIdeas list.');
+      return;
+    }
 
     final randomIndex = random.nextInt(_dateIdeas.length);
     const fullRotations = 1;
@@ -77,7 +80,7 @@ class DatesScrollerBloc extends Bloc<DatesScrollerEvent, DatesScrollerState> {
   ) {
     emit(DatesScrollerResetRequested(_dateIdeas));
     _dateIdeas = List.from(DateIdeasData.instance.dateIdeasMapOriginal);
-    dl.log('Resetting to original date ideas count: ${_dateIdeas.length}');
+    _log.fine('Resetting to original date ideas count: ${_dateIdeas.length}');
     emit(DatesScrollerIdle(_dateIdeas));
   }
 
@@ -86,7 +89,7 @@ class DatesScrollerBloc extends Bloc<DatesScrollerEvent, DatesScrollerState> {
     Emitter<DatesScrollerState> emit,
   ) {
     _dateIdeas = List.from(DateIdeasData.instance.dateIdeasMap);
-    dl.log('Resetting date ideas count: ${_dateIdeas.length}');
+    _log.fine('Resetting date ideas count: ${_dateIdeas.length}');
     emit(DatesScrollerIdle(_dateIdeas));
   }
 
@@ -94,7 +97,7 @@ class DatesScrollerBloc extends Bloc<DatesScrollerEvent, DatesScrollerState> {
     DatesFilterRequested event,
     Emitter<DatesScrollerState> emit,
   ) {
-    dl.log('Received DatesFilterRequested: ${event.tags}');
+    _log.fine('Received DatesFilterRequested: ${event.tags}');
 
     final allDateIdeas = List.from(DateIdeasData.instance.dateIdeasMap);
 
@@ -105,7 +108,7 @@ class DatesScrollerBloc extends Bloc<DatesScrollerEvent, DatesScrollerState> {
 
     _dateIdeas = List.from(filteredIdeas);
 
-    dl.log('Filtered Ideas Count: ${filteredIdeas.length}');
+    _log.fine('Filtered Ideas Count: ${filteredIdeas.length}');
 
     emit(DatesScrollerFiltered(
         filteredIdeas.isNotEmpty, List.from(filteredIdeas)));
