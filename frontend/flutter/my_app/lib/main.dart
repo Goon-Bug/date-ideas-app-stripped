@@ -35,7 +35,7 @@ Future<void> main() async {
 
   await hp.logSystemFiles();
 
-  // Uncomment this line if you want to clear storage at startup for dev/testing
+  // Clear storage at startup for dev/testing
   await storage.deleteAll();
 
   hp.addDefaultsToStorage();
