@@ -12,6 +12,10 @@ import 'package:flutter/widgets.dart';
 
 import 'package:date_spark_app/helper_functions.dart' as hp;
 
+//TODO: Change timeline card to show location and other details
+//TODO: Add inforemation on how city requests work
+//TODO: Add proper google ads integration
+
 final getIt = GetIt.instance;
 
 void setupDependencies() {
@@ -32,9 +36,7 @@ Future<void> main() async {
   await hp.logSystemFiles();
 
   // Uncomment this line if you want to clear storage at startup for dev/testing
-  if (!const bool.fromEnvironment('dart.vm.product')) {
-    await storage.deleteAll();
-  }
+  await storage.deleteAll();
 
   hp.addDefaultsToStorage();
 
