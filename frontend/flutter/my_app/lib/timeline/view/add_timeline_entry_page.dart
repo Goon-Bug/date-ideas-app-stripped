@@ -235,8 +235,6 @@ class AddTimelineEntryForm extends StatelessWidget {
                           await context.read<TimelineCubit>().addTimelineEntry(
                                 description: descriptionController.text,
                                 image: state.selectedImage,
-                                userId:
-                                    'Delete this field!', // TODO: Delete this field
                                 date: state.selectedDate,
                                 dateId:
                                     state.selectedDateIdea?['id'].toString() ??
