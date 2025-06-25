@@ -121,7 +121,6 @@ class TimelineCubit extends Cubit<TimelineState> {
   Future<void> addTimelineEntry({
     required String description,
     File? image,
-    required String userId,
     required String date,
     required String dateId,
     required String dateTitle,
@@ -141,7 +140,6 @@ class TimelineCubit extends Cubit<TimelineState> {
         dateId: dateId,
         imagePath: imagePath,
         description: description,
-        userId: userId,
         dateTitle: dateTitle,
         date: date.isNotEmpty
             ? date
