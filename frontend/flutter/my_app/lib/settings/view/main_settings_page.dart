@@ -1,7 +1,6 @@
 import 'dart:developer';
 
 import 'package:date_spark_app/services/ad_manager.dart';
-import 'package:date_spark_app/services/navigation_service.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
 
@@ -13,8 +12,6 @@ class SettingsPage extends StatefulWidget {
 }
 
 class _SettingsPageState extends State<SettingsPage> {
-  NavigatorState get navigator => navigatorKey.currentState!;
-
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -48,7 +45,7 @@ class _SettingsPageState extends State<SettingsPage> {
               style: TextStyle(fontSize: 15),
             ),
             onTap: () {
-              navigator.pushNamed('/accountManagement');
+              Navigator.pushNamed(context, '/accountManagement');
             },
           ),
           const Divider(),
@@ -66,7 +63,7 @@ class _SettingsPageState extends State<SettingsPage> {
               style: TextStyle(fontSize: 15),
             ),
             onTap: () {
-              navigator.pushNamed('/changeTheme');
+              Navigator.pushNamed(context, '/changeTheme');
             },
           ),
           const Divider(),
@@ -136,7 +133,7 @@ class _SettingsPageState extends State<SettingsPage> {
               style: TextStyle(fontSize: 15),
             ),
             onTap: () {
-              navigator.pushNamed('/privacyPolicy');
+              Navigator.pushNamed(context, '/privacyPolicy');
             },
           ),
           const Divider(),
@@ -180,7 +177,6 @@ Future<void> showCityInputDialog(BuildContext context) async {
             decoration: const InputDecoration(
               labelText: 'City Name',
               border: OutlineInputBorder(),
-              counterText: '', // hides the character counter
             ),
             validator: (value) {
               final trimmed = value?.trim() ?? '';
@@ -195,7 +191,7 @@ Future<void> showCityInputDialog(BuildContext context) async {
         ),
         actions: [
           TextButton(
-            onPressed: () => Navigator.of(context).pop(), // Cancel
+            onPressed: () => Navigator.of(context).pop(),
             child: const Text('Cancel'),
           ),
           ElevatedButton(
@@ -214,7 +210,7 @@ Future<void> showCityInputDialog(BuildContext context) async {
                   onAdClosed: () {
                     submitCityToSheet(city);
                     log('City submitted: $city', name: 'showCityInputDialog');
-                    Navigator.of(context).pop(city); // Return valid city name
+                    Navigator.of(context).pop(city);
                   },
                 );
               }
