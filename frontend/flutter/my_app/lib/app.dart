@@ -4,7 +4,6 @@ import 'package:date_spark_app/main/cubit/token_cubit.dart';
 import 'package:date_spark_app/main/tags/tags_cubit.dart';
 import 'package:date_spark_app/main/view/dates_wheel_page.dart';
 import 'package:date_spark_app/services/date_ideas_service.dart';
-import 'package:date_spark_app/services/navigation_service.dart';
 import 'package:date_spark_app/settings/blocs/theme_cubit.dart';
 import 'package:date_spark_app/settings/view/accounts_page.dart';
 import 'package:date_spark_app/settings/view/change_theme_page.dart';
@@ -83,7 +82,6 @@ class AppView extends StatelessWidget {
             colorScheme: theme,
             useMaterial3: true,
           ),
-          navigatorKey: navigatorKey,
           builder: (context, child) => child!,
         );
       },
