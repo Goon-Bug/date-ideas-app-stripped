@@ -8,11 +8,9 @@ import 'package:date_spark_app/services/secure_storage_service.dart';
 import 'package:date_spark_app/timeline/bloc/timeline_cubit.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
-import 'package:date_spark_app/services/navigation_service.dart';
 import 'package:date_spark_app/main/tags/tags_cubit.dart';
 import 'package:url_launcher/url_launcher.dart';
 
-//TODO: Refactor for production token usage
 // Utility extension for string capitalization
 extension StringCasingExtension on String {
   String toTitleCase() {
@@ -22,8 +20,6 @@ extension StringCasingExtension on String {
         .join(' ');
   }
 }
-
-NavigatorState get navigator => navigatorKey.currentState!;
 
 class DateIdeasWheelPage extends StatelessWidget {
   DateIdeasWheelPage({super.key});
@@ -427,7 +423,7 @@ class _DateIdeasWheelContentState extends State<DateIdeasWheelContent> {
                     context
                         .read<DatesScrollerBloc>()
                         .add(DatesScrollerSpinRequested());
-                    context.read<TokenCubit>().useTokens(10); // 0 for testing
+                    context.read<TokenCubit>().useTokens(1);
                   },
             child: Text('Spin the Wheel!',
                 style: TextStyle(
@@ -528,7 +524,7 @@ class _DateIdeasWheelContentState extends State<DateIdeasWheelContent> {
                     ),
                   ),
                   onPressed: () async {
-                    navigator.pop(dialogContext);
+                    Navigator.pop(dialogContext);
                     context.read<DatesScrollerBloc>().add(DatesTagsReset());
                     context.read<TagsCubit>().resetTags();
                     await context.read<TimelineCubit>().resetSelectedDateIdea();
@@ -547,8 +543,9 @@ class _DateIdeasWheelContentState extends State<DateIdeasWheelContent> {
                   onPressed: () async {
                     context.read<DatesScrollerBloc>().add(DatesTagsReset());
                     await context.read<TimelineCubit>().selectDateIdea(result);
-                    navigator.pushReplacementNamed('/timeline');
-                    navigator.pushNamed('/addTimelineEntry');
+                    if (!context.mounted) return;
+                    Navigator.pushReplacementNamed(context, '/timeline');
+                    Navigator.pushNamed(context, '/addTimelineEntry');
                   },
                   child: const Text('Add date to timeline',
                       style: TextStyle(fontSize: 18, color: Colors.black)),
@@ -582,12 +579,11 @@ class PackDropdownState extends State<PackDropdown> {
   Widget build(BuildContext context) {
     final packs = DateIdeasData.instance.packs;
 
-    // Add 'All' at the top of the list
     final dropdownItems = ['all', ...packs];
 
     return DropdownButton<String>(
       value: selectedPack,
-      hint: const Text("Select a pack"),
+      hint: const Text("Select a City"),
       items: dropdownItems.map((pack) {
         return DropdownMenuItem<String>(
           value: pack,
