@@ -607,7 +607,11 @@ class PackDropdownState extends State<PackDropdown> {
 
     return DropdownButton<String>(
       value: selectedPack,
-      hint: const Text("Select a City"),
+      hint: Text(
+        "Select a City",
+        style: TextStyle(
+            color: Theme.of(context).colorScheme.onSecondaryContainer),
+      ),
       items: dropdownItems.map((pack) {
         return DropdownMenuItem<String>(
           value: pack,
