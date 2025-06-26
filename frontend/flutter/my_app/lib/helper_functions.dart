@@ -54,7 +54,7 @@ Future<void> addDefaultsToStorage() async {
   _log.fine('All storage data: $allStorageData');
   if (allStorageData.isEmpty) {
     _log.fine('Storage is empty, adding defaults');
-    await storage.write(key: 'tokenCount', value: '100');
+    await storage.write(key: 'tokenCount', value: '1');
     await storage.write(
         key: 'iconImage', value: 'assets/profile_icons/icon_1.png');
   } else {
