@@ -1,0 +1,6548 @@
+[
+  {
+    "title": "Nightjar",
+    "pack": "london",
+    "description": "Speakeasy-style cocktail bar known for its vintage vibe and creative drinks.",
+    "location": [
+      "129 City Road, London, EC1V 1JB"
+    ],
+    "duration": 1.5,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "romantic",
+      "nostalgic",
+      "nighttime",
+      "luxury"
+    ],
+    "websites": [
+      "https://www.barnightjar.com/"
+    ]
+  },
+  {
+    "title": "The Alchemist",
+    "pack": "london",
+    "description": "Trendy bar with theatrical cocktails and moody lighting.",
+    "location": [
+      "6 Bevis Marks, London, EC3A 7HL"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "fun",
+      "nighttime",
+      "interactive"
+    ],
+    "websites": [
+      "https://thealchemist.uk.com/"
+    ]
+  },
+  {
+    "title": "The Blues Kitchen Shoreditch",
+    "pack": "london",
+    "description": "Live blues bar with Southern US-style food and a late-night crowd.",
+    "location": [
+      "134-146 Curtain Road, London, EC2A 3AR"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "entertainment",
+      "culture",
+      "nighttime"
+    ],
+    "websites": [
+      "https://www.theblueskitchen.com/shoreditch/"
+    ]
+  },
+  {
+    "title": "Tonight Josephine",
+    "pack": "london",
+    "description": "Instagram-famous cocktail bar with bold decor and wild vibes.",
+    "location": [
+      "111 Waterloo Road, London, SE1 8SG"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "fun",
+      "entertainment",
+      "nighttime"
+    ],
+    "websites": [
+      "https://www.tonightjosephine.co.uk/"
+    ]
+  },
+  {
+    "title": "Jazz Cafe Camden",
+    "pack": "london",
+    "description": "Iconic music venue and bar offering soul, jazz, funk, and live performances.",
+    "location": [
+      "5 Parkway, Camden Town, London, NW1 7PG"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "entertainment",
+      "culture",
+      "nighttime"
+    ],
+    "websites": [
+      "https://thejazzcafelondon.com/"
+    ]
+  },
+  {
+    "title": "Fabric London",
+    "pack": "london",
+    "description": "Legendary nightclub known for cutting-edge electronic music and late nights.",
+    "location": [
+      "77A Charterhouse Street, London, EC1M 6HJ"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "entertainment",
+      "nighttime",
+      "fun",
+      "luxury"
+    ],
+    "websites": [
+      "https://www.fabriclondon.com/"
+    ]
+  },
+  {
+    "title": "XOYO",
+    "pack": "london",
+    "description": "Popular Shoreditch nightclub with DJs, electronic music, and themed nights.",
+    "location": [
+      "32-37 Cowper Street, London, EC2A 4AP"
+    ],
+    "duration": 3,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "nighttime",
+      "fun",
+      "entertainment"
+    ],
+    "websites": [
+      "https://www.xoyo.co.uk/"
+    ]
+  },
+  {
+    "title": "Ministry of Sound",
+    "pack": "london",
+    "description": "World-famous nightclub with big-name DJs and high-energy atmosphere.",
+    "location": [
+      "103 Gaunt Street, London, SE1 6DP"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "entertainment",
+      "nighttime",
+      "fun",
+      "active"
+    ],
+    "websites": [
+      "https://www.ministryofsound.com/"
+    ]
+  },
+  {
+    "title": "Monmouth Coffee Company",
+    "pack": "london",
+    "description": "Legendary Borough Market coffee roaster serving exceptional single-origin beans in a bustling atmosphere.",
+    "location": [
+      "2 Park Street, London SE1 9AB"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "culture",
+      "educational"
+    ],
+    "websites": [
+      "https://www.monmouthcoffee.co.uk"
+    ]
+  },
+  {
+    "title": "Sketch",
+    "pack": "london",
+    "description": "Pink tearoom in Mayfair offering afternoon tea in a whimsical, Instagram-worthy setting.",
+    "location": [
+      "9 Conduit Street, London W1S 2XG"
+    ],
+    "duration": 2,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "art",
+      "luxury",
+      "romantic"
+    ],
+    "websites": [
+      "https://sketch.london"
+    ]
+  },
+  {
+    "title": "Pavilion Café",
+    "pack": "london",
+    "description": "Charming lakeside café in Victoria Park with outdoor seating and homemade cakes.",
+    "location": [
+      "Victoria Park, Crown Gate West, London E9 7DE"
+    ],
+    "duration": 1.5,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "outdoors",
+      "nature",
+      "relaxing",
+      "budget-friendly"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Attendant Coffee Roasters",
+    "pack": "london",
+    "description": "Unique café housed in a converted Victorian underground toilet with expertly crafted coffee.",
+    "location": [
+      "74 Foley Street, London W1W 7TH"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "history",
+      "culture",
+      "fun"
+    ],
+    "websites": [
+      "https://www.the-attendant.com/"
+    ]
+  },
+  {
+    "title": "Dishoom",
+    "pack": "london",
+    "description": "Bombay-style café serving exceptional chai and Indian breakfast dishes in nostalgic Irani café setting.",
+    "location": [
+      "12 Upper St Martin's Lane, London WC2H 9FB"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "culture",
+      "nostalgic",
+      "educational"
+    ],
+    "websites": [
+      "https://www.dishoom.com"
+    ]
+  },
+  {
+    "title": "The Breakfast Club",
+    "pack": "london",
+    "description": "Retro American diner-style café with all-day breakfast and milkshakes in quirky surroundings.",
+    "location": [
+      "33 D'Arblay Street, London W1F 8EU"
+    ],
+    "duration": 1,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "fun",
+      "nostalgic",
+      "entertainment"
+    ],
+    "websites": [
+      "https://thebreakfastclubcafes.com"
+    ]
+  },
+  {
+    "title": "Kaffeine",
+    "pack": "london",
+    "description": "Fitzrovia institution known for flat whites, Australian-style coffee culture and excellent brunch.",
+    "location": [
+      "66 Great Titchfield Street, London W1W 7QJ"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "culture",
+      "relaxing"
+    ],
+    "websites": [
+      "https://kaffeine.co.uk"
+    ]
+  },
+  {
+    "title": "Cereal Killer Café",
+    "pack": "london",
+    "description": "Quirky Brick Lane café serving 120+ cereals from around the world in a nostalgic cartoon setting.",
+    "location": [
+      "139 Brick Lane, London E1 6SB"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "fun",
+      "nostalgic",
+      "interactive"
+    ],
+    "websites": [
+      "https://www.instagram.com/cerealkillercafe/"
+    ]
+  },
+  {
+    "title": "Fortnum & Mason Diamond Jubilee Tea Salon",
+    "pack": "london",
+    "description": "Elegant Piccadilly tearoom offering traditional afternoon tea with impeccable service and historic charm.",
+    "location": [
+      "181 Piccadilly, London W1A 1ER"
+    ],
+    "duration": 2,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "luxury",
+      "history",
+      "romantic"
+    ],
+    "websites": [
+      "https://www.fortnumandmason.com"
+    ]
+  },
+  {
+    "title": "Workshop Coffee",
+    "pack": "london",
+    "description": "Specialty coffee roastery in Fitzrovia with educational cupping sessions and artisanal brewing methods.",
+    "location": [
+      "27 Clerkenwell Road, London EC1M 5RN"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "educational",
+      "culture"
+    ],
+    "websites": [
+      "https://workshopcoffee.com"
+    ]
+  },
+  {
+    "title": "Duck & Waffle Local",
+    "pack": "london",
+    "description": "All-day dining spot in King's Cross with outdoor terrace offering casual comfort food and cocktails.",
+    "location": [
+      "St Pancras Square, London N1C 4AG"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "outdoors",
+      "entertainment"
+    ],
+    "websites": [
+      "https://duckandwaffle.com"
+    ]
+  },
+  {
+    "title": "Peggy Porschen Cakes",
+    "pack": "london",
+    "description": "Instagram-famous Belgravia boutique café known for pastel-colored exterior and exquisite cupcakes.",
+    "location": [
+      "116 Ebury Street, London SW1W 9QQ"
+    ],
+    "duration": 1,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "art",
+      "luxury",
+      "romantic"
+    ],
+    "websites": [
+      "https://www.peggyporschen.com"
+    ]
+  },
+  {
+    "title": "Grind Coffee Bar",
+    "pack": "london",
+    "description": "Modern coffee chain with DJ decks, late-night hours and quality espresso across multiple London locations.",
+    "location": [
+      "213 Old Street, London EC1V 9NR"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "entertainment",
+      "fun"
+    ],
+    "websites": [
+      "https://grind.co.uk"
+    ]
+  },
+  {
+    "title": "The Ivy Chelsea Garden",
+    "pack": "london",
+    "description": "Beautiful all-day brasserie with stunning garden terrace, perfect for special occasions and people-watching.",
+    "location": [
+      "197 King's Road, London SW3 5ED"
+    ],
+    "duration": 2,
+    "cost": "High",
+    "tags": [
+      "food",
+      "outdoors",
+      "luxury",
+      "romantic",
+      "entertainment"
+    ],
+    "websites": [
+      "https://theivychelseagarden.com"
+    ]
+  },
+  {
+    "title": "Prufrock Coffee",
+    "pack": "london",
+    "description": "Leather Lane coffee laboratory offering barista courses and some of London's most technical coffee brewing.",
+    "location": [
+      "23-25 Leather Lane, London EC1N 7TE"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "educational",
+      "interactive",
+      "science"
+    ],
+    "websites": [
+      "https://prufrockcoffee.com"
+    ]
+  },
+  {
+    "title": "Hyde Park",
+    "pack": "london",
+    "description": "Famous 350-acre central London park with Speaker's Corner, Serpentine Lake, and Diana Memorial.",
+    "location": [
+      "Hyde Park, London W2 2UH"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "budget-friendly",
+      "adventure"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/hyde-park"
+    ]
+  },
+  {
+    "title": "Regent's Park",
+    "pack": "london",
+    "description": "Elegant 395-acre park featuring London Zoo, Queen Mary's Gardens, and outdoor theatre.",
+    "location": [
+      "Regent's Park, London NW1 4NU"
+    ],
+    "duration": 2.5,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "culture",
+      "budget-friendly",
+      "adventure"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/regents-park"
+    ]
+  },
+  {
+    "title": "Richmond Park",
+    "pack": "london",
+    "description": "Largest Royal Park with 2,500 acres of grassland, ancient trees, and roaming deer herds.",
+    "location": [
+      "Richmond Park, Richmond, London TW10 5HS"
+    ],
+    "duration": 3,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "adventure",
+      "budget-friendly",
+      "active"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/richmond-park"
+    ]
+  },
+  {
+    "title": "Hampstead Heath",
+    "pack": "london",
+    "description": "Ancient heathland with swimming ponds, Parliament Hill views, and wild natural landscapes.",
+    "location": [
+      "Hampstead Heath, London NW3 2PP"
+    ],
+    "duration": 2.5,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "adventure",
+      "budget-friendly",
+      "active"
+    ],
+    "websites": [
+      "https://www.cityoflondon.gov.uk/things-to-do/green-spaces/hampstead-heath"
+    ]
+  },
+  {
+    "title": "Greenwich Park",
+    "pack": "london",
+    "description": "Historic park with Royal Observatory, Prime Meridian Line, and stunning London skyline views.",
+    "location": [
+      "Greenwich Park, London SE10 8QY"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "educational",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/greenwich-park"
+    ]
+  },
+  {
+    "title": "Kensington Gardens",
+    "pack": "london",
+    "description": "Royal park featuring Kensington Palace, Diana Memorial Playground, and Italian Gardens.",
+    "location": [
+      "Kensington Gardens, London W8 4PX"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "culture",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/kensington-gardens"
+    ]
+  },
+  {
+    "title": "St. James's Park",
+    "pack": "london",
+    "description": "Central London park with pelicans, lake views, and proximity to Buckingham Palace.",
+    "location": [
+      "St James's Park, London SW1A 2BJ"
+    ],
+    "duration": 1.5,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "culture",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/st-jamess-park"
+    ]
+  },
+  {
+    "title": "Primrose Hill",
+    "pack": "london",
+    "description": "Small park north of Regent's Park offering panoramic views of central London skyline.",
+    "location": [
+      "Primrose Hill, London NW1 4NR"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "romantic",
+      "budget-friendly",
+      "relaxing"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/the-regents-park/things-to-see-and-do/primrose-hill"
+    ]
+  },
+  {
+    "title": "Battersea Park",
+    "pack": "london",
+    "description": "Victorian park with children's zoo, Peace Pagoda, and riverside Thames Path.",
+    "location": [
+      "Battersea Park, London SW11 4NJ"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "fun",
+      "budget-friendly"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Holland Park",
+    "pack": "london",
+    "description": "Peaceful park with Japanese garden, peacocks, opera house, and formal gardens.",
+    "location": [
+      "Holland Park, London W8 6LU"
+    ],
+    "duration": 1.5,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "culture",
+      "relaxing",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.rbkc.gov.uk/leisure-and-culture/parks/holland-park"
+    ]
+  },
+  {
+    "title": "Victoria Park",
+    "pack": "london",
+    "description": "East London's largest park with boating lake, festivals, and Victorian heritage features.",
+    "location": [
+      "Victoria Park, London E9 7BT"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "entertainment",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.towerhamlets.gov.uk/lgnl/leisure_and_culture/parks_and_open_spaces/victoria_park.aspx"
+    ]
+  },
+  {
+    "title": "Clapham Common",
+    "pack": "london",
+    "description": "Large common with historic bandstand, ponds, and popular weekend markets.",
+    "location": [
+      "Clapham Common, London SW4 9DE"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "shopping",
+      "budget-friendly"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Kyoto Garden",
+    "pack": "london",
+    "description": "Authentic Japanese garden within Holland Park featuring waterfalls, stone lanterns, and koi pond.",
+    "location": [
+      "Holland Park, London W8 6LU"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "culture",
+      "relaxing",
+      "romantic"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Crystal Palace Park",
+    "pack": "london",
+    "description": "Victorian park featuring prehistoric dinosaur sculptures, maze, and Crystal Palace ruins.",
+    "location": [
+      "Crystal Palace Park, London SE20 8DT"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "educational",
+      "fun"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Alexandra Palace Park",
+    "pack": "london",
+    "description": "North London park with Victorian palace, panoramic city views, and entertainment venue.",
+    "location": [
+      "Alexandra Palace Way, London N22 7AY"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "entertainment",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.alexandrapalace.com/park/"
+    ]
+  },
+  {
+    "title": "Brockwell Park",
+    "pack": "london",
+    "description": "South London park with historic clock tower, lido, and panoramic views over London.",
+    "location": [
+      "Brockwell Park, London SE24 0PA"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "active",
+      "budget-friendly"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Bushy Park",
+    "pack": "london",
+    "description": "Royal park with deer herds, Chestnut Avenue, and historic Hampton Court Palace nearby.",
+    "location": [
+      "Bushy Park, Hampton, London TW12 2EJ"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "adventure",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/bushy-park"
+    ]
+  },
+  {
+    "title": "Dulwich Park",
+    "pack": "london",
+    "description": "Victorian park with boating lake, American garden, and excellent cycling paths.",
+    "location": [
+      "Dulwich Park, London SE21 7BQ"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "active",
+      "budget-friendly"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Kew Gardens",
+    "pack": "london",
+    "description": "UNESCO World Heritage botanical gardens with tropical houses, treetop walkway, and royal heritage.",
+    "location": [
+      "Royal Botanic Gardens, Kew, Richmond, London TW9 3AE"
+    ],
+    "duration": 3,
+    "cost": "Medium",
+    "tags": [
+      "outdoors",
+      "nature",
+      "educational",
+      "history",
+      "culture"
+    ],
+    "websites": [
+      "https://www.kew.org"
+    ]
+  },
+  {
+    "title": "Lee Valley Regional Park",
+    "pack": "london",
+    "description": "26-mile linear park along River Lee with nature reserves, cycling paths, and water sports.",
+    "location": [
+      "Lee Valley Regional Park, Waltham Abbey, London EN9 2EF"
+    ],
+    "duration": 3,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "adventure",
+      "active",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.leevalleypark.org.uk"
+    ]
+  },
+  {
+    "title": "Gordon Ramsay",
+    "pack": "london",
+    "description": "Three Michelin-starred flagship restaurant in Chelsea offering exquisite French cuisine and impeccable service.",
+    "location": [
+      "68 Royal Hospital Rd, Chelsea, London SW3 4HP"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "luxury",
+      "romantic"
+    ],
+    "websites": [
+      "https://www.gordonramsayrestaurants.com"
+    ]
+  },
+  {
+    "title": "Dishoom King's Cross",
+    "pack": "london",
+    "description": "Bombay-style café in a stunning Victorian railway building, serving authentic Indian cuisine with theatrical flair.",
+    "location": [
+      "5 Stable St, King's Cross, London N1C 4AB"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "culture",
+      "nostalgic",
+      "history"
+    ],
+    "websites": [
+      "https://www.dishoom.com"
+    ]
+  },
+  {
+    "title": "Borough Market Food Stalls",
+    "pack": "london",
+    "description": "Historic food market with diverse street food vendors offering authentic cuisines from around the world.",
+    "location": [
+      "8 Southwark St, London SE1 1TL"
+    ],
+    "duration": 1.5,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "outdoor",
+      "budget-friendly",
+      "culture",
+      "history",
+      "interactive"
+    ],
+    "websites": [
+      "https://boroughmarket.org.uk"
+    ]
+  },
+  {
+    "title": "Clos Maggiore",
+    "pack": "london",
+    "description": "Romantic French restaurant in Covent Garden famous for its enchanted conservatory with blossom-covered ceiling.",
+    "location": [
+      "33 King St, Covent Garden, London WC2E 8JD"
+    ],
+    "duration": 2.5,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "romantic",
+      "luxury",
+      "art"
+    ],
+    "websites": [
+      "https://www.closmaggiore.com"
+    ]
+  },
+  {
+    "title": "Inamo",
+    "pack": "london",
+    "description": "Interactive Asian fusion restaurant where you order via touchscreen tables and watch chefs prepare food.",
+    "location": [
+      "134-136 Wardour St, Soho, London W1F 8ZP"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "interactive",
+      "fun",
+      "entertainment"
+    ],
+    "websites": [
+      "https://www.inamo-restaurant.com"
+    ]
+  },
+  {
+    "title": "The Shard Restaurants",
+    "pack": "london",
+    "description": "Collection of high-end restaurants on floors 31-33 of London's tallest building with panoramic city views.",
+    "location": [
+      "31 St Thomas St, London SE1 9RY"
+    ],
+    "duration": 2.5,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "luxury",
+      "romantic",
+      "adventure"
+    ],
+    "websites": [
+      "https://www.the-shard.com"
+    ]
+  },
+  {
+    "title": "Rules Restaurant",
+    "pack": "london",
+    "description": "London's oldest restaurant established in 1798, serving traditional British game and classic dishes in historic setting.",
+    "location": [
+      "35 Maiden Ln, Covent Garden, London WC2E 7LB"
+    ],
+    "duration": 2.5,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "history",
+      "nostalgic",
+      "luxury",
+      "culture"
+    ],
+    "websites": [
+      "https://www.rules.co.uk"
+    ]
+  },
+  {
+    "title": "Gymkhana",
+    "pack": "london",
+    "description": "Michelin-starred Indian restaurant in Mayfair recreating the British Raj club atmosphere with refined Indian cuisine.",
+    "location": [
+      "42 Albemarle St, Mayfair, London W1S 4JH"
+    ],
+    "duration": 2.5,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "luxury",
+      "culture",
+      "history",
+      "nostalgic"
+    ],
+    "websites": [
+      "https://www.gymkhanalondon.com"
+    ]
+  },
+  {
+    "title": "Dans Le Noir?",
+    "pack": "london",
+    "description": "Unique dining experience where you eat in complete darkness, served by visually impaired waiters.",
+    "location": [
+      "30-31 Clerkenwell Green, London EC1R 0DU"
+    ],
+    "duration": 2.5,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "interactive",
+      "adventure",
+      "educational",
+      "fun"
+    ],
+    "websites": [
+      "https://london.danslenoir.com"
+    ]
+  },
+  {
+    "title": "Flat Iron",
+    "pack": "london",
+    "description": "No-reservations steakhouse chain serving quality flat iron steaks at affordable prices in casual settings.",
+    "location": [
+      "17 Beak St, Soho, London W1F 9RW"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.flatiron.co.uk"
+    ]
+  },
+  {
+    "title": "Berners Tavern",
+    "pack": "london",
+    "description": "Grand all-day dining room in Fitzrovia with ornate décor, gold-framed paintings, and modern British cuisine.",
+    "location": [
+      "10 Berners St, Fitzrovia, London W1T 3NP"
+    ],
+    "duration": 2,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "luxury",
+      "art",
+      "romantic"
+    ],
+    "websites": [
+      "https://www.bernerstavern.com"
+    ]
+  },
+  {
+    "title": "The Ivy",
+    "pack": "london",
+    "description": "Legendary West End restaurant frequented by celebrities, serving modern British cuisine in theatrical surroundings.",
+    "location": [
+      "1-5 West St, Covent Garden, London WC2H 9NQ"
+    ],
+    "duration": 2,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "luxury",
+      "entertainment",
+      "culture",
+      "nostalgic"
+    ],
+    "websites": [
+      "https://www.the-ivy.co.uk"
+    ]
+  },
+  {
+    "title": "Pembroke Lodge",
+    "pack": "london",
+    "description": "Georgian mansion restaurant in Richmond Park offering British cuisine with stunning views across London.",
+    "location": [
+      "Richmond Park, Richmond, London TW10 5HX"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "outdoor",
+      "indoor",
+      "nature",
+      "relaxing",
+      "history",
+      "romantic"
+    ],
+    "websites": [
+      "https://www.pembroke-lodge.co.uk"
+    ]
+  },
+  {
+    "title": "Brick Lane Curry Houses",
+    "pack": "london",
+    "description": "Historic street lined with authentic Bangladeshi restaurants offering traditional curries and vibrant atmosphere.",
+    "location": [
+      "Brick Ln, Spitalfields, London E1 6QL"
+    ],
+    "duration": 1.5,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "budget-friendly",
+      "culture",
+      "history",
+      "nighttime"
+    ],
+    "websites": [
+      "https://www.visitbricklane.org"
+    ]
+  },
+  {
+    "title": "Aqua Shard",
+    "pack": "london",
+    "description": "Contemporary British restaurant on level 31 of The Shard with floor-to-ceiling windows and spectacular views.",
+    "location": [
+      "Level 31, The Shard, 31 St Thomas St, London SE1 9RY"
+    ],
+    "duration": 2.5,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "luxury",
+      "romantic",
+      "adventure"
+    ],
+    "websites": [
+      "https://www.aquashard.co.uk"
+    ]
+  },
+  {
+    "title": "Westfield London",
+    "pack": "london",
+    "description": "One of the largest shopping centres in Europe, offering a wide range of shops, dining, and entertainment.",
+    "location": [
+      "White City, London W12 7GF"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "shopping",
+      "indoor",
+      "entertainment",
+      "food",
+      "luxury"
+    ],
+    "websites": [
+      "https://www.westfield.com/en/united-kingdom/london"
+    ]
+  },
+  {
+    "title": "Covent Garden Market",
+    "pack": "london",
+    "description": "Historic market known for unique shops, street performers, restaurants, and cultural experiences.",
+    "location": [
+      "Covent Garden, London WC2E 8RF"
+    ],
+    "duration": 3,
+    "cost": "Medium",
+    "tags": [
+      "shopping",
+      "outdoors",
+      "culture",
+      "entertainment",
+      "food"
+    ],
+    "websites": [
+      "https://www.coventgarden.london/"
+    ]
+  },
+  {
+    "title": "Canary Wharf Shopping Centre",
+    "pack": "london",
+    "description": "Modern shopping centre in the financial district featuring high-end retailers and restaurants.",
+    "location": [
+      "Canary Wharf, London E14 5NY"
+    ],
+    "duration": 2.5,
+    "cost": "Medium",
+    "tags": [
+      "shopping",
+      "indoor",
+      "luxury",
+      "food"
+    ],
+    "websites": [
+      "https://canarywharf.com/shops-services/directory/"
+    ]
+  },
+  {
+    "title": "Brent Cross Shopping Centre",
+    "pack": "london",
+    "description": "Large indoor shopping centre offering a variety of popular high street and designer stores.",
+    "location": [
+      "Brent Cross, London NW4 3FP"
+    ],
+    "duration": 3,
+    "cost": "Medium",
+    "tags": [
+      "shopping",
+      "indoor"
+    ],
+    "websites": [
+      "https://www.brentcross.co.uk/"
+    ]
+  },
+  {
+    "title": "King's Road Shopping",
+    "pack": "london",
+    "description": "A famous shopping street with a mix of boutique stores, fashion, and lifestyle shops.",
+    "location": [
+      "King's Road, Chelsea, London SW3"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "shopping",
+      "outdoors",
+      "luxury",
+      "culture"
+    ],
+    "websites": [
+      "https://www.kingsroad.co.uk/shop-kings-road-london/"
+    ]
+  },
+  {
+    "title": "All Star Lanes",
+    "pack": "london",
+    "description": "Enjoy a vibrant bowling alley with great food and cocktails at All Star Lanes.",
+    "location": [
+      "Holborn, London WC2B 4HL",
+      "Shoreditch, London E1 6PJ"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "fun",
+      "entertainment",
+      "food"
+    ],
+    "websites": [
+      "https://allstarlanes.co.uk/"
+    ]
+  },
+  {
+    "title": "Swingers Crazy Golf",
+    "pack": "london",
+    "description": "Play fun and quirky indoor crazy golf courses with great food and drinks.",
+    "location": [
+      "City, London EC2M 2QS",
+      "West End, London W1D 3BS"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "fun",
+      "entertainment",
+      "food"
+    ],
+    "websites": [
+      "https://www.swingers.club/uk"
+    ]
+  },
+  {
+    "title": "London Bicycle Tour Company",
+    "pack": "london",
+    "description": "Discover London's iconic landmarks and hidden gems on guided bike tours with experienced guides.",
+    "location": [
+      "74 Kennington Road, London SE11 6NL"
+    ],
+    "duration": 3.5,
+    "cost": "Medium",
+    "tags": [
+      "outdoors",
+      "active",
+      "adventure",
+      "travel",
+      "educational"
+    ],
+    "websites": [
+      "https://www.londonbicycle.com/"
+    ]
+  },
+  {
+    "title": "The Castle Climbing Centre",
+    "pack": "london",
+    "description": "Try indoor climbing at this popular climbing centre located in a former Victorian water pumping station.",
+    "location": [
+      "Green Lanes, London N4 2HA"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "active",
+      "adventure"
+    ],
+    "websites": [
+      "https://castle-climbing.co.uk/"
+    ]
+  },
+  {
+    "title": "TeamSport Go Karting London",
+    "pack": "london",
+    "description": "Race your partner at TeamSport's indoor go-karting track for a thrilling experience.",
+    "location": [
+      "Acton, London W3 6XA"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "entertainment",
+      "fun",
+      "active"
+    ],
+    "websites": [
+      "https://www.team-sport.co.uk/go-kart-tracks/london"
+    ]
+  },
+  {
+    "title": "Queens Skate Dine Bowl",
+    "pack": "london",
+    "description": "Enjoy skating, bowling, dining, and entertainment all under one roof.",
+    "location": [
+      "Queensway, London W2 4QJ"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "fun",
+      "active",
+      "food",
+      "entertainment"
+    ],
+    "websites": [
+      "https://www.designmynight.com/london/event-space/notting-hill/queens-skate-dine-bowl"
+    ]
+  },
+  {
+    "title": "Better London Fields Lido",
+    "pack": "london",
+    "description": "Swim in a heated 50m outdoor pool with sunbathing areas and a café at this popular lido.",
+    "location": [
+      "London Fields West Side, London E8 3EU"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "active",
+      "relaxing"
+    ],
+    "websites": [
+      "https://www.better.org.uk/leisure-centre/london/hackney/london-fields-lido"
+    ]
+  },
+  {
+    "title": "Better Swiss Cottage Leisure Centre",
+    "pack": "london",
+    "description": "Features a large gym, 25m swimming pool, climbing wall, and spa facilities in Swiss Cottage.",
+    "location": [
+      "Winchester Rd, London NW3 3NR"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "active",
+      "relaxing",
+      "family-friendly"
+    ],
+    "websites": [
+      "https://www.better.org.uk/leisure-centre/london/camden/swiss-cottage-leisure-centre"
+    ]
+  },
+  {
+    "title": "Better Wimbledon Leisure Centre and Spa",
+    "pack": "london",
+    "description": "Modern gym and pool facilities combined with a day spa in a beautifully restored Victorian building.",
+    "location": [
+      "Latimer Rd, London SW19 1EW"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "active",
+      "relaxing",
+      "spa"
+    ],
+    "websites": [
+      "https://www.better.org.uk/leisure-centre/london/merton/wimbledon-leisure-centre"
+    ]
+  },
+  {
+    "title": "Nightjar",
+    "pack": "london",
+    "description": "Speakeasy-style cocktail bar known for its vintage vibe and creative drinks.",
+    "location": [
+      "129 City Road, London, EC1V 1JB"
+    ],
+    "duration": 1.5,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "romantic",
+      "nostalgic",
+      "nighttime",
+      "luxury"
+    ],
+    "websites": [
+      "https://www.barnightjar.com/"
+    ]
+  },
+  {
+    "title": "The Alchemist",
+    "pack": "london",
+    "description": "Trendy bar with theatrical cocktails and moody lighting.",
+    "location": [
+      "6 Bevis Marks, London, EC3A 7HL"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "fun",
+      "nighttime",
+      "interactive"
+    ],
+    "websites": [
+      "https://thealchemist.uk.com/"
+    ]
+  },
+  {
+    "title": "The Blues Kitchen Shoreditch",
+    "pack": "london",
+    "description": "Live blues bar with Southern US-style food and a late-night crowd.",
+    "location": [
+      "134-146 Curtain Road, London, EC2A 3AR"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "entertainment",
+      "culture",
+      "nighttime"
+    ],
+    "websites": [
+      "https://www.theblueskitchen.com/shoreditch/"
+    ]
+  },
+  {
+    "title": "Tonight Josephine",
+    "pack": "london",
+    "description": "Instagram-famous cocktail bar with bold decor and wild vibes.",
+    "location": [
+      "111 Waterloo Road, London, SE1 8SG"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "fun",
+      "entertainment",
+      "nighttime"
+    ],
+    "websites": [
+      "https://www.tonightjosephine.co.uk/"
+    ]
+  },
+  {
+    "title": "Jazz Cafe Camden",
+    "pack": "london",
+    "description": "Iconic music venue and bar offering soul, jazz, funk, and live performances.",
+    "location": [
+      "5 Parkway, Camden Town, London, NW1 7PG"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "entertainment",
+      "culture",
+      "nighttime"
+    ],
+    "websites": [
+      "https://thejazzcafelondon.com/"
+    ]
+  },
+  {
+    "title": "Fabric London",
+    "pack": "london",
+    "description": "Legendary nightclub known for cutting-edge electronic music and late nights.",
+    "location": [
+      "77A Charterhouse Street, London, EC1M 6HJ"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "entertainment",
+      "nighttime",
+      "fun",
+      "luxury"
+    ],
+    "websites": [
+      "https://www.fabriclondon.com/"
+    ]
+  },
+  {
+    "title": "XOYO",
+    "pack": "london",
+    "description": "Popular Shoreditch nightclub with DJs, electronic music, and themed nights.",
+    "location": [
+      "32-37 Cowper Street, London, EC2A 4AP"
+    ],
+    "duration": 3,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "nighttime",
+      "fun",
+      "entertainment"
+    ],
+    "websites": [
+      "https://www.xoyo.co.uk/"
+    ]
+  },
+  {
+    "title": "Ministry of Sound",
+    "pack": "london",
+    "description": "World-famous nightclub with big-name DJs and high-energy atmosphere.",
+    "location": [
+      "103 Gaunt Street, London, SE1 6DP"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "entertainment",
+      "nighttime",
+      "fun",
+      "active"
+    ],
+    "websites": [
+      "https://www.ministryofsound.com/"
+    ]
+  },
+  {
+    "title": "Monmouth Coffee Company",
+    "pack": "london",
+    "description": "Legendary Borough Market coffee roaster serving exceptional single-origin beans in a bustling atmosphere.",
+    "location": [
+      "2 Park Street, London SE1 9AB"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "culture",
+      "educational"
+    ],
+    "websites": [
+      "https://www.monmouthcoffee.co.uk"
+    ]
+  },
+  {
+    "title": "Sketch",
+    "pack": "london",
+    "description": "Pink tearoom in Mayfair offering afternoon tea in a whimsical, Instagram-worthy setting.",
+    "location": [
+      "9 Conduit Street, London W1S 2XG"
+    ],
+    "duration": 2,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "art",
+      "luxury",
+      "romantic"
+    ],
+    "websites": [
+      "https://sketch.london"
+    ]
+  },
+  {
+    "title": "Pavilion Café",
+    "pack": "london",
+    "description": "Charming lakeside café in Victoria Park with outdoor seating and homemade cakes.",
+    "location": [
+      "Victoria Park, Crown Gate West, London E9 7DE"
+    ],
+    "duration": 1.5,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "outdoors",
+      "nature",
+      "relaxing",
+      "budget-friendly"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Attendant Coffee Roasters",
+    "pack": "london",
+    "description": "Unique café housed in a converted Victorian underground toilet with expertly crafted coffee.",
+    "location": [
+      "74 Foley Street, London W1W 7TH"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "history",
+      "culture",
+      "fun"
+    ],
+    "websites": [
+      "https://www.the-attendant.com/"
+    ]
+  },
+  {
+    "title": "Dishoom",
+    "pack": "london",
+    "description": "Bombay-style café serving exceptional chai and Indian breakfast dishes in nostalgic Irani café setting.",
+    "location": [
+      "12 Upper St Martin's Lane, London WC2H 9FB"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "culture",
+      "nostalgic",
+      "educational"
+    ],
+    "websites": [
+      "https://www.dishoom.com"
+    ]
+  },
+  {
+    "title": "The Breakfast Club",
+    "pack": "london",
+    "description": "Retro American diner-style café with all-day breakfast and milkshakes in quirky surroundings.",
+    "location": [
+      "33 D'Arblay Street, London W1F 8EU"
+    ],
+    "duration": 1,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "fun",
+      "nostalgic",
+      "entertainment"
+    ],
+    "websites": [
+      "https://thebreakfastclubcafes.com"
+    ]
+  },
+  {
+    "title": "Kaffeine",
+    "pack": "london",
+    "description": "Fitzrovia institution known for flat whites, Australian-style coffee culture and excellent brunch.",
+    "location": [
+      "66 Great Titchfield Street, London W1W 7QJ"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "culture",
+      "relaxing"
+    ],
+    "websites": [
+      "https://kaffeine.co.uk"
+    ]
+  },
+  {
+    "title": "Cereal Killer Café",
+    "pack": "london",
+    "description": "Quirky Brick Lane café serving 120+ cereals from around the world in a nostalgic cartoon setting.",
+    "location": [
+      "139 Brick Lane, London E1 6SB"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "fun",
+      "nostalgic",
+      "interactive"
+    ],
+    "websites": [
+      "https://www.instagram.com/cerealkillercafe/"
+    ]
+  },
+  {
+    "title": "Fortnum & Mason Diamond Jubilee Tea Salon",
+    "pack": "london",
+    "description": "Elegant Piccadilly tearoom offering traditional afternoon tea with impeccable service and historic charm.",
+    "location": [
+      "181 Piccadilly, London W1A 1ER"
+    ],
+    "duration": 2,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "luxury",
+      "history",
+      "romantic"
+    ],
+    "websites": [
+      "https://www.fortnumandmason.com"
+    ]
+  },
+  {
+    "title": "Workshop Coffee",
+    "pack": "london",
+    "description": "Specialty coffee roastery in Fitzrovia with educational cupping sessions and artisanal brewing methods.",
+    "location": [
+      "27 Clerkenwell Road, London EC1M 5RN"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "educational",
+      "culture"
+    ],
+    "websites": [
+      "https://workshopcoffee.com"
+    ]
+  },
+  {
+    "title": "Duck & Waffle Local",
+    "pack": "london",
+    "description": "All-day dining spot in King's Cross with outdoor terrace offering casual comfort food and cocktails.",
+    "location": [
+      "St Pancras Square, London N1C 4AG"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "outdoors",
+      "entertainment"
+    ],
+    "websites": [
+      "https://duckandwaffle.com"
+    ]
+  },
+  {
+    "title": "Peggy Porschen Cakes",
+    "pack": "london",
+    "description": "Instagram-famous Belgravia boutique café known for pastel-colored exterior and exquisite cupcakes.",
+    "location": [
+      "116 Ebury Street, London SW1W 9QQ"
+    ],
+    "duration": 1,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "art",
+      "luxury",
+      "romantic"
+    ],
+    "websites": [
+      "https://www.peggyporschen.com"
+    ]
+  },
+  {
+    "title": "Grind Coffee Bar",
+    "pack": "london",
+    "description": "Modern coffee chain with DJ decks, late-night hours and quality espresso across multiple London locations.",
+    "location": [
+      "213 Old Street, London EC1V 9NR"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "entertainment",
+      "fun"
+    ],
+    "websites": [
+      "https://grind.co.uk"
+    ]
+  },
+  {
+    "title": "The Ivy Chelsea Garden",
+    "pack": "london",
+    "description": "Beautiful all-day brasserie with stunning garden terrace, perfect for special occasions and people-watching.",
+    "location": [
+      "197 King's Road, London SW3 5ED"
+    ],
+    "duration": 2,
+    "cost": "High",
+    "tags": [
+      "food",
+      "outdoors",
+      "luxury",
+      "romantic",
+      "entertainment"
+    ],
+    "websites": [
+      "https://theivychelseagarden.com"
+    ]
+  },
+  {
+    "title": "Prufrock Coffee",
+    "pack": "london",
+    "description": "Leather Lane coffee laboratory offering barista courses and some of London's most technical coffee brewing.",
+    "location": [
+      "23-25 Leather Lane, London EC1N 7TE"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "educational",
+      "interactive",
+      "science"
+    ],
+    "websites": [
+      "https://prufrockcoffee.com"
+    ]
+  },
+  {
+    "title": "Hyde Park",
+    "pack": "london",
+    "description": "Famous 350-acre central London park with Speaker's Corner, Serpentine Lake, and Diana Memorial.",
+    "location": [
+      "Hyde Park, London W2 2UH"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "budget-friendly",
+      "adventure"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/hyde-park"
+    ]
+  },
+  {
+    "title": "Regent's Park",
+    "pack": "london",
+    "description": "Elegant 395-acre park featuring London Zoo, Queen Mary's Gardens, and outdoor theatre.",
+    "location": [
+      "Regent's Park, London NW1 4NU"
+    ],
+    "duration": 2.5,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "culture",
+      "budget-friendly",
+      "adventure"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/regents-park"
+    ]
+  },
+  {
+    "title": "Richmond Park",
+    "pack": "london",
+    "description": "Largest Royal Park with 2,500 acres of grassland, ancient trees, and roaming deer herds.",
+    "location": [
+      "Richmond Park, Richmond, London TW10 5HS"
+    ],
+    "duration": 3,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "adventure",
+      "budget-friendly",
+      "active"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/richmond-park"
+    ]
+  },
+  {
+    "title": "Hampstead Heath",
+    "pack": "london",
+    "description": "Ancient heathland with swimming ponds, Parliament Hill views, and wild natural landscapes.",
+    "location": [
+      "Hampstead Heath, London NW3 2PP"
+    ],
+    "duration": 2.5,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "adventure",
+      "budget-friendly",
+      "active"
+    ],
+    "websites": [
+      "https://www.cityoflondon.gov.uk/things-to-do/green-spaces/hampstead-heath"
+    ]
+  },
+  {
+    "title": "Greenwich Park",
+    "pack": "london",
+    "description": "Historic park with Royal Observatory, Prime Meridian Line, and stunning London skyline views.",
+    "location": [
+      "Greenwich Park, London SE10 8QY"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "educational",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/greenwich-park"
+    ]
+  },
+  {
+    "title": "Kensington Gardens",
+    "pack": "london",
+    "description": "Royal park featuring Kensington Palace, Diana Memorial Playground, and Italian Gardens.",
+    "location": [
+      "Kensington Gardens, London W8 4PX"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "culture",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/kensington-gardens"
+    ]
+  },
+  {
+    "title": "St. James's Park",
+    "pack": "london",
+    "description": "Central London park with pelicans, lake views, and proximity to Buckingham Palace.",
+    "location": [
+      "St James's Park, London SW1A 2BJ"
+    ],
+    "duration": 1.5,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "culture",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/st-jamess-park"
+    ]
+  },
+  {
+    "title": "Primrose Hill",
+    "pack": "london",
+    "description": "Small park north of Regent's Park offering panoramic views of central London skyline.",
+    "location": [
+      "Primrose Hill, London NW1 4NR"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "romantic",
+      "budget-friendly",
+      "relaxing"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/the-regents-park/things-to-see-and-do/primrose-hill"
+    ]
+  },
+  {
+    "title": "Battersea Park",
+    "pack": "london",
+    "description": "Victorian park with children's zoo, Peace Pagoda, and riverside Thames Path.",
+    "location": [
+      "Battersea Park, London SW11 4NJ"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "fun",
+      "budget-friendly"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Holland Park",
+    "pack": "london",
+    "description": "Peaceful park with Japanese garden, peacocks, opera house, and formal gardens.",
+    "location": [
+      "Holland Park, London W8 6LU"
+    ],
+    "duration": 1.5,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "culture",
+      "relaxing",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.rbkc.gov.uk/leisure-and-culture/parks/holland-park"
+    ]
+  },
+  {
+    "title": "Victoria Park",
+    "pack": "london",
+    "description": "East London's largest park with boating lake, festivals, and Victorian heritage features.",
+    "location": [
+      "Victoria Park, London E9 7BT"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "entertainment",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.towerhamlets.gov.uk/lgnl/leisure_and_culture/parks_and_open_spaces/victoria_park.aspx"
+    ]
+  },
+  {
+    "title": "Clapham Common",
+    "pack": "london",
+    "description": "Large common with historic bandstand, ponds, and popular weekend markets.",
+    "location": [
+      "Clapham Common, London SW4 9DE"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "shopping",
+      "budget-friendly"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Kyoto Garden",
+    "pack": "london",
+    "description": "Authentic Japanese garden within Holland Park featuring waterfalls, stone lanterns, and koi pond.",
+    "location": [
+      "Holland Park, London W8 6LU"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "culture",
+      "relaxing",
+      "romantic"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Crystal Palace Park",
+    "pack": "london",
+    "description": "Victorian park featuring prehistoric dinosaur sculptures, maze, and Crystal Palace ruins.",
+    "location": [
+      "Crystal Palace Park, London SE20 8DT"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "educational",
+      "fun"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Alexandra Palace Park",
+    "pack": "london",
+    "description": "North London park with Victorian palace, panoramic city views, and entertainment venue.",
+    "location": [
+      "Alexandra Palace Way, London N22 7AY"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "entertainment",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.alexandrapalace.com/park/"
+    ]
+  },
+  {
+    "title": "Brockwell Park",
+    "pack": "london",
+    "description": "South London park with historic clock tower, lido, and panoramic views over London.",
+    "location": [
+      "Brockwell Park, London SE24 0PA"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "active",
+      "budget-friendly"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Bushy Park",
+    "pack": "london",
+    "description": "Royal park with deer herds, Chestnut Avenue, and historic Hampton Court Palace nearby.",
+    "location": [
+      "Bushy Park, Hampton, London TW12 2EJ"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "adventure",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/bushy-park"
+    ]
+  },
+  {
+    "title": "Dulwich Park",
+    "pack": "london",
+    "description": "Victorian park with boating lake, American garden, and excellent cycling paths.",
+    "location": [
+      "Dulwich Park, London SE21 7BQ"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "active",
+      "budget-friendly"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Kew Gardens",
+    "pack": "london",
+    "description": "UNESCO World Heritage botanical gardens with tropical houses, treetop walkway, and royal heritage.",
+    "location": [
+      "Royal Botanic Gardens, Kew, Richmond, London TW9 3AE"
+    ],
+    "duration": 3,
+    "cost": "Medium",
+    "tags": [
+      "outdoors",
+      "nature",
+      "educational",
+      "history",
+      "culture"
+    ],
+    "websites": [
+      "https://www.kew.org"
+    ]
+  },
+  {
+    "title": "Lee Valley Regional Park",
+    "pack": "london",
+    "description": "26-mile linear park along River Lee with nature reserves, cycling paths, and water sports.",
+    "location": [
+      "Lee Valley Regional Park, Waltham Abbey, London EN9 2EF"
+    ],
+    "duration": 3,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "adventure",
+      "active",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.leevalleypark.org.uk"
+    ]
+  },
+  {
+    "title": "Gordon Ramsay",
+    "pack": "london",
+    "description": "Three Michelin-starred flagship restaurant in Chelsea offering exquisite French cuisine and impeccable service.",
+    "location": [
+      "68 Royal Hospital Rd, Chelsea, London SW3 4HP"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "luxury",
+      "romantic"
+    ],
+    "websites": [
+      "https://www.gordonramsayrestaurants.com"
+    ]
+  },
+  {
+    "title": "Dishoom King's Cross",
+    "pack": "london",
+    "description": "Bombay-style café in a stunning Victorian railway building, serving authentic Indian cuisine with theatrical flair.",
+    "location": [
+      "5 Stable St, King's Cross, London N1C 4AB"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "culture",
+      "nostalgic",
+      "history"
+    ],
+    "websites": [
+      "https://www.dishoom.com"
+    ]
+  },
+  {
+    "title": "Borough Market Food Stalls",
+    "pack": "london",
+    "description": "Historic food market with diverse street food vendors offering authentic cuisines from around the world.",
+    "location": [
+      "8 Southwark St, London SE1 1TL"
+    ],
+    "duration": 1.5,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "outdoor",
+      "budget-friendly",
+      "culture",
+      "history",
+      "interactive"
+    ],
+    "websites": [
+      "https://boroughmarket.org.uk"
+    ]
+  },
+  {
+    "title": "Clos Maggiore",
+    "pack": "london",
+    "description": "Romantic French restaurant in Covent Garden famous for its enchanted conservatory with blossom-covered ceiling.",
+    "location": [
+      "33 King St, Covent Garden, London WC2E 8JD"
+    ],
+    "duration": 2.5,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "romantic",
+      "luxury",
+      "art"
+    ],
+    "websites": [
+      "https://www.closmaggiore.com"
+    ]
+  },
+  {
+    "title": "Inamo",
+    "pack": "london",
+    "description": "Interactive Asian fusion restaurant where you order via touchscreen tables and watch chefs prepare food.",
+    "location": [
+      "134-136 Wardour St, Soho, London W1F 8ZP"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "interactive",
+      "fun",
+      "entertainment"
+    ],
+    "websites": [
+      "https://www.inamo-restaurant.com"
+    ]
+  },
+  {
+    "title": "The Shard Restaurants",
+    "pack": "london",
+    "description": "Collection of high-end restaurants on floors 31-33 of London's tallest building with panoramic city views.",
+    "location": [
+      "31 St Thomas St, London SE1 9RY"
+    ],
+    "duration": 2.5,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "luxury",
+      "romantic",
+      "adventure"
+    ],
+    "websites": [
+      "https://www.the-shard.com"
+    ]
+  },
+  {
+    "title": "Rules Restaurant",
+    "pack": "london",
+    "description": "London's oldest restaurant established in 1798, serving traditional British game and classic dishes in historic setting.",
+    "location": [
+      "35 Maiden Ln, Covent Garden, London WC2E 7LB"
+    ],
+    "duration": 2.5,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "history",
+      "nostalgic",
+      "luxury",
+      "culture"
+    ],
+    "websites": [
+      "https://www.rules.co.uk"
+    ]
+  },
+  {
+    "title": "Gymkhana",
+    "pack": "london",
+    "description": "Michelin-starred Indian restaurant in Mayfair recreating the British Raj club atmosphere with refined Indian cuisine.",
+    "location": [
+      "42 Albemarle St, Mayfair, London W1S 4JH"
+    ],
+    "duration": 2.5,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "luxury",
+      "culture",
+      "history",
+      "nostalgic"
+    ],
+    "websites": [
+      "https://www.gymkhanalondon.com"
+    ]
+  },
+  {
+    "title": "Dans Le Noir?",
+    "pack": "london",
+    "description": "Unique dining experience where you eat in complete darkness, served by visually impaired waiters.",
+    "location": [
+      "30-31 Clerkenwell Green, London EC1R 0DU"
+    ],
+    "duration": 2.5,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "interactive",
+      "adventure",
+      "educational",
+      "fun"
+    ],
+    "websites": [
+      "https://london.danslenoir.com"
+    ]
+  },
+  {
+    "title": "Flat Iron",
+    "pack": "london",
+    "description": "No-reservations steakhouse chain serving quality flat iron steaks at affordable prices in casual settings.",
+    "location": [
+      "17 Beak St, Soho, London W1F 9RW"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.flatiron.co.uk"
+    ]
+  },
+  {
+    "title": "Berners Tavern",
+    "pack": "london",
+    "description": "Grand all-day dining room in Fitzrovia with ornate décor, gold-framed paintings, and modern British cuisine.",
+    "location": [
+      "10 Berners St, Fitzrovia, London W1T 3NP"
+    ],
+    "duration": 2,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "luxury",
+      "art",
+      "romantic"
+    ],
+    "websites": [
+      "https://www.bernerstavern.com"
+    ]
+  },
+  {
+    "title": "The Ivy",
+    "pack": "london",
+    "description": "Legendary West End restaurant frequented by celebrities, serving modern British cuisine in theatrical surroundings.",
+    "location": [
+      "1-5 West St, Covent Garden, London WC2H 9NQ"
+    ],
+    "duration": 2,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "luxury",
+      "entertainment",
+      "culture",
+      "nostalgic"
+    ],
+    "websites": [
+      "https://www.the-ivy.co.uk"
+    ]
+  },
+  {
+    "title": "Pembroke Lodge",
+    "pack": "london",
+    "description": "Georgian mansion restaurant in Richmond Park offering British cuisine with stunning views across London.",
+    "location": [
+      "Richmond Park, Richmond, London TW10 5HX"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "outdoor",
+      "indoor",
+      "nature",
+      "relaxing",
+      "history",
+      "romantic"
+    ],
+    "websites": [
+      "https://www.pembroke-lodge.co.uk"
+    ]
+  },
+  {
+    "title": "Brick Lane Curry Houses",
+    "pack": "london",
+    "description": "Historic street lined with authentic Bangladeshi restaurants offering traditional curries and vibrant atmosphere.",
+    "location": [
+      "Brick Ln, Spitalfields, London E1 6QL"
+    ],
+    "duration": 1.5,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "budget-friendly",
+      "culture",
+      "history",
+      "nighttime"
+    ],
+    "websites": [
+      "https://www.visitbricklane.org"
+    ]
+  },
+  {
+    "title": "Aqua Shard",
+    "pack": "london",
+    "description": "Contemporary British restaurant on level 31 of The Shard with floor-to-ceiling windows and spectacular views.",
+    "location": [
+      "Level 31, The Shard, 31 St Thomas St, London SE1 9RY"
+    ],
+    "duration": 2.5,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "luxury",
+      "romantic",
+      "adventure"
+    ],
+    "websites": [
+      "https://www.aquashard.co.uk"
+    ]
+  },
+  {
+    "title": "Westfield London",
+    "pack": "london",
+    "description": "One of the largest shopping centres in Europe, offering a wide range of shops, dining, and entertainment.",
+    "location": [
+      "White City, London W12 7GF"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "shopping",
+      "indoor",
+      "entertainment",
+      "food",
+      "luxury"
+    ],
+    "websites": [
+      "https://www.westfield.com/en/united-kingdom/london"
+    ]
+  },
+  {
+    "title": "Covent Garden Market",
+    "pack": "london",
+    "description": "Historic market known for unique shops, street performers, restaurants, and cultural experiences.",
+    "location": [
+      "Covent Garden, London WC2E 8RF"
+    ],
+    "duration": 3,
+    "cost": "Medium",
+    "tags": [
+      "shopping",
+      "outdoors",
+      "culture",
+      "entertainment",
+      "food"
+    ],
+    "websites": [
+      "https://www.coventgarden.london/"
+    ]
+  },
+  {
+    "title": "Canary Wharf Shopping Centre",
+    "pack": "london",
+    "description": "Modern shopping centre in the financial district featuring high-end retailers and restaurants.",
+    "location": [
+      "Canary Wharf, London E14 5NY"
+    ],
+    "duration": 2.5,
+    "cost": "Medium",
+    "tags": [
+      "shopping",
+      "indoor",
+      "luxury",
+      "food"
+    ],
+    "websites": [
+      "https://canarywharf.com/shops-services/directory/"
+    ]
+  },
+  {
+    "title": "Brent Cross Shopping Centre",
+    "pack": "london",
+    "description": "Large indoor shopping centre offering a variety of popular high street and designer stores.",
+    "location": [
+      "Brent Cross, London NW4 3FP"
+    ],
+    "duration": 3,
+    "cost": "Medium",
+    "tags": [
+      "shopping",
+      "indoor"
+    ],
+    "websites": [
+      "https://www.brentcross.co.uk/"
+    ]
+  },
+  {
+    "title": "King's Road Shopping",
+    "pack": "london",
+    "description": "A famous shopping street with a mix of boutique stores, fashion, and lifestyle shops.",
+    "location": [
+      "King's Road, Chelsea, London SW3"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "shopping",
+      "outdoors",
+      "luxury",
+      "culture"
+    ],
+    "websites": [
+      "https://www.kingsroad.co.uk/shop-kings-road-london/"
+    ]
+  },
+  {
+    "title": "All Star Lanes",
+    "pack": "london",
+    "description": "Enjoy a vibrant bowling alley with great food and cocktails at All Star Lanes.",
+    "location": [
+      "Holborn, London WC2B 4HL",
+      "Shoreditch, London E1 6PJ"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "fun",
+      "entertainment",
+      "food"
+    ],
+    "websites": [
+      "https://allstarlanes.co.uk/"
+    ]
+  },
+  {
+    "title": "Swingers Crazy Golf",
+    "pack": "london",
+    "description": "Play fun and quirky indoor crazy golf courses with great food and drinks.",
+    "location": [
+      "City, London EC2M 2QS",
+      "West End, London W1D 3BS"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "fun",
+      "entertainment",
+      "food"
+    ],
+    "websites": [
+      "https://www.swingers.club/uk"
+    ]
+  },
+  {
+    "title": "London Bicycle Tour Company",
+    "pack": "london",
+    "description": "Discover London's iconic landmarks and hidden gems on guided bike tours with experienced guides.",
+    "location": [
+      "74 Kennington Road, London SE11 6NL"
+    ],
+    "duration": 3.5,
+    "cost": "Medium",
+    "tags": [
+      "outdoors",
+      "active",
+      "adventure",
+      "travel",
+      "educational"
+    ],
+    "websites": [
+      "https://www.londonbicycle.com/"
+    ]
+  },
+  {
+    "title": "The Castle Climbing Centre",
+    "pack": "london",
+    "description": "Try indoor climbing at this popular climbing centre located in a former Victorian water pumping station.",
+    "location": [
+      "Green Lanes, London N4 2HA"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "active",
+      "adventure"
+    ],
+    "websites": [
+      "https://castle-climbing.co.uk/"
+    ]
+  },
+  {
+    "title": "TeamSport Go Karting London",
+    "pack": "london",
+    "description": "Race your partner at TeamSport's indoor go-karting track for a thrilling experience.",
+    "location": [
+      "Acton, London W3 6XA"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "entertainment",
+      "fun",
+      "active"
+    ],
+    "websites": [
+      "https://www.team-sport.co.uk/go-kart-tracks/london"
+    ]
+  },
+  {
+    "title": "Queens Skate Dine Bowl",
+    "pack": "london",
+    "description": "Enjoy skating, bowling, dining, and entertainment all under one roof.",
+    "location": [
+      "Queensway, London W2 4QJ"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "fun",
+      "active",
+      "food",
+      "entertainment"
+    ],
+    "websites": [
+      "https://www.designmynight.com/london/event-space/notting-hill/queens-skate-dine-bowl"
+    ]
+  },
+  {
+    "title": "Better London Fields Lido",
+    "pack": "london",
+    "description": "Swim in a heated 50m outdoor pool with sunbathing areas and a café at this popular lido.",
+    "location": [
+      "London Fields West Side, London E8 3EU"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "active",
+      "relaxing"
+    ],
+    "websites": [
+      "https://www.better.org.uk/leisure-centre/london/hackney/london-fields-lido"
+    ]
+  },
+  {
+    "title": "Better Swiss Cottage Leisure Centre",
+    "pack": "london",
+    "description": "Features a large gym, 25m swimming pool, climbing wall, and spa facilities in Swiss Cottage.",
+    "location": [
+      "Winchester Rd, London NW3 3NR"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "active",
+      "relaxing",
+      "family-friendly"
+    ],
+    "websites": [
+      "https://www.better.org.uk/leisure-centre/london/camden/swiss-cottage-leisure-centre"
+    ]
+  },
+  {
+    "title": "Better Wimbledon Leisure Centre and Spa",
+    "pack": "london",
+    "description": "Modern gym and pool facilities combined with a day spa in a beautifully restored Victorian building.",
+    "location": [
+      "Latimer Rd, London SW19 1EW"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "active",
+      "relaxing",
+      "spa"
+    ],
+    "websites": [
+      "https://www.better.org.uk/leisure-centre/london/merton/wimbledon-leisure-centre"
+    ]
+  },
+  {
+    "title": "Nightjar",
+    "pack": "london",
+    "description": "Speakeasy-style cocktail bar known for its vintage vibe and creative drinks.",
+    "location": [
+      "129 City Road, London, EC1V 1JB"
+    ],
+    "duration": 1.5,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "romantic",
+      "nostalgic",
+      "nighttime",
+      "luxury"
+    ],
+    "websites": [
+      "https://www.barnightjar.com/"
+    ]
+  },
+  {
+    "title": "The Alchemist",
+    "pack": "london",
+    "description": "Trendy bar with theatrical cocktails and moody lighting.",
+    "location": [
+      "6 Bevis Marks, London, EC3A 7HL"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "fun",
+      "nighttime",
+      "interactive"
+    ],
+    "websites": [
+      "https://thealchemist.uk.com/"
+    ]
+  },
+  {
+    "title": "The Blues Kitchen Shoreditch",
+    "pack": "london",
+    "description": "Live blues bar with Southern US-style food and a late-night crowd.",
+    "location": [
+      "134-146 Curtain Road, London, EC2A 3AR"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "entertainment",
+      "culture",
+      "nighttime"
+    ],
+    "websites": [
+      "https://www.theblueskitchen.com/shoreditch/"
+    ]
+  },
+  {
+    "title": "Tonight Josephine",
+    "pack": "london",
+    "description": "Instagram-famous cocktail bar with bold decor and wild vibes.",
+    "location": [
+      "111 Waterloo Road, London, SE1 8SG"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "fun",
+      "entertainment",
+      "nighttime"
+    ],
+    "websites": [
+      "https://www.tonightjosephine.co.uk/"
+    ]
+  },
+  {
+    "title": "Jazz Cafe Camden",
+    "pack": "london",
+    "description": "Iconic music venue and bar offering soul, jazz, funk, and live performances.",
+    "location": [
+      "5 Parkway, Camden Town, London, NW1 7PG"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "entertainment",
+      "culture",
+      "nighttime"
+    ],
+    "websites": [
+      "https://thejazzcafelondon.com/"
+    ]
+  },
+  {
+    "title": "Fabric London",
+    "pack": "london",
+    "description": "Legendary nightclub known for cutting-edge electronic music and late nights.",
+    "location": [
+      "77A Charterhouse Street, London, EC1M 6HJ"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "entertainment",
+      "nighttime",
+      "fun",
+      "luxury"
+    ],
+    "websites": [
+      "https://www.fabriclondon.com/"
+    ]
+  },
+  {
+    "title": "XOYO",
+    "pack": "london",
+    "description": "Popular Shoreditch nightclub with DJs, electronic music, and themed nights.",
+    "location": [
+      "32-37 Cowper Street, London, EC2A 4AP"
+    ],
+    "duration": 3,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "nighttime",
+      "fun",
+      "entertainment"
+    ],
+    "websites": [
+      "https://www.xoyo.co.uk/"
+    ]
+  },
+  {
+    "title": "Ministry of Sound",
+    "pack": "london",
+    "description": "World-famous nightclub with big-name DJs and high-energy atmosphere.",
+    "location": [
+      "103 Gaunt Street, London, SE1 6DP"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "entertainment",
+      "nighttime",
+      "fun",
+      "active"
+    ],
+    "websites": [
+      "https://www.ministryofsound.com/"
+    ]
+  },
+  {
+    "title": "Monmouth Coffee Company",
+    "pack": "london",
+    "description": "Legendary Borough Market coffee roaster serving exceptional single-origin beans in a bustling atmosphere.",
+    "location": [
+      "2 Park Street, London SE1 9AB"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "culture",
+      "educational"
+    ],
+    "websites": [
+      "https://www.monmouthcoffee.co.uk"
+    ]
+  },
+  {
+    "title": "Sketch",
+    "pack": "london",
+    "description": "Pink tearoom in Mayfair offering afternoon tea in a whimsical, Instagram-worthy setting.",
+    "location": [
+      "9 Conduit Street, London W1S 2XG"
+    ],
+    "duration": 2,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "art",
+      "luxury",
+      "romantic"
+    ],
+    "websites": [
+      "https://sketch.london"
+    ]
+  },
+  {
+    "title": "Pavilion Café",
+    "pack": "london",
+    "description": "Charming lakeside café in Victoria Park with outdoor seating and homemade cakes.",
+    "location": [
+      "Victoria Park, Crown Gate West, London E9 7DE"
+    ],
+    "duration": 1.5,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "outdoors",
+      "nature",
+      "relaxing",
+      "budget-friendly"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Attendant Coffee Roasters",
+    "pack": "london",
+    "description": "Unique café housed in a converted Victorian underground toilet with expertly crafted coffee.",
+    "location": [
+      "74 Foley Street, London W1W 7TH"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "history",
+      "culture",
+      "fun"
+    ],
+    "websites": [
+      "https://www.the-attendant.com/"
+    ]
+  },
+  {
+    "title": "Dishoom",
+    "pack": "london",
+    "description": "Bombay-style café serving exceptional chai and Indian breakfast dishes in nostalgic Irani café setting.",
+    "location": [
+      "12 Upper St Martin's Lane, London WC2H 9FB"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "culture",
+      "nostalgic",
+      "educational"
+    ],
+    "websites": [
+      "https://www.dishoom.com"
+    ]
+  },
+  {
+    "title": "The Breakfast Club",
+    "pack": "london",
+    "description": "Retro American diner-style café with all-day breakfast and milkshakes in quirky surroundings.",
+    "location": [
+      "33 D'Arblay Street, London W1F 8EU"
+    ],
+    "duration": 1,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "fun",
+      "nostalgic",
+      "entertainment"
+    ],
+    "websites": [
+      "https://thebreakfastclubcafes.com"
+    ]
+  },
+  {
+    "title": "Kaffeine",
+    "pack": "london",
+    "description": "Fitzrovia institution known for flat whites, Australian-style coffee culture and excellent brunch.",
+    "location": [
+      "66 Great Titchfield Street, London W1W 7QJ"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "culture",
+      "relaxing"
+    ],
+    "websites": [
+      "https://kaffeine.co.uk"
+    ]
+  },
+  {
+    "title": "Cereal Killer Café",
+    "pack": "london",
+    "description": "Quirky Brick Lane café serving 120+ cereals from around the world in a nostalgic cartoon setting.",
+    "location": [
+      "139 Brick Lane, London E1 6SB"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "fun",
+      "nostalgic",
+      "interactive"
+    ],
+    "websites": [
+      "https://www.instagram.com/cerealkillercafe/"
+    ]
+  },
+  {
+    "title": "Fortnum & Mason Diamond Jubilee Tea Salon",
+    "pack": "london",
+    "description": "Elegant Piccadilly tearoom offering traditional afternoon tea with impeccable service and historic charm.",
+    "location": [
+      "181 Piccadilly, London W1A 1ER"
+    ],
+    "duration": 2,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "luxury",
+      "history",
+      "romantic"
+    ],
+    "websites": [
+      "https://www.fortnumandmason.com"
+    ]
+  },
+  {
+    "title": "Workshop Coffee",
+    "pack": "london",
+    "description": "Specialty coffee roastery in Fitzrovia with educational cupping sessions and artisanal brewing methods.",
+    "location": [
+      "27 Clerkenwell Road, London EC1M 5RN"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "educational",
+      "culture"
+    ],
+    "websites": [
+      "https://workshopcoffee.com"
+    ]
+  },
+  {
+    "title": "Duck & Waffle Local",
+    "pack": "london",
+    "description": "All-day dining spot in King's Cross with outdoor terrace offering casual comfort food and cocktails.",
+    "location": [
+      "St Pancras Square, London N1C 4AG"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "outdoors",
+      "entertainment"
+    ],
+    "websites": [
+      "https://duckandwaffle.com"
+    ]
+  },
+  {
+    "title": "Peggy Porschen Cakes",
+    "pack": "london",
+    "description": "Instagram-famous Belgravia boutique café known for pastel-colored exterior and exquisite cupcakes.",
+    "location": [
+      "116 Ebury Street, London SW1W 9QQ"
+    ],
+    "duration": 1,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "art",
+      "luxury",
+      "romantic"
+    ],
+    "websites": [
+      "https://www.peggyporschen.com"
+    ]
+  },
+  {
+    "title": "Grind Coffee Bar",
+    "pack": "london",
+    "description": "Modern coffee chain with DJ decks, late-night hours and quality espresso across multiple London locations.",
+    "location": [
+      "213 Old Street, London EC1V 9NR"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "entertainment",
+      "fun"
+    ],
+    "websites": [
+      "https://grind.co.uk"
+    ]
+  },
+  {
+    "title": "The Ivy Chelsea Garden",
+    "pack": "london",
+    "description": "Beautiful all-day brasserie with stunning garden terrace, perfect for special occasions and people-watching.",
+    "location": [
+      "197 King's Road, London SW3 5ED"
+    ],
+    "duration": 2,
+    "cost": "High",
+    "tags": [
+      "food",
+      "outdoors",
+      "luxury",
+      "romantic",
+      "entertainment"
+    ],
+    "websites": [
+      "https://theivychelseagarden.com"
+    ]
+  },
+  {
+    "title": "Prufrock Coffee",
+    "pack": "london",
+    "description": "Leather Lane coffee laboratory offering barista courses and some of London's most technical coffee brewing.",
+    "location": [
+      "23-25 Leather Lane, London EC1N 7TE"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "educational",
+      "interactive",
+      "science"
+    ],
+    "websites": [
+      "https://prufrockcoffee.com"
+    ]
+  },
+  {
+    "title": "The Lion King - Lyceum Theatre",
+    "pack": "london",
+    "description": "World-famous musical featuring stunning costumes and music in the heart of the West End.",
+    "location": [
+      "21 Wellington Street, London WC2E 7RQ"
+    ],
+    "duration": 2.5,
+    "cost": "High",
+    "tags": [
+      "indoor",
+      "culture",
+      "art",
+      "entertainment"
+    ],
+    "websites": [
+      "https://www.thelionking.co.uk"
+    ]
+  },
+  {
+    "title": "Shakespeare's Globe Theatre",
+    "pack": "london",
+    "description": "Authentic reconstruction of Shakespeare's original theatre offering classic plays and educational tours.",
+    "location": [
+      "21 New Globe Walk, London SE1 9DT"
+    ],
+    "duration": 2.5,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "culture",
+      "art",
+      "history",
+      "educational"
+    ],
+    "websites": [
+      "https://www.shakespearesglobe.com"
+    ]
+  },
+  {
+    "title": "Royal Opera House",
+    "pack": "london",
+    "description": "World-renowned venue for opera, ballet, and classical performances in Covent Garden.",
+    "location": [
+      "Bow Street, London WC2E 9DD"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "indoor",
+      "culture",
+      "art",
+      "luxury",
+      "romantic"
+    ],
+    "websites": [
+      "https://www.roh.org.uk"
+    ]
+  },
+  {
+    "title": "BFI Southbank",
+    "pack": "london",
+    "description": "Premier cinema showcasing arthouse films, classics, and film festivals with riverside dining.",
+    "location": [
+      "Belvedere Road, London SE1 8XT"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "culture",
+      "art",
+      "educational",
+      "relaxing"
+    ],
+    "websites": [
+      "https://www.bfi.org.uk/bfi-southbank"
+    ]
+  },
+  {
+    "title": "Electric Cinema Notting Hill",
+    "pack": "london",
+    "description": "Historic luxury cinema with leather armchairs, footstools, and table service for a premium experience.",
+    "location": [
+      "191 Portobello Road, London W11 2ED"
+    ],
+    "duration": 2,
+    "cost": "High",
+    "tags": [
+      "indoor",
+      "luxury",
+      "relaxing",
+      "romantic",
+      "history"
+    ],
+    "websites": [
+      "https://www.electriccinema.co.uk"
+    ]
+  },
+  {
+    "title": "Comedy Store London",
+    "pack": "london",
+    "description": "Famous comedy club in Leicester Square hosting stand-up shows and improv nights.",
+    "location": [
+      "1a Oxendon Street, London SW1Y 4EE"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "entertainment",
+      "fun",
+      "nighttime"
+    ],
+    "websites": [
+      "https://www.thecomedystore.co.uk"
+    ]
+  },
+  {
+    "title": "Tate Modern",
+    "pack": "london",
+    "description": "World's leading modern art gallery housed in a former power station with stunning city views.",
+    "location": [
+      "Bankside, London SE1 9TG"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "indoor",
+      "culture",
+      "art",
+      "educational",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.tate.org.uk/visit/tate-modern"
+    ]
+  },
+  {
+    "title": "KOKO Camden",
+    "pack": "london",
+    "description": "Historic music venue in a restored Victorian theatre hosting live bands and club nights.",
+    "location": [
+      "1A Camden High Street, London NW1 7JE"
+    ],
+    "duration": 3,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "entertainment",
+      "nighttime",
+      "history",
+      "culture"
+    ],
+    "websites": [
+      "https://www.koko.uk.com"
+    ]
+  },
+  {
+    "title": "The Old Vic",
+    "pack": "london",
+    "description": "Independent not-for-profit theatre presenting bold new works and classic revivals.",
+    "location": [
+      "103 The Cut, London SE1 8NB"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "culture",
+      "art",
+      "history"
+    ],
+    "websites": [
+      "https://www.oldvictheatre.com"
+    ]
+  },
+  {
+    "title": "Barbican Centre",
+    "pack": "london",
+    "description": "Europe's largest multi-arts venue with theatre, concerts, exhibitions, and cinema.",
+    "location": [
+      "Silk Street, London EC2Y 8DS"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "culture",
+      "art",
+      "educational",
+      "interactive"
+    ],
+    "websites": [
+      "https://www.barbican.org.uk"
+    ]
+  },
+  {
+    "title": "Roundhouse",
+    "pack": "london",
+    "description": "Iconic circular venue in Camden hosting cutting-edge theatre, music, and circus performances.",
+    "location": [
+      "Chalk Farm Road, London NW1 8EH"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "culture",
+      "art",
+      "interactive",
+      "fun"
+    ],
+    "websites": [
+      "https://www.roundhouse.org.uk"
+    ]
+  },
+  {
+    "title": "Fabric",
+    "pack": "london",
+    "description": "World-famous nightclub in Farringdon with cutting-edge sound system and underground DJs.",
+    "location": [
+      "77A Charterhouse Street, London EC1M 6HJ"
+    ],
+    "duration": 4,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "nighttime",
+      "entertainment",
+      "active",
+      "fun"
+    ],
+    "websites": [
+      "https://www.fabriclondon.com"
+    ]
+  },
+  {
+    "title": "National Theatre",
+    "pack": "london",
+    "description": "Leading theatre on the South Bank presenting new works and classics across three auditoriums.",
+    "location": [
+      "Upper Ground, London SE1 9PX"
+    ],
+    "duration": 2.5,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "culture",
+      "art",
+      "educational"
+    ],
+    "websites": [
+      "https://www.nationaltheatre.org.uk"
+    ]
+  },
+  {
+    "title": "O2 Arena",
+    "pack": "london",
+    "description": "Massive entertainment venue hosting major concerts, sporting events, and shows.",
+    "location": [
+      "Peninsula Square, London SE10 0DX"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "indoor",
+      "entertainment",
+      "active",
+      "fun"
+    ],
+    "websites": [
+      "https://www.theo2.co.uk"
+    ]
+  },
+  {
+    "title": "Sadler's Wells Theatre",
+    "pack": "london",
+    "description": "London's premier dance venue showcasing contemporary dance, ballet, and international companies.",
+    "location": [
+      "Rosebery Avenue, London EC1R 4TN"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "culture",
+      "art",
+      "active"
+    ],
+    "websites": [
+      "https://www.sadlerswells.com"
+    ]
+  },
+  {
+    "title": "Hyde Park",
+    "pack": "london",
+    "description": "Famous 350-acre central London park with Speaker's Corner, Serpentine Lake, and Diana Memorial.",
+    "location": [
+      "Hyde Park, London W2 2UH"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "budget-friendly",
+      "adventure"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/hyde-park"
+    ]
+  },
+  {
+    "title": "Regent's Park",
+    "pack": "london",
+    "description": "Elegant 395-acre park featuring London Zoo, Queen Mary's Gardens, and outdoor theatre.",
+    "location": [
+      "Regent's Park, London NW1 4NU"
+    ],
+    "duration": 2.5,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "culture",
+      "budget-friendly",
+      "adventure"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/regents-park"
+    ]
+  },
+  {
+    "title": "Richmond Park",
+    "pack": "london",
+    "description": "Largest Royal Park with 2,500 acres of grassland, ancient trees, and roaming deer herds.",
+    "location": [
+      "Richmond Park, Richmond, London TW10 5HS"
+    ],
+    "duration": 3,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "adventure",
+      "budget-friendly",
+      "active"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/richmond-park"
+    ]
+  },
+  {
+    "title": "Hampstead Heath",
+    "pack": "london",
+    "description": "Ancient heathland with swimming ponds, Parliament Hill views, and wild natural landscapes.",
+    "location": [
+      "Hampstead Heath, London NW3 2PP"
+    ],
+    "duration": 2.5,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "adventure",
+      "budget-friendly",
+      "active"
+    ],
+    "websites": [
+      "https://www.cityoflondon.gov.uk/things-to-do/green-spaces/hampstead-heath"
+    ]
+  },
+  {
+    "title": "Greenwich Park",
+    "pack": "london",
+    "description": "Historic park with Royal Observatory, Prime Meridian Line, and stunning London skyline views.",
+    "location": [
+      "Greenwich Park, London SE10 8QY"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "educational",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/greenwich-park"
+    ]
+  },
+  {
+    "title": "Kensington Gardens",
+    "pack": "london",
+    "description": "Royal park featuring Kensington Palace, Diana Memorial Playground, and Italian Gardens.",
+    "location": [
+      "Kensington Gardens, London W8 4PX"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "culture",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/kensington-gardens"
+    ]
+  },
+  {
+    "title": "St. James's Park",
+    "pack": "london",
+    "description": "Central London park with pelicans, lake views, and proximity to Buckingham Palace.",
+    "location": [
+      "St James's Park, London SW1A 2BJ"
+    ],
+    "duration": 1.5,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "culture",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/st-jamess-park"
+    ]
+  },
+  {
+    "title": "Primrose Hill",
+    "pack": "london",
+    "description": "Small park north of Regent's Park offering panoramic views of central London skyline.",
+    "location": [
+      "Primrose Hill, London NW1 4NR"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "romantic",
+      "budget-friendly",
+      "relaxing"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/the-regents-park/things-to-see-and-do/primrose-hill"
+    ]
+  },
+  {
+    "title": "Battersea Park",
+    "pack": "london",
+    "description": "Victorian park with children's zoo, Peace Pagoda, and riverside Thames Path.",
+    "location": [
+      "Battersea Park, London SW11 4NJ"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "fun",
+      "budget-friendly"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Holland Park",
+    "pack": "london",
+    "description": "Peaceful park with Japanese garden, peacocks, opera house, and formal gardens.",
+    "location": [
+      "Holland Park, London W8 6LU"
+    ],
+    "duration": 1.5,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "culture",
+      "relaxing",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.rbkc.gov.uk/leisure-and-culture/parks/holland-park"
+    ]
+  },
+  {
+    "title": "Victoria Park",
+    "pack": "london",
+    "description": "East London's largest park with boating lake, festivals, and Victorian heritage features.",
+    "location": [
+      "Victoria Park, London E9 7BT"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "entertainment",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.towerhamlets.gov.uk/lgnl/leisure_and_culture/parks_and_open_spaces/victoria_park.aspx"
+    ]
+  },
+  {
+    "title": "Clapham Common",
+    "pack": "london",
+    "description": "Large common with historic bandstand, ponds, and popular weekend markets.",
+    "location": [
+      "Clapham Common, London SW4 9DE"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "shopping",
+      "budget-friendly"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Kyoto Garden",
+    "pack": "london",
+    "description": "Authentic Japanese garden within Holland Park featuring waterfalls, stone lanterns, and koi pond.",
+    "location": [
+      "Holland Park, London W8 6LU"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "culture",
+      "relaxing",
+      "romantic"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Crystal Palace Park",
+    "pack": "london",
+    "description": "Victorian park featuring prehistoric dinosaur sculptures, maze, and Crystal Palace ruins.",
+    "location": [
+      "Crystal Palace Park, London SE20 8DT"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "educational",
+      "fun"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Alexandra Palace Park",
+    "pack": "london",
+    "description": "North London park with Victorian palace, panoramic city views, and entertainment venue.",
+    "location": [
+      "Alexandra Palace Way, London N22 7AY"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "entertainment",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.alexandrapalace.com/park/"
+    ]
+  },
+  {
+    "title": "Brockwell Park",
+    "pack": "london",
+    "description": "South London park with historic clock tower, lido, and panoramic views over London.",
+    "location": [
+      "Brockwell Park, London SE24 0PA"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "active",
+      "budget-friendly"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Bushy Park",
+    "pack": "london",
+    "description": "Royal park with deer herds, Chestnut Avenue, and historic Hampton Court Palace nearby.",
+    "location": [
+      "Bushy Park, Hampton, London TW12 2EJ"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "adventure",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/bushy-park"
+    ]
+  },
+  {
+    "title": "Dulwich Park",
+    "pack": "london",
+    "description": "Victorian park with boating lake, American garden, and excellent cycling paths.",
+    "location": [
+      "Dulwich Park, London SE21 7BQ"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "active",
+      "budget-friendly"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Kew Gardens",
+    "pack": "london",
+    "description": "UNESCO World Heritage botanical gardens with tropical houses, treetop walkway, and royal heritage.",
+    "location": [
+      "Royal Botanic Gardens, Kew, Richmond, London TW9 3AE"
+    ],
+    "duration": 3,
+    "cost": "Medium",
+    "tags": [
+      "outdoors",
+      "nature",
+      "educational",
+      "history",
+      "culture"
+    ],
+    "websites": [
+      "https://www.kew.org"
+    ]
+  },
+  {
+    "title": "Lee Valley Regional Park",
+    "pack": "london",
+    "description": "26-mile linear park along River Lee with nature reserves, cycling paths, and water sports.",
+    "location": [
+      "Lee Valley Regional Park, Waltham Abbey, London EN9 2EF"
+    ],
+    "duration": 3,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "adventure",
+      "active",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.leevalleypark.org.uk"
+    ]
+  },
+  {
+    "title": "Gordon Ramsay",
+    "pack": "london",
+    "description": "Three Michelin-starred flagship restaurant in Chelsea offering exquisite French cuisine and impeccable service.",
+    "location": [
+      "68 Royal Hospital Rd, Chelsea, London SW3 4HP"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "luxury",
+      "romantic"
+    ],
+    "websites": [
+      "https://www.gordonramsayrestaurants.com"
+    ]
+  },
+  {
+    "title": "Dishoom King's Cross",
+    "pack": "london",
+    "description": "Bombay-style café in a stunning Victorian railway building, serving authentic Indian cuisine with theatrical flair.",
+    "location": [
+      "5 Stable St, King's Cross, London N1C 4AB"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "culture",
+      "nostalgic",
+      "history"
+    ],
+    "websites": [
+      "https://www.dishoom.com"
+    ]
+  },
+  {
+    "title": "Borough Market Food Stalls",
+    "pack": "london",
+    "description": "Historic food market with diverse street food vendors offering authentic cuisines from around the world.",
+    "location": [
+      "8 Southwark St, London SE1 1TL"
+    ],
+    "duration": 1.5,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "outdoor",
+      "budget-friendly",
+      "culture",
+      "history",
+      "interactive"
+    ],
+    "websites": [
+      "https://boroughmarket.org.uk"
+    ]
+  },
+  {
+    "title": "Clos Maggiore",
+    "pack": "london",
+    "description": "Romantic French restaurant in Covent Garden famous for its enchanted conservatory with blossom-covered ceiling.",
+    "location": [
+      "33 King St, Covent Garden, London WC2E 8JD"
+    ],
+    "duration": 2.5,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "romantic",
+      "luxury",
+      "art"
+    ],
+    "websites": [
+      "https://www.closmaggiore.com"
+    ]
+  },
+  {
+    "title": "Inamo",
+    "pack": "london",
+    "description": "Interactive Asian fusion restaurant where you order via touchscreen tables and watch chefs prepare food.",
+    "location": [
+      "134-136 Wardour St, Soho, London W1F 8ZP"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "interactive",
+      "fun",
+      "entertainment"
+    ],
+    "websites": [
+      "https://www.inamo-restaurant.com"
+    ]
+  },
+  {
+    "title": "The Shard Restaurants",
+    "pack": "london",
+    "description": "Collection of high-end restaurants on floors 31-33 of London's tallest building with panoramic city views.",
+    "location": [
+      "31 St Thomas St, London SE1 9RY"
+    ],
+    "duration": 2.5,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "luxury",
+      "romantic",
+      "adventure"
+    ],
+    "websites": [
+      "https://www.the-shard.com"
+    ]
+  },
+  {
+    "title": "Rules Restaurant",
+    "pack": "london",
+    "description": "London's oldest restaurant established in 1798, serving traditional British game and classic dishes in historic setting.",
+    "location": [
+      "35 Maiden Ln, Covent Garden, London WC2E 7LB"
+    ],
+    "duration": 2.5,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "history",
+      "nostalgic",
+      "luxury",
+      "culture"
+    ],
+    "websites": [
+      "https://www.rules.co.uk"
+    ]
+  },
+  {
+    "title": "Gymkhana",
+    "pack": "london",
+    "description": "Michelin-starred Indian restaurant in Mayfair recreating the British Raj club atmosphere with refined Indian cuisine.",
+    "location": [
+      "42 Albemarle St, Mayfair, London W1S 4JH"
+    ],
+    "duration": 2.5,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "luxury",
+      "culture",
+      "history",
+      "nostalgic"
+    ],
+    "websites": [
+      "https://www.gymkhanalondon.com"
+    ]
+  },
+  {
+    "title": "Dans Le Noir?",
+    "pack": "london",
+    "description": "Unique dining experience where you eat in complete darkness, served by visually impaired waiters.",
+    "location": [
+      "30-31 Clerkenwell Green, London EC1R 0DU"
+    ],
+    "duration": 2.5,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "interactive",
+      "adventure",
+      "educational",
+      "fun"
+    ],
+    "websites": [
+      "https://london.danslenoir.com"
+    ]
+  },
+  {
+    "title": "Flat Iron",
+    "pack": "london",
+    "description": "No-reservations steakhouse chain serving quality flat iron steaks at affordable prices in casual settings.",
+    "location": [
+      "17 Beak St, Soho, London W1F 9RW"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.flatiron.co.uk"
+    ]
+  },
+  {
+    "title": "Berners Tavern",
+    "pack": "london",
+    "description": "Grand all-day dining room in Fitzrovia with ornate décor, gold-framed paintings, and modern British cuisine.",
+    "location": [
+      "10 Berners St, Fitzrovia, London W1T 3NP"
+    ],
+    "duration": 2,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "luxury",
+      "art",
+      "romantic"
+    ],
+    "websites": [
+      "https://www.bernerstavern.com"
+    ]
+  },
+  {
+    "title": "The Ivy",
+    "pack": "london",
+    "description": "Legendary West End restaurant frequented by celebrities, serving modern British cuisine in theatrical surroundings.",
+    "location": [
+      "1-5 West St, Covent Garden, London WC2H 9NQ"
+    ],
+    "duration": 2,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "luxury",
+      "entertainment",
+      "culture",
+      "nostalgic"
+    ],
+    "websites": [
+      "https://www.the-ivy.co.uk"
+    ]
+  },
+  {
+    "title": "Pembroke Lodge",
+    "pack": "london",
+    "description": "Georgian mansion restaurant in Richmond Park offering British cuisine with stunning views across London.",
+    "location": [
+      "Richmond Park, Richmond, London TW10 5HX"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "outdoor",
+      "indoor",
+      "nature",
+      "relaxing",
+      "history",
+      "romantic"
+    ],
+    "websites": [
+      "https://www.pembroke-lodge.co.uk"
+    ]
+  },
+  {
+    "title": "Brick Lane Curry Houses",
+    "pack": "london",
+    "description": "Historic street lined with authentic Bangladeshi restaurants offering traditional curries and vibrant atmosphere.",
+    "location": [
+      "Brick Ln, Spitalfields, London E1 6QL"
+    ],
+    "duration": 1.5,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "budget-friendly",
+      "culture",
+      "history",
+      "nighttime"
+    ],
+    "websites": [
+      "https://www.visitbricklane.org"
+    ]
+  },
+  {
+    "title": "Aqua Shard",
+    "pack": "london",
+    "description": "Contemporary British restaurant on level 31 of The Shard with floor-to-ceiling windows and spectacular views.",
+    "location": [
+      "Level 31, The Shard, 31 St Thomas St, London SE1 9RY"
+    ],
+    "duration": 2.5,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "luxury",
+      "romantic",
+      "adventure"
+    ],
+    "websites": [
+      "https://www.aquashard.co.uk"
+    ]
+  },
+  {
+    "title": "Westfield London",
+    "pack": "london",
+    "description": "One of the largest shopping centres in Europe, offering a wide range of shops, dining, and entertainment.",
+    "location": [
+      "White City, London W12 7GF"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "shopping",
+      "indoor",
+      "entertainment",
+      "food",
+      "luxury"
+    ],
+    "websites": [
+      "https://www.westfield.com/en/united-kingdom/london"
+    ]
+  },
+  {
+    "title": "Covent Garden Market",
+    "pack": "london",
+    "description": "Historic market known for unique shops, street performers, restaurants, and cultural experiences.",
+    "location": [
+      "Covent Garden, London WC2E 8RF"
+    ],
+    "duration": 3,
+    "cost": "Medium",
+    "tags": [
+      "shopping",
+      "outdoors",
+      "culture",
+      "entertainment",
+      "food"
+    ],
+    "websites": [
+      "https://www.coventgarden.london/"
+    ]
+  },
+  {
+    "title": "Canary Wharf Shopping Centre",
+    "pack": "london",
+    "description": "Modern shopping centre in the financial district featuring high-end retailers and restaurants.",
+    "location": [
+      "Canary Wharf, London E14 5NY"
+    ],
+    "duration": 2.5,
+    "cost": "Medium",
+    "tags": [
+      "shopping",
+      "indoor",
+      "luxury",
+      "food"
+    ],
+    "websites": [
+      "https://canarywharf.com/shops-services/directory/"
+    ]
+  },
+  {
+    "title": "Brent Cross Shopping Centre",
+    "pack": "london",
+    "description": "Large indoor shopping centre offering a variety of popular high street and designer stores.",
+    "location": [
+      "Brent Cross, London NW4 3FP"
+    ],
+    "duration": 3,
+    "cost": "Medium",
+    "tags": [
+      "shopping",
+      "indoor"
+    ],
+    "websites": [
+      "https://www.brentcross.co.uk/"
+    ]
+  },
+  {
+    "title": "King's Road Shopping",
+    "pack": "london",
+    "description": "A famous shopping street with a mix of boutique stores, fashion, and lifestyle shops.",
+    "location": [
+      "King's Road, Chelsea, London SW3"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "shopping",
+      "outdoors",
+      "luxury",
+      "culture"
+    ],
+    "websites": [
+      "https://www.kingsroad.co.uk/shop-kings-road-london/"
+    ]
+  },
+  {
+    "title": "All Star Lanes",
+    "pack": "london",
+    "description": "Enjoy a vibrant bowling alley with great food and cocktails at All Star Lanes.",
+    "location": [
+      "Holborn, London WC2B 4HL",
+      "Shoreditch, London E1 6PJ"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "fun",
+      "entertainment",
+      "food"
+    ],
+    "websites": [
+      "https://allstarlanes.co.uk/"
+    ]
+  },
+  {
+    "title": "Swingers Crazy Golf",
+    "pack": "london",
+    "description": "Play fun and quirky indoor crazy golf courses with great food and drinks.",
+    "location": [
+      "City, London EC2M 2QS",
+      "West End, London W1D 3BS"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "fun",
+      "entertainment",
+      "food"
+    ],
+    "websites": [
+      "https://www.swingers.club/uk"
+    ]
+  },
+  {
+    "title": "London Bicycle Tour Company",
+    "pack": "london",
+    "description": "Discover London's iconic landmarks and hidden gems on guided bike tours with experienced guides.",
+    "location": [
+      "74 Kennington Road, London SE11 6NL"
+    ],
+    "duration": 3.5,
+    "cost": "Medium",
+    "tags": [
+      "outdoors",
+      "active",
+      "adventure",
+      "travel",
+      "educational"
+    ],
+    "websites": [
+      "https://www.londonbicycle.com/"
+    ]
+  },
+  {
+    "title": "The Castle Climbing Centre",
+    "pack": "london",
+    "description": "Try indoor climbing at this popular climbing centre located in a former Victorian water pumping station.",
+    "location": [
+      "Green Lanes, London N4 2HA"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "active",
+      "adventure"
+    ],
+    "websites": [
+      "https://castle-climbing.co.uk/"
+    ]
+  },
+  {
+    "title": "TeamSport Go Karting London",
+    "pack": "london",
+    "description": "Race your partner at TeamSport's indoor go-karting track for a thrilling experience.",
+    "location": [
+      "Acton, London W3 6XA"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "entertainment",
+      "fun",
+      "active"
+    ],
+    "websites": [
+      "https://www.team-sport.co.uk/go-kart-tracks/london"
+    ]
+  },
+  {
+    "title": "Queens Skate Dine Bowl",
+    "pack": "london",
+    "description": "Enjoy skating, bowling, dining, and entertainment all under one roof.",
+    "location": [
+      "Queensway, London W2 4QJ"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "fun",
+      "active",
+      "food",
+      "entertainment"
+    ],
+    "websites": [
+      "https://www.designmynight.com/london/event-space/notting-hill/queens-skate-dine-bowl"
+    ]
+  },
+  {
+    "title": "Better London Fields Lido",
+    "pack": "london",
+    "description": "Swim in a heated 50m outdoor pool with sunbathing areas and a café at this popular lido.",
+    "location": [
+      "London Fields West Side, London E8 3EU"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "active",
+      "relaxing"
+    ],
+    "websites": [
+      "https://www.better.org.uk/leisure-centre/london/hackney/london-fields-lido"
+    ]
+  },
+  {
+    "title": "Better Swiss Cottage Leisure Centre",
+    "pack": "london",
+    "description": "Features a large gym, 25m swimming pool, climbing wall, and spa facilities in Swiss Cottage.",
+    "location": [
+      "Winchester Rd, London NW3 3NR"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "active",
+      "relaxing",
+      "family-friendly"
+    ],
+    "websites": [
+      "https://www.better.org.uk/leisure-centre/london/camden/swiss-cottage-leisure-centre"
+    ]
+  },
+  {
+    "title": "Better Wimbledon Leisure Centre and Spa",
+    "pack": "london",
+    "description": "Modern gym and pool facilities combined with a day spa in a beautifully restored Victorian building.",
+    "location": [
+      "Latimer Rd, London SW19 1EW"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "active",
+      "relaxing",
+      "spa"
+    ],
+    "websites": [
+      "https://www.better.org.uk/leisure-centre/london/merton/wimbledon-leisure-centre"
+    ]
+  },
+  {
+    "title": "Nightjar",
+    "pack": "london",
+    "description": "Speakeasy-style cocktail bar known for its vintage vibe and creative drinks.",
+    "location": [
+      "129 City Road, London, EC1V 1JB"
+    ],
+    "duration": 1.5,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "romantic",
+      "nostalgic",
+      "nighttime",
+      "luxury"
+    ],
+    "websites": [
+      "https://www.barnightjar.com/"
+    ]
+  },
+  {
+    "title": "The Alchemist",
+    "pack": "london",
+    "description": "Trendy bar with theatrical cocktails and moody lighting.",
+    "location": [
+      "6 Bevis Marks, London, EC3A 7HL"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "fun",
+      "nighttime",
+      "interactive"
+    ],
+    "websites": [
+      "https://thealchemist.uk.com/"
+    ]
+  },
+  {
+    "title": "The Blues Kitchen Shoreditch",
+    "pack": "london",
+    "description": "Live blues bar with Southern US-style food and a late-night crowd.",
+    "location": [
+      "134-146 Curtain Road, London, EC2A 3AR"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "entertainment",
+      "culture",
+      "nighttime"
+    ],
+    "websites": [
+      "https://www.theblueskitchen.com/shoreditch/"
+    ]
+  },
+  {
+    "title": "Tonight Josephine",
+    "pack": "london",
+    "description": "Instagram-famous cocktail bar with bold decor and wild vibes.",
+    "location": [
+      "111 Waterloo Road, London, SE1 8SG"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "fun",
+      "entertainment",
+      "nighttime"
+    ],
+    "websites": [
+      "https://www.tonightjosephine.co.uk/"
+    ]
+  },
+  {
+    "title": "Jazz Cafe Camden",
+    "pack": "london",
+    "description": "Iconic music venue and bar offering soul, jazz, funk, and live performances.",
+    "location": [
+      "5 Parkway, Camden Town, London, NW1 7PG"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "entertainment",
+      "culture",
+      "nighttime"
+    ],
+    "websites": [
+      "https://thejazzcafelondon.com/"
+    ]
+  },
+  {
+    "title": "Fabric London",
+    "pack": "london",
+    "description": "Legendary nightclub known for cutting-edge electronic music and late nights.",
+    "location": [
+      "77A Charterhouse Street, London, EC1M 6HJ"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "entertainment",
+      "nighttime",
+      "fun",
+      "luxury"
+    ],
+    "websites": [
+      "https://www.fabriclondon.com/"
+    ]
+  },
+  {
+    "title": "XOYO",
+    "pack": "london",
+    "description": "Popular Shoreditch nightclub with DJs, electronic music, and themed nights.",
+    "location": [
+      "32-37 Cowper Street, London, EC2A 4AP"
+    ],
+    "duration": 3,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "nighttime",
+      "fun",
+      "entertainment"
+    ],
+    "websites": [
+      "https://www.xoyo.co.uk/"
+    ]
+  },
+  {
+    "title": "Ministry of Sound",
+    "pack": "london",
+    "description": "World-famous nightclub with big-name DJs and high-energy atmosphere.",
+    "location": [
+      "103 Gaunt Street, London, SE1 6DP"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "entertainment",
+      "nighttime",
+      "fun",
+      "active"
+    ],
+    "websites": [
+      "https://www.ministryofsound.com/"
+    ]
+  },
+  {
+    "title": "Monmouth Coffee Company",
+    "pack": "london",
+    "description": "Legendary Borough Market coffee roaster serving exceptional single-origin beans in a bustling atmosphere.",
+    "location": [
+      "2 Park Street, London SE1 9AB"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "culture",
+      "educational"
+    ],
+    "websites": [
+      "https://www.monmouthcoffee.co.uk"
+    ]
+  },
+  {
+    "title": "Sketch",
+    "pack": "london",
+    "description": "Pink tearoom in Mayfair offering afternoon tea in a whimsical, Instagram-worthy setting.",
+    "location": [
+      "9 Conduit Street, London W1S 2XG"
+    ],
+    "duration": 2,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "art",
+      "luxury",
+      "romantic"
+    ],
+    "websites": [
+      "https://sketch.london"
+    ]
+  },
+  {
+    "title": "Pavilion Café",
+    "pack": "london",
+    "description": "Charming lakeside café in Victoria Park with outdoor seating and homemade cakes.",
+    "location": [
+      "Victoria Park, Crown Gate West, London E9 7DE"
+    ],
+    "duration": 1.5,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "outdoors",
+      "nature",
+      "relaxing",
+      "budget-friendly"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Attendant Coffee Roasters",
+    "pack": "london",
+    "description": "Unique café housed in a converted Victorian underground toilet with expertly crafted coffee.",
+    "location": [
+      "74 Foley Street, London W1W 7TH"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "history",
+      "culture",
+      "fun"
+    ],
+    "websites": [
+      "https://www.the-attendant.com/"
+    ]
+  },
+  {
+    "title": "Dishoom",
+    "pack": "london",
+    "description": "Bombay-style café serving exceptional chai and Indian breakfast dishes in nostalgic Irani café setting.",
+    "location": [
+      "12 Upper St Martin's Lane, London WC2H 9FB"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "culture",
+      "nostalgic",
+      "educational"
+    ],
+    "websites": [
+      "https://www.dishoom.com"
+    ]
+  },
+  {
+    "title": "The Breakfast Club",
+    "pack": "london",
+    "description": "Retro American diner-style café with all-day breakfast and milkshakes in quirky surroundings.",
+    "location": [
+      "33 D'Arblay Street, London W1F 8EU"
+    ],
+    "duration": 1,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "fun",
+      "nostalgic",
+      "entertainment"
+    ],
+    "websites": [
+      "https://thebreakfastclubcafes.com"
+    ]
+  },
+  {
+    "title": "Kaffeine",
+    "pack": "london",
+    "description": "Fitzrovia institution known for flat whites, Australian-style coffee culture and excellent brunch.",
+    "location": [
+      "66 Great Titchfield Street, London W1W 7QJ"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "culture",
+      "relaxing"
+    ],
+    "websites": [
+      "https://kaffeine.co.uk"
+    ]
+  },
+  {
+    "title": "Cereal Killer Café",
+    "pack": "london",
+    "description": "Quirky Brick Lane café serving 120+ cereals from around the world in a nostalgic cartoon setting.",
+    "location": [
+      "139 Brick Lane, London E1 6SB"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "fun",
+      "nostalgic",
+      "interactive"
+    ],
+    "websites": [
+      "https://www.instagram.com/cerealkillercafe/"
+    ]
+  },
+  {
+    "title": "Fortnum & Mason Diamond Jubilee Tea Salon",
+    "pack": "london",
+    "description": "Elegant Piccadilly tearoom offering traditional afternoon tea with impeccable service and historic charm.",
+    "location": [
+      "181 Piccadilly, London W1A 1ER"
+    ],
+    "duration": 2,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "luxury",
+      "history",
+      "romantic"
+    ],
+    "websites": [
+      "https://www.fortnumandmason.com"
+    ]
+  },
+  {
+    "title": "Workshop Coffee",
+    "pack": "london",
+    "description": "Specialty coffee roastery in Fitzrovia with educational cupping sessions and artisanal brewing methods.",
+    "location": [
+      "27 Clerkenwell Road, London EC1M 5RN"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "educational",
+      "culture"
+    ],
+    "websites": [
+      "https://workshopcoffee.com"
+    ]
+  },
+  {
+    "title": "Duck & Waffle Local",
+    "pack": "london",
+    "description": "All-day dining spot in King's Cross with outdoor terrace offering casual comfort food and cocktails.",
+    "location": [
+      "St Pancras Square, London N1C 4AG"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "outdoors",
+      "entertainment"
+    ],
+    "websites": [
+      "https://duckandwaffle.com"
+    ]
+  },
+  {
+    "title": "Peggy Porschen Cakes",
+    "pack": "london",
+    "description": "Instagram-famous Belgravia boutique café known for pastel-colored exterior and exquisite cupcakes.",
+    "location": [
+      "116 Ebury Street, London SW1W 9QQ"
+    ],
+    "duration": 1,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "art",
+      "luxury",
+      "romantic"
+    ],
+    "websites": [
+      "https://www.peggyporschen.com"
+    ]
+  },
+  {
+    "title": "Grind Coffee Bar",
+    "pack": "london",
+    "description": "Modern coffee chain with DJ decks, late-night hours and quality espresso across multiple London locations.",
+    "location": [
+      "213 Old Street, London EC1V 9NR"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "entertainment",
+      "fun"
+    ],
+    "websites": [
+      "https://grind.co.uk"
+    ]
+  },
+  {
+    "title": "The Ivy Chelsea Garden",
+    "pack": "london",
+    "description": "Beautiful all-day brasserie with stunning garden terrace, perfect for special occasions and people-watching.",
+    "location": [
+      "197 King's Road, London SW3 5ED"
+    ],
+    "duration": 2,
+    "cost": "High",
+    "tags": [
+      "food",
+      "outdoors",
+      "luxury",
+      "romantic",
+      "entertainment"
+    ],
+    "websites": [
+      "https://theivychelseagarden.com"
+    ]
+  },
+  {
+    "title": "Prufrock Coffee",
+    "pack": "london",
+    "description": "Leather Lane coffee laboratory offering barista courses and some of London's most technical coffee brewing.",
+    "location": [
+      "23-25 Leather Lane, London EC1N 7TE"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "educational",
+      "interactive",
+      "science"
+    ],
+    "websites": [
+      "https://prufrockcoffee.com"
+    ]
+  },
+  {
+    "title": "The Lion King - Lyceum Theatre",
+    "pack": "london",
+    "description": "World-famous musical featuring stunning costumes and music in the heart of the West End.",
+    "location": [
+      "21 Wellington Street, London WC2E 7RQ"
+    ],
+    "duration": 2.5,
+    "cost": "High",
+    "tags": [
+      "indoor",
+      "culture",
+      "art",
+      "entertainment"
+    ],
+    "websites": [
+      "https://www.thelionking.co.uk"
+    ]
+  },
+  {
+    "title": "Shakespeare's Globe Theatre",
+    "pack": "london",
+    "description": "Authentic reconstruction of Shakespeare's original theatre offering classic plays and educational tours.",
+    "location": [
+      "21 New Globe Walk, London SE1 9DT"
+    ],
+    "duration": 2.5,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "culture",
+      "art",
+      "history",
+      "educational"
+    ],
+    "websites": [
+      "https://www.shakespearesglobe.com"
+    ]
+  },
+  {
+    "title": "Royal Opera House",
+    "pack": "london",
+    "description": "World-renowned venue for opera, ballet, and classical performances in Covent Garden.",
+    "location": [
+      "Bow Street, London WC2E 9DD"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "indoor",
+      "culture",
+      "art",
+      "luxury",
+      "romantic"
+    ],
+    "websites": [
+      "https://www.roh.org.uk"
+    ]
+  },
+  {
+    "title": "BFI Southbank",
+    "pack": "london",
+    "description": "Premier cinema showcasing arthouse films, classics, and film festivals with riverside dining.",
+    "location": [
+      "Belvedere Road, London SE1 8XT"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "culture",
+      "art",
+      "educational",
+      "relaxing"
+    ],
+    "websites": [
+      "https://www.bfi.org.uk/bfi-southbank"
+    ]
+  },
+  {
+    "title": "Electric Cinema Notting Hill",
+    "pack": "london",
+    "description": "Historic luxury cinema with leather armchairs, footstools, and table service for a premium experience.",
+    "location": [
+      "191 Portobello Road, London W11 2ED"
+    ],
+    "duration": 2,
+    "cost": "High",
+    "tags": [
+      "indoor",
+      "luxury",
+      "relaxing",
+      "romantic",
+      "history"
+    ],
+    "websites": [
+      "https://www.electriccinema.co.uk"
+    ]
+  },
+  {
+    "title": "Comedy Store London",
+    "pack": "london",
+    "description": "Famous comedy club in Leicester Square hosting stand-up shows and improv nights.",
+    "location": [
+      "1a Oxendon Street, London SW1Y 4EE"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "entertainment",
+      "fun",
+      "nighttime"
+    ],
+    "websites": [
+      "https://www.thecomedystore.co.uk"
+    ]
+  },
+  {
+    "title": "Tate Modern",
+    "pack": "london",
+    "description": "World's leading modern art gallery housed in a former power station with stunning city views.",
+    "location": [
+      "Bankside, London SE1 9TG"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "indoor",
+      "culture",
+      "art",
+      "educational",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.tate.org.uk/visit/tate-modern"
+    ]
+  },
+  {
+    "title": "KOKO Camden",
+    "pack": "london",
+    "description": "Historic music venue in a restored Victorian theatre hosting live bands and club nights.",
+    "location": [
+      "1A Camden High Street, London NW1 7JE"
+    ],
+    "duration": 3,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "entertainment",
+      "nighttime",
+      "history",
+      "culture"
+    ],
+    "websites": [
+      "https://www.koko.uk.com"
+    ]
+  },
+  {
+    "title": "The Old Vic",
+    "pack": "london",
+    "description": "Independent not-for-profit theatre presenting bold new works and classic revivals.",
+    "location": [
+      "103 The Cut, London SE1 8NB"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "culture",
+      "art",
+      "history"
+    ],
+    "websites": [
+      "https://www.oldvictheatre.com"
+    ]
+  },
+  {
+    "title": "Barbican Centre",
+    "pack": "london",
+    "description": "Europe's largest multi-arts venue with theatre, concerts, exhibitions, and cinema.",
+    "location": [
+      "Silk Street, London EC2Y 8DS"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "culture",
+      "art",
+      "educational",
+      "interactive"
+    ],
+    "websites": [
+      "https://www.barbican.org.uk"
+    ]
+  },
+  {
+    "title": "Roundhouse",
+    "pack": "london",
+    "description": "Iconic circular venue in Camden hosting cutting-edge theatre, music, and circus performances.",
+    "location": [
+      "Chalk Farm Road, London NW1 8EH"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "culture",
+      "art",
+      "interactive",
+      "fun"
+    ],
+    "websites": [
+      "https://www.roundhouse.org.uk"
+    ]
+  },
+  {
+    "title": "Fabric",
+    "pack": "london",
+    "description": "World-famous nightclub in Farringdon with cutting-edge sound system and underground DJs.",
+    "location": [
+      "77A Charterhouse Street, London EC1M 6HJ"
+    ],
+    "duration": 4,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "nighttime",
+      "entertainment",
+      "active",
+      "fun"
+    ],
+    "websites": [
+      "https://www.fabriclondon.com"
+    ]
+  },
+  {
+    "title": "National Theatre",
+    "pack": "london",
+    "description": "Leading theatre on the South Bank presenting new works and classics across three auditoriums.",
+    "location": [
+      "Upper Ground, London SE1 9PX"
+    ],
+    "duration": 2.5,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "culture",
+      "art",
+      "educational"
+    ],
+    "websites": [
+      "https://www.nationaltheatre.org.uk"
+    ]
+  },
+  {
+    "title": "O2 Arena",
+    "pack": "london",
+    "description": "Massive entertainment venue hosting major concerts, sporting events, and shows.",
+    "location": [
+      "Peninsula Square, London SE10 0DX"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "indoor",
+      "entertainment",
+      "active",
+      "fun"
+    ],
+    "websites": [
+      "https://www.theo2.co.uk"
+    ]
+  },
+  {
+    "title": "Sadler's Wells Theatre",
+    "pack": "london",
+    "description": "London's premier dance venue showcasing contemporary dance, ballet, and international companies.",
+    "location": [
+      "Rosebery Avenue, London EC1R 4TN"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "culture",
+      "art",
+      "active"
+    ],
+    "websites": [
+      "https://www.sadlerswells.com"
+    ]
+  },
+  {
+    "title": "British Museum",
+    "pack": "london",
+    "description": "World-famous museum housing treasures from ancient civilizations including the Rosetta Stone and Egyptian mummies.",
+    "location": [
+      "Great Russell Street, London WC1B 3DG"
+    ],
+    "duration": 2.5,
+    "cost": "Low",
+    "tags": [
+      "educational",
+      "indoor",
+      "history",
+      "culture"
+    ],
+    "websites": [
+      "https://www.britishmuseum.org"
+    ]
+  },
+  {
+    "title": "Natural History Museum",
+    "pack": "london",
+    "description": "Stunning Victorian building housing dinosaur skeletons, minerals, and interactive science galleries.",
+    "location": [
+      "Exhibition Road, London SW7 5BD"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "educational",
+      "indoor",
+      "science",
+      "interactive",
+      "fun"
+    ],
+    "websites": [
+      "https://www.nhm.ac.uk"
+    ]
+  },
+  {
+    "title": "Science Museum",
+    "pack": "london",
+    "description": "Interactive museum showcasing scientific achievements from steam engines to space exploration.",
+    "location": [
+      "Exhibition Road, London SW7 2DD"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "educational",
+      "indoor",
+      "science",
+      "interactive",
+      "fun"
+    ],
+    "websites": [
+      "https://www.sciencemuseum.org.uk"
+    ]
+  },
+  {
+    "title": "Victoria and Albert Museum",
+    "pack": "london",
+    "description": "World's leading museum of art, design, and performance with decorative arts from across the globe.",
+    "location": [
+      "Cromwell Road, London SW7 2RL"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "art",
+      "indoor",
+      "culture",
+      "educational"
+    ],
+    "websites": [
+      "https://www.vam.ac.uk"
+    ]
+  },
+  {
+    "title": "Imperial War Museum",
+    "pack": "london",
+    "description": "Moving museum exploring the impact of modern war on people and society through immersive exhibitions.",
+    "location": [
+      "Lambeth Road, London SE1 6HZ"
+    ],
+    "duration": 1.5,
+    "cost": "Low",
+    "tags": [
+      "educational",
+      "indoor",
+      "history",
+      "interactive"
+    ],
+    "websites": [
+      "https://www.iwm.org.uk"
+    ]
+  },
+  {
+    "title": "Tower of London",
+    "pack": "london",
+    "description": "Historic royal palace and fortress housing the Crown Jewels and nearly 1000 years of history.",
+    "location": [
+      "St Katharine's & Wapping, London EC3N 4AB"
+    ],
+    "duration": 2.5,
+    "cost": "High",
+    "tags": [
+      "educational",
+      "indoor",
+      "history",
+      "culture",
+      "luxury"
+    ],
+    "websites": [
+      "https://www.hrp.org.uk/tower-of-london"
+    ]
+  },
+  {
+    "title": "National Gallery",
+    "pack": "london",
+    "description": "World-class collection of Western European paintings from the 13th to 19th centuries in Trafalgar Square.",
+    "location": [
+      "Trafalgar Square, London WC2N 5DN"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "art",
+      "indoor",
+      "culture",
+      "educational"
+    ],
+    "websites": [
+      "https://www.nationalgallery.org.uk"
+    ]
+  },
+  {
+    "title": "Museum of London",
+    "pack": "london",
+    "description": "Explore London's fascinating history from prehistoric times to the present day.",
+    "location": [
+      "150 London Wall, London EC2Y 5HN"
+    ],
+    "duration": 1.5,
+    "cost": "Low",
+    "tags": [
+      "educational",
+      "indoor",
+      "history",
+      "culture"
+    ],
+    "websites": [
+      "https://www.museumoflondon.org.uk"
+    ]
+  },
+  {
+    "title": "Churchill War Rooms",
+    "pack": "london",
+    "description": "Underground bunker preserved as it was during WWII, where Churchill and his government directed the war.",
+    "location": [
+      "Clive Steps, King Charles Street, London SW1A 2AQ"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "educational",
+      "indoor",
+      "history",
+      "interactive"
+    ],
+    "websites": [
+      "https://www.iwm.org.uk/visits/churchill-war-rooms"
+    ]
+  },
+  {
+    "title": "Horniman Museum and Gardens",
+    "pack": "london",
+    "description": "Quirky Victorian museum with natural history, anthropology, and musical instruments plus beautiful gardens.",
+    "location": [
+      "100 London Road, Forest Hill, London SE23 3PQ"
+    ],
+    "duration": 1.5,
+    "cost": "Low",
+    "tags": [
+      "educational",
+      "indoor",
+      "outdoors",
+      "nature",
+      "fun"
+    ],
+    "websites": [
+      "https://www.horniman.ac.uk"
+    ]
+  },
+  {
+    "title": "Design Museum",
+    "pack": "london",
+    "description": "Contemporary design museum in Kensington showcasing architecture, fashion, graphics, and product design.",
+    "location": [
+      "224-238 Kensington High Street, London W8 6AG"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "art",
+      "indoor",
+      "culture",
+      "educational"
+    ],
+    "websites": [
+      "https://designmuseum.org"
+    ]
+  },
+  {
+    "title": "National Maritime Museum",
+    "pack": "london",
+    "description": "World's largest maritime museum in Greenwich exploring Britain's seafaring history and naval heritage.",
+    "location": [
+      "Park Row, Greenwich, London SE10 9NF"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "educational",
+      "indoor",
+      "history",
+      "interactive"
+    ],
+    "websites": [
+      "https://www.rmg.co.uk/national-maritime-museum"
+    ]
+  },
+  {
+    "title": "Wellcome Collection",
+    "pack": "london",
+    "description": "Free museum exploring the connections between medicine, life, and art through thought-provoking exhibitions.",
+    "location": [
+      "183 Euston Road, London NW1 2BE"
+    ],
+    "duration": 1.5,
+    "cost": "Low",
+    "tags": [
+      "educational",
+      "indoor",
+      "science",
+      "art",
+      "interactive"
+    ],
+    "websites": [
+      "https://wellcomecollection.org"
+    ]
+  },
+  {
+    "title": "Sir John Soane's Museum",
+    "pack": "london",
+    "description": "Atmospheric house museum filled with art, antiquities, and curiosities collected by the famous architect.",
+    "location": [
+      "13 Lincoln's Inn Fields, London WC2A 3BP"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "art",
+      "indoor",
+      "history",
+      "culture"
+    ],
+    "websites": [
+      "https://www.soane.org"
+    ]
+  },
+  {
+    "title": "Grant Museum of Zoology",
+    "pack": "london",
+    "description": "University College London's quirky natural history museum with rare specimens and extinct species.",
+    "location": [
+      "21 University Street, London WC1E 6DE"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "educational",
+      "indoor",
+      "science",
+      "fun"
+    ],
+    "websites": [
+      "https://www.ucl.ac.uk/culture/grant-museum-zoology"
+    ]
+  },
+  {
+    "title": "Hyde Park",
+    "pack": "london",
+    "description": "Famous 350-acre central London park with Speaker's Corner, Serpentine Lake, and Diana Memorial.",
+    "location": [
+      "Hyde Park, London W2 2UH"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "budget-friendly",
+      "adventure"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/hyde-park"
+    ]
+  },
+  {
+    "title": "Regent's Park",
+    "pack": "london",
+    "description": "Elegant 395-acre park featuring London Zoo, Queen Mary's Gardens, and outdoor theatre.",
+    "location": [
+      "Regent's Park, London NW1 4NU"
+    ],
+    "duration": 2.5,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "culture",
+      "budget-friendly",
+      "adventure"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/regents-park"
+    ]
+  },
+  {
+    "title": "Richmond Park",
+    "pack": "london",
+    "description": "Largest Royal Park with 2,500 acres of grassland, ancient trees, and roaming deer herds.",
+    "location": [
+      "Richmond Park, Richmond, London TW10 5HS"
+    ],
+    "duration": 3,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "adventure",
+      "budget-friendly",
+      "active"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/richmond-park"
+    ]
+  },
+  {
+    "title": "Hampstead Heath",
+    "pack": "london",
+    "description": "Ancient heathland with swimming ponds, Parliament Hill views, and wild natural landscapes.",
+    "location": [
+      "Hampstead Heath, London NW3 2PP"
+    ],
+    "duration": 2.5,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "adventure",
+      "budget-friendly",
+      "active"
+    ],
+    "websites": [
+      "https://www.cityoflondon.gov.uk/things-to-do/green-spaces/hampstead-heath"
+    ]
+  },
+  {
+    "title": "Greenwich Park",
+    "pack": "london",
+    "description": "Historic park with Royal Observatory, Prime Meridian Line, and stunning London skyline views.",
+    "location": [
+      "Greenwich Park, London SE10 8QY"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "educational",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/greenwich-park"
+    ]
+  },
+  {
+    "title": "Kensington Gardens",
+    "pack": "london",
+    "description": "Royal park featuring Kensington Palace, Diana Memorial Playground, and Italian Gardens.",
+    "location": [
+      "Kensington Gardens, London W8 4PX"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "culture",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/kensington-gardens"
+    ]
+  },
+  {
+    "title": "St. James's Park",
+    "pack": "london",
+    "description": "Central London park with pelicans, lake views, and proximity to Buckingham Palace.",
+    "location": [
+      "St James's Park, London SW1A 2BJ"
+    ],
+    "duration": 1.5,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "culture",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/st-jamess-park"
+    ]
+  },
+  {
+    "title": "Primrose Hill",
+    "pack": "london",
+    "description": "Small park north of Regent's Park offering panoramic views of central London skyline.",
+    "location": [
+      "Primrose Hill, London NW1 4NR"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "romantic",
+      "budget-friendly",
+      "relaxing"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/the-regents-park/things-to-see-and-do/primrose-hill"
+    ]
+  },
+  {
+    "title": "Battersea Park",
+    "pack": "london",
+    "description": "Victorian park with children's zoo, Peace Pagoda, and riverside Thames Path.",
+    "location": [
+      "Battersea Park, London SW11 4NJ"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "fun",
+      "budget-friendly"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Holland Park",
+    "pack": "london",
+    "description": "Peaceful park with Japanese garden, peacocks, opera house, and formal gardens.",
+    "location": [
+      "Holland Park, London W8 6LU"
+    ],
+    "duration": 1.5,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "culture",
+      "relaxing",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.rbkc.gov.uk/leisure-and-culture/parks/holland-park"
+    ]
+  },
+  {
+    "title": "Victoria Park",
+    "pack": "london",
+    "description": "East London's largest park with boating lake, festivals, and Victorian heritage features.",
+    "location": [
+      "Victoria Park, London E9 7BT"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "entertainment",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.towerhamlets.gov.uk/lgnl/leisure_and_culture/parks_and_open_spaces/victoria_park.aspx"
+    ]
+  },
+  {
+    "title": "Clapham Common",
+    "pack": "london",
+    "description": "Large common with historic bandstand, ponds, and popular weekend markets.",
+    "location": [
+      "Clapham Common, London SW4 9DE"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "shopping",
+      "budget-friendly"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Kyoto Garden",
+    "pack": "london",
+    "description": "Authentic Japanese garden within Holland Park featuring waterfalls, stone lanterns, and koi pond.",
+    "location": [
+      "Holland Park, London W8 6LU"
+    ],
+    "duration": 1,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "culture",
+      "relaxing",
+      "romantic"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Crystal Palace Park",
+    "pack": "london",
+    "description": "Victorian park featuring prehistoric dinosaur sculptures, maze, and Crystal Palace ruins.",
+    "location": [
+      "Crystal Palace Park, London SE20 8DT"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "educational",
+      "fun"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Alexandra Palace Park",
+    "pack": "london",
+    "description": "North London park with Victorian palace, panoramic city views, and entertainment venue.",
+    "location": [
+      "Alexandra Palace Way, London N22 7AY"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "entertainment",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.alexandrapalace.com/park/"
+    ]
+  },
+  {
+    "title": "Brockwell Park",
+    "pack": "london",
+    "description": "South London park with historic clock tower, lido, and panoramic views over London.",
+    "location": [
+      "Brockwell Park, London SE24 0PA"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "active",
+      "budget-friendly"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Bushy Park",
+    "pack": "london",
+    "description": "Royal park with deer herds, Chestnut Avenue, and historic Hampton Court Palace nearby.",
+    "location": [
+      "Bushy Park, Hampton, London TW12 2EJ"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "adventure",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.royalparks.org.uk/parks/bushy-park"
+    ]
+  },
+  {
+    "title": "Dulwich Park",
+    "pack": "london",
+    "description": "Victorian park with boating lake, American garden, and excellent cycling paths.",
+    "location": [
+      "Dulwich Park, London SE21 7BQ"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "history",
+      "active",
+      "budget-friendly"
+    ],
+    "websites": []
+  },
+  {
+    "title": "Kew Gardens",
+    "pack": "london",
+    "description": "UNESCO World Heritage botanical gardens with tropical houses, treetop walkway, and royal heritage.",
+    "location": [
+      "Royal Botanic Gardens, Kew, Richmond, London TW9 3AE"
+    ],
+    "duration": 3,
+    "cost": "Medium",
+    "tags": [
+      "outdoors",
+      "nature",
+      "educational",
+      "history",
+      "culture"
+    ],
+    "websites": [
+      "https://www.kew.org"
+    ]
+  },
+  {
+    "title": "Lee Valley Regional Park",
+    "pack": "london",
+    "description": "26-mile linear park along River Lee with nature reserves, cycling paths, and water sports.",
+    "location": [
+      "Lee Valley Regional Park, Waltham Abbey, London EN9 2EF"
+    ],
+    "duration": 3,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "nature",
+      "adventure",
+      "active",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.leevalleypark.org.uk"
+    ]
+  },
+  {
+    "title": "Gordon Ramsay",
+    "pack": "london",
+    "description": "Three Michelin-starred flagship restaurant in Chelsea offering exquisite French cuisine and impeccable service.",
+    "location": [
+      "68 Royal Hospital Rd, Chelsea, London SW3 4HP"
+    ],
+    "duration": 3,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "luxury",
+      "romantic"
+    ],
+    "websites": [
+      "https://www.gordonramsayrestaurants.com"
+    ]
+  },
+  {
+    "title": "Dishoom King's Cross",
+    "pack": "london",
+    "description": "Bombay-style café in a stunning Victorian railway building, serving authentic Indian cuisine with theatrical flair.",
+    "location": [
+      "5 Stable St, King's Cross, London N1C 4AB"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "culture",
+      "nostalgic",
+      "history"
+    ],
+    "websites": [
+      "https://www.dishoom.com"
+    ]
+  },
+  {
+    "title": "Borough Market Food Stalls",
+    "pack": "london",
+    "description": "Historic food market with diverse street food vendors offering authentic cuisines from around the world.",
+    "location": [
+      "8 Southwark St, London SE1 1TL"
+    ],
+    "duration": 1.5,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "outdoor",
+      "budget-friendly",
+      "culture",
+      "history",
+      "interactive"
+    ],
+    "websites": [
+      "https://boroughmarket.org.uk"
+    ]
+  },
+  {
+    "title": "Clos Maggiore",
+    "pack": "london",
+    "description": "Romantic French restaurant in Covent Garden famous for its enchanted conservatory with blossom-covered ceiling.",
+    "location": [
+      "33 King St, Covent Garden, London WC2E 8JD"
+    ],
+    "duration": 2.5,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "romantic",
+      "luxury",
+      "art"
+    ],
+    "websites": [
+      "https://www.closmaggiore.com"
+    ]
+  },
+  {
+    "title": "Inamo",
+    "pack": "london",
+    "description": "Interactive Asian fusion restaurant where you order via touchscreen tables and watch chefs prepare food.",
+    "location": [
+      "134-136 Wardour St, Soho, London W1F 8ZP"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "interactive",
+      "fun",
+      "entertainment"
+    ],
+    "websites": [
+      "https://www.inamo-restaurant.com"
+    ]
+  },
+  {
+    "title": "The Shard Restaurants",
+    "pack": "london",
+    "description": "Collection of high-end restaurants on floors 31-33 of London's tallest building with panoramic city views.",
+    "location": [
+      "31 St Thomas St, London SE1 9RY"
+    ],
+    "duration": 2.5,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "luxury",
+      "romantic",
+      "adventure"
+    ],
+    "websites": [
+      "https://www.the-shard.com"
+    ]
+  },
+  {
+    "title": "Rules Restaurant",
+    "pack": "london",
+    "description": "London's oldest restaurant established in 1798, serving traditional British game and classic dishes in historic setting.",
+    "location": [
+      "35 Maiden Ln, Covent Garden, London WC2E 7LB"
+    ],
+    "duration": 2.5,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "history",
+      "nostalgic",
+      "luxury",
+      "culture"
+    ],
+    "websites": [
+      "https://www.rules.co.uk"
+    ]
+  },
+  {
+    "title": "Gymkhana",
+    "pack": "london",
+    "description": "Michelin-starred Indian restaurant in Mayfair recreating the British Raj club atmosphere with refined Indian cuisine.",
+    "location": [
+      "42 Albemarle St, Mayfair, London W1S 4JH"
+    ],
+    "duration": 2.5,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "luxury",
+      "culture",
+      "history",
+      "nostalgic"
+    ],
+    "websites": [
+      "https://www.gymkhanalondon.com"
+    ]
+  },
+  {
+    "title": "Dans Le Noir?",
+    "pack": "london",
+    "description": "Unique dining experience where you eat in complete darkness, served by visually impaired waiters.",
+    "location": [
+      "30-31 Clerkenwell Green, London EC1R 0DU"
+    ],
+    "duration": 2.5,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "interactive",
+      "adventure",
+      "educational",
+      "fun"
+    ],
+    "websites": [
+      "https://london.danslenoir.com"
+    ]
+  },
+  {
+    "title": "Flat Iron",
+    "pack": "london",
+    "description": "No-reservations steakhouse chain serving quality flat iron steaks at affordable prices in casual settings.",
+    "location": [
+      "17 Beak St, Soho, London W1F 9RW"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "indoor",
+      "budget-friendly"
+    ],
+    "websites": [
+      "https://www.flatiron.co.uk"
+    ]
+  },
+  {
+    "title": "Berners Tavern",
+    "pack": "london",
+    "description": "Grand all-day dining room in Fitzrovia with ornate décor, gold-framed paintings, and modern British cuisine.",
+    "location": [
+      "10 Berners St, Fitzrovia, London W1T 3NP"
+    ],
+    "duration": 2,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "luxury",
+      "art",
+      "romantic"
+    ],
+    "websites": [
+      "https://www.bernerstavern.com"
+    ]
+  },
+  {
+    "title": "The Ivy",
+    "pack": "london",
+    "description": "Legendary West End restaurant frequented by celebrities, serving modern British cuisine in theatrical surroundings.",
+    "location": [
+      "1-5 West St, Covent Garden, London WC2H 9NQ"
+    ],
+    "duration": 2,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "luxury",
+      "entertainment",
+      "culture",
+      "nostalgic"
+    ],
+    "websites": [
+      "https://www.the-ivy.co.uk"
+    ]
+  },
+  {
+    "title": "Pembroke Lodge",
+    "pack": "london",
+    "description": "Georgian mansion restaurant in Richmond Park offering British cuisine with stunning views across London.",
+    "location": [
+      "Richmond Park, Richmond, London TW10 5HX"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "food",
+      "outdoor",
+      "indoor",
+      "nature",
+      "relaxing",
+      "history",
+      "romantic"
+    ],
+    "websites": [
+      "https://www.pembroke-lodge.co.uk"
+    ]
+  },
+  {
+    "title": "Brick Lane Curry Houses",
+    "pack": "london",
+    "description": "Historic street lined with authentic Bangladeshi restaurants offering traditional curries and vibrant atmosphere.",
+    "location": [
+      "Brick Ln, Spitalfields, London E1 6QL"
+    ],
+    "duration": 1.5,
+    "cost": "Low",
+    "tags": [
+      "food",
+      "indoor",
+      "budget-friendly",
+      "culture",
+      "history",
+      "nighttime"
+    ],
+    "websites": [
+      "https://www.visitbricklane.org"
+    ]
+  },
+  {
+    "title": "Aqua Shard",
+    "pack": "london",
+    "description": "Contemporary British restaurant on level 31 of The Shard with floor-to-ceiling windows and spectacular views.",
+    "location": [
+      "Level 31, The Shard, 31 St Thomas St, London SE1 9RY"
+    ],
+    "duration": 2.5,
+    "cost": "High",
+    "tags": [
+      "food",
+      "indoor",
+      "luxury",
+      "romantic",
+      "adventure"
+    ],
+    "websites": [
+      "https://www.aquashard.co.uk"
+    ]
+  },
+  {
+    "title": "Westfield London",
+    "pack": "london",
+    "description": "One of the largest shopping centres in Europe, offering a wide range of shops, dining, and entertainment.",
+    "location": [
+      "White City, London W12 7GF"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "shopping",
+      "indoor",
+      "entertainment",
+      "food",
+      "luxury"
+    ],
+    "websites": [
+      "https://www.westfield.com/en/united-kingdom/london"
+    ]
+  },
+  {
+    "title": "Covent Garden Market",
+    "pack": "london",
+    "description": "Historic market known for unique shops, street performers, restaurants, and cultural experiences.",
+    "location": [
+      "Covent Garden, London WC2E 8RF"
+    ],
+    "duration": 3,
+    "cost": "Medium",
+    "tags": [
+      "shopping",
+      "outdoors",
+      "culture",
+      "entertainment",
+      "food"
+    ],
+    "websites": [
+      "https://www.coventgarden.london/"
+    ]
+  },
+  {
+    "title": "Canary Wharf Shopping Centre",
+    "pack": "london",
+    "description": "Modern shopping centre in the financial district featuring high-end retailers and restaurants.",
+    "location": [
+      "Canary Wharf, London E14 5NY"
+    ],
+    "duration": 2.5,
+    "cost": "Medium",
+    "tags": [
+      "shopping",
+      "indoor",
+      "luxury",
+      "food"
+    ],
+    "websites": [
+      "https://canarywharf.com/shops-services/directory/"
+    ]
+  },
+  {
+    "title": "Brent Cross Shopping Centre",
+    "pack": "london",
+    "description": "Large indoor shopping centre offering a variety of popular high street and designer stores.",
+    "location": [
+      "Brent Cross, London NW4 3FP"
+    ],
+    "duration": 3,
+    "cost": "Medium",
+    "tags": [
+      "shopping",
+      "indoor"
+    ],
+    "websites": [
+      "https://www.brentcross.co.uk/"
+    ]
+  },
+  {
+    "title": "King's Road Shopping",
+    "pack": "london",
+    "description": "A famous shopping street with a mix of boutique stores, fashion, and lifestyle shops.",
+    "location": [
+      "King's Road, Chelsea, London SW3"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "shopping",
+      "outdoors",
+      "luxury",
+      "culture"
+    ],
+    "websites": [
+      "https://www.kingsroad.co.uk/shop-kings-road-london/"
+    ]
+  },
+  {
+    "title": "All Star Lanes",
+    "pack": "london",
+    "description": "Enjoy a vibrant bowling alley with great food and cocktails at All Star Lanes.",
+    "location": [
+      "Holborn, London WC2B 4HL",
+      "Shoreditch, London E1 6PJ"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "fun",
+      "entertainment",
+      "food"
+    ],
+    "websites": [
+      "https://allstarlanes.co.uk/"
+    ]
+  },
+  {
+    "title": "Swingers Crazy Golf",
+    "pack": "london",
+    "description": "Play fun and quirky indoor crazy golf courses with great food and drinks.",
+    "location": [
+      "City, London EC2M 2QS",
+      "West End, London W1D 3BS"
+    ],
+    "duration": 1.5,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "fun",
+      "entertainment",
+      "food"
+    ],
+    "websites": [
+      "https://www.swingers.club/uk"
+    ]
+  },
+  {
+    "title": "London Bicycle Tour Company",
+    "pack": "london",
+    "description": "Discover London's iconic landmarks and hidden gems on guided bike tours with experienced guides.",
+    "location": [
+      "74 Kennington Road, London SE11 6NL"
+    ],
+    "duration": 3.5,
+    "cost": "Medium",
+    "tags": [
+      "outdoors",
+      "active",
+      "adventure",
+      "travel",
+      "educational"
+    ],
+    "websites": [
+      "https://www.londonbicycle.com/"
+    ]
+  },
+  {
+    "title": "The Castle Climbing Centre",
+    "pack": "london",
+    "description": "Try indoor climbing at this popular climbing centre located in a former Victorian water pumping station.",
+    "location": [
+      "Green Lanes, London N4 2HA"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "active",
+      "adventure"
+    ],
+    "websites": [
+      "https://castle-climbing.co.uk/"
+    ]
+  },
+  {
+    "title": "TeamSport Go Karting London",
+    "pack": "london",
+    "description": "Race your partner at TeamSport's indoor go-karting track for a thrilling experience.",
+    "location": [
+      "Acton, London W3 6XA"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "entertainment",
+      "fun",
+      "active"
+    ],
+    "websites": [
+      "https://www.team-sport.co.uk/go-kart-tracks/london"
+    ]
+  },
+  {
+    "title": "Queens Skate Dine Bowl",
+    "pack": "london",
+    "description": "Enjoy skating, bowling, dining, and entertainment all under one roof.",
+    "location": [
+      "Queensway, London W2 4QJ"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "fun",
+      "active",
+      "food",
+      "entertainment"
+    ],
+    "websites": [
+      "https://www.designmynight.com/london/event-space/notting-hill/queens-skate-dine-bowl"
+    ]
+  },
+  {
+    "title": "Better London Fields Lido",
+    "pack": "london",
+    "description": "Swim in a heated 50m outdoor pool with sunbathing areas and a café at this popular lido.",
+    "location": [
+      "London Fields West Side, London E8 3EU"
+    ],
+    "duration": 2,
+    "cost": "Low",
+    "tags": [
+      "outdoors",
+      "active",
+      "relaxing"
+    ],
+    "websites": [
+      "https://www.better.org.uk/leisure-centre/london/hackney/london-fields-lido"
+    ]
+  },
+  {
+    "title": "Better Swiss Cottage Leisure Centre",
+    "pack": "london",
+    "description": "Features a large gym, 25m swimming pool, climbing wall, and spa facilities in Swiss Cottage.",
+    "location": [
+      "Winchester Rd, London NW3 3NR"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "active",
+      "relaxing",
+      "family-friendly"
+    ],
+    "websites": [
+      "https://www.better.org.uk/leisure-centre/london/camden/swiss-cottage-leisure-centre"
+    ]
+  },
+  {
+    "title": "Better Wimbledon Leisure Centre and Spa",
+    "pack": "london",
+    "description": "Modern gym and pool facilities combined with a day spa in a beautifully restored Victorian building.",
+    "location": [
+      "Latimer Rd, London SW19 1EW"
+    ],
+    "duration": 2,
+    "cost": "Medium",
+    "tags": [
+      "indoor",
+      "active",
+      "relaxing",
+      "spa"
+    ],
+    "websites": [
+      "https://www.better.org.uk/leisure-centre/london/merton/wimbledon-leisure-centre"
+    ]
+  }
+]
