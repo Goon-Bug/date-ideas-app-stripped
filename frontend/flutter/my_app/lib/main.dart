@@ -12,8 +12,6 @@ import 'package:flutter/widgets.dart';
 
 import 'package:date_spark_app/helper_functions.dart' as hp;
 
-//TODO: Change timeline card to show location and other details
-//TODO: Add inforemation on how city requests work
 //TODO: Add proper google ads integration
 
 final getIt = GetIt.instance;
