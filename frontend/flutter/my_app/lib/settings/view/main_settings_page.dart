@@ -93,7 +93,7 @@ class _SettingsPageState extends State<SettingsPage> {
                       mainAxisSize: MainAxisSize.min,
                       children: [
                         const Text(
-                          'If you have any queries please email me at goon-bug@hotmail.com',
+                          'If you have any queries or would like to submit any feedback or feature requests then please email me at goon-bug@hotmail.com',
                         ),
                         const SizedBox(height: 10),
                         ElevatedButton(
