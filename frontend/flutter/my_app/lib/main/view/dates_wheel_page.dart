@@ -70,7 +70,7 @@ class DateIdeasWheelPage extends StatelessWidget {
         builder: (context, state) {
           final bool isSpinning = state is DatesScrollerSpinTo;
 
-          // Use a FutureBuilder to load the profileIcon asynchronously
+          // Using a FutureBuilder to load the profileIcon asynchronously
           return FutureBuilder<String?>(
             future: storage.read(key: 'iconImage'),
             builder: (futureContext, snapshot) {
@@ -385,6 +385,7 @@ class _DateIdeasWheelContentState extends State<DateIdeasWheelContent> {
                       children: dateIdeas.map((idea) {
                         return Center(
                           child: Text(
+                            maxLines: 1,
                             idea['title']!,
                             style: const TextStyle(
                               fontFamily: 'RetroTitle',
@@ -440,6 +441,9 @@ class _DateIdeasWheelContentState extends State<DateIdeasWheelContent> {
       barrierDismissible: false,
       context: context,
       builder: (BuildContext dialogContext) {
+        bool hasWebsites = result['websites'] != null &&
+            result['websites'].isNotEmpty &&
+            result['websites'] is List;
         return Dialog(
           shape: RoundedRectangleBorder(
             borderRadius: BorderRadius.circular(20),
@@ -450,12 +454,6 @@ class _DateIdeasWheelContentState extends State<DateIdeasWheelContent> {
             child: Column(
               mainAxisSize: MainAxisSize.min,
               children: [
-                const Icon(
-                  Icons.check_circle_outline,
-                  color: Colors.green,
-                  size: 80,
-                ),
-                const SizedBox(height: 20),
                 Text(
                   result['title'],
                   textAlign: TextAlign.center,
@@ -466,54 +464,80 @@ class _DateIdeasWheelContentState extends State<DateIdeasWheelContent> {
                     color: Colors.black,
                   ),
                 ),
+                Divider(),
                 const SizedBox(height: 10),
                 Text(
                   result['description'],
                   textAlign: TextAlign.left,
                   style: TextStyle(
                     fontSize: 18,
-                    color: Colors.grey[700],
+                    color: Theme.of(context).colorScheme.onSecondaryContainer,
                   ),
                 ),
-                const SizedBox(height: 10),
-                Text(
-                  result['location'],
-                  textAlign: TextAlign.left,
-                  style: TextStyle(
-                    fontSize: 18,
-                    color: Colors.grey[700],
-                  ),
-                ),
-                const SizedBox(height: 10),
-                Column(
-                  crossAxisAlignment: CrossAxisAlignment.start,
-                  children:
-                      List<Widget>.from(result['websites'].map<Widget>((url) {
-                    return GestureDetector(
-                      onTap: () async {
-                        final uri = Uri.parse(url);
-                        if (await canLaunchUrl(uri) && context.mounted) {
-                          await launchUrl(uri,
-                              mode: LaunchMode.externalApplication);
-                        } else {
-                          ScaffoldMessenger.of(context).showSnackBar(
-                            SnackBar(content: Text('Could not launch $url')),
-                          );
-                        }
-                      },
-                      child: Padding(
-                        padding: const EdgeInsets.symmetric(vertical: 4.0),
-                        child: Text(
-                          url,
-                          style: const TextStyle(
-                            fontSize: 18,
-                            color: Colors.blue,
-                            decoration: TextDecoration.underline,
-                          ),
+                const SizedBox(height: 15),
+                Row(
+                  crossAxisAlignment: CrossAxisAlignment.center,
+                  mainAxisAlignment: MainAxisAlignment.center,
+                  children: [
+                    Text(
+                      'Location: ',
+                      style: TextStyle(
+                        fontSize: 16,
+                        color: Theme.of(context).colorScheme.primary,
+                      ),
+                    ),
+                    Flexible(
+                      child: Text(
+                        result['location'],
+                        style: TextStyle(
+                          fontSize: 18,
                         ),
                       ),
-                    );
-                  })),
+                    ),
+                  ],
+                ),
+                const SizedBox(height: 10),
+                hasWebsites
+                    ? Text(
+                        'Websites: ',
+                        style: TextStyle(
+                          fontSize: 16,
+                          color: Theme.of(context).colorScheme.primary,
+                        ),
+                      )
+                    : Text(''),
+                Flexible(
+                  child: Column(
+                    crossAxisAlignment: CrossAxisAlignment.start,
+                    mainAxisSize: MainAxisSize.min,
+                    children:
+                        List<Widget>.from(result['websites'].map<Widget>((url) {
+                      return GestureDetector(
+                        onTap: () async {
+                          final uri = Uri.parse(url);
+                          if (await canLaunchUrl(uri) && context.mounted) {
+                            await launchUrl(uri,
+                                mode: LaunchMode.externalApplication);
+                          } else {
+                            ScaffoldMessenger.of(context).showSnackBar(
+                              SnackBar(content: Text('Could not launch $url')),
+                            );
+                          }
+                        },
+                        child: Padding(
+                          padding: const EdgeInsets.symmetric(vertical: 4.0),
+                          child: Text(
+                            url,
+                            style: const TextStyle(
+                              fontSize: 18,
+                              color: Colors.blue,
+                              decoration: TextDecoration.underline,
+                            ),
+                          ),
+                        ),
+                      );
+                    })),
+                  ),
                 ),
                 const SizedBox(height: 10),
                 ElevatedButton(
