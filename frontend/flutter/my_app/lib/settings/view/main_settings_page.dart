@@ -169,25 +169,36 @@ Future<void> showCityInputDialog(BuildContext context) async {
     builder: (BuildContext context) {
       return AlertDialog(
         title: const Text('Enter City'),
-        content: Form(
-          key: formKey,
-          child: TextFormField(
-            controller: controller,
-            maxLength: 26,
-            decoration: const InputDecoration(
-              labelText: 'City Name',
-              border: OutlineInputBorder(),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            Form(
+              key: formKey,
+              child: TextFormField(
+                controller: controller,
+                maxLength: 26,
+                decoration: const InputDecoration(
+                  labelText: 'City Name',
+                  border: OutlineInputBorder(),
+                ),
+                validator: (value) {
+                  final trimmed = value?.trim() ?? '';
+                  if (trimmed.isEmpty) return 'City name is required';
+                  if (!RegExp(r'^[a-zA-Z\s]+$').hasMatch(trimmed)) {
+                    return 'Only letters and spaces allowed';
+                  }
+                  if (trimmed.length > 26) return 'Max 26 characters allowed';
+                  return null;
+                },
+              ),
             ),
-            validator: (value) {
-              final trimmed = value?.trim() ?? '';
-              if (trimmed.isEmpty) return 'City name is required';
-              if (!RegExp(r'^[a-zA-Z\s]+$').hasMatch(trimmed)) {
-                return 'Only letters and spaces allowed';
-              }
-              if (trimmed.length > 26) return 'Max 26 characters allowed';
-              return null;
-            },
-          ),
+            const SizedBox(height: 10),
+            Text('The Cities with the most requests will be added first.',
+                textAlign: TextAlign.center,
+                style: TextStyle(
+                  fontSize: 16,
+                )),
+          ],
         ),
         actions: [
           TextButton(
