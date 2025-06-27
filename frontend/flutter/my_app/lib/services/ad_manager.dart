@@ -83,7 +83,8 @@ class AdManager {
 
     _rewardedAd!.show(
       onUserEarnedReward: (AdWithoutView ad, RewardItem reward) {
-        onRewarded(reward);
+        final fixedReward = RewardItem(1, reward.type);
+        onRewarded(fixedReward);
       },
     );
     _rewardedAd = null;
