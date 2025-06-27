@@ -385,6 +385,7 @@ class _DateIdeasWheelContentState extends State<DateIdeasWheelContent> {
                       children: dateIdeas.map((idea) {
                         return Center(
                           child: Text(
+                            textAlign: TextAlign.center,
                             maxLines: 1,
                             idea['title']!,
                             style: const TextStyle(
