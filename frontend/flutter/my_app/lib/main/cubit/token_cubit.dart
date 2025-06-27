@@ -32,7 +32,7 @@ class TokenCubit extends Cubit<TokenState> {
     try {
       var currentTokenCount = state.tokenCount;
 
-      if (currentTokenCount + amount <= 30) {
+      if (currentTokenCount + amount <= 3) {
         await _storage.write(key: 'tokenUpdated', value: 'true');
         currentTokenCount += amount;
         _log.fine('Token count increased: $currentTokenCount (+$amount)');
