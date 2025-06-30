@@ -86,7 +86,7 @@ class DateIdeasWheelPage extends StatelessWidget {
                     MainTopRow(dropdownKey: _dropdownKey),
                     const Expanded(flex: 2, child: DateIdeasWheelContent()),
                     Expanded(
-                      flex: 2,
+                      flex: 1,
                       child: TagsCheckboxGrid(
                         tagNames: DateIdeasData.instance.tagsList
                             .map((tag) => tag.toTitleCase())
@@ -260,7 +260,8 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
             snapshot.data?.toString() ?? 'assets/profile_icons/icon_0.png';
 
         return AppBar(
-          title: const Text("Date Spark", style: TextStyle(fontSize: 32)),
+          title: const Text("Date Spark",
+              style: TextStyle(fontSize: 28, fontFamily: 'SmallTitle')),
           backgroundColor: Theme.of(context).colorScheme.primary,
           leading: IconButton(
             onPressed: () {
@@ -403,7 +404,7 @@ class _DateIdeasWheelContentState extends State<DateIdeasWheelContent> {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.all(18.0),
+          padding: const EdgeInsets.only(bottom: 60.0),
           child: ElevatedButton(
             style: ElevatedButton.styleFrom(
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
@@ -430,7 +431,7 @@ class _DateIdeasWheelContentState extends State<DateIdeasWheelContent> {
             child: Text('Spin the Wheel!',
                 style: TextStyle(
                     color: Theme.of(context).colorScheme.onSurface,
-                    fontSize: 24)),
+                    fontSize: 20)),
           ),
         ),
       ],
@@ -635,4 +636,32 @@ class PackDropdownState extends State<PackDropdown> {
       },
     );
   }
+}
+
+void showTagsBottomSheet(BuildContext context, List<String> tags) {
+  showModalBottomSheet(
+    context: context,
+    isScrollControlled: true,
+    backgroundColor: Colors.transparent,
+    builder: (context) {
+      return DraggableScrollableSheet(
+        initialChildSize: 0.4,
+        minChildSize: 0.2,
+        maxChildSize: 0.9,
+        expand: false,
+        builder: (context, scrollController) {
+          return Container(
+            decoration: const BoxDecoration(
+              color: Colors.white,
+              borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
+            ),
+            child: PrimaryScrollController(
+              controller: scrollController,
+              child: TagsCheckboxGrid(tagNames: tags),
+            ),
+          );
+        },
+      );
+    },
+  );
 }
