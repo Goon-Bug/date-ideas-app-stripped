@@ -168,7 +168,7 @@ class MainTopRow extends StatelessWidget {
             padding: const EdgeInsets.only(right: 8.0),
             child: Text(
               'Tokens: ${context.watch<TokenCubit>().state.tokenCount}',
-              style: const TextStyle(fontSize: 24),
+              style: const TextStyle(fontSize: 22),
             ),
           ),
         ],
@@ -330,7 +330,7 @@ class _DateIdeasWheelContentState extends State<DateIdeasWheelContent> {
           flex: 2,
           child: Center(
             child: SizedBox(
-              height: 200,
+              height: 260,
               child: BlocConsumer<DatesScrollerBloc, DatesScrollerState>(
                 listener: (context, state) {
                   if (state is DatesScrollerSpinTo) {
@@ -404,7 +404,7 @@ class _DateIdeasWheelContentState extends State<DateIdeasWheelContent> {
           ),
         ),
         Padding(
-          padding: const EdgeInsets.only(bottom: 60.0),
+          padding: const EdgeInsets.only(bottom: 40.0),
           child: ElevatedButton(
             style: ElevatedButton.styleFrom(
               padding: const EdgeInsets.symmetric(horizontal: 20, vertical: 10),
@@ -542,6 +542,7 @@ class _DateIdeasWheelContentState extends State<DateIdeasWheelContent> {
                   ),
                 ),
                 const SizedBox(height: 10),
+                Divider(),
                 ElevatedButton(
                   style: ElevatedButton.styleFrom(
                     backgroundColor: Theme.of(context).colorScheme.primary,
