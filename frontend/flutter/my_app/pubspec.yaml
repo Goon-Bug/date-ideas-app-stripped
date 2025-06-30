@@ -70,8 +70,13 @@ flutter:
   fonts:
     - family: RetroSmall
       fonts:
-        - asset: assets/fonts/VT323-Regular.ttf
-          weight: 400
+        - asset: assets/fonts/JosefinSans-Medium.ttf
+          weight: 800
+
+    - family: SmallTitle
+      fonts:
+        - asset: assets/fonts/Lora.ttf
+          weight: 600
 
     - family: RetroTitle
       fonts:
