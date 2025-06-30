@@ -81,7 +81,7 @@ class TagsCheckboxGrid extends StatelessWidget {
                             child: Text(
                               tag,
                               style: TextStyle(
-                                fontSize: 16,
+                                fontSize: 13,
                                 color: isSelected ? Colors.white : Colors.black,
                               ),
                               maxLines: 2,
