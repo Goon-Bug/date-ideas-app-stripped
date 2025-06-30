@@ -180,8 +180,9 @@ class TimelineItemCard extends StatelessWidget {
         ),
       ),
       child: Padding(
-        padding: EdgeInsets.all(MediaQuery.of(context).size.width * 0.03),
+        padding: EdgeInsets.all(MediaQuery.of(context).size.width * 0.025),
         child: Row(
+          crossAxisAlignment: CrossAxisAlignment.center,
           children: [
             GestureDetector(
               onTap: () async {
@@ -239,7 +240,7 @@ class TimelineItemCard extends StatelessWidget {
                   Text(
                     timelineItem.dateTitle,
                     style:
-                        const TextStyle(fontFamily: 'RetroTitle', fontSize: 24),
+                        const TextStyle(fontFamily: 'RetroTitle', fontSize: 22),
                   ),
                   Text(
                     timelineItem.description!,
