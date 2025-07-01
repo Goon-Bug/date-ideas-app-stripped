@@ -21,26 +21,6 @@
     ]
   },
   {
-    "title": "The Alchemist",
-    "pack": "london",
-    "description": "Trendy bar with theatrical cocktails and moody lighting.",
-    "location": [
-      "6 Bevis Marks, London, EC3A 7HL"
-    ],
-    "duration": 1.5,
-    "cost": "Medium",
-    "tags": [
-      "food",
-      "indoor",
-      "fun",
-      "nighttime",
-      "interactive"
-    ],
-    "websites": [
-      "https://thealchemist.uk.com/"
-    ]
-  },
-  {
     "title": "The Blues Kitchen Shoreditch",
     "pack": "london",
     "description": "Live blues bar with Southern US-style food and a late-night crowd.",
@@ -1437,26 +1417,6 @@
     ]
   },
   {
-    "title": "The Alchemist",
-    "pack": "london",
-    "description": "Trendy bar with theatrical cocktails and moody lighting.",
-    "location": [
-      "6 Bevis Marks, London, EC3A 7HL"
-    ],
-    "duration": 1.5,
-    "cost": "Medium",
-    "tags": [
-      "food",
-      "indoor",
-      "fun",
-      "nighttime",
-      "interactive"
-    ],
-    "websites": [
-      "https://thealchemist.uk.com/"
-    ]
-  },
-  {
     "title": "The Blues Kitchen Shoreditch",
     "pack": "london",
     "description": "Live blues bar with Southern US-style food and a late-night crowd.",
@@ -2850,26 +2810,6 @@
     ],
     "websites": [
       "https://www.barnightjar.com/"
-    ]
-  },
-  {
-    "title": "The Alchemist",
-    "pack": "london",
-    "description": "Trendy bar with theatrical cocktails and moody lighting.",
-    "location": [
-      "6 Bevis Marks, London, EC3A 7HL"
-    ],
-    "duration": 1.5,
-    "cost": "Medium",
-    "tags": [
-      "food",
-      "indoor",
-      "fun",
-      "nighttime",
-      "interactive"
-    ],
-    "websites": [
-      "https://thealchemist.uk.com/"
     ]
   },
   {
