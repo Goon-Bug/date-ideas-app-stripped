@@ -252,11 +252,24 @@ class TimelineItemCard extends StatelessWidget {
                 ],
               ),
             ),
-            IconButton(
-              icon: const Icon(Icons.close, color: Colors.red),
-              onPressed: () {
-                _showDeleteConfirmationDialog(context);
-              },
+            Column(
+              children: [
+                IconButton(
+                  icon: Icon(
+                    Icons.edit,
+                    color: Theme.of(context).colorScheme.tertiary,
+                  ),
+                  onPressed: () {
+                    _showEditDescriptionDialog(context, timelineItem);
+                  },
+                ),
+                IconButton(
+                  icon: const Icon(Icons.close, color: Colors.red),
+                  onPressed: () {
+                    _showDeleteConfirmationDialog(context);
+                  },
+                ),
+              ],
             ),
           ],
         ),
@@ -297,4 +310,47 @@ class TimelineItemCard extends StatelessWidget {
       },
     );
   }
+}
+
+void _showEditDescriptionDialog(
+    BuildContext context, TimelineItem timelineItem) {
+  final TextEditingController controller =
+      TextEditingController(text: timelineItem.description);
+
+  showDialog(
+    context: context,
+    builder: (BuildContext context) {
+      return AlertDialog(
+        title: const Text('Edit Description'),
+        content: TextField(
+          controller: controller,
+          maxLines: 5,
+          decoration: const InputDecoration(
+            labelText: 'Description',
+            border: OutlineInputBorder(),
+          ),
+        ),
+        actions: <Widget>[
+          TextButton(
+            onPressed: () {
+              Navigator.of(context).pop();
+            },
+            child: const Text('Cancel', style: TextStyle(fontSize: 16)),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              final newDescription = controller.text.trim();
+              if (newDescription.isNotEmpty) {
+                context
+                    .read<TimelineCubit>()
+                    .updateTimelineDescription(timelineItem.id, newDescription);
+              }
+              Navigator.of(context).pop(); // close dialog after saving
+            },
+            child: const Text('Update', style: TextStyle(fontSize: 16)),
+          ),
+        ],
+      );
+    },
+  );
 }

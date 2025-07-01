@@ -79,4 +79,32 @@ class TimelineRepository {
 
     _log.fine('Updated timeline entries count: ${updatedEntries.length}');
   }
+
+  Future<void> updateTimelineEntry(TimelineItem updatedEntry) async {
+    _log.fine('Updating timeline entry with ID: ${updatedEntry.id}');
+
+    final currentJson = await storage.read(key: storageKey);
+    final currentEntries = currentJson != null
+        ? TimelineItem.decodeList(currentJson)
+        : <TimelineItem>[];
+
+    final index =
+        currentEntries.indexWhere((entry) => entry.id == updatedEntry.id);
+
+    if (index == -1) {
+      _log.warning(
+          'Timeline entry with ID ${updatedEntry.id} not found for update.');
+      return;
+    }
+
+    currentEntries[index] = updatedEntry;
+
+    await storage.write(
+      key: storageKey,
+      value: TimelineItem.encodeList(currentEntries),
+    );
+
+    _log.fine(
+        'Successfully updated timeline entry with ID: ${updatedEntry.id}');
+  }
 }
