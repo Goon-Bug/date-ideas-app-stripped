@@ -261,7 +261,7 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
 
         return AppBar(
           title: const Text("Date Spark",
-              style: TextStyle(fontSize: 28, fontFamily: 'SmallTitle')),
+              style: TextStyle(fontSize: 28, fontFamily: 'RetroTitle')),
           backgroundColor: Theme.of(context).colorScheme.primary,
           leading: IconButton(
             onPressed: () {
@@ -472,7 +472,7 @@ class _DateIdeasWheelContentState extends State<DateIdeasWheelContent> {
                   result['description'],
                   textAlign: TextAlign.left,
                   style: TextStyle(
-                    fontSize: 18,
+                    fontSize: 16,
                     color: Theme.of(context).colorScheme.onSecondaryContainer,
                   ),
                 ),
@@ -492,7 +492,7 @@ class _DateIdeasWheelContentState extends State<DateIdeasWheelContent> {
                       child: Text(
                         result['location'],
                         style: TextStyle(
-                          fontSize: 18,
+                          fontSize: 14,
                         ),
                       ),
                     ),
@@ -531,7 +531,7 @@ class _DateIdeasWheelContentState extends State<DateIdeasWheelContent> {
                           child: Text(
                             url,
                             style: const TextStyle(
-                              fontSize: 18,
+                              fontSize: 16,
                               color: Colors.blue,
                               decoration: TextDecoration.underline,
                             ),
@@ -557,7 +557,7 @@ class _DateIdeasWheelContentState extends State<DateIdeasWheelContent> {
                     await context.read<TimelineCubit>().resetSelectedDateIdea();
                   },
                   child: const Text('OK',
-                      style: TextStyle(fontSize: 18, color: Colors.black)),
+                      style: TextStyle(fontSize: 16, color: Colors.black)),
                 ),
                 const SizedBox(height: 5),
                 ElevatedButton(
@@ -575,7 +575,7 @@ class _DateIdeasWheelContentState extends State<DateIdeasWheelContent> {
                     Navigator.pushNamed(context, '/addTimelineEntry');
                   },
                   child: const Text('Add date to timeline',
-                      style: TextStyle(fontSize: 18, color: Colors.black)),
+                      style: TextStyle(fontSize: 16, color: Colors.black)),
                 ),
               ],
             ),

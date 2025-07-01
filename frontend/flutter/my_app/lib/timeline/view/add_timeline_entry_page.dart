@@ -47,7 +47,6 @@ class AddTimelineEntryForm extends StatelessWidget {
                     ),
                   );
                 }
-
                 return Column(
                   crossAxisAlignment: CrossAxisAlignment.start,
                   children: [
@@ -96,7 +95,7 @@ class AddTimelineEntryForm extends StatelessWidget {
                                 .contains(searchValue.toLowerCase());
                           },
                         ),
-                        items: DateIdeasData.instance.dateIdeasMap
+                        items: DateIdeasData.instance.dateIdeasMapOriginal
                             .map((dateIdea) =>
                                 DropdownMenuItem<Map<String, dynamic>>(
                                   value: dateIdea,
@@ -257,11 +256,11 @@ class AddTimelineEntryForm extends StatelessWidget {
                         ),
                       ),
                       child: Padding(
-                        padding: const EdgeInsets.all(8.0),
+                        padding: const EdgeInsets.all(10.0),
                         child: Text(
                           'Add Entry',
                           style: TextStyle(
-                            fontSize: 20,
+                            fontSize: 18,
                             color: Theme.of(context).colorScheme.onPrimary,
                           ),
                         ),
