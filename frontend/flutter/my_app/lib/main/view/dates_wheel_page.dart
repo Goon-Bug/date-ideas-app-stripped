@@ -577,6 +577,10 @@ class _DateIdeasWheelContentState extends State<DateIdeasWheelContent> {
                   child: const Text('Add date to timeline',
                       style: TextStyle(fontSize: 16, color: Colors.black)),
                 ),
+                Text(
+                  '(Add details to your description after your date!)',
+                  style: TextStyle(fontSize: 12),
+                )
               ],
             ),
           ),
