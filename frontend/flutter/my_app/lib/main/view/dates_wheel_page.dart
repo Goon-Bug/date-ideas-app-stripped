@@ -261,7 +261,7 @@ class MainAppBar extends StatelessWidget implements PreferredSizeWidget {
 
         return AppBar(
           title: const Text("Date Spark",
-              style: TextStyle(fontSize: 28, fontFamily: 'RetroTitle')),
+              style: TextStyle(fontSize: 24, fontFamily: 'RetroSmall')),
           backgroundColor: Theme.of(context).colorScheme.primary,
           leading: IconButton(
             onPressed: () {
