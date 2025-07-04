@@ -188,7 +188,6 @@ class TimelineCubit extends Cubit<TimelineState> {
       _log.info('Updating description for timeline entry ID: $id');
       emit(state.copyWith(status: TimelineStatus.loading));
 
-      // Find the entry to update
       final index = state.timelineEntries.indexWhere((entry) => entry.id == id);
       if (index == -1) {
         throw Exception('Timeline entry not found');
@@ -197,10 +196,8 @@ class TimelineCubit extends Cubit<TimelineState> {
       final oldEntry = state.timelineEntries[index];
       final updatedEntry = oldEntry.copyWith(imagePath: newImagePath);
 
-      // Update repository
       await timelineRepository.updateTimelineEntry(updatedEntry);
 
-      // Update local state list
       final updatedEntries = List<TimelineItem>.from(state.timelineEntries);
       updatedEntries[index] = updatedEntry;
 
@@ -225,7 +222,6 @@ class TimelineCubit extends Cubit<TimelineState> {
       _log.info('Updating description for timeline entry ID: $id');
       emit(state.copyWith(status: TimelineStatus.loading));
 
-      // Find the entry to update
       final index = state.timelineEntries.indexWhere((entry) => entry.id == id);
       if (index == -1) {
         throw Exception('Timeline entry not found');
@@ -234,10 +230,8 @@ class TimelineCubit extends Cubit<TimelineState> {
       final oldEntry = state.timelineEntries[index];
       final updatedEntry = oldEntry.copyWith(description: newDescription);
 
-      // Update repository
       await timelineRepository.updateTimelineEntry(updatedEntry);
 
-      // Update local state list
       final updatedEntries = List<TimelineItem>.from(state.timelineEntries);
       updatedEntries[index] = updatedEntry;
 
