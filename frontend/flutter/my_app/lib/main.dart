@@ -7,6 +7,7 @@ import 'package:date_spark_app/services/ad_manager.dart';
 import 'package:date_spark_app/services/date_ideas_service.dart';
 import 'package:date_spark_app/services/secure_storage_service.dart';
 import 'package:date_spark_app/timeline/timeline_repository.dart';
+import 'package:flutter/foundation.dart';
 import 'package:get_it/get_it.dart';
 import 'package:flutter/widgets.dart';
 
@@ -31,14 +32,13 @@ Future<void> main() async {
 
   AdManager().initializeAds();
 
-  await hp.logSystemFiles();
-
-  // Clear storage at startup for dev/testing
-  // await storage.deleteAll();
-
   hp.addDefaultsToStorage();
 
-  storage.printAllSecureStorage();
+  if (kDebugMode) {
+    await storage.printAllSecureStorage();
+    await hp.logSystemFiles();
+    // await storage.deleteAll();
+  }
 
   setupDependencies();
   appLogger.info('App dependencies set up');
