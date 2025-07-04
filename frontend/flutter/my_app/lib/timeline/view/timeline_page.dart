@@ -5,6 +5,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:date_spark_app/timeline/bloc/timeline_cubit.dart';
 import 'package:date_spark_app/timeline/models/timeline.dart';
+import 'package:image_picker/image_picker.dart';
 
 class TimelinePage extends StatelessWidget {
   const TimelinePage({super.key});
@@ -260,7 +261,7 @@ class TimelineItemCard extends StatelessWidget {
                     color: Theme.of(context).colorScheme.tertiary,
                   ),
                   onPressed: () {
-                    _showEditDescriptionDialog(context, timelineItem);
+                    _showEditEntryDialog(context, timelineItem);
                   },
                 ),
                 IconButton(
@@ -312,23 +313,62 @@ class TimelineItemCard extends StatelessWidget {
   }
 }
 
-void _showEditDescriptionDialog(
-    BuildContext context, TimelineItem timelineItem) {
+void _showEditEntryDialog(BuildContext context, TimelineItem timelineItem) {
   final TextEditingController controller =
       TextEditingController(text: timelineItem.description);
+  String newImagePath = timelineItem.imagePath;
 
   showDialog(
     context: context,
     builder: (BuildContext context) {
       return AlertDialog(
-        title: const Text('Edit Description'),
-        content: TextField(
-          controller: controller,
-          maxLines: 5,
-          decoration: const InputDecoration(
-            labelText: 'Description',
-            border: OutlineInputBorder(),
-          ),
+        title: const Text('Edit Timeline Entry'),
+        content: Column(
+          mainAxisSize: MainAxisSize.min,
+          children: [
+            BlocBuilder<TimelineCubit, TimelineState>(
+                builder: (context, state) {
+              return GestureDetector(
+                onTap: () async {
+                  final image = await ImagePicker()
+                      .pickImage(source: ImageSource.gallery);
+                  if (image != null && context.mounted) {
+                    newImagePath = image.path;
+                    context
+                        .read<TimelineCubit>()
+                        .updateSelectedImage(File(newImagePath));
+                  }
+                },
+                child: Container(
+                  height: 150,
+                  width: double.infinity,
+                  decoration: BoxDecoration(
+                    image: DecorationImage(
+                      image: FileImage(File(newImagePath)),
+                      fit: BoxFit.scaleDown,
+                    ),
+                    borderRadius: BorderRadius.circular(8),
+                  ),
+                  child: const Center(
+                    child: Icon(
+                      Icons.camera_alt,
+                      size: 40,
+                      color: Colors.white,
+                    ),
+                  ),
+                ),
+              );
+            }),
+            SizedBox(height: 16),
+            TextField(
+              controller: controller,
+              maxLines: 5,
+              decoration: const InputDecoration(
+                labelText: 'Description',
+                border: OutlineInputBorder(),
+              ),
+            ),
+          ],
         ),
         actions: <Widget>[
           TextButton(
@@ -345,6 +385,10 @@ void _showEditDescriptionDialog(
                     .read<TimelineCubit>()
                     .updateTimelineDescription(timelineItem.id, newDescription);
               }
+              context.read<TimelineCubit>().updateTimelineImage(
+                    timelineItem.id,
+                    newImagePath,
+                  );
               Navigator.of(context).pop(); // close dialog after saving
             },
             child: const Text('Update', style: TextStyle(fontSize: 16)),

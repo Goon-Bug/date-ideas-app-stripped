@@ -183,6 +183,42 @@ class TimelineCubit extends Cubit<TimelineState> {
     }
   }
 
+  Future<void> updateTimelineImage(String id, String newImagePath) async {
+    try {
+      _log.info('Updating description for timeline entry ID: $id');
+      emit(state.copyWith(status: TimelineStatus.loading));
+
+      // Find the entry to update
+      final index = state.timelineEntries.indexWhere((entry) => entry.id == id);
+      if (index == -1) {
+        throw Exception('Timeline entry not found');
+      }
+
+      final oldEntry = state.timelineEntries[index];
+      final updatedEntry = oldEntry.copyWith(imagePath: newImagePath);
+
+      // Update repository
+      await timelineRepository.updateTimelineEntry(updatedEntry);
+
+      // Update local state list
+      final updatedEntries = List<TimelineItem>.from(state.timelineEntries);
+      updatedEntries[index] = updatedEntry;
+
+      _log.info('Successfully updated description for entry ID: $id');
+
+      emit(state.copyWith(
+        status: TimelineStatus.success,
+        timelineEntries: updatedEntries,
+      ));
+    } catch (error, stackTrace) {
+      _log.severe('Failed to update timeline description', error, stackTrace);
+      emit(state.copyWith(
+        status: TimelineStatus.failure,
+        errorMessage: error.toString(),
+      ));
+    }
+  }
+
   Future<void> updateTimelineDescription(
       String id, String newDescription) async {
     try {
