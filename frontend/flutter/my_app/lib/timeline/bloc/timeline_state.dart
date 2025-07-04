@@ -31,13 +31,17 @@ class TimelineState extends Equatable {
     String? selectedDate,
     Map<String, dynamic>? selectedDateIdea,
     bool resetSelectedDateIdea = false,
+    bool resetSelectedImage = false, // Add this line
+
     List<Map<String, dynamic>>? dateIdeaEntries,
   }) {
     return TimelineState(
       status: status ?? this.status,
       timelineEntries: timelineEntries ?? this.timelineEntries,
       errorMessage: errorMessage ?? this.errorMessage,
-      selectedImage: selectedImage ?? this.selectedImage,
+      selectedImage: resetSelectedImage // Add this logic
+          ? null
+          : selectedImage ?? this.selectedImage,
       selectedDate: selectedDate ?? this.selectedDate,
       selectedDateIdea: resetSelectedDateIdea
           ? null

@@ -110,10 +110,12 @@ class TimelineCubit extends Cubit<TimelineState> {
 
   Future<void> resetAddEntryFields() async {
     _log.info('Resetting add entry fields');
+
     emit(state.copyWith(
       selectedDate: '',
-      selectedDateIdea: null,
+      selectedDateIdea: {},
       resetSelectedDateIdea: true,
+      resetSelectedImage: true,
       selectedImage: null,
     ));
   }
@@ -183,66 +185,39 @@ class TimelineCubit extends Cubit<TimelineState> {
     }
   }
 
-  Future<void> updateTimelineImage(String id, String newImagePath) async {
+  Future<void> updateTimelineEntry({
+    required String id,
+    String? newDescription,
+    String? newImagePath,
+    String? newDate,
+  }) async {
     try {
-      _log.info('Updating description for timeline entry ID: $id');
+      _log.info('Updating timeline entry ID: $id');
       emit(state.copyWith(status: TimelineStatus.loading));
 
       final index = state.timelineEntries.indexWhere((entry) => entry.id == id);
-      if (index == -1) {
-        throw Exception('Timeline entry not found');
-      }
+      if (index == -1) throw Exception('Timeline entry not found');
 
       final oldEntry = state.timelineEntries[index];
-      final updatedEntry = oldEntry.copyWith(imagePath: newImagePath);
+      final updatedEntry = oldEntry.copyWith(
+        description: newDescription ?? oldEntry.description,
+        imagePath: newImagePath ?? oldEntry.imagePath,
+        date: newDate ?? oldEntry.date,
+      );
 
       await timelineRepository.updateTimelineEntry(updatedEntry);
 
-      final updatedEntries = List<TimelineItem>.from(state.timelineEntries);
-      updatedEntries[index] = updatedEntry;
+      final updatedEntries = List<TimelineItem>.from(state.timelineEntries)
+        ..[index] = updatedEntry;
 
-      _log.info('Successfully updated description for entry ID: $id');
+      _log.info('Successfully updated entry ID: $id');
 
       emit(state.copyWith(
         status: TimelineStatus.success,
         timelineEntries: updatedEntries,
       ));
     } catch (error, stackTrace) {
-      _log.severe('Failed to update timeline description', error, stackTrace);
-      emit(state.copyWith(
-        status: TimelineStatus.failure,
-        errorMessage: error.toString(),
-      ));
-    }
-  }
-
-  Future<void> updateTimelineDescription(
-      String id, String newDescription) async {
-    try {
-      _log.info('Updating description for timeline entry ID: $id');
-      emit(state.copyWith(status: TimelineStatus.loading));
-
-      final index = state.timelineEntries.indexWhere((entry) => entry.id == id);
-      if (index == -1) {
-        throw Exception('Timeline entry not found');
-      }
-
-      final oldEntry = state.timelineEntries[index];
-      final updatedEntry = oldEntry.copyWith(description: newDescription);
-
-      await timelineRepository.updateTimelineEntry(updatedEntry);
-
-      final updatedEntries = List<TimelineItem>.from(state.timelineEntries);
-      updatedEntries[index] = updatedEntry;
-
-      _log.info('Successfully updated description for entry ID: $id');
-
-      emit(state.copyWith(
-        status: TimelineStatus.success,
-        timelineEntries: updatedEntries,
-      ));
-    } catch (error, stackTrace) {
-      _log.severe('Failed to update timeline description', error, stackTrace);
+      _log.severe('Failed to update timeline entry', error, stackTrace);
       emit(state.copyWith(
         status: TimelineStatus.failure,
         errorMessage: error.toString(),
