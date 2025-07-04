@@ -6,6 +6,7 @@ import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:date_spark_app/timeline/bloc/timeline_cubit.dart';
 import 'package:date_spark_app/timeline/models/timeline.dart';
 import 'package:image_picker/image_picker.dart';
+import 'package:intl/intl.dart';
 
 class TimelinePage extends StatelessWidget {
   const TimelinePage({super.key});
@@ -225,7 +226,7 @@ class TimelineItemCard extends StatelessWidget {
                   image: DecorationImage(
                     image: timelineItem.imagePath.isNotEmpty
                         ? FileImage(File(timelineItem.imagePath))
-                        : const AssetImage('assets/images/sample1.jpg')
+                        : const AssetImage('assets/images/lightbulb_logo.png')
                             as ImageProvider,
                     fit: BoxFit.cover,
                   ),
@@ -323,52 +324,103 @@ void _showEditEntryDialog(BuildContext context, TimelineItem timelineItem) {
     builder: (BuildContext context) {
       return AlertDialog(
         title: const Text('Edit Timeline Entry'),
-        content: Column(
-          mainAxisSize: MainAxisSize.min,
-          children: [
-            BlocBuilder<TimelineCubit, TimelineState>(
-                builder: (context, state) {
-              return GestureDetector(
-                onTap: () async {
-                  final image = await ImagePicker()
-                      .pickImage(source: ImageSource.gallery);
-                  if (image != null && context.mounted) {
-                    newImagePath = image.path;
-                    context
-                        .read<TimelineCubit>()
-                        .updateSelectedImage(File(newImagePath));
-                  }
-                },
-                child: Container(
-                  height: 150,
-                  width: double.infinity,
-                  decoration: BoxDecoration(
-                    image: DecorationImage(
-                      image: FileImage(File(newImagePath)),
-                      fit: BoxFit.scaleDown,
+        content: BlocBuilder<TimelineCubit, TimelineState>(
+          builder: (context, state) {
+            return Column(
+              mainAxisSize: MainAxisSize.min,
+              children: [
+                GestureDetector(
+                  onTap: () async {
+                    final image = await ImagePicker()
+                        .pickImage(source: ImageSource.gallery);
+                    if (image != null && context.mounted) {
+                      newImagePath = image.path;
+                      context
+                          .read<TimelineCubit>()
+                          .updateSelectedImage(File(newImagePath));
+                    }
+                  },
+                  child: Container(
+                    height: 150,
+                    width: double.infinity,
+                    decoration: BoxDecoration(
+                      image: DecorationImage(
+                        image: FileImage(File(newImagePath)),
+                        fit: BoxFit.scaleDown,
+                      ),
+                      borderRadius: BorderRadius.circular(8),
                     ),
-                    borderRadius: BorderRadius.circular(8),
-                  ),
-                  child: const Center(
-                    child: Icon(
-                      Icons.camera_alt,
-                      size: 40,
-                      color: Colors.white,
+                    child: const Center(
+                      child: Icon(
+                        Icons.camera_alt,
+                        size: 40,
+                        color: Colors.white,
+                      ),
                     ),
                   ),
                 ),
-              );
-            }),
-            SizedBox(height: 16),
-            TextField(
-              controller: controller,
-              maxLines: 5,
-              decoration: const InputDecoration(
-                labelText: 'Description',
-                border: OutlineInputBorder(),
-              ),
-            ),
-          ],
+                const SizedBox(height: 16),
+                TextField(
+                  controller: controller,
+                  maxLines: 5,
+                  decoration: const InputDecoration(
+                    labelText: 'Description',
+                    border: OutlineInputBorder(),
+                  ),
+                ),
+                Row(
+                  children: [
+                    Expanded(
+                      child: TextFormField(
+                        controller: TextEditingController(
+                          text:
+                              context.read<TimelineCubit>().state.selectedDate,
+                        ),
+                        readOnly: true,
+                        decoration: InputDecoration(
+                          hintText: 'Select Date',
+                          hintStyle: TextStyle(
+                            fontSize: 16,
+                            color: Theme.of(context).colorScheme.onSecondary,
+                          ),
+                          border: InputBorder.none,
+                        ),
+                        onTap: () async {
+                          final pickedDate = await showDatePicker(
+                            context: context,
+                            initialDate: DateTime.now(),
+                            firstDate: DateTime(1900),
+                            lastDate: DateTime(2100),
+                          );
+                          if (pickedDate != null && context.mounted) {
+                            context.read<TimelineCubit>().updateSelectedDate(
+                                  DateFormat('yyyy-MM-dd').format(pickedDate),
+                                );
+                          }
+                        },
+                      ),
+                    ),
+                    IconButton(
+                      icon: const Icon(Icons.calendar_month),
+                      onPressed: () async {
+                        final pickedDate = await showDatePicker(
+                          context: context,
+                          initialDate: DateTime.now(),
+                          firstDate: DateTime(1900),
+                          lastDate: DateTime(2100),
+                        );
+                        if (pickedDate != null && context.mounted) {
+                          context.read<TimelineCubit>().updateSelectedDate(
+                                DateFormat('yyyy-MM-dd').format(pickedDate),
+                              );
+                        }
+                      },
+                    ),
+                  ],
+                ),
+              ],
+            );
+          },
         ),
         actions: <Widget>[
           TextButton(
@@ -380,16 +432,18 @@ void _showEditEntryDialog(BuildContext context, TimelineItem timelineItem) {
           ElevatedButton(
             onPressed: () {
               final newDescription = controller.text.trim();
-              if (newDescription.isNotEmpty) {
-                context
-                    .read<TimelineCubit>()
-                    .updateTimelineDescription(timelineItem.id, newDescription);
-              }
-              context.read<TimelineCubit>().updateTimelineImage(
-                    timelineItem.id,
-                    newImagePath,
+              final selectedDate =
+                  context.read<TimelineCubit>().state.selectedDate;
+
+              context.read<TimelineCubit>().updateTimelineEntry(
+                    id: timelineItem.id,
+                    newDescription:
+                        newDescription.isNotEmpty ? newDescription : null,
+                    newImagePath: newImagePath,
+                    newDate: selectedDate,
                   );
-              Navigator.of(context).pop(); // close dialog after saving
+
+              Navigator.of(context).pop();
             },
             child: const Text('Update', style: TextStyle(fontSize: 16)),
           ),
