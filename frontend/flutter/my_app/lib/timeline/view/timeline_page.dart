@@ -430,23 +430,29 @@ void _showEditEntryDialog(BuildContext context, TimelineItem timelineItem) {
             child: const Text('Cancel', style: TextStyle(fontSize: 16)),
           ),
           ElevatedButton(
-            onPressed: () {
-              final newDescription = controller.text.trim();
-              final selectedDate =
-                  context.read<TimelineCubit>().state.selectedDate;
+              style: ElevatedButton.styleFrom(
+                backgroundColor: Theme.of(context).colorScheme.primary,
+                foregroundColor: Theme.of(context).colorScheme.onPrimary,
+              ),
+              onPressed: () {
+                final newDescription = controller.text.trim();
+                final selectedDate =
+                    context.read<TimelineCubit>().state.selectedDate;
 
-              context.read<TimelineCubit>().updateTimelineEntry(
-                    id: timelineItem.id,
-                    newDescription:
-                        newDescription.isNotEmpty ? newDescription : null,
-                    newImagePath: newImagePath,
-                    newDate: selectedDate,
-                  );
+                context.read<TimelineCubit>().updateTimelineEntry(
+                      id: timelineItem.id,
+                      newDescription:
+                          newDescription.isNotEmpty ? newDescription : null,
+                      newImagePath: newImagePath,
+                      newDate: selectedDate,
+                    );
 
-              Navigator.of(context).pop();
-            },
-            child: const Text('Update', style: TextStyle(fontSize: 16)),
-          ),
+                Navigator.of(context).pop();
+              },
+              child: Text('Update',
+                  style: TextStyle(
+                    fontSize: 16,
+                  ))),
         ],
       );
     },
