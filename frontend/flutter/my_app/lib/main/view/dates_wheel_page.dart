@@ -578,7 +578,8 @@ class _DateIdeasWheelContentState extends State<DateIdeasWheelContent> {
                       style: TextStyle(fontSize: 16, color: Colors.black)),
                 ),
                 Text(
-                  '(Add details to your description after your date!)',
+                  '(Add date to timeline now and edit after your date!)',
+                  textAlign: TextAlign.center,
                   style: TextStyle(fontSize: 12),
                 )
               ],
