@@ -1,4 +1,3 @@
-import 'dart:io';
 import 'package:date_spark_app/logger.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
 import 'package:flutter/material.dart';
@@ -28,12 +27,8 @@ class AdManager {
 
   void _createRewardedAd() {
     RewardedAd.load(
-      adUnitId: Platform.isAndroid
-          ? 'ca-app-pub-3940256099942544/5224354917'
-          : 'ca-app-pub-3940256099942544/1712485313',
+      adUnitId: 'ca-app-pub-3019314381670327/1602161553',
       request: AdRequest(
-        keywords: <String>['foo', 'bar'],
-        contentUrl: 'http://foo.com/bar.html',
         nonPersonalizedAds: true,
       ),
       rewardedAdLoadCallback: RewardedAdLoadCallback(
@@ -92,12 +87,8 @@ class AdManager {
 
   void _createInterstitialAd() {
     InterstitialAd.load(
-      adUnitId: Platform.isAndroid
-          ? 'ca-app-pub-3940256099942544/1033173712'
-          : 'ca-app-pub-3940256099942544/4411468910',
+      adUnitId: 'ca-app-pub-3019314381670327/7869493914',
       request: AdRequest(
-        keywords: <String>['foo', 'bar'],
-        contentUrl: 'http://foo.com/bar.html',
         nonPersonalizedAds: true,
       ),
       adLoadCallback: InterstitialAdLoadCallback(
