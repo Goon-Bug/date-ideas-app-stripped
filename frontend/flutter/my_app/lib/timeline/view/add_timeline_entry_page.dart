@@ -35,7 +35,6 @@ class AddTimelineEntryForm extends StatelessWidget {
                 if (state.status == TimelineStatus.loading) {
                   return const Center(child: CircularProgressIndicator());
                 }
-
                 if (state.hasError) {
                   return Center(
                     child: Text(
@@ -56,16 +55,12 @@ class AddTimelineEntryForm extends StatelessWidget {
                       child: DropdownButtonFormField2<Map<String, dynamic>>(
                         isExpanded: true,
                         value: state.selectedDateIdea,
+                        validator: (value) =>
+                            value == null ? 'Please select a date idea' : null,
                         onChanged: (dateIdea) async {
                           await context
                               .read<TimelineCubit>()
                               .selectDateIdea(dateIdea!);
-                        },
-                        validator: (value) {
-                          if (value == null) {
-                            return 'Please select a Date Idea';
-                          }
-                          return null;
                         },
                         decoration: InputDecoration(
                           labelText: 'Select the Date that you went on',
@@ -117,12 +112,6 @@ class AddTimelineEntryForm extends StatelessWidget {
                         alignLabelWithHint: true,
                       ),
                       maxLines: 3,
-                      validator: (value) {
-                        if (value == null || value.isEmpty) {
-                          return 'Please enter a Description';
-                        }
-                        return null;
-                      },
                     ),
                     const SizedBox(height: 16),
                     // Image Picker
@@ -154,7 +143,7 @@ class AddTimelineEntryForm extends StatelessWidget {
                                 )
                               : const DecorationImage(
                                   image: AssetImage(
-                                      'assets/images/lightbulb_logo.png'),
+                                      'assets/images/lightbulb_log.png'),
                                   fit: BoxFit.scaleDown,
                                 ),
                           borderRadius: BorderRadius.circular(8),
@@ -177,12 +166,6 @@ class AddTimelineEntryForm extends StatelessWidget {
                             controller:
                                 TextEditingController(text: state.selectedDate),
                             readOnly: true,
-                            validator: (value) {
-                              if (value == null || value.isEmpty) {
-                                return 'Please select a Date';
-                              }
-                              return null;
-                            },
                             decoration: InputDecoration(
                               hintText: 'Select Date',
                               hintStyle: TextStyle(
