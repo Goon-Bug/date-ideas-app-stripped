@@ -17,6 +17,14 @@ class TagsCheckboxGrid extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    final screenWidth = MediaQuery.of(context).size.width;
+
+    int calculateCrossAxisCount(double width) {
+      if (width >= 1000) return 6; // desktop or large tablet
+      if (width >= 600) return 4; // mid-size tablet
+      return 3; // default for phones
+    }
+
     return Scaffold(
       appBar: AppBar(
         title: const Text(
@@ -29,8 +37,8 @@ class TagsCheckboxGrid extends StatelessWidget {
         child: BlocBuilder<TagsCubit, Map<String, bool>>(
           builder: (context, selectedTags) {
             return GridView.builder(
-              gridDelegate: const SliverGridDelegateWithFixedCrossAxisCount(
-                crossAxisCount: 3,
+              gridDelegate: SliverGridDelegateWithFixedCrossAxisCount(
+                crossAxisCount: calculateCrossAxisCount(screenWidth),
                 mainAxisSpacing: 10,
                 crossAxisSpacing: 3,
                 childAspectRatio: 2.5,
@@ -90,7 +98,7 @@ class TagsCheckboxGrid extends StatelessWidget {
                           ),
                         ),
                         IgnorePointer(
-                          ignoring: !enabled, // disables checkbox
+                          ignoring: !enabled,
                           child: Checkbox(
                             value: isSelected,
                             onChanged: (isChecked) {
