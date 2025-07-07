@@ -18,3 +18,6 @@ Key Features:
 Date Spark is designed to make planning your next adventure easy and fun. Download now and let fate decide your next date!
 
 Profile images from https://www.vecteezy.com/free-vector/abstract
+
+Stargazing Photo by <a href="https://unsplash.com/@mrmarkdejong?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Mark de Jong</a> on <a href="https://unsplash.com/photos/man-and-woman-standing-in-front-of-galaxy-B3BisFE09y8?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+      
