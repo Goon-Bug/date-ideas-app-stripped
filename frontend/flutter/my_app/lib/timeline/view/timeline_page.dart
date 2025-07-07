@@ -71,7 +71,8 @@ class TimelinePage extends StatelessWidget {
 
                   return ListView.builder(
                     padding: EdgeInsets.symmetric(
-                      horizontal: constraints.maxWidth * 0.015,
+                      horizontal: constraints.maxWidth * 0.03,
+                      vertical: constraints.maxHeight * 0.015,
                     ),
                     itemCount: state.timelineEntries.length,
                     itemBuilder: (context, index) {
@@ -79,6 +80,7 @@ class TimelinePage extends StatelessWidget {
                       return TimelineEntry(
                         timelineItem: entry,
                         isLast: index == state.timelineEntries.length - 1,
+                        maxWidth: constraints.maxWidth,
                       );
                     },
                   );
@@ -107,58 +109,69 @@ class TimelinePage extends StatelessWidget {
 class TimelineEntry extends StatelessWidget {
   final TimelineItem timelineItem;
   final bool isLast;
+  final double maxWidth;
 
   const TimelineEntry({
     super.key,
     required this.timelineItem,
     required this.isLast,
+    required this.maxWidth,
   });
 
   @override
   Widget build(BuildContext context) {
+    final dateWidth = maxWidth * 0.15;
+    final lineWidth = 24.0;
+
     return IntrinsicHeight(
-      child: Row(
-        crossAxisAlignment: CrossAxisAlignment.stretch,
-        children: [
-          SizedBox(
-            width: MediaQuery.of(context).size.width * 0.135,
-            child: Center(
-              child: Text(
-                timelineItem.date,
-                style: TextStyle(
-                  fontSize: 12,
-                  color: Theme.of(context).colorScheme.tertiary,
+      child: Padding(
+        padding: EdgeInsets.symmetric(vertical: 8.0),
+        child: Row(
+          crossAxisAlignment: CrossAxisAlignment.stretch,
+          children: [
+            SizedBox(
+              width: dateWidth,
+              child: Center(
+                child: Text(
+                  timelineItem.date,
+                  style: TextStyle(
+                    fontSize: dateWidth * 0.25,
+                    color: Theme.of(context).colorScheme.tertiary,
+                  ),
+                  textAlign: TextAlign.left,
                 ),
-                textAlign: TextAlign.left,
               ),
             ),
-          ),
-          SizedBox(
-            width: 20,
-            child: Stack(
-              alignment: Alignment.centerLeft,
-              children: [
-                Container(
-                  width: 5,
-                  color: Theme.of(context).colorScheme.primary,
-                ),
-                Center(
-                  child: Align(
-                    alignment: Alignment.centerLeft,
-                    child: Container(
-                      height: 5,
-                      width: 20,
-                      color: Theme.of(context).colorScheme.primary,
+            SizedBox(
+              width: lineWidth,
+              child: Stack(
+                alignment: Alignment.centerLeft,
+                children: [
+                  Container(
+                    width: 5,
+                    color: Theme.of(context).colorScheme.primary,
+                  ),
+                  Center(
+                    child: Align(
+                      alignment: Alignment.centerLeft,
+                      child: Container(
+                        height: 5,
+                        width: lineWidth,
+                        color: Theme.of(context).colorScheme.primary,
+                      ),
                     ),
                   ),
-                ),
-              ],
+                ],
+              ),
             ),
-          ),
-          Expanded(
-            child: TimelineItemCard(timelineItem: timelineItem),
-          ),
-        ],
+            Expanded(
+              child: TimelineItemCard(
+                timelineItem: timelineItem,
+                maxWidth: maxWidth - dateWidth - lineWidth - 40,
+              ),
+            ),
+          ],
+        ),
       ),
     );
   }
@@ -166,11 +179,19 @@ class TimelineEntry extends StatelessWidget {
 
 class TimelineItemCard extends StatelessWidget {
   final TimelineItem timelineItem;
+  final double maxWidth;
 
-  const TimelineItemCard({super.key, required this.timelineItem});
+  const TimelineItemCard({
+    super.key,
+    required this.timelineItem,
+    required this.maxWidth,
+  });
 
   @override
   Widget build(BuildContext context) {
+    final imageSize = maxWidth * 0.25;
+    final padding = maxWidth * 0.04;
+
     return Card(
       elevation: 4,
       color: Theme.of(context).colorScheme.onPrimaryContainer,
@@ -182,7 +203,7 @@ class TimelineItemCard extends StatelessWidget {
         ),
       ),
       child: Padding(
-        padding: EdgeInsets.all(MediaQuery.of(context).size.width * 0.025),
+        padding: EdgeInsets.all(padding),
         child: Row(
           crossAxisAlignment: CrossAxisAlignment.center,
           children: [
@@ -220,8 +241,8 @@ class TimelineItemCard extends StatelessWidget {
                 );
               },
               child: Container(
-                height: MediaQuery.of(context).size.width * 0.2,
-                width: MediaQuery.of(context).size.width * 0.2,
+                height: imageSize,
+                width: imageSize,
                 decoration: BoxDecoration(
                   image: DecorationImage(
                     image: timelineItem.imagePath.isNotEmpty
@@ -234,20 +255,23 @@ class TimelineItemCard extends StatelessWidget {
                 ),
               ),
             ),
-            SizedBox(width: MediaQuery.of(context).size.width * 0.03),
+            SizedBox(width: padding),
             Expanded(
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   Text(
                     timelineItem.dateTitle,
-                    style:
-                        const TextStyle(fontFamily: 'RetroTitle', fontSize: 22),
-                  ),
-                  Text(
-                    timelineItem.description!,
                     style: TextStyle(
-                      fontSize: 14,
+                      fontFamily: 'RetroTitle',
+                      fontSize: maxWidth * 0.07,
+                    ),
+                  ),
+                  SizedBox(height: maxWidth * 0.01),
+                  Text(
+                    timelineItem.description ?? '',
+                    style: TextStyle(
+                      fontSize: maxWidth * 0.04,
                       color: Theme.of(context).colorScheme.onSurface,
                     ),
                   ),
@@ -260,13 +284,15 @@ class TimelineItemCard extends StatelessWidget {
                   icon: Icon(
                     Icons.edit,
                     color: Theme.of(context).colorScheme.tertiary,
+                    size: maxWidth * 0.06,
                   ),
                   onPressed: () {
                     _showEditEntryDialog(context, timelineItem);
                   },
                 ),
                 IconButton(
-                  icon: const Icon(Icons.close, color: Colors.red),
+                  icon: Icon(Icons.close,
+                      color: Colors.red, size: maxWidth * 0.06),
                   onPressed: () {
                     _showDeleteConfirmationDialog(context);
                   },
@@ -326,66 +352,85 @@ void _showEditEntryDialog(BuildContext context, TimelineItem timelineItem) {
         title: const Text('Edit Timeline Entry'),
         content: BlocBuilder<TimelineCubit, TimelineState>(
           builder: (context, state) {
-            return Column(
-              mainAxisSize: MainAxisSize.min,
-              children: [
-                GestureDetector(
-                  onTap: () async {
-                    final image = await ImagePicker()
-                        .pickImage(source: ImageSource.gallery);
-                    if (image != null && context.mounted) {
-                      newImagePath = image.path;
-                      context
-                          .read<TimelineCubit>()
-                          .updateSelectedImage(File(newImagePath));
-                    }
-                  },
-                  child: Container(
-                    height: 150,
-                    width: double.infinity,
-                    decoration: BoxDecoration(
-                      image: DecorationImage(
-                        image: FileImage(File(newImagePath)),
-                        fit: BoxFit.scaleDown,
-                      ),
-                      borderRadius: BorderRadius.circular(8),
-                    ),
-                    child: const Center(
-                      child: Icon(
-                        Icons.camera_alt,
-                        size: 40,
-                        color: Colors.white,
-                      ),
-                    ),
-                  ),
-                ),
-                const SizedBox(height: 16),
-                TextField(
-                  controller: controller,
-                  maxLines: 5,
-                  decoration: const InputDecoration(
-                    labelText: 'Description',
-                    border: OutlineInputBorder(),
-                  ),
-                ),
-                Row(
-                  children: [
-                    Expanded(
-                      child: TextFormField(
-                        controller: TextEditingController(
-                          text:
-                              context.read<TimelineCubit>().state.selectedDate,
+            return SingleChildScrollView(
+              child: Column(
+                mainAxisSize: MainAxisSize.min,
+                children: [
+                  GestureDetector(
+                    onTap: () async {
+                      final image = await ImagePicker()
+                          .pickImage(source: ImageSource.gallery);
+                      if (image != null && context.mounted) {
+                        newImagePath = image.path;
+                        context
+                            .read<TimelineCubit>()
+                            .updateSelectedImage(File(newImagePath));
+                      }
+                    },
+                    child: Container(
+                      height: 150,
+                      width: double.infinity,
+                      decoration: BoxDecoration(
+                        image: DecorationImage(
+                          image: FileImage(File(newImagePath)),
+                          fit: BoxFit.scaleDown,
                         ),
-                        readOnly: true,
-                        decoration: InputDecoration(
-                          hintText: 'Select Date',
-                          hintStyle: TextStyle(
-                            fontSize: 16,
-                            color: Theme.of(context).colorScheme.onSecondary,
+                        borderRadius: BorderRadius.circular(8),
+                      ),
+                      child: const Center(
+                        child: Icon(
+                          Icons.camera_alt,
+                          size: 40,
+                          color: Colors.white,
+                        ),
+                      ),
+                    ),
+                  ),
+                  const SizedBox(height: 16),
+                  TextField(
+                    controller: controller,
+                    maxLines: 5,
+                    decoration: const InputDecoration(
+                      labelText: 'Description',
+                      border: OutlineInputBorder(),
+                    ),
+                  ),
+                  Row(
+                    children: [
+                      Expanded(
+                        child: TextFormField(
+                          controller: TextEditingController(
+                            text: context
+                                .read<TimelineCubit>()
+                                .state
+                                .selectedDate,
                           ),
-                          border: InputBorder.none,
+                          readOnly: true,
+                          decoration: InputDecoration(
+                            hintText: 'Select Date',
+                            hintStyle: TextStyle(
+                              fontSize: 16,
+                              color: Theme.of(context).colorScheme.onSecondary,
+                            ),
+                            border: InputBorder.none,
+                          ),
+                          onTap: () async {
+                            final pickedDate = await showDatePicker(
+                              context: context,
+                              initialDate: DateTime.now(),
+                              firstDate: DateTime(1900),
+                              lastDate: DateTime(2100),
+                            );
+                            if (pickedDate != null && context.mounted) {
+                              context.read<TimelineCubit>().updateSelectedDate(
+                                  DateFormat('yyyy-MM-dd').format(pickedDate));
+                            }
+                          },
                         ),
-                        onTap: () async {
+                      ),
+                      IconButton(
+                        icon: const Icon(Icons.calendar_today),
+                        onPressed: () async {
                           final pickedDate = await showDatePicker(
                             context: context,
                             initialDate: DateTime.now(),
@@ -394,31 +439,14 @@ void _showEditEntryDialog(BuildContext context, TimelineItem timelineItem) {
                           );
                           if (pickedDate != null && context.mounted) {
                             context.read<TimelineCubit>().updateSelectedDate(
-                                  DateFormat('yyyy-MM-dd').format(pickedDate),
-                                );
+                                DateFormat('yyyy-MM-dd').format(pickedDate));
                           }
                         },
                       ),
-                    ),
-                    IconButton(
-                      icon: const Icon(Icons.calendar_month),
-                      onPressed: () async {
-                        final pickedDate = await showDatePicker(
-                          context: context,
-                          initialDate: DateTime.now(),
-                          firstDate: DateTime(1900),
-                          lastDate: DateTime(2100),
-                        );
-                        if (pickedDate != null && context.mounted) {
-                          context.read<TimelineCubit>().updateSelectedDate(
-                                DateFormat('yyyy-MM-dd').format(pickedDate),
-                              );
-                        }
-                      },
-                    ),
-                  ],
-                ),
-              ],
+                    ],
+                  ),
+                ],
+              ),
             );
           },
         ),
@@ -427,32 +455,19 @@ void _showEditEntryDialog(BuildContext context, TimelineItem timelineItem) {
             onPressed: () {
               Navigator.of(context).pop();
             },
-            child: const Text('Cancel', style: TextStyle(fontSize: 16)),
+            child: const Text('Cancel'),
           ),
           ElevatedButton(
-              style: ElevatedButton.styleFrom(
-                backgroundColor: Theme.of(context).colorScheme.primary,
-                foregroundColor: Theme.of(context).colorScheme.onPrimary,
-              ),
-              onPressed: () {
-                final newDescription = controller.text.trim();
-                final selectedDate =
-                    context.read<TimelineCubit>().state.selectedDate;
-
-                context.read<TimelineCubit>().updateTimelineEntry(
-                      id: timelineItem.id,
-                      newDescription:
-                          newDescription.isNotEmpty ? newDescription : null,
-                      newImagePath: newImagePath,
-                      newDate: selectedDate,
-                    );
-
-                Navigator.of(context).pop();
-              },
-              child: Text('Update',
-                  style: TextStyle(
-                    fontSize: 16,
-                  ))),
+            onPressed: () {
+              context.read<TimelineCubit>().updateTimelineEntry(
+                    id: timelineItem.id,
+                    newDescription: controller.text,
+                    newImagePath: newImagePath,
+                  );
+              Navigator.of(context).pop();
+            },
+            child: const Text('Save'),
+          ),
         ],
       );
     },
