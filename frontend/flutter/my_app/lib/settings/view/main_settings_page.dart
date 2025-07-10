@@ -1,8 +1,10 @@
 import 'dart:developer';
 
 import 'package:date_spark_app/services/ad_manager.dart';
+import 'package:flutter/gestures.dart';
 import 'package:flutter/material.dart';
 import 'package:http/http.dart' as http;
+import 'package:url_launcher/url_launcher.dart';
 
 class SettingsPage extends StatefulWidget {
   const SettingsPage({super.key});
@@ -73,11 +75,11 @@ class _SettingsPageState extends State<SettingsPage> {
               size: 34,
             ),
             title: const Text(
-              'Help & Support',
+              'Send Feedback',
               style: TextStyle(fontSize: 22),
             ),
             subtitle: const Text(
-              'Get help and support',
+              'Get help or send feedback',
               style: TextStyle(fontSize: 15),
             ),
             onTap: () {
@@ -86,15 +88,13 @@ class _SettingsPageState extends State<SettingsPage> {
                 builder: (BuildContext context) {
                   return AlertDialog(
                     title: const Text(
-                      'Help and Support',
+                      'Help and Feedback',
                       style: TextStyle(fontSize: 22),
                     ),
                     content: Column(
                       mainAxisSize: MainAxisSize.min,
                       children: [
-                        const Text(
-                          'If you have any queries or would like to submit any feedback or feature requests then please email me at goon-bug@hotmail.com',
-                        ),
+                        FeedbackText(),
                         const SizedBox(height: 10),
                         ElevatedButton(
                           style: ElevatedButton.styleFrom(
@@ -278,4 +278,44 @@ String toTitleCase(String text) {
           ? ''
           : word[0].toUpperCase() + word.substring(1).toLowerCase())
       .join(' ');
+}
+
+class FeedbackText extends StatelessWidget {
+  final String email = 'goon-bug@hotmail.com';
+
+  const FeedbackText({super.key});
+
+  void _launchEmail() async {
+    final Uri emailUri = Uri(
+      scheme: 'mailto',
+      path: email,
+    );
+    if (await canLaunchUrl(emailUri)) {
+      await launchUrl(emailUri);
+    } else {
+      // Handle error or show message
+      print('Could not launch email client');
+    }
+  }
+
+  @override
+  Widget build(BuildContext context) {
+    return RichText(
+      text: TextSpan(
+        style: DefaultTextStyle.of(context).style,
+        children: [
+          const TextSpan(
+              text:
+                  'If you have any queries or would like to submit any feedback or feature requests then please email me at '),
+          TextSpan(
+            text: email,
+            style: const TextStyle(
+                color: Colors.blue, decoration: TextDecoration.underline),
+            recognizer: TapGestureRecognizer()..onTap = _launchEmail,
+          ),
+          const TextSpan(text: '.'),
+        ],
+      ),
+    );
+  }
 }
