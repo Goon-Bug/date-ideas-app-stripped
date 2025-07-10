@@ -14,7 +14,7 @@ plugins {
 }
 
 android {
-    namespace = "com.example.date_spark_app"
+    namespace = "com.cameronr.date_spark_app"
     compileSdk = flutter.compileSdkVersion
     ndkVersion = "27.0.12077973"
 
@@ -37,7 +37,7 @@ android {
     }
 
     defaultConfig {
-        applicationId = "com.example.date_spark_app"
+        applicationId = "com.cameronr.date_spark_app"
         minSdk = 23
         targetSdk = 34
         versionCode = 1

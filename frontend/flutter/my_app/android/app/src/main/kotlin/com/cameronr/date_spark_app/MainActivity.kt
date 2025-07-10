@@ -1,4 +1,4 @@
-package com.example.date_spark_app
+package com.cameronr.date_spark_app
 
 import io.flutter.embedding.android.FlutterActivity
 
