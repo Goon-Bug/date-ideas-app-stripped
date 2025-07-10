@@ -281,7 +281,7 @@ String toTitleCase(String text) {
 }
 
 class FeedbackText extends StatelessWidget {
-  final String email = 'goon-bug@hotmail.com';
+  final String email = 'datesparkhelp@gmail.com';
 
   const FeedbackText({super.key});
 
